@@ -63,7 +63,7 @@ export default function Home() {
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button className="bg-orange-600 hover:bg-orange-700 text-white">
-                  <Link href="/articles/">Derniers Articles</Link>
+                  <Link href="/blog/">Derniers Articles</Link>
                 </Button>
                 <Button
                   variant="outline"
@@ -76,8 +76,8 @@ export default function Home() {
             </div>
             <div className="relative h-[400px] rounded-xl overflow-hidden border border-gray-200 shadow-lg">
               <Image
-                src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?q=80&w=1200&h=800&auto=format&fit=crop"
-                alt="Visualisation IA montrant des connexions de réseau neuronal"
+                src="https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVfio5cua93bxoLyhcW8aNnVRf0tO2vu4mHdZJ"
+                alt="Production vidéo animée d'entreprise"
                 fill
                 className="object-cover"
                 priority
@@ -91,13 +91,13 @@ export default function Home() {
         <section className="mb-20">
           <div className="flex items-center justify-between mb-8">
             <h2 className="text-2xl font-bold text-gray-900">Derniers Articles</h2>
-            <Link href="/articles" className="text-orange-500 hover:text-orange-600 text-sm flex items-center gap-2">
+            <Link href="/journal" className="text-orange-500 hover:text-orange-600 text-sm flex items-center gap-2">
               Voir tous les articles →
             </Link>
           </div>
           
           <div className="grid md:grid-cols-3 gap-6">
-            <Link href="/articles" className="group">
+            <Link href="/journal" className="group">
               <div className="bg-white border border-gray-200 rounded-lg overflow-hidden hover:border-orange-300 hover:shadow-lg transition-all">
                 <div className="p-6">
                   <h3 className="font-medium group-hover:text-orange-600 transition-colors text-gray-900">
@@ -115,7 +115,7 @@ export default function Home() {
         <section className="mb-20">
           <div className="flex items-center justify-between mb-8">
             <h2 className="text-2xl font-bold text-gray-900">Articles Mis en Avant</h2>
-            <Link href="/articles/" className="text-orange-500 hover:text-orange-600 text-sm flex items-center gap-2">
+            <Link href="/journal/" className="text-orange-500 hover:text-orange-600 text-sm flex items-center gap-2">
               Voir tous <Eye className="h-4 w-4" />
             </Link>
           </div>
@@ -131,13 +131,13 @@ export default function Home() {
               slug="corporate-video-production"
             />
             <FeaturedCard
-              title="L'IA en 2025 : Transformer la Vie Quotidienne"
-              description="Découvrez comment l'IA générative s'est intégrée dans les activités quotidiennes d'ici 2025, en offrant des conseils de style personnalisés, en traduisant les conversations, en analysant les régimes alimentaires, et plus encore."
-              image="https://images.unsplash.com/photo-1531746790731-6c087fecd65a?q=80&w=600&h=400&auto=format&fit=crop"
-              date="2 juin 2023"
-              category="Technologie Future"
+              title="Combien coute une vidéo motion design ?"
+              description="Découvrez en profondeur les différents éléments qui influencent les tarifs du motion design, et comment optimiser votre budget pour obtenir une vidéo de qualité qui répond à vos objectifs marketing."
+              image="https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVfio5cua93bxoLyhcW8aNnVRf0tO2vu4mHdZJ"
+              date="27 août 2023"
+              category="Marketing vidéo"
               icon={<Cpu className="h-5 w-5" />}
-              slug="ai-in-2025"
+              slug="combien-coute-un-motion-design"
             />
             <FeaturedCard
               title="L'Essor des Modèles d'IA Multimodaux : Relier le Texte, l'Image et Plus"
@@ -261,7 +261,7 @@ function FeaturedCard({ title, description, image, date, category, icon, slug = 
           <Clock className="h-4 w-4" />
           <span>{date}</span>
         </div>
-        <Link href={`/blog/${slug}/`} className="text-orange-500 hover:text-orange-600">
+        <Link href={`/journal/${slug}/`} className="text-orange-500 hover:text-orange-600">
           Lire plus →
         </Link>
       </CardFooter>
@@ -271,7 +271,7 @@ function FeaturedCard({ title, description, image, date, category, icon, slug = 
 
 function ArticleCard({ title, description, category, date, slug = "", image }) {
   return (
-    <Link href={`/blog/${slug}/`} className="group">
+    <Link href={`/journal/${slug}/`} className="group">
       <div className="space-y-3">
         <div className="relative h-48 rounded-lg overflow-hidden border border-gray-200 group-hover:border-orange-300 group-hover:shadow-md transition-all">
           <Image src={image || "/placeholder.svg"} alt={`Vignette de ${title}`} fill className="object-cover" />
