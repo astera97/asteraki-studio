@@ -132,7 +132,7 @@ export default function Home() {
                 slug="corporate-video-production"
               />
               <FeaturedCard
-                title="Combien coute une vidéo motion design ?"
+                title="Combien coûte une vidéo motion design ?"
                 description="Découvrez en profondeur les différents éléments qui influencent les tarifs du motion design, et comment optimiser votre budget pour obtenir une vidéo de qualité qui répond à vos objectifs marketing."
                 image="https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVfio5cua93bxoLyhcW8aNnVRf0tO2vu4mHdZJ  "
                 date="27 août 2025"
