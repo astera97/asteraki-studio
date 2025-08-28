@@ -29,13 +29,19 @@ const servicesDropdown = {
           title: "Vidéos explicatives",
           description: "Animation 2D/3D de haut niveau",
           image: "https://xb26hl5f9h.ufs.sh/f/myb9AtBX9KywLGxauPLEFAvwOdGUzS8rfWxIcVho5ekmLqYl?height=40&width=40&text=🎬",
-          href: "/explainer-video-production"
+          href: "/production-video-explicative"
         },
         {
           title: "Vidéos de démonstration",
           description: "Votre meilleur vendeur",
           image: "https://xb26hl5f9h.ufs.sh/f/myb9AtBX9KywZq2L825DmjQM0nVEs2BHNKk8yJeWpug7rf34?height=40&width=40&text=🎯",
-          href: "/demo-video-production"
+          href: "/production-video-demonstration-produit"
+        },
+        {
+          title: "Vidéos d'applications",
+          description: "Votre application en beauté",
+          image: "https://xb26hl5f9h.ufs.sh/f/myb9AtBX9KywZq2L825DmjQM0nVEs2BHNKk8yJeWpug7rf34?height=40&width=40&text=🎯",
+          href: "/production-video-application"
         },
       ],
     },
@@ -47,31 +53,31 @@ const servicesDropdown = {
           title: "Vidéos de marque",
           description: "Campagnes de marque & TVC",
           image: "https://xb26hl5f9h.ufs.sh/f/myb9AtBX9Kyw6HsLmAagHJ3YwbVFM7BDCv2nIdW8y1stzLeO?height=40&width=40&text=🏢",
-          href: "/brand-video-production-services"
+          href: "/production-video-marque"
         },
         {
           title: "Vidéos d'événements",
           description: "Unir talents et produits",
           image: "https://xb26hl5f9h.ufs.sh/f/myb9AtBX9KywjOrOlmAXDwEq0U4C87KsF9Tplh2ZmP5R1adB?height=40&width=40&text=📦",
-          href: "/event-video-production"
+          href: "/production-video-evenementielle"
         },
         {
           title: "Vidéos de crowdfunding",
           description: "Plus de +25m $ levés",
           image: "https://xb26hl5f9h.ufs.sh/f/myb9AtBX9Kyw6lIiYvagHJ3YwbVFM7BDCv2nIdW8y1stzLeO?height=40&width=40&text=💰",
-          href: "/crowdfunding-video-production-services"
+          href: "/production-video-financement"
         },
         {
           title: "Vidéos de recrutement",
           description: "Recrutez les meilleurs talents",
           image: "https://xb26hl5f9h.ufs.sh/f/myb9AtBX9KywiAQuGIBrTARJGXZkYLKW6sdH5N4B0vywIojm?height=40&width=40&text=👥",
-          href: "/recruitment-video-production"
+          href: "/production-video-recrutement"
         },
         {
           title: "Vidéos de témoignages clients",
           description: "Montrez des histoires de réussite",
           image: "https://xb26hl5f9h.ufs.sh/f/myb9AtBX9KywtCNQt6134vBTOxF8dARqINU9EX5yck2foZjG?height=40&width=40&text=📊",
-          href: "/customer-story-video-production"
+          href: "/production-video-temoignage-client"
         },
       ],
     },
@@ -83,7 +89,7 @@ const servicesDropdown = {
           title: "Éducation & Infodivertissement",
           description: "Pour l'éducation à grande échelle",
           image: "https://xb26hl5f9h.ufs.sh/f/myb9AtBX9KywjmhaQLAXDwEq0U4C87KsF9Tplh2ZmP5R1adB?height=40&width=40&text=🎓",
-          href: "/educational-video-production"
+          href: "/production-video-pedagogique"
         },
       ],
     },
@@ -140,19 +146,19 @@ const expertiseDropdown = {
       title: "Pour la technologie & SaaS",
       description: "Aucune société de production n'a autant travaillé pour le secteur technologique qu'Asteraki",
       heroImage: "https://xb26hl5f9h.ufs.sh/f/myb9AtBX9Kywa6Nj6vQW6cbV58LvMdJS0skQ9yGeoPAiFT3Y",
-      href: "/tech-video-production-services", // Added href for clickable section
+      href: "/production-video-tech", // Added href for clickable section
       items: [
         {
           title: "SaaS & Applications",
           description: "Générez plus de pipeline + revenus",
           image: "https://xb26hl5f9h.ufs.sh/f/myb9AtBX9KywVz96gwZk9bJcHXMNUQfstv87OVhrZn4GzoAa?height=40&width=40&text=💻",
-          href: "/saas-video-production"
+          href: "/production-video-saas"
         },
         {
           title: "Pour les startups",
           description: "Tarification adaptée aux startups",
           image: "https://xb26hl5f9h.ufs.sh/f/myb9AtBX9KywJn9GcksXNLP2QdFWhK9OvG3Rr0fZVD4Htsme?height=40&width=40&text=🚀",
-          href: "/video-production-for-startups"
+          href: "/production-video-startup"
         },
       ],
     },
@@ -160,19 +166,19 @@ const expertiseDropdown = {
       title: "Pour les entreprises",
       description: "Les grandes entreprises nous adorent. En plus de notre engagement envers la qualité, nous respectons les guidelines de marque",
       heroImage: "https://xb26hl5f9h.ufs.sh/f/myb9AtBX9KywhPxURjesIX8uUOrt39b1FRWBpdfEcgCMKvw6?height=200&width=350&text=Enterprise+Meeting",
-      href: "/video-production-for-enterprise", // Added href for clickable section
+      href: "/production-video-b2b", // Added href for clickable section
       items: [
         {
           title: "Services financiers",
           description: "Conçu pour le succès fintech",
           image: "https://xb26hl5f9h.ufs.sh/f/myb9AtBX9Kyw1bhZY3L0yHGBKOREhLxl4Ti6nuevra7FcWC5?height=40&width=40&text=💰",
-          href: "/video-production-for-finance"
+          href: "/production-video-bancaire"
         },
         {
           title: "Services logistiques",
           description: "Conçu pour les entreprises logistiques",
           image: "https://xb26hl5f9h.ufs.sh/f/myb9AtBX9KywCwGN7Z6dH7rVT25qFa9GQY8gkxhfvsZSXJMC?height=40&width=40&text=🚚",
-          href: "/video-production-for-logistics"
+          href: "/production-video-logistique"
         },
       ],
     },
@@ -180,13 +186,13 @@ const expertiseDropdown = {
       title: "Pour le grand public",
       description: "Nous produisons ce genre de publicités grand public dont les gens parlent à leurs amis",
       heroImage: "https://xb26hl5f9h.ufs.sh/f/myb9AtBX9KywXNTUP5qqNEZxSsUah86LOQRFMbvitf9woCdj?height=200&width=350&text=Consumer+Ads",
-      href: "/video-production-for-consumer", // Added href for clickable section
+      href: "/production-video-b2c", // Added href for clickable section
       items: [
         {
           title: "E-commerce & DTC",
           description: "Marques, TV et publicités",
           image: "https://xb26hl5f9h.ufs.sh/f/myb9AtBX9KywpljVSKvIpEkOY8D0GBumXaioq9CjFLZxsPM1?height=40&width=40&text=🛒",
-          href: "/ecommerce-video-production-services"
+          href: "/production-video-ecommerce"
         },
       ],
       specialItem: {
@@ -227,7 +233,7 @@ const resourcesDropdown = {
       title: "Entreprise",
       description: "Nous produisons du contenu que vous adorerez !",
       heroImage: "https://xb26hl5f9h.ufs.sh/f/myb9AtBX9Kywjd5d0D1AXDwEq0U4C87KsF9Tplh2ZmP5R1ad?height=200&width=350&text=Vidico+Office",
-      href: "/about", // Added href for clickable section
+      href: "/a-propos", // Added href for clickable section
       items: [
       ],
     },
@@ -235,7 +241,7 @@ const resourcesDropdown = {
       title: "Pourquoi choisir Asteraki",
       description: "Découvrez ce qui nous rend différents",
       heroImage: "https://xb26hl5f9h.ufs.sh/f/myb9AtBX9KywlrrX99RNjhtsPvHbSRacMYefKT2gQAxB90k3?height=200&width=350&text=Creative+Process",
-      href: "/why-asteraki", // Added href for clickable section
+      href: "/pourquoi-asteraki", // Added href for clickable section
       items: [
       ],
     },
@@ -243,7 +249,7 @@ const resourcesDropdown = {
       title: "Conseils créatifs actionnables",
       description: "Rejoignez plus de 5000 marketeurs",
       heroImage: "https://xb26hl5f9h.ufs.sh/f/myb9AtBX9Kyw1aH2UwL0yHGBKOREhLxl4Ti6nuevra7FcWC5?height=200&width=350&text=Newsletter+Preview",
-      href: "/creative-insights", // Added href for clickable section
+      href: "/newsletter-creative-insights", // Added href for clickable section
       items: [
         {
           title: "Blog",
@@ -400,7 +406,7 @@ export default function Header() {
             </div>
             {/* Work */}
             <Link
-              href="/work"
+              href="/realisations"
               className="cursor-pointer text-black hover:text-black transition-colors"
             >
               Réalisations
@@ -428,7 +434,7 @@ export default function Header() {
           </div>
           {/* Mobile Menu Button */}
           <div className="lg:hidden relative z-50">
-            <button onClick={toggleMobileMenu} className="text-white p-2"> {/* Note: Original had text-white, might need adjustment for non-mobile menu */}
+            <button onClick={toggleMobileMenu} className="text-black p-2"> {/* Note: Original had text-white, might need adjustment for non-mobile menu */}
               {isMobileMenuOpen ? (
                 <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 18" />
