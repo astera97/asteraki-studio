@@ -42,7 +42,7 @@ export default function HeroSection() {
       {isVideoPlaying ? (
         // Self-hosted video player
         <video
-          src="/hero-video.mp4" // Path to your video file in the public directory
+          src="https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVdBLC9JWi6GqYWhobFfAOlIMupSJPcUR2wyLa" // Path to your video file in the public directory
           controls // Shows play, pause, volume etc.
           autoPlay
           muted={false} // Start unmuted as per your original Vimeo settings
@@ -55,12 +55,6 @@ export default function HeroSection() {
       ) : (
         // Thumbnail and play button
         <>
-          <Image
-            src="/video-thumbnail.webp" // Path to your video thumbnail
-            alt="Prévisualisation de la vidéo"
-            fill
-            className="object-cover w-full h-full"
-          />
           <div className="absolute inset-0 flex items-center justify-center">
             <button 
               onClick={playVideo}
