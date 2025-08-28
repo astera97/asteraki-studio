@@ -70,7 +70,7 @@ export default function Footer() {
                   {/* Numéro de téléphone */}
                   <p className="font-medium">
                     <a 
-                      href="tel:+14155793030" 
+                      href="tel:+33758116026" 
                       className="hover:text-gray-300 transition-colors"
                     >
                       +33 (7) 58 11 60 26
@@ -133,7 +133,7 @@ export default function Footer() {
             {/* Régions desservies */}
             <div className="text-center sm:text-left">
               <h4 className="text-gray-400 text-sm font-bold mb-4 sm:mb-6 uppercase tracking-wider">
-                Bureaux principaux
+                Nos studios
               </h4>
               <ul className="space-y-3 sm:space-y-4">
                 <li>
@@ -159,7 +159,7 @@ export default function Footer() {
               <h4 className="text-gray-400 text-sm font-bold mb-4 sm:mb-6 uppercase tracking-wider">ENTREPRISE</h4>
               <ul className="space-y-3 sm:space-y-4">
                 <li>
-                  <a href="/about" className="text-white hover:text-gray-300 transition-colors text-sm sm:text-base">
+                  <a href="/a-propos" className="text-white hover:text-gray-300 transition-colors text-sm sm:text-base">
                     À propos
                   </a>
                 </li>
@@ -186,7 +186,7 @@ export default function Footer() {
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="text-white hover:text-gray-300 transition-colors text-sm sm:text-base">
+                  <a href="politique-de-confidentialite" className="text-white hover:text-gray-300 transition-colors text-sm sm:text-base">
                     Confidentialité
                   </a>
                 </li>
@@ -195,12 +195,12 @@ export default function Footer() {
               <h4 className="text-gray-400 text-sm font-bold mb-4 sm:mb-6 uppercase tracking-wider">RESSOURCES</h4>
               <ul className="space-y-3 sm:space-y-4">
                 <li>
-                  <a href="/blog" className="text-white hover:text-gray-300 transition-colors text-sm sm:text-base">
+                  <a href="/journal" className="text-white hover:text-gray-300 transition-colors text-sm sm:text-base">
                     Blog
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="text-white hover:text-gray-300 transition-colors text-sm sm:text-base">
+                  <a href="newsletter-creative-insights" className="text-white hover:text-gray-300 transition-colors text-sm sm:text-base">
                     Newsletter motion
                   </a>
                 </li>

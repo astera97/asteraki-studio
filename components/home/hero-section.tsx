@@ -38,37 +38,17 @@ export default function HeroSection() {
         {/* Right side - Single Video Preview (No Blue Border) */}
 <div className="w-full lg:flex-1 flex justify-center">
   <div className="relative rounded-lg overflow-hidden max-w-md mx-auto lg:max-w-none">
-    <div className="aspect-video bg-gray-800 flex items-center justify-center relative">
-      {isVideoPlaying ? (
-        // Self-hosted video player
-        <video
-          src="https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVdBLC9JWi6GqYWhobFfAOlIMupSJPcUR2wyLa" // Path to your video file in the public directory
-          controls // Shows play, pause, volume etc.
-          autoPlay
-          muted={false} // Start unmuted as per your original Vimeo settings
-          playsInline // Important for mobile Safari
-          className="w-full h-full rounded-lg"
-          onError={(e) => console.error("Video failed to load:", e)}
-        >
-          Votre navigateur ne supporte pas la lecture de vidéos.
-        </video>
-      ) : (
-        // Thumbnail and play button
-        <>
-          <div className="absolute inset-0 flex items-center justify-center">
-            <button 
-              onClick={playVideo}
-              className="w-16 h-16 sm:w-20 sm:h-20 rounded-full flex items-center justify-center bg-black bg-opacity-70 hover:bg-opacity-90 transition-all duration-300"
-              aria-label="Lire la vidéo" // Added for accessibility
-            >
-              <svg className="w-8 h-8 sm:w-12 sm:h-12 text-white ml-1" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M8 5v14l11-7z" />
-              </svg>
-            </button>
-          </div>
-        </>
-      )}
-    </div>
+    <div className="rounded-2xl overflow-hidden bg-gray-800 flex items-center justify-center h-96">
+                  <video
+                    autoPlay
+                    loop
+                    muted
+                    className="w-full h-full object-cover"
+                  >
+                    <source src="https://xb26hl5f9h.ufs.sh/f/myb9AtBX9KywO1YZG6DldM8Th1Y46jXqf7KG5xJvzIoicVbS    " type="video/mp4" />
+                    Votre navigateur ne supporte pas les vidéos.
+                  </video>
+                </div>
   </div>
 </div>
       </div>
