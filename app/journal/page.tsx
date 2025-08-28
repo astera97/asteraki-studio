@@ -172,12 +172,12 @@ export default function Home() {
                 image="https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVjkQYWaQnk6Z0aKAOH3TspmrCuFeME74fB5Qq"
               />
               <ArticleCard
-                title="La Vision par Ordinateur dans les Véhicules Autonomes"
-                description="Explorer comment les algorithmes de vision par ordinateur permettent aux voitures autonomes de percevoir et de naviguer dans des environnements complexes."
-                category="Vision par Ordinateur"
-                date="3 août 2023"
-                slug="computer-vision-autonomous-vehicles"
-                image="    https://images.unsplash.com/photo-1563630381190-77c336ea545a?q=80&w=600&h=400&auto=format&fit=crop"
+                title="Les KPI de marketing vidéo que vous devez connaître"
+                description="Explorer les indicateurs clés de performance (KPI) essentiels pour mesurer le succès de vos campagnes de marketing vidéo et optimiser votre stratégie."
+                category="Marketing vidéo"
+                date="7 août 2025"
+                slug="kpi-du-marketing-video"
+                image="https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVSTLP9vUCDrvtja6n9zgLHo1Uq5I0Mu78VS4d"
               />
               <ArticleCard
                 title="L'Apprentissage Profond pour le Traitement du Langage Naturel"
