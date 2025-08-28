@@ -403,7 +403,7 @@ export default function MotionDesignCostPost() {
         </div>
       </main>
 
-      <br /><br /><br /><br />
+      
 
       {/* Pied de page */}
       <Footer />

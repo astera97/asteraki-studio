@@ -135,9 +135,9 @@ export default function Home() {
                 title="Combien coute une vidéo motion design ?"
                 description="Découvrez en profondeur les différents éléments qui influencent les tarifs du motion design, et comment optimiser votre budget pour obtenir une vidéo de qualité qui répond à vos objectifs marketing."
                 image="https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVfio5cua93bxoLyhcW8aNnVRf0tO2vu4mHdZJ  "
-                date="27 août 2023"
+                date="27 août 2025"
                 category="Marketing vidéo"
-                icon={<Cpu className="h-5 w-5" />}
+                icon={<BrainCircuit className="h-5 w-5" />}
                 slug="combien-coute-un-motion-design"
               />
               <FeaturedCard
@@ -145,8 +145,8 @@ export default function Home() {
                 description="Examinez l'émergence des modèles d'IA multimodaux qui traitent et génèrent plusieurs types de données, tels que le texte, les images et les vidéos, et leurs applications dans divers secteurs industriels."
                 image="  https://images.unsplash.com/photo-1620712943543-bcc4688e7485?q=80&w=600&h=400&auto=format&fit=crop"
                 date="28 juin 2023"
-                category="Recherche en IA"
-                icon={<Eye className="h-5 w-5" />}
+                category="Marketing vidéo"
+                icon={<BrainCircuit className="h-5 w-5" />}
                 slug="multimodal-ai-models"
               />
             </div>
@@ -196,12 +196,12 @@ export default function Home() {
                 image="    https://images.unsplash.com/photo-1507146153580-69a1fe6d8aa1?q=80&w=600&h=400&auto=format&fit=crop"
               />
               <ArticleCard
-                title="L'Avenir de la Recherche en IA : Quelles Perspectives ?"
-                description="Prédictions et insights sur les prochaines frontières de la recherche et du développement en intelligence artificielle."
-                category="Futur de l'IA"
-                date="20 septembre 2023"
-                slug="future-of-ai-research"
-                image="    https://images.unsplash.com/photo-1485827404703-89b55fcc595e?q=80&w=600&h=400&auto=format&fit=crop"
+                title="Les tendences du motion design en 2025"
+                description="Les tendances émergentes en motion design pour 2025, y compris les styles visuels, les techniques d'animation et les technologies influençant le domaine."
+                category="Marketing vidéo"
+                date="20 juillet 2025"
+                slug="tendences-motion-design-2025"
+                image="https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVmpBGIc5MHqgpiKfXLTktCOlh2Dac86JuZso9"
               />
             </div>
           </section>

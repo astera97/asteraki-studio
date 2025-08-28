@@ -78,7 +78,7 @@ export default function MotionDesignTrends2025Post() {
           {/* Image de héros */}
           <div className="relative h-[400px] md:h-[500px] rounded-xl overflow-hidden border border-gray-200 shadow-lg mb-8">
             <Image
-              src="https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVTA9kki0ins5ZGYgUmLXN6jkRIWfT8d4Sc0F2"
+              src="https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVmpBGIc5MHqgpiKfXLTktCOlh2Dac86JuZso9"
               alt="Tendances du motion design 2025 avec éléments animés"
               fill
               className="object-cover"
@@ -483,6 +483,8 @@ export default function MotionDesignTrends2025Post() {
               En 2025, le motion design est plus stratégique que jamais. Entre IA, 3D, minimalisme et rétro-futurisme, les possibilités sont nombreuses. Le tout, c'est de choisir le bon style, le bon format, le bon outil. Bien utilisé, le motion design devient un levier puissant pour raconter, convaincre et marquer les esprits.
             </p>
 
+            <br /><br />
+
              <section>
               <h2 className="text-2xl font-bold text-black mt-12 mb-6">Et si vous vous faisiez accompagner ?</h2>
               
@@ -572,7 +574,7 @@ export default function MotionDesignTrends2025Post() {
                       <span>Marketing Vidéo</span>
                     </div>
                     <h3 className="font-medium group-hover:text-orange-600 transition-colors text-black">
-                      Combien coûte une vidéo motion design ? ?
+                      Combien coûte une vidéo motion design ?
                     </h3>
                   </div>
                 </div>
