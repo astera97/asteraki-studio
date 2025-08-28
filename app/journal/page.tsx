@@ -141,13 +141,13 @@ export default function Home() {
                 slug="combien-coute-un-motion-design"
               />
               <FeaturedCard
-                title="L'Essor des Modèles d'IA Multimodaux : Relier le Texte, l'Image et Plus"
-                description="Examinez l'émergence des modèles d'IA multimodaux qui traitent et génèrent plusieurs types de données, tels que le texte, les images et les vidéos, et leurs applications dans divers secteurs industriels."
-                image="  https://images.unsplash.com/photo-1620712943543-bcc4688e7485?q=80&w=600&h=400&auto=format&fit=crop"
-                date="28 juin 2023"
+                title="Pourquoi les PDG et dirigeants publient plus de vidéos en 2025"
+                description="Découvrez pourquoi les PDG et dirigeants adoptent de plus en plus la vidéo en 2025 pour renforcer leur marque personnelle, engager leurs équipes et communiquer efficacement dans un paysage numérique en évolution rapide."
+                image="https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVq2bKoyEJ71KVf4mZNtnHaRrMPQjFOAu6wxlD"
+                date="28 juin 2025"
                 category="Marketing vidéo"
                 icon={<BrainCircuit className="h-5 w-5" />}
-                slug="multimodal-ai-models"
+                slug="pourquoi-les-pdg-publient-plus-de-videos-en-2025"
               />
             </div>
           </section>

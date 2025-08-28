@@ -398,12 +398,12 @@ export default function VideoMarketingKPIsPost() {
                   </div>
                 </div>
               </Link>
-              <Link href="/blog/corporate-video-production/" className="group">
+              <Link href="/blog/pourquoi-les-pdg-publient-plus-de-videos-en-2025/" className="group">
                 <div className="space-y-3">
                   <div className="relative h-48 rounded-lg overflow-hidden border border-gray-200 group-hover:border-orange-300 group-hover:shadow-md transition-all">
                     <Image
-                      src="https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVTA9kki0ins5ZGYgUmLXN6jkRIWfT8d4Sc0F2"
-                      alt="Production vidéo d'entreprise"
+                      src="https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVq2bKoyEJ71KVf4mZNtnHaRrMPQjFOAu6wxlD"
+                      alt="Interview vidéo avec un PDJ d'entreprise"
                       fill
                       className="object-cover"
                     />
