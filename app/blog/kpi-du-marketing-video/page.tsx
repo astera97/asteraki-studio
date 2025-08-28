@@ -377,12 +377,12 @@ export default function VideoMarketingKPIsPost() {
           <div className="border-t border-gray-200 mt-12 pt-8">
             <h3 className="text-xl font-bold mb-6 text-black">Vous aimerez peut-être aussi</h3>
             <div className="grid md:grid-cols-2 gap-6">
-              <Link href="/blog/what-kind-of-video-do-i-need-for-my-business/" className="group">
+              <Link href="/blog/quel-video-pour-mon-entreprise/" className="group">
                 <div className="space-y-3">
                   <div className="relative h-48 rounded-lg overflow-hidden border border-gray-200 group-hover:border-orange-300 group-hover:shadow-md transition-all">
                     <Image
                       src="https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVSTLP9vUCDrvtja6n9zgLHo1Uq5I0Mu78VS4d"
-                      alt="De quel type de vidéo ai-je besoin pour mon entreprise ?"
+                      alt="Frame à partir d'une vidéo d'entreprise"
                       fill
                       className="object-cover"
                     />

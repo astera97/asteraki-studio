@@ -164,12 +164,12 @@ export default function Home() {
                 image="    https://images.unsplash.com/photo-1633412802994-5c058f151b66?q=80&w=600&h=400&auto=format&fit=crop"
               />
               <ArticleCard
-                title="L'Intégration de l'IA dans la Technologie Portable : Améliorer l'Expérience Utilisateur"
-                description="Analysez l'incorporation de l'IA dans les appareils portables, tels que les lunettes intelligentes, et comment cela améliore l'interaction utilisateur grâce à des fonctionnalités comme la navigation en monde réel et l'accessibilité de l'information."
-                category="Technologie Portable"
-                date="18 juillet 2023"
-                slug="ai-in-wearable-technology"
-                image="    https://images.unsplash.com/photo-1551808525-51a94da548ce?q=80&w=600&h=400&auto=format&fit=crop"
+                title="De quel type de vidéo ai-je besoin pour mon entreprise ?"
+                description="Découvrez les différents types de vidéos d'entreprise, de la vidéo explicative aux témoignages clients, et comment choisir le format qui correspond le mieux à vos objectifs marketing."
+                category="Marketing Vidéo"
+                date="18 juillet 2025"
+                slug="quel-video-pour-mon-entreprise"
+                image="https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVjkQYWaQnk6Z0aKAOH3TspmrCuFeME74fB5Qq"
               />
               <ArticleCard
                 title="La Vision par Ordinateur dans les Véhicules Autonomes"
