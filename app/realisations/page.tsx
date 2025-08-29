@@ -81,6 +81,205 @@ const portfolioProjects = getUniqueAndShuffledProjects([
      thumbnail: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztV21oGj537WJBOGwHyYpLQ8mtukDFsr9nVZ07e",
      vimeoUrl: "https://vimeo.com/1114350408",
     },
+    {
+     id: 6,
+     title: "Malt",
+     subtitle: "Vidéo de marque",
+     description: "Keynote à propos de la nouvelle fonctionnalité de Malt, AI search.",
+     services: ["Scénario", "Cinématographie", "Graphismes animés", "Étalonnage des couleurs"],
+     videoType: "Vidéo de marque",
+     industry: "Startup",
+     thumbnail: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVJeYdFwKuqgdOsGVhtpIHWTxEMPov1QX37nkB",
+     vimeoUrl: "https://vimeo.com/1114349973",
+    },
+    {
+     id: 7,
+     title: "Malt",
+     subtitle: "Évènement",
+     description: "Vidéo évènement pour Malt durant VivaTech 2024.",
+     services: ["Cinématographie", "Graphismes animés", "Étalonnage des couleurs"],
+     videoType: "Évènement",
+     industry: "Startup",
+     thumbnail: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVJgQDR2KuqgdOsGVhtpIHWTxEMPov1QX37nkB",
+     vimeoUrl: "https://vimeo.com/1114350569",
+    },
+    {
+     id: 8,
+     title: "Malt",
+     subtitle: "Témoignage client",
+     description: "Vidéo témoignage client avec le client Malt, Doctolib.",
+     services: ["Scénario", "Cinématographie", "Graphismes animés", "Étalonnage"],
+     videoType: "Témoignage client",
+     industry: "Startup",
+     thumbnail: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVxm7bC9kdfVjkbuO409UhABiKIpeEqDgnCNwH",
+     vimeoUrl: "https://vimeo.com/1114350569",
+    },
+
+    //Typeform - Startup
+
+    {
+     id: 9,
+     title: "Typeform",
+     subtitle: "Démonstration produit",
+     description: "Vidéo démonstration produit montrant ce que Typeform peut faire.",
+     services: ["Scénario", "Cinématographie", "Graphismes animés", "Étalonnage"],
+     videoType: "Démonstration produit",
+     industry: "Startup",
+     thumbnail: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVRYNBCPPV8xN4tsZSVcawW35TIh0CgyLOYHAi",
+     vimeoUrl: "https://vimeo.com/1114346252",
+    },
+    {
+     id: 10,
+     title: "Typeform",
+     subtitle: "Démonstration produit",
+     description: "Vidéo démonstration expliquant la nouvelle fonctionnalité de Typeform, AI search.",
+     services: ["Scénario", "Cinématographie", "Graphismes animés", "Étalonnage"],
+     videoType: "Démonstration produit",
+     industry: "Startup",
+     thumbnail: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVbBt78mcTmDeo8Gup5yYk6UfPOQtMisvdVZNn",
+     vimeoUrl: "https://vimeo.com/1114346206",
+    },
+
+
+    //Shift Technology - Startup
+
+    {
+     id: 11,
+     title: "Shift",
+     subtitle: "Démonstration produit",
+     description: "Vidéo démonstration expliquant la problématique que Shift résout.",
+     services: ["Scénario", "Cinématographie", "Graphismes animés", "Étalonnage"],
+     videoType: "Démonstration produit",
+     industry: "Startup",
+     thumbnail: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVWD4hSniEG0j4rIlZeaBmiPMNq6kRYybfWv2S",
+     vimeoUrl: "https://vimeo.com/1114344771",
+    },
+    {
+     id: 12,
+     title: "Shift",
+     subtitle: "Démonstration produit",
+     description: "Vidéo démonstration montrant un cas d'utilisation de Shift.",
+     services: ["Scénario", "Cinématographie", "Graphismes animés", "Étalonnage"],
+     videoType: "Démonstration produit",
+     industry: "Startup",
+     thumbnail: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVNPRhb745FgMDujBmTbOY28pnK0y4lkrZfWxe",
+     vimeoUrl: "https://vimeo.com/1114343820",
+    },
+    {
+     id: 13,
+     title: "Shift",
+     subtitle: "Démonstration produit",
+     description: "Vidéo démonstration montrant une fonctionnalité de Shift.",
+     services: ["Scénario", "Cinématographie", "Graphismes animés", "Étalonnage"],
+     videoType: "Démonstration produit",
+     industry: "Startup",
+     thumbnail: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVDOY1AcTSFI73d61yo94zbUNY5muheKMsfAQR",
+     vimeoUrl: "https://vimeo.com/1114343677",
+    },
+
+
+    //Aircall - Startup
+
+    {
+     id: 14,
+     title: "Aircall",
+     subtitle: "Démonstration produit",
+     description: "Vidéo démonstration expliquant ce qu'Aircall peut faire.",
+     services: ["Scénario", "Cinématographie", "Graphismes animés", "Étalonnage"],
+     videoType: "Démonstration produit",
+     industry: "Startup",
+     thumbnail: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVjkkmAsOnk6Z0aKAOH3TspmrCuFeME74fB5Qq",
+     vimeoUrl: "https://vimeo.com/1114342087",
+    },
+    {
+     id: 15,
+     title: "Aircall",
+     subtitle: "Vidéo de marque",
+     description: "Vidéo de marque pour l'entreprise Aircall.",
+     services: ["Scénario", "Cinématographie", "Graphismes animés", "Étalonnage des couleurs"],
+     videoType: "Vidéo de marque",
+     industry: "Startup",
+     thumbnail: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVcmINPu9r3QfKI0dziE8sFt4BVwMqT2bChkLN",
+     vimeoUrl: "https://vimeo.com/1114342036",
+    },
+
+    //Zapier - Startup
+
+    {
+     id: 16,
+     title: "Zapier",
+     subtitle: "Vidéo de recrutement",
+     description: "Portrait collaborateur avec l'équipe de Zapier.",
+     services: ["Scénario", "Cinématographie", "Graphismes animés", "Étalonnage des couleurs"],
+     videoType: "Vidéo de recrutement",
+     industry: "Startup",
+     thumbnail: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVLuaOAibf8wJFWPDVs4Ky3z2UpGML7SAeE10r",
+     vimeoUrl: "https://vimeo.com/1114340171",
+    },
+    {
+     id: 17,
+     title: "Zapier",
+     subtitle: "Vidéo de recrutement",
+     description: "Portrait collaborateur avec l'équipe de Zapier.",
+     services: ["Scénario", "Cinématographie", "Graphismes animés", "Étalonnage des couleurs"],
+     videoType: "Vidéo de recrutement",
+     industry: "Startup",
+     thumbnail: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztV8KqQMEaOG4YknlEfbvRpMT0XH617A9IO5Sdu",
+     vimeoUrl: "https://vimeo.com/1114339646",
+    },
+    {
+     id: 18,
+     title: "Zapier",
+     subtitle: "Vidéo de recrutement",
+     description: "Portrait collaborateur avec l'équipe de Zapier.",
+     services: ["Scénario", "Cinématographie", "Graphismes animés", "Étalonnage des couleurs"],
+     videoType: "Vidéo de recrutement",
+     industry: "Startup",
+     thumbnail: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVbzFXLt1cTmDeo8Gup5yYk6UfPOQtMisvdVZN",
+     vimeoUrl: "https://vimeo.com/1114339918",
+    },
+
+
+    //Lucca - Startup
+
+    {
+     id: 19,
+     title: "Lucca",
+     subtitle: "Évènement",
+     description: "Lucca Summer Camp 2025",
+     services: ["Cinématographie", "Graphismes animés", "Étalonnage des couleurs"],
+     videoType: "Évènement",
+     industry: "Startup",
+     thumbnail: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVoMxugOH6CsnPrFwBgUiXEaet6jdqyMYbAL9p",
+     vimeoUrl: "https://vimeo.com/1114338016",
+    },
+    {
+     id: 20,
+     title: "Lucca",
+     subtitle: "Vidéo explicative",
+     description: "Vidéo d'animation expliquant la saisie et le suivi des temps de travail avec Lucca Feuilles de temps.",
+     services: ["Scénario", "Cinématographie", "Graphismes animés", "Étalonnage des couleurs"],
+     videoType: "Vidéo explicative",
+     industry: "Startup",
+     thumbnail: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVumo7XnMM0kbnN9ZpEL8lYQRazuvgOVG4Fot2",
+     vimeoUrl: "https://vimeo.com/1114338327",
+    },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
 
 
 
