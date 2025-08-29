@@ -8,70 +8,37 @@ export default function PortfolioSection() {
   const portfolioProjects = [
         {
       id: 1,
-      title: "Drata",
+      title: "Deloitte",
       subtitle: "Témoignage client",
-      description: "Vidéo témoignage client avec le client Drata, Softcat.",
-      services: ["Scénario", "Cinématographie", "Graphismes animés", "Étalonnage des couleurs"],
+      description: "Vidéo témoignage client avec le client de Deloitte, EXEL.",
+      services: ["Scénario", "Cinématographie", "Graphismes animés", "Étalonnage"],
       videoType: "Témoignage client",
-      industry: "Startup",
-      thumbnail: "https://xb26hl5f9h.ufs.sh/f/myb9AtBX9KywqSo613yucagDQM1fypRjomx7Ct05zsVwrhkY  ",
-      vimeoUrl: "https://vimeo.com/1110326216  ",
+      industry: "Technologie",
+      thumbnail: "https://xb26hl5f9h.ufs.sh/f/myb9AtBX9KywZN3ImH5DmjQM0nVEs2BHNKk8yJeWpug7rf34",
+      vimeoUrl: "https://vimeo.com/1113694980",
     },
     {
       id: 2,
-      title: "Salesforce",
+      title: "Sage",
       subtitle: "Témoignage client",
-      description: "Vidéo témoignage client avec le client Salesforce, Fisher and Paykel.",
-      services: ["Scénario", "Cinématographie", "Graphismes animés", "Étalonnage des couleurs"],
+      description: "Vidéo témoignage client avec le client Sage, Kalhyge.",
+      services: ["Scénario", "Cinématographie", "Graphismes animés", "Étalonnage"],
       videoType: "Témoignage client",
       industry: "Technologie",
-      thumbnail: "https://xb26hl5f9h.ufs.sh/f/myb9AtBX9KywtSZvvQ134vBTOxF8dARqINU9EX5yck2foZjG  ",
-      vimeoUrl: "https://vimeo.com/1110324328  ",
+      thumbnail: "https://xb26hl5f9h.ufs.sh/f/myb9AtBX9Kyws7Qb2Zh9tIXKsu1OETl2SqkiA0bH7zG5eaor",
+      vimeoUrl: "https://vimeo.com/1113712907",
     },
     {
       id: 3,
-      title: "Kandji",
+      title: "Uber",
       subtitle: "Témoignage client",
-      description: "Vidéo témoignage client avec le client Kandji, Rackspace Technology.",
+      description: "Vidéo témoignage client avec le client Uber, Le Boucher Moderne.",
       services: ["Scénario", "Cinématographie", "Graphismes animés", "Étalonnage des couleurs"],
       videoType: "Témoignage client",
-      industry: "Technologie",
-      thumbnail: "https://xb26hl5f9h.ufs.sh/f/myb9AtBX9KywJaeBiHsXNLP2QdFWhK9OvG3Rr0fZVD4Htsme  ",
-      vimeoUrl: "https://vimeo.com/1110322579  ",
+      industry: "Logistique",
+      thumbnail: "https://xb26hl5f9h.ufs.sh/f/myb9AtBX9KywiFaskIPBrTARJGXZkYLKW6sdH5N4B0vywIoj",
+      vimeoUrl: "https://vimeo.com/1104750452",
     },
-    {
-      id: 4,
-      title: "Mercury Bank",
-      subtitle: "Témoignage client",
-      description: "Vidéo témoignage client avec le client Mercury, Mango Puzzles.",
-      services: ["Scénario", "Cinématographie", "Graphismes animés", "Étalonnage des couleurs"],
-      videoType: "Témoignage client",
-      industry: "Finance",
-      thumbnail: "https://xb26hl5f9h.ufs.sh/f/myb9AtBX9KywtZ4Wth134vBTOxF8dARqINU9EX5yck2foZjG  ",
-      vimeoUrl: "https://vimeo.com/1110313363  ",
-    },
-    {
-      id: 5,
-      title: "HSBC",
-      subtitle: "Témoignage client",
-      description: "Vidéo témoignage client avec le client HSBC, Cinépolis.",
-      services: ["Scénario", "Cinématographie", "Graphismes animés", "Étalonnage des couleurs"],
-      videoType: "Témoignage client",
-      industry: "Finance",
-      thumbnail: "https://xb26hl5f9h.ufs.sh/f/myb9AtBX9KywBitVFFPP0hrpkjXS8G9AZlVmDwaR7ELNxqf5  ",
-      vimeoUrl: "https://vimeo.com/1102894973  ",
-    },
-    {
-      id: 6,
-      title: "HP",
-      subtitle: "Témoignage client",
-      description: "Vidéo témoignage client avec le client HP, Digital Etikett",
-      services: ["Scénario", "Cinématographie", "Graphismes animés", "Étalonnage des couleurs"],
-      videoType: "Témoignage client",
-      industry: "Technologie",
-      thumbnail: "https://xb26hl5f9h.ufs.sh/f/myb9AtBX9KywnrVMma2GAKUwrqsXVlt1BHPRSjJzvoTuZfCE  ",
-      vimeoUrl: "https://vimeo.com/1102895095  ",
-    }
   ]
 
   return (
@@ -79,7 +46,7 @@ export default function PortfolioSection() {
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold text-black mb-4">
-            Découvrez certains de nos travaux pour <br/>des campagnes vidéo de marque gagnantes.
+            Exemples de vidéos de témoignages clients
           </h2>
           <p className="text-xl text-black max-w-3xl mx-auto leading-relaxed">
             Nous avons obtenu plus de 1 milliard de vues sur plus de 580 projets vidéo. <br/>Nous savons ce qui fonctionne, et ce qui ne fonctionne pas.

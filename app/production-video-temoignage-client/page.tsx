@@ -11,7 +11,7 @@ import FinalCTASection from "./customer-story-cta"
 export const generateMetadata = async () => {
   return {
     title: "Production de vidéos témoignages clients | Asteraki",
-    description: "Créez de la preuve sociale avec des témoignages de premier plan. Notre équipe s'assure d'obtenir des vidéos témoignages clients cinématographiques qui convertissent les prospects en clients.",
+    description: "Créez de la preuve sociale avec des témoignages premium. Notre équipe s'assure d'obtenir des vidéos témoignages clients cinématographiques qui convertissent les prospects en clients.",
   }
 }
 
@@ -37,7 +37,7 @@ export default function CustomerStoryVideoPage() {
                 <div className="flex flex-col sm:flex-row gap-4">
                   <Link href="/quiz" passHref>
                     <button className="btn-luxury border-0 px-6 sm:px-8 py-3 rounded-full text-base text-white text-semibold sm:text-lg mb-4 sm:mb-2">
-                      Obtenir un devis
+                      Estimer votre projet en 1-minute
                     </button>
                   </Link>
                 </div>
@@ -51,7 +51,7 @@ export default function CustomerStoryVideoPage() {
                     className="w-full h-full object-cover"
                     poster="/customer-story-poster.jpg"
                   >
-                    <source src="https://xb26hl5f9h.ufs.sh/f/myb9AtBX9Kywsg1Juach9tIXKsu1OETl2SqkiA0bH7zG5eao  " type="video/mp4" />
+                    <source src="https://xb26hl5f9h.ufs.sh/f/myb9AtBX9Kywsg1Juach9tIXKsu1OETl2SqkiA0bH7zG5eao" type="video/mp4" />
                     Votre navigateur ne prend pas en charge la balise vidéo.
                   </video>
                 </div>
@@ -64,7 +64,7 @@ export default function CustomerStoryVideoPage() {
         <section className="pt-1 pb-24" style={{ backgroundColor: "rgba(255, 255, 255, 1)" }}>
           <div className="max-w-7xl mx-auto px-6 lg:px-8 text-center">
             <p className="text-center text-black font-normal mt-4 sm:mt-6 text-sm sm:text-base px-4">
-              Fait confiance à plus de 250 marques – 5/5 avis Google
+              +150 entreprises nous font confiance – 5/5 avis Google
             </p>
 
             {/* Carrousel de logos */}
@@ -172,7 +172,7 @@ export default function CustomerStoryVideoPage() {
               <div className="relative">
                 <div className="rounded-2xl overflow-hidden">
                   <img
-                    src="https://xb26hl5f9h.ufs.sh/f/myb9AtBX9KywnrVMma2GAKUwrqsXVlt1BHPRSjJzvoTuZfCE?height=400&width=800&text=Customer+Story+Illustration"
+                    src="https://xb26hl5f9h.ufs.sh/f/myb9AtBX9KywnrVMma2GAKUwrqsXVlt1BHPRSjJzvoTuZfCE"
                     alt="image d'interview avec un client HP ; le PDG de Digital Etikett"
                     className="w-full"
                   />
@@ -192,7 +192,7 @@ export default function CustomerStoryVideoPage() {
                 <div className="mt-10">
                   <Link href="/contact" passHref>
                     <button className="btn-luxury border-0 px-6 sm:px-8 py-3 rounded-full text-base text-white text-semibold sm:text-lg mb-4 sm:mb-2">
-                      Entrer en contact
+                      Obtenir un devis
                     </button>
                   </Link>
                 </div>
@@ -206,25 +206,25 @@ export default function CustomerStoryVideoPage() {
           <div className="max-w-7xl mx-auto px-6 lg:px-8">
             <div className="text-center mb-20">
               <h2 className="text-4xl lg:text-5xl font-bold text-black mb-4">
-                Comment nous garantissons la livraison de témoignages clients<br/> qui convertissent mieux
+                Comment nous garantissons la livraison de témoignages clients qui convertissent mieux
               </h2>
             </div>
             <div className="grid lg:grid-cols-3 gap-16">
               {[
                 {
-                  image: "  https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVh2BelJLDI024dcPOMo9lrEN6UY8eWLTbkv3Q  ",
+                  image: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVh2BelJLDI024dcPOMo9lrEN6UY8eWLTbkv3Q",
                   alt: "Récit authentique",
                   title: "Récit authentique",
                   desc: "Nous nous concentrons sur des moments réels et non scénarisés qui mettent en valeur des émotions authentiques et des résultats spécifiques obtenus par vos clients.",
                 },
                 {
-                  image: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVh2BelJLDI024dcPOMo9lrEN6UY8eWLTbkv3Q  ", 
+                  image: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVh2BelJLDI024dcPOMo9lrEN6UY8eWLTbkv3Q", 
                   alt: "Production de bout en bout",
                   title: "Production de bout en bout",
                   desc: "De l'identification des bons clients au tournage sur site et au montage de la pièce finale, nous gérons tout pour que vous puissiez vous concentrer sur votre entreprise.",
                 },
                 {
-                  image: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVh2BelJLDI024dcPOMo9lrEN6UY8eWLTbkv3Q  ",
+                  image: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVh2BelJLDI024dcPOMo9lrEN6UY8eWLTbkv3Q",
                   alt: "Distribution multi-canaux",
                   title: "Distribution multi-canaux",
                   desc: "Nous livrons votre témoignage client dans plusieurs formats optimisés pour le site web, les présentations commerciales, les réseaux sociaux et les campagnes par e-mail.",
@@ -271,7 +271,7 @@ export default function CustomerStoryVideoPage() {
                 </div>
                 <Link href="/contact" passHref>
                     <button className="btn-luxury border-0 px-6 sm:px-8 py-3 rounded-full text-base text-white text-semibold sm:text-lg mb-4 sm:mb-2">
-                      Entrer en contact
+                      Devis gratuit
                     </button>
                   </Link>
               </div>
@@ -356,7 +356,7 @@ export default function CustomerStoryVideoPage() {
                     <div className="bg-orange-500 text-white rounded-lg w-8 h-8 flex items-center justify-center font-bold mr-4 flex-shrink-0">3</div>
                     <div>
                       <h3 className="text-xl font-bold text-white mb-2">Accélère le cycle de vente</h3>
-                      <p className="text-gray-400">Les histoires clientes répondent aux objections et questions courantes avant même qu'elles ne soient posées, faisant avancer les prospects plus rapidement dans l'entonnoir.</p>
+                      <p className="text-gray-400">Les témoignages clientes répondent aux objections et questions courantes avant même qu'elles ne soient posées, faisant avancer les prospects plus rapidement dans l'entonnoir.</p>
                     </div>
                   </div>
                   
@@ -402,7 +402,7 @@ export default function CustomerStoryVideoPage() {
                       playsInline
                       className="w-full h-full object-cover"
                     >
-                      <source src="  https://xb26hl5f9h.ufs.sh/f/myb9AtBX9Kyw7IlAPs3wavFUfw5SNg3PlOHYAIuB0yjRm1hp  " type="video/mp4" />
+                      <source src="https://xb26hl5f9h.ufs.sh/f/myb9AtBX9Kyw7IlAPs3wavFUfw5SNg3PlOHYAIuB0yjRm1hp" type="video/mp4" />
                       Votre navigateur ne prend pas en charge la balise vidéo.
                     </video>
                     <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent pointer-events-none"></div>

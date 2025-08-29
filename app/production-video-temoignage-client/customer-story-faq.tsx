@@ -32,17 +32,12 @@ const customerStoryFAQItems: FAQItem[] = [
   {
     question: "Combien coûte une vidéo témoignage client ?",
     answer:
-      "La production de vidéos témoignages clients commence à 2 500 €, avec la plupart des projets entre 3 500 € et 7 500 € selon les exigences de déplacement, le nombre de lieux de tournage et la complexité de la production. Nous fournissons des devis détaillés sans frais cachés, pour que vous sachiez exactement ce qui est inclus.",
+      "La production de vidéos témoignages clients commence à 2 500 €, avec la plupart des projets entre 3 000 € et 5 500 € selon les exigences de déplacement, le nombre de lieux de tournage et la complexité de la production. Nous fournissons des devis détaillés sans frais cachés, pour que vous sachiez exactement ce qui est inclus.",
   },
   {
     question: "Gérez-vous les entretiens clients et les autorisations ?",
     answer:
       "Oui, notre équipe gère l'ensemble du processus, de la planification des entretiens à l'obtention des formulaires de consentement signés. Nous mettons les clients à l'aise pendant le tournage et nous assurons que toutes les exigences légales sont respectées pour l'utilisation commerciale de leur témoignage.",
-  },
-  {
-    question: "Comment les vidéos témoignages clients peuvent-elles être utilisées dans le marketing ?",
-    answer:
-      "Ces puissantes vidéos peuvent être utilisées sur votre site web, dans les présentations commerciales, lors de salons professionnels, dans les campagnes par e-mail et sur les plateformes de réseaux sociaux. Nous livrons plusieurs versions optimisées pour différents canaux, y compris des histoires complètes, des extraits de 60 secondes et des vignettes pour les réseaux sociaux.",
   },
 ]
 
