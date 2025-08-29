@@ -1,47 +1,63 @@
-import { NextApiRequest, NextApiResponse } from 'next'
+// app/api/sitemap/route.ts
+import { NextResponse } from 'next/server'
 import fs from 'fs'
 import path from 'path'
 
-// Function to get all static paths from your pages directory
+// Function to get all static paths from your app directory
 function getStaticPaths() {
-  const pagesDir = path.join(process.cwd(), 'pages')
+  const appDir = path.join(process.cwd(), 'app')
   const paths: string[] = [''] // Start with homepage
   
   function readDirectory(dir: string, basePath = '') {
+    // Check if directory exists
+    if (!fs.existsSync(dir)) {
+      return
+    }
+    
     const files = fs.readdirSync(dir)
     
     files.forEach(file => {
       const fullPath = path.join(dir, file)
       const relativePath = path.join(basePath, file)
       
+      // Skip API routes and special directories
+      if (file === 'api' || file.startsWith('_') || file === 'node_modules') {
+        return
+      }
+      
       if (fs.statSync(fullPath).isDirectory()) {
         readDirectory(fullPath, relativePath)
-      } else if (file.endsWith('.tsx') || file.endsWith('.js')) {
+      } else if (file === 'page.tsx' || file === 'page.ts' || file === 'page.js') {
         const route = relativePath
           .replace(/\\/g, '/')
-          .replace('/index', '')
+          .replace('/page', '')
           .replace('.tsx', '')
+          .replace('.ts', '')
           .replace('.js', '')
         
-        // Exclude API routes and special files
-        if (!route.includes('api') && !route.includes('_app') && !route.includes('_document')) {
+        if (route) {
           paths.push(route)
         }
       }
     })
   }
   
-  readDirectory(pagesDir)
+  readDirectory(appDir)
   return paths.filter(Boolean)
 }
 
-export default function handler(req: NextApiRequest, res: NextApiResponse) {
-  const baseUrl = 'https://asterakistudio.com'
+export async function GET() {
+  const baseUrl = 'https://asterakistudio.com' // Fixed the extra spaces
   
   // Get all static paths automatically
-  const staticPaths = getStaticPaths()
+  let staticPaths: string[] = ['']
+  try {
+    staticPaths = getStaticPaths()
+  } catch (error) {
+    console.error('Error getting static paths:', error)
+  }
   
-  // You can still manually add blog posts or fetch them from your data source
+  // Add your blog posts manually or fetch them
   const blogPosts = [
     'kpi-du-marketing-video',
     'pourquoi-les-pdg-publient-plus-de-videos-en-2025',
@@ -59,7 +75,7 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
     .map((path) => {
       return `
     <url>
-      <loc>${baseUrl}${path}</loc>
+      <loc>${baseUrl}${path === '' ? '' : `/${path}`}</loc>
       <lastmod>${new Date().toISOString().split('T')[0]}</lastmod>
       <changefreq>weekly</changefreq>
       <priority>${path === '' ? '1.0' : '0.8'}</priority>
@@ -81,7 +97,9 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
     .join('')}
 </urlset>`
 
-  res.setHeader('Content-Type', 'text/xml')
-  res.write(sitemap)
-  res.end()
+  return new NextResponse(sitemap, {
+    headers: {
+      'Content-Type': 'text/xml',
+    },
+  })
 }
