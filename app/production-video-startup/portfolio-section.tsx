@@ -10,7 +10,7 @@ export default function PortfolioSection() {
      id: 1,
      title: "Malt",
      subtitle: "Vidéo explicative",
-     description: "Vidéo explicative du term Super team avec l'équipe de Malt",
+     description: "Vidéo explicative du terme Superteam avec l'équipe de Malt",
      services: ["Scénario", "Cinématographie", "Graphismes animés", "Étalonnage des couleurs"],
      videoType: "Vidéo explicative",
      industry: "Startup",
@@ -18,7 +18,7 @@ export default function PortfolioSection() {
      vimeoUrl: "https://vimeo.com/1114350408",
     },
         {
-     id: 16,
+     id: 2,
      title: "Zapier",
      subtitle: "Vidéo de recrutement",
      description: "Portrait collaborateur avec l'équipe de Zapier.",
@@ -29,7 +29,7 @@ export default function PortfolioSection() {
      vimeoUrl: "https://vimeo.com/1114340171",
     },
     {
-     id: 14,
+     id: 3,
      title: "Aircall",
      subtitle: "Démonstration produit",
      description: "Vidéo démonstration expliquant ce qu'Aircall peut faire.",
@@ -51,7 +51,7 @@ export default function PortfolioSection() {
     vimeoUrl: "https://vimeo.com/1110392859",  
     },
     {
-     id: 9,
+     id: 5,
      title: "Typeform",
      subtitle: "Démonstration produit",
      description: "Vidéo démonstration produit montrant ce que Typeform peut faire.",
@@ -62,15 +62,15 @@ export default function PortfolioSection() {
      vimeoUrl: "https://vimeo.com/1114346252",
     },
     {
-     id: 5,
-     title: "Malt",
+     id: 6,
+     title: "Lucca",
      subtitle: "Vidéo explicative",
-     description: "Vidéo explicative du term Super team avec l'équipe de Malt",
+     description: "Vidéo d'animation expliquant la saisie et le suivi des temps de travail avec Lucca Feuilles de temps.",
      services: ["Scénario", "Cinématographie", "Graphismes animés", "Étalonnage des couleurs"],
      videoType: "Vidéo explicative",
      industry: "Startup",
-     thumbnail: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztV21oGj537WJBOGwHyYpLQ8mtukDFsr9nVZ07e",
-     vimeoUrl: "https://vimeo.com/1114350408",
+     thumbnail: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVumo7XnMM0kbnN9ZpEL8lYQRazuvgOVG4Fot2",
+     vimeoUrl: "https://vimeo.com/1114338327",
     },
   ]
 
