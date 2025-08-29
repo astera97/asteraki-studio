@@ -7,15 +7,15 @@ import Link from "next/link"
 export default function PortfolioSection() {
   const portfolioProjects = [
     {
-      id:1,
-      title: "Uber",
-      subtitle: "Vidéo d'entreprise",
-      description: "Vidéo d'entreprise sur la vie chez Uber, racontée par les partenaires.",
-      services: ["Scénario", "Cinématographie", "Graphismes animés", "Étalonnage colorimétrique"],
-      videoType: "Culture d'entreprise",
-      industry: "Startup",
-      thumbnail: "https://xb26hl5f9h.ufs.sh/f/myb9AtBX9KywByuMVOPP0hrpkjXS8G9AZlVmDwaR7ELNxqf5",
-      vimeoUrl: "https://vimeo.com/1110366894",
+     id: 1,
+     title: "Malt",
+     subtitle: "Vidéo explicative",
+     description: "Vidéo explicative du term Super team avec l'équipe de Malt",
+     services: ["Scénario", "Cinématographie", "Graphismes animés", "Étalonnage des couleurs"],
+     videoType: "Vidéo explicative",
+     industry: "Startup",
+     thumbnail: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztV21oGj537WJBOGwHyYpLQ8mtukDFsr9nVZ07e",
+     vimeoUrl: "https://vimeo.com/1114350408",
     },
     { 
     id: 2,
@@ -42,10 +42,10 @@ export default function PortfolioSection() {
     {
     id: 4,
     title: "Notion",
-    subtitle: "Vidéo de financement participatif",
+    subtitle: "Démonstration produit",
     description: "Vidéo animée expliquant Notion et ses fonctionnalités.",
-    services: ["Scénario", "Cinématographie", "Intégration VFX", "Étalonnage colorimétrique"],
-    videoType: "Vidéo de financement participatif",
+    services: ["Scénario", "Cinématographie", "Graphismes animés", "Étalonnage colorimétrique"],
+    videoType: "Démonstration produit",
     industry: "Startup",
     thumbnail: "https://xb26hl5f9h.ufs.sh/f/myb9AtBX9Kywt87OYL134vBTOxF8dARqINU9EX5yck2foZjG",
     vimeoUrl: "https://vimeo.com/1110392859",  

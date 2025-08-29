@@ -56,6 +56,151 @@ const portfolioProjects = getUniqueAndShuffledProjects([
       thumbnail: "https://xb26hl5f9h.ufs.sh/f/myb9AtBX9KywiFaskIPBrTARJGXZkYLKW6sdH5N4B0vywIoj",
       vimeoUrl: "https://vimeo.com/1104750452",
     },
+
+    //Malt - Startup
+
+    {
+     id: 4,
+     title: "Malt",
+     subtitle: "Démonstration produit",
+     description: "Vidéo animée expliquant la nouvelle fonctionnalité de Malt, AI search.",
+     services: ["Développement du scénario", "Animation 2D", "Production de voix-off", "Livraison multi-format"],
+     videoType: "Démonstration produit",
+     industry: "Startup",
+     thumbnail: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVGnpXRPBHNo2Fl95RE1eVgdJmnxZq4zjfCtBK",
+     vimeoUrl: "https://vimeo.com/1114350536",
+    },
+    {
+     id: 5,
+     title: "Malt",
+     subtitle: "Vidéo explicative",
+     description: "Vidéo explicative du term Super team avec l'équipe de Malt",
+     services: ["Scénario", "Cinématographie", "Graphismes animés", "Étalonnage des couleurs"],
+     videoType: "Vidéo explicative",
+     industry: "Startup",
+     thumbnail: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztV21oGj537WJBOGwHyYpLQ8mtukDFsr9nVZ07e",
+     vimeoUrl: "https://vimeo.com/1114350408",
+    },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+  {
+      id: 3,
+      title: "Malt",
+      subtitle: "Témoignage client",
+      description: "Vidéo démonstration du nouvelle fonctionnalité de Malt, AI search.",
+      services: ["Scénario", "Cinématographie", "Graphismes animés", "Étalonnage des couleurs"],
+      videoType: "Témoignage client",
+      industry: "Logistique",
+      thumbnail: "https://xb26hl5f9h.ufs.sh/f/myb9AtBX9KywiFaskIPBrTARJGXZkYLKW6sdH5N4B0vywIoj",
+      vimeoUrl: "https://vimeo.com/1114350536",
+    },
+
+    {
+      id: 3,
+      title: "Uber",
+      subtitle: "Témoignage client",
+      description: "Vidéo témoignage client avec le client Uber, Le Boucher Moderne.",
+      services: ["Scénario", "Cinématographie", "Graphismes animés", "Étalonnage des couleurs"],
+      videoType: "Témoignage client",
+      industry: "Logistique",
+      thumbnail: "https://xb26hl5f9h.ufs.sh/f/myb9AtBX9KywiFaskIPBrTARJGXZkYLKW6sdH5N4B0vywIoj",
+      vimeoUrl: "https://vimeo.com/1104750452",
+    },
+
+    {
+      id: 3,
+      title: "Uber",
+      subtitle: "Témoignage client",
+      description: "Vidéo témoignage client avec le client Uber, Le Boucher Moderne.",
+      services: ["Scénario", "Cinématographie", "Graphismes animés", "Étalonnage des couleurs"],
+      videoType: "Témoignage client",
+      industry: "Logistique",
+      thumbnail: "https://xb26hl5f9h.ufs.sh/f/myb9AtBX9KywiFaskIPBrTARJGXZkYLKW6sdH5N4B0vywIoj",
+      vimeoUrl: "https://vimeo.com/1104750452",
+    },
+
+    {
+      id: 3,
+      title: "Uber",
+      subtitle: "Témoignage client",
+      description: "Vidéo témoignage client avec le client Uber, Le Boucher Moderne.",
+      services: ["Scénario", "Cinématographie", "Graphismes animés", "Étalonnage des couleurs"],
+      videoType: "Témoignage client",
+      industry: "Logistique",
+      thumbnail: "https://xb26hl5f9h.ufs.sh/f/myb9AtBX9KywiFaskIPBrTARJGXZkYLKW6sdH5N4B0vywIoj",
+      vimeoUrl: "https://vimeo.com/1104750452",
+    },
+
+    {
+      id: 3,
+      title: "Uber",
+      subtitle: "Témoignage client",
+      description: "Vidéo témoignage client avec le client Uber, Le Boucher Moderne.",
+      services: ["Scénario", "Cinématographie", "Graphismes animés", "Étalonnage des couleurs"],
+      videoType: "Témoignage client",
+      industry: "Logistique",
+      thumbnail: "https://xb26hl5f9h.ufs.sh/f/myb9AtBX9KywiFaskIPBrTARJGXZkYLKW6sdH5N4B0vywIoj",
+      vimeoUrl: "https://vimeo.com/1104750452",
+    },
+
+    {
+      id: 3,
+      title: "Uber",
+      subtitle: "Témoignage client",
+      description: "Vidéo témoignage client avec le client Uber, Le Boucher Moderne.",
+      services: ["Scénario", "Cinématographie", "Graphismes animés", "Étalonnage des couleurs"],
+      videoType: "Témoignage client",
+      industry: "Logistique",
+      thumbnail: "https://xb26hl5f9h.ufs.sh/f/myb9AtBX9KywiFaskIPBrTARJGXZkYLKW6sdH5N4B0vywIoj",
+      vimeoUrl: "https://vimeo.com/1104750452",
+    },
+
+    {
+      id: 3,
+      title: "Uber",
+      subtitle: "Témoignage client",
+      description: "Vidéo témoignage client avec le client Uber, Le Boucher Moderne.",
+      services: ["Scénario", "Cinématographie", "Graphismes animés", "Étalonnage des couleurs"],
+      videoType: "Témoignage client",
+      industry: "Logistique",
+      thumbnail: "https://xb26hl5f9h.ufs.sh/f/myb9AtBX9KywiFaskIPBrTARJGXZkYLKW6sdH5N4B0vywIoj",
+      vimeoUrl: "https://vimeo.com/1104750452",
+    },
   {
     id: 4,
     title: "Girard-Perregaux",
