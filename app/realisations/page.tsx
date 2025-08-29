@@ -56,9 +56,7 @@ const portfolioProjects = getUniqueAndShuffledProjects([
       thumbnail: "https://xb26hl5f9h.ufs.sh/f/myb9AtBX9KywiFaskIPBrTARJGXZkYLKW6sdH5N4B0vywIoj",
       vimeoUrl: "https://vimeo.com/1104750452",
     },
-
     //Malt - Startup
-
     {
      id: 4,
      title: "Malt",
@@ -114,9 +112,7 @@ const portfolioProjects = getUniqueAndShuffledProjects([
      thumbnail: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVxm7bC9kdfVjkbuO409UhABiKIpeEqDgnCNwH",
      vimeoUrl: "https://vimeo.com/1114350569",
     },
-
     //Typeform - Startup
-
     {
      id: 9,
      title: "Typeform",
@@ -139,10 +135,7 @@ const portfolioProjects = getUniqueAndShuffledProjects([
      thumbnail: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVbBt78mcTmDeo8Gup5yYk6UfPOQtMisvdVZNn",
      vimeoUrl: "https://vimeo.com/1114346206",
     },
-
-
     //Shift Technology - Startup
-
     {
      id: 11,
      title: "Shift",
@@ -176,10 +169,7 @@ const portfolioProjects = getUniqueAndShuffledProjects([
      thumbnail: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVDOY1AcTSFI73d61yo94zbUNY5muheKMsfAQR",
      vimeoUrl: "https://vimeo.com/1114343677",
     },
-
-
     //Aircall - Startup
-
     {
      id: 14,
      title: "Aircall",
@@ -202,9 +192,7 @@ const portfolioProjects = getUniqueAndShuffledProjects([
      thumbnail: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVcmINPu9r3QfKI0dziE8sFt4BVwMqT2bChkLN",
      vimeoUrl: "https://vimeo.com/1114342036",
     },
-
     //Zapier - Startup
-
     {
      id: 16,
      title: "Zapier",
@@ -238,10 +226,7 @@ const portfolioProjects = getUniqueAndShuffledProjects([
      thumbnail: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVbzFXLt1cTmDeo8Gup5yYk6UfPOQtMisvdVZN",
      vimeoUrl: "https://vimeo.com/1114339918",
     },
-
-
     //Lucca - Startup
-
     {
      id: 19,
      title: "Lucca",
@@ -331,7 +316,7 @@ const portfolioProjects = getUniqueAndShuffledProjects([
     vimeoUrl: "https://vimeo.com/1114337494",
     },
     {
-     id: 19,
+     id: 27,
      title: "Lucca",
      subtitle: "Évènement",
      description: "Lève-Talk Nantes - La matinale RH par Lucca",
@@ -341,64 +326,49 @@ const portfolioProjects = getUniqueAndShuffledProjects([
      thumbnail: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVjkFUtQ3nk6Z0aKAOH3TspmrCuFeME74fB5Qq",
      vimeoUrl: "https://vimeo.com/1114337865",
     },
-
-
-    //Lucca - Startup
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    //Dell Technologies - Technology
+    {
+     id: 28,
+     title: "Dell",
+     subtitle: "Conseil d'expert",
+     description: "Dell et Scaleway sur le GPU-as-a-service au service de l'IA dans la santé",
+     services: ["Cinématographie", "Graphismes animés", "Étalonnage des couleurs"],
+     videoType: "Conseil d'expert",
+     industry: "Technologie",
+     thumbnail: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVUyS3LLq2CrN5MjsDJkoHGX6AzxuROT8SgfwW",
+     vimeoUrl: "https://vimeo.com/1114279502",
+    },
+    {
+     id: 29,
+     title: "Dell",
+     subtitle: "Évènement",
+     description: "Teaser du Dell Technologies Forum 2024 ： l'IA en pratique",
+     services: ["Cinématographie", "Graphismes animés", "Étalonnage des couleurs"],
+     videoType: "Évènement",
+     industry: "Technologie",
+     thumbnail: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVLNaKXKbf8wJFWPDVs4Ky3z2UpGML7SAeE10r",
+     vimeoUrl: "https://vimeo.com/1114279669/d381d70e6e",
+    },
+    //HP - Technology
+    {
+     id: 30,
+     title: "HP",
+     subtitle: "Témoignage client",
+     description: "Témoignage client avec le client HP, Festival de Cannes.",
+     services: ["Cinématographie", "Graphismes animés", "Étalonnage des couleurs"],
+     videoType: "Témoignage client",
+     industry: "Technologie",
+     thumbnail: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVMefsGzX6YLO1BSGiKj2D5WhHcuQrys4MloaJ",
+     vimeoUrl: "https://vimeo.com/1114293266",
+    },
     
+   
+
+
+
+//1st draft duplicates below - to be removed
+
+
   {
       id: 3,
       title: "Malt",
