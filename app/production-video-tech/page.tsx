@@ -64,7 +64,7 @@ export default function TechVideoProductionPage() {
         <section className="pt-1 pb-24" style={{ backgroundColor: "rgba(255, 255, 255, 1)" }}>
           <div className="max-w-7xl mx-auto px-6 lg:px-8 text-center">
             <p className="text-center text-black font-normal mt-4 sm:mt-6 text-sm sm:text-base px-4">
-              Fiable par 200+ marques tech – 5/5 avis Google
+              Fiable par 50+ marques tech – 5/5 avis Google
             </p>
 
             {/* Logo Carousel */}
@@ -172,7 +172,7 @@ export default function TechVideoProductionPage() {
               <div className="relative">
                 <div className="rounded-2xl overflow-hidden">
                   <img
-                    src="https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVZgrZvGsT3M8YKQp7XOUWxIjLVJhstl1Gv6iq  "
+                    src="https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVZgrZvGsT3M8YKQp7XOUWxIjLVJhstl1Gv6iq"
                     alt="Image de vidéo tech avec Mercury Banking"
                     className="w-full"
                   />
@@ -190,7 +190,7 @@ export default function TechVideoProductionPage() {
                 <div className="mt-10">
                   <Link href="/contact" passHref>
                     <button className="btn-luxury border-0 px-6 sm:px-8 py-3 rounded-full text-base text-white text-semibold sm:text-lg mb-4 sm:mb-2">
-                      Entrer en contact
+                      Obtenir un devis
                     </button>
                   </Link>
                 </div>
@@ -210,19 +210,19 @@ export default function TechVideoProductionPage() {
             <div className="grid lg:grid-cols-3 gap-16">
               {[
                 {
-                  image: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVh2BelJLDI024dcPOMo9lrEN6UY8eWLTbkv3Q  ",
+                  image: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVh2BelJLDI024dcPOMo9lrEN6UY8eWLTbkv3Q",
                   alt: "Expertise technique",
                   title: "Expertise technique",
                   desc: "Notre équipe comprend d'anciens ingénieurs et spécialistes tech qui comprennent profondément les technologies complexes, nous permettant d'expliquer avec précision même les concepts les plus sophistiqués sans les simplifier excessivement.",
                 },
                 {
-                  image: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVh2BelJLDI024dcPOMo9lrEN6UY8eWLTbkv3Q  ", 
+                  image: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVh2BelJLDI024dcPOMo9lrEN6UY8eWLTbkv3Q", 
                   alt: "Segmentation d'audience",
                   title: "Segmentation d'audience",
                   desc: "Nous créons du contenu sur mesure pour différentes audiences techniques - des acheteurs techniques aux dirigeants - en veillant à ce que le bon message atteigne la bonne audience avec le niveau approprié de détail technique.",
                 },
                 {
-                  image: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVh2BelJLDI024dcPOMo9lrEN6UY8eWLTbkv3Q  ",
+                  image: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVh2BelJLDI024dcPOMo9lrEN6UY8eWLTbkv3Q",
                   alt: "Approche axée sur le produit",
                   title: "Approche axée sur le produit",
                   desc: "Nos vidéos sont conçues pour fonctionner dans votre stratégie de croissance axée sur le produit, en créant du contenu qui stimule l'activation, l'adoption et l'expansion à chaque étape du parcours client.",
@@ -269,14 +269,14 @@ export default function TechVideoProductionPage() {
                 </div>
                 <Link href="/contact" passHref>
                     <button className="btn-luxury border-0 px-6 sm:px-8 py-3 rounded-full text-base text-white text-semibold sm:text-lg mb-4 sm:mb-2">
-                       Entrer en contact
+                      Obtenir un devis
                     </button>
                 </Link>
               </div>
               <div className="relative">
                 <div className="rounded-2xl overflow-hidden">
                   <img
-                    src="https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVcFPLxsv9r3QfKI0dziE8sFt4BVwMqT2bChkL  "
+                    src="https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVcFPLxsv9r3QfKI0dziE8sFt4BVwMqT2bChkL"
                     alt="Démonstration tech"
                     className="w-full"
                   />
@@ -292,9 +292,9 @@ export default function TechVideoProductionPage() {
             <div className="max-w-xl">
               <div className="flex items-center mb-5">
                 <img
-                  src="https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztV1xD1dlojqztV0JATyZN26ohPfmBaei9cuLXR  "
+                  src="https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztV1xD1dlojqztV0JATyZN26ohPfmBaei9cuLXR"
                   alt="Logo Microsoft"
-                  className="w-24 h-20 mr-3"
+                  className="w-30 h-20 mr-3"
                 />
               </div>
               <blockquote className="font-normal text-black mb-3 leading-relaxed">
@@ -302,7 +302,7 @@ export default function TechVideoProductionPage() {
                 Nous avons constaté une augmentation de 34 % des inscriptions à la plateforme et une réduction de 28 % de la durée du cycle de vente après avoir mis en œuvre leurs vidéos dans nos canaux marketing et commerciaux. 
                 L'exactitude technique combinée à un storytelling clair correspondait exactement à ce dont nos clients avaient besoin pour comprendre nos solutions IA complexes."
               </blockquote>
-              <div className="text-black font-semibold mb-4">Satya Nadella, PDG de Microsoft</div>
+              <div className="text-black font-semibold mb-4">Vincent Desmazes, Partner Marketing Manager chez Microsoft</div>
             </div>
           </div>
         </section>

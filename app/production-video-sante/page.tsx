@@ -172,7 +172,7 @@ export default function HealthcareVideoProductionPage() {
               <div className="relative">
                 <div className="rounded-2xl overflow-hidden">
                   <img
-                    src="https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVMD3yucX6YLO1BSGiKj2D5WhHcuQrys4MloaJ  "
+                    src="https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVMD3yucX6YLO1BSGiKj2D5WhHcuQrys4MloaJ"
                     alt="Image de vidéo de santé avec interface de clinique Mayo"
                     className="w-full"
                   />
@@ -190,7 +190,7 @@ export default function HealthcareVideoProductionPage() {
                 <div className="mt-10">
                   <Link href="/contact" passHref>
                     <button className="btn-luxury border-0 px-6 sm:px-8 py-3 rounded-full text-base text-white text-semibold sm:text-lg mb-4 sm:mb-2">
-                      Obtenir une consultation gratuite
+                      Obtenir un devis gratuit
                     </button>
                   </Link>
                 </div>
@@ -210,19 +210,19 @@ export default function HealthcareVideoProductionPage() {
             <div className="grid lg:grid-cols-3 gap-16">
               {[
                 {
-                  image: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVh2BelJLDI024dcPOMo9lrEN6UY8eWLTbkv3Q  ",
+                  image: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVh2BelJLDI024dcPOMo9lrEN6UY8eWLTbkv3Q",
                   alt: "Conformité HIPAA",
                   title: "Conformité HIPAA",
                   desc: "Notre équipe comprend d'anciens agents de conformité de la santé et des rédacteurs médicaux qui garantissent que tout le contenu respecte les réglementations HIPAA, FDA, FTC et autres normes de santé. Nous mettons en œuvre des flux de révision rigoureux qui satisfont même les départements de conformité les plus stricts.",
                 },
                 {
-                  image: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVh2BelJLDI024dcPOMo9lrEN6UY8eWLTbkv3Q  ", 
+                  image: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVh2BelJLDI024dcPOMo9lrEN6UY8eWLTbkv3Q", 
                   alt: "Storytelling compassionnel",
                   title: "Storytelling compassionnel",
                   desc: "Nous créons des récits qui traitent des barrières émotionnelles spécifiques dans le domaine de la santé, en utilisant des techniques de narration empathiques qui renforcent la confiance tout en respectant les exigences réglementaires pour les divulgations et les mentions de risque.",
                 },
                 {
-                  image: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVh2BelJLDI024dcPOMo9lrEN6UY8eWLTbkv3Q  ",
+                  image: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVh2BelJLDI024dcPOMo9lrEN6UY8eWLTbkv3Q",
                   alt: "Exactitude médicale",
                   title: "Exactitude médicale",
                   desc: "Nos experts médicaux traduisent des procédures et des pathologies complexes en explications claires et engageantes sans les simplifier excessivement ni violer les directives réglementaires, rendant des concepts médicaux sophistiqués accessibles à votre public cible.",

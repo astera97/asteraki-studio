@@ -37,7 +37,7 @@ export default function FinalCTASection() {
 
               <Link href="/contact" passHref>
                 <Button className="btn-luxury border-0 px-6 py-3 w-full sm:w-auto sm:px-8 sm:py-3 rounded-full text-base sm:text-lg mb-4 sm:mb-6">
-                  Obtenir une consultation gratuite
+                  Obtenir un devis
                 </Button>
               </Link>
             </div>

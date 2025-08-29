@@ -8,79 +8,64 @@ const industries = [
     id: "tech",
     name: "Technologie",
     // Add the path to the relevant page for this industry
-    href: "/tech-video-production-services", 
+    href: "/production-video-tech", 
     image: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztV1n9a3JojqztV0JATyZN26ohPfmBaei9cuLXR  ",
   },
   {
     id: "ecommerce",
     name: "E-commerce",
-    href: "/ecommerce-video-production-services", // Example path
+    href: "/production-video-ecommerce", // Example path
     image: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVeJEPhOI8GO1WIHuqP47SYN8FaV6DnlysEmKQ  ",
   },
   {
     id: "finance",
-    name: "Finance",
-    href: "/video-production-for-finance", // Example path
+    name: "Banque & Finance",
+    href: "/production-video-bancaire", // Example path
     image: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVXA74OQyU25xHY6yjCthZbQeBr3P09VOWigE8  ",
   },
-  {
-    id: "energy",
-    name: "Énergie", // Consider correcting the spelling to "Energy"
-    href: "/services/brand-videos/energy", // Example path
-    image: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztV2iobvi7WJBOGwHyYpLQ8mtukDFsr9nVZ07eK  ",
-  },
+  
   {
     id: "education",
     name: "Éducation",
-    href: "/educational-video-production", // Example path
+    href: "/production-video-pedagogique", // Example path
     image: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVqSgdbsEJ71KVf4mZNtnHaRrMPQjFOAu6wxlD  ", //Done
   },
-  {
-    id: "Automotive",
-    name: "Automobile",
-    href: "/services/brand-videos/automotive", // Example path
-    image: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVekQ1eW8GO1WIHuqP47SYN8FaV6DnlysEmKQX  ", //Done
-  },
+  
   {
     id: "healthcare",
     name: "Santé", // Corrected capitalization
-    href: "/video-production-for-healthcare", // Example path
+    href: "/production-video-sante", // Example path
     image: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVMD3yucX6YLO1BSGiKj2D5WhHcuQrys4MloaJ  ",
   },
   {
     id: "startups",
     name: "Startups",
-    href: "/video-production-for-startups", // Example path
+    href: "/production-video-startup", // Example path
     image: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztV8Lwq3TOG4YknlEfbvRpMT0XH617A9IO5SduC  ",
   },
   {
     id: "logistics",
     name: "Logistique",
-    href: "/video-production-for-logistics", // Example path
+    href: "/production-video-logistique", // Example path
     image: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztV1uZkl5UojqztV0JATyZN26ohPfmBaei9cuLX  ",
   },
-  {
-    id: "manufacturing",
-    name: "Industrie",
-    href: "/services/brand-videos/manufacturing", // Example path
-    image: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVsa1G16w2tlD7s56WfcNiaCEHnQOFR8xdqMV3  ", //Done
-  },
+  
   {
     id: "food beverage",
-    name: "Alimentation & Boissons",
-    href: "/video-production-for-consumer", // Example path
+    name: "B2C",
+    href: "/production-video-b2c", // Example path
     image: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVKigItf3f3Wsd1EZQ4zPStY5JB97kxm6Ac8Hy  ", //Done
   },
   {
     id: "enterprise",
-    name: "Grands Comptes",
-    href: "/video-production-for-enterprise", // Example path
+    name: "B2B",
+    href: "/production-video-b2b", // Example path
     image: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVsa1G16w2tlD7s56WfcNiaCEHnQOFR8xdqMV3  ",
   },
   {
     id: "saas",
     name: "SaaS",
-    href: "/saas-video-production", // Example path
+    href: "/production-video-saas", // Example path
     image: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVZgrZvGsT3M8YKQp7XOUWxIjLVJhstl1Gv6iq  ",
   },
 ];

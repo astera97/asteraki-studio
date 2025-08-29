@@ -14,8 +14,8 @@ export default function PortfolioSection() {
       services: ["Scénario", "Cinématographie", "Graphismes animés", "Étalonnage colorimétrique"],
       videoType: "Culture d'entreprise",
       industry: "Startup",
-      thumbnail: "https://xb26hl5f9h.ufs.sh/f/myb9AtBX9KywByuMVOPP0hrpkjXS8G9AZlVmDwaR7ELNxqf5    ",
-      vimeoUrl: "https://vimeo.com/1110366894?share=copy",
+      thumbnail: "https://xb26hl5f9h.ufs.sh/f/myb9AtBX9KywByuMVOPP0hrpkjXS8G9AZlVmDwaR7ELNxqf5",
+      vimeoUrl: "https://vimeo.com/1110366894",
     },
     { 
     id: 2,
@@ -25,8 +25,8 @@ export default function PortfolioSection() {
     services: ["Scénario", "Cinématographie", "Intégration VFX", "Étalonnage colorimétrique"],
     videoType: "Vidéo de marque",
     industry: "Startup",
-    thumbnail: "  https://xb26hl5f9h.ufs.sh/f/myb9AtBX9KywWPQZ2IUiab8RMjqt25cZzSeDlVIhg1Y3fnXC    ",
-    vimeoUrl: "https://vimeo.com/1110278295  ",
+    thumbnail: "  https://xb26hl5f9h.ufs.sh/f/myb9AtBX9KywWPQZ2IUiab8RMjqt25cZzSeDlVIhg1Y3fnXC",
+    vimeoUrl: "https://vimeo.com/1110278295",
     },
     {
     id: 3,
@@ -36,8 +36,8 @@ export default function PortfolioSection() {
     services: ["Scénario", "Cinématographie", "Intégration VFX", "Étalonnage colorimétrique"],
     videoType: "Vidéo de financement participatif",
     industry: "SaaS",
-    thumbnail: "https://xb26hl5f9h.ufs.sh/f/myb9AtBX9KywwP6D71p8bKgyaVXAm3Widen0SEzUPqYQGJFT    ",
-    vimeoUrl: "https://vimeo.com/1110392210    ",
+    thumbnail: "https://xb26hl5f9h.ufs.sh/f/myb9AtBX9KywwP6D71p8bKgyaVXAm3Widen0SEzUPqYQGJFT",
+    vimeoUrl: "https://vimeo.com/1110392210",
     },
     {
     id: 4,
@@ -47,8 +47,8 @@ export default function PortfolioSection() {
     services: ["Scénario", "Cinématographie", "Intégration VFX", "Étalonnage colorimétrique"],
     videoType: "Vidéo de financement participatif",
     industry: "Startup",
-    thumbnail: "https://xb26hl5f9h.ufs.sh/f/myb9AtBX9Kywt87OYL134vBTOxF8dARqINU9EX5yck2foZjG    ",
-    vimeoUrl: "https://vimeo.com/1110392859    ",  
+    thumbnail: "https://xb26hl5f9h.ufs.sh/f/myb9AtBX9Kywt87OYL134vBTOxF8dARqINU9EX5yck2foZjG",
+    vimeoUrl: "https://vimeo.com/1110392859",  
     },
     {
       id: 5,
@@ -58,8 +58,8 @@ export default function PortfolioSection() {
       services: ["Scénario", "Cinématographie", "Graphismes animés", "Étalonnage colorimétrique"],
       videoType: "Témoignage client",
       industry: "Startup",
-      thumbnail: "https://xb26hl5f9h.ufs.sh/f/myb9AtBX9KywqSo613yucagDQM1fypRjomx7Ct05zsVwrhkY    ",
-      vimeoUrl: "https://vimeo.com/1110326216  ",
+      thumbnail: "https://xb26hl5f9h.ufs.sh/f/myb9AtBX9KywqSo613yucagDQM1fypRjomx7Ct05zsVwrhkY",
+      vimeoUrl: "https://vimeo.com/1110326216",
     },
     {
       id: 6,
@@ -69,8 +69,8 @@ export default function PortfolioSection() {
       services: ["Développement du scénario", "Démonstration produit", "Animation UI", "Livraison multi-format"],
       videoType: "Vidéo explicative",
       industry: "Startup",
-      thumbnail: "https://xb26hl5f9h.ufs.sh/f/myb9AtBX9KywygeFJbtsdpIWi7BXtnEN2YOvmFLjb4rV6Pux    ",
-      vimeoUrl: "https://vimeo.com/1110585884  ",
+      thumbnail: "https://xb26hl5f9h.ufs.sh/f/myb9AtBX9KywygeFJbtsdpIWi7BXtnEN2YOvmFLjb4rV6Pux",
+      vimeoUrl: "https://vimeo.com/1110585884",
     }
   ]
 

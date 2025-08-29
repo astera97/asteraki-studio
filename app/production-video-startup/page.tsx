@@ -51,7 +51,7 @@ export default function StartupVideoProductionPage() {
                     className="w-full h-full object-cover"
                     
                   >
-                    <source src="https://xb26hl5f9h.ufs.sh/f/myb9AtBX9KywYDYsbzMBbdoyAp3vE5DRa9SFiUfT6lkr4qsN  " type="video/mp4" />
+                    <source src="https://xb26hl5f9h.ufs.sh/f/myb9AtBX9KywYDYsbzMBbdoyAp3vE5DRa9SFiUfT6lkr4qsN" type="video/mp4" />
                     Votre navigateur ne supporte pas la balise vidéo.
                   </video>
                 </div>
@@ -64,7 +64,7 @@ export default function StartupVideoProductionPage() {
         <section className="pt-1 pb-24" style={{ backgroundColor: "rgba(255, 255, 255, 1)" }}>
           <div className="max-w-7xl mx-auto px-6 lg:px-8 text-center">
             <p className="text-center text-black font-normal mt-4 sm:mt-6 text-sm sm:text-base px-4">
-              Fiable par 150+ startups – 5/5 avis Google
+              Nous avons accompagné plus de 50 startups – 5/5 avis Google
             </p>
 
             {/* Logo Carousel */}
@@ -172,7 +172,7 @@ export default function StartupVideoProductionPage() {
               <div className="relative">
                 <div className="rounded-2xl overflow-hidden">
                   <img
-                    src="https://xb26hl5f9h.ufs.sh/f/myb9AtBX9KywtSZvvQ134vBTOxF8dARqINU9EX5yck2foZjG  "
+                    src="https://xb26hl5f9h.ufs.sh/f/myb9AtBX9KywtSZvvQ134vBTOxF8dARqINU9EX5yck2foZjG"
                     alt="Image de vidéo de startup avec des employés de Salesforce"
                     className="w-full"
                   />
@@ -210,19 +210,19 @@ export default function StartupVideoProductionPage() {
             <div className="grid lg:grid-cols-3 gap-16">
               {[
                 {
-                  image: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVh2BelJLDI024dcPOMo9lrEN6UY8eWLTbkv3Q  ",
+                  image: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVh2BelJLDI024dcPOMo9lrEN6UY8eWLTbkv3Q",
                   alt: "Tarification adaptée aux startups",
                   title: "Tarification adaptée aux startups",
                   desc: "Nous proposons des modèles de tarification flexibles, notamment des options en actions pour les startups en phase précoce, des paiements basés sur les jalons et des forfaits évolutifs qui s'adaptent à votre stade de croissance et à vos levées de fonds.",
                 },
                 {
-                  image: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVh2BelJLDI024dcPOMo9lrEN6UY8eWLTbkv3Q  ", 
+                  image: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVh2BelJLDI024dcPOMo9lrEN6UY8eWLTbkv3Q", 
                   alt: "Délais rapides",
                   title: "Délais rapides",
                   desc: "Notre processus de production rationalisé livre des vidéos de haute qualité en 2 à 3 semaines (et non en mois), avec des options accélérées pour les échéances de financement urgentes ou les lancements de produits.",
                 },
                 {
-                  image: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVh2BelJLDI024dcPOMo9lrEN6UY8eWLTbkv3Q  ",
+                  image: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVh2BelJLDI024dcPOMo9lrEN6UY8eWLTbkv3Q",
                   alt: "Stratégie axée sur la croissance",
                   title: "Stratégie axée sur la croissance",
                   desc: "Nous créons des vidéos conçues pour stimuler des indicateurs de croissance spécifiques : acquisition d'utilisateurs, taux de conversion ou intérêt des investisseurs, avec des KPI clairs et des cadres de mesure.",
@@ -277,7 +277,7 @@ export default function StartupVideoProductionPage() {
               <div className="relative">
                 <div className="rounded-2xl overflow-hidden">
                   <img
-                    src="https://xb26hl5f9h.ufs.sh/f/myb9AtBX9KywbclKbhOiCeEItjw1VXN8kvL65WuUqFRDcO24  "
+                    src="https://xb26hl5f9h.ufs.sh/f/myb9AtBX9KywbclKbhOiCeEItjw1VXN8kvL65WuUqFRDcO24"
                     alt="Démonstration de startup"
                     className="w-full"
                   />
@@ -293,7 +293,7 @@ export default function StartupVideoProductionPage() {
             <div className="max-w-xl">
               <div className="flex items-center mb-5">
                 <img
-                  src="https://xb26hl5f9h.ufs.sh/f/myb9AtBX9KywWPFgmCOiab8RMjqt25cZzSeDlVIhg1Y3fnXC  "
+                  src="https://xb26hl5f9h.ufs.sh/f/myb9AtBX9KywWPFgmCOiab8RMjqt25cZzSeDlVIhg1Y3fnXC"
                   alt="Logo Clickup"
                   className="w-24 h-20 mr-3"
                 />
@@ -403,7 +403,7 @@ export default function StartupVideoProductionPage() {
                       playsInline
                       className="w-full h-full object-cover"
                     >
-                      <source src="https://xb26hl5f9h.ufs.sh/f/myb9AtBX9KywS0fG7CH9FOVjf6AcwC1na825YUxusmo4KNgE  " type="video/mp4" />
+                      <source src="https://xb26hl5f9h.ufs.sh/f/myb9AtBX9KywS0fG7CH9FOVjf6AcwC1na825YUxusmo4KNgE" type="video/mp4" />
                       Votre navigateur ne supporte pas la balise vidéo.
                     </video>
                     <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent pointer-events-none"></div>

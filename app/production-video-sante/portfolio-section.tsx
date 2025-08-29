@@ -8,14 +8,14 @@ export default function PortfolioSection() {
   const portfolioProjects = [
     {
       id: 1,
-      title: "Lettuce",
+      title: "Sanofi",
       subtitle: "Vidéo de marque",
       description: "Campagne de 3 vidéos de portraits collaborateurs pour valoriser l'alternance chez Microsoft France.",
       services: ["Scénario", "Cinématographie", "Intégration VFX", "Étalonnage colorimétrique"],
       videoType: "Vidéo de Marque",
       industry: "SaaS",
       thumbnail: "/brand-videos/images/Lettuce_brand_video.webp?height=400&width=600&text=Microsoft+Employee+Portrait",
-      vimeoUrl: "https://vimeo.com/1104256442  ",
+      vimeoUrl: "https://vimeo.com/1104256442",
     },
     {
       id: 2,
@@ -26,7 +26,7 @@ export default function PortfolioSection() {
       videoType: "Vidéo de Marque",
       industry: "Technologie",
       thumbnail: "/brand-videos/images/framery_brand_video.webp?height=400&width=600&text=Spotify+Mobile+App+Demo",
-      vimeoUrl: "https://vimeo.com/1106893991  ",
+      vimeoUrl: "https://vimeo.com/1106893991",
     },
     {
       id: 3,
@@ -37,40 +37,7 @@ export default function PortfolioSection() {
       videoType: "Vidéo de Marque",
       industry: "E-commerce",
       thumbnail: "/brand-videos/images/xencelabs_brand_video.webp?height=400&width=600&text=TikTok+Certification+Program",
-      vimeoUrl: "https://vimeo.com/1106895426  ",
-    },
-    {
-      id: 4,
-      title: "Mercury Bank",
-      subtitle: "Vidéo de marque",
-      description: "Bande-annonce pour une nouvelle série documentaire Netflix sur l'innovation technologique.",
-      services: ["Scénario", "Cinématographie", "Intégration VFX", "Étalonnage colorimétrique"],
-      videoType: "Vidéo de Marque",
-      industry: "Fintech",
-      thumbnail: "/brand-videos/images/mercury_bank_brand_video.webp?height=400&width=600&text=Netflix+Documentary+Trailer",
-      vimeoUrl: "https://vimeo.com/1104166857  ",
-    },
-    {
-      id: 5,
-      title: "Native Instruments",
-      subtitle: "Vidéo de marque",
-      description: "Vidéo explicative des nouvelles fonctionnalités de l'application Airbnb pour les hôtes.",
-      services: ["Scénario", "Cinématographie", "Intégration VFX", "Étalonnage colorimétrique"],
-      videoType: "Vidéo de Marque",
-      industry: "E-commerce",
-      thumbnail: "/brand-videos/images/native_instruments_brand_video.webp?height=400&width=600&text=Airbnb+Host+Experience",
-      vimeoUrl: "https://vimeo.com/1106896654  ",
-    },
-    {
-      id: 6,
-      title: "Girard-Perregaux",
-      subtitle: "Vidéo de marque",
-      description: "Production d'une vidéo de marque de luxe pour la Laureato Chronograph Ti49 de Girard-Perregaux",
-      services: ["Scénario", "Cinématographie", "Intégration VFX", "Étalonnage colorimétrique"],
-      videoType: "Vidéo de marque",
-      industry: "E-commerce",
-      thumbnail: "/brand-videos/images/girard-perregaux-laureato-chronograph-ti49.webp?height=400&width=600&text=Girard+Perregaux+Laureato",
-      vimeoUrl: "https://vimeo.com/1105886150  ",
+      vimeoUrl: "https://vimeo.com/1106895426",
     }
   ]
 
