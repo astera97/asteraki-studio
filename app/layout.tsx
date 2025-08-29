@@ -10,9 +10,9 @@ import CookiebotScript from "@/components/CookiebotScript"; // ← New Client Co
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Asteraki | Creative Video Agency",
+  title: "Asteraki | Agence de production vidéo à Paris",
   description:
-    "Professional video production for businesses. We create content that leaves a lasting impression and drives results.",
+    "Création de contenus percutants pour marques inspirantes. Expertise, créativité et qualité au service de votre image.",
 };
 
 export default function RootLayout({
