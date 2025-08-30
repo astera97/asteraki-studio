@@ -622,10 +622,10 @@ const portfolioProjects = getUniqueAndShuffledProjects([
   {
     id: 61,
     title: "Bolt",
-    subtitle: "Culture d'entreprise",
+    subtitle: "Vidéo de recrutement",
     description: "Vidéo d'entreprise mettant en lumière les employés de Bolt.",
     services: ["Scénario", "Cinématographie", "Graphismes animés", "Étalonnage colorimétrique"],
-    videoType: "Portrait d'employé",
+    videoType: "Vidéo de recrutement",
     industry: "Startup",
     thumbnail: "https://xb26hl5f9h.ufs.sh/f/myb9AtBX9KywvuM8M7GgmR8DzbQXG4njAStoPfq2aTk7JiFL    ",
     vimeoUrl: "https://vimeo.com/1104256442  ",
@@ -713,7 +713,74 @@ const portfolioProjects = getUniqueAndShuffledProjects([
      thumbnail: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVL3177Lbf8wJFWPDVs4Ky3z2UpGML7SAeE10r",
      vimeoUrl: "https://vimeo.com/1113713647",
     },
-,
+//Sanofi - Pharmaceuticals
+   {
+     id: 64,
+     title: "Sanofi",
+     subtitle: "Vidéo de marque",
+     description: "Vidéo de marque présantant la culture de l'entreprise Sanofi France.",
+     services: ["Scénario", "Cinématographie", "Graphismes animés", "Étalonnage"],
+     videoType: "Vidéo de marque",
+     industry: "Santé",
+     thumbnail: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztV6XA4z2yuM0sOH4LRiZ2hEraGKUtQVDIYCP3b",
+     vimeoUrl: "https://vimeo.com/1114223480",
+    },
+    {
+     id: 65,
+     title: "Sanofi",
+     subtitle: "Évènement",
+     description: "Vidéo de l'évènement Sanofi France, Place d'Avenir 2025.",
+     services: ["Cinématographie", "Graphismes animés", "Étalonnage"],
+     videoType: "Évènement",
+     industry: "Santé",
+     thumbnail: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVakfaUfZsONX0DMj54Vk3gxKWAvEe9Tmohn6Y",
+     vimeoUrl: "https://vimeo.com/1114222965",
+    },
+    {
+     id: 66,
+     title: "Sanofi",
+     subtitle: "Conseil d'expert",
+     description: "Vidéo d'explication sur la maladie de Niemann-Pick avec Dr Nathalie Guffon.",
+     services: ["Cinématographie", "Graphismes animés", "Étalonnage"],
+     videoType: "Conseil d'expert",
+     industry: "Santé",
+     thumbnail: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVfAQ4yVa93bxoLyhcW8aNnVRf0tO2vu4mHdZJ",
+     vimeoUrl: "https://vimeo.com/1114223230",
+    },
+    {
+     id: 67,
+     title: "Sanofi",
+     subtitle: "Motion design",
+     description: "Episode 1 de la série animée de Sanofi France, Mon système immunitaire et moi.",
+     services: ["Scénario", "Graphismes animés", "Voix-off","Étalonnage"],
+     videoType: "Motion design",
+     industry: "Santé",
+     thumbnail: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVvzZRh313dJewK5HDhqcx2ks9fTPaG0RgtMrU",
+     vimeoUrl: "https://vimeo.com/1114222805",
+    },
+    {
+     id: 68,
+     title: "Sanofi",
+     subtitle: "Motion design",
+     description: "Episode 2 de la série animée de Sanofi France, Mon système immunitaire et moi.",
+     services: ["Scénario", "Graphismes animés", "Voix-off","Étalonnage"],
+     videoType: "Motion design",
+     industry: "Santé",
+     thumbnail: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVSwn5f4UCDrvtja6n9zgLHo1Uq5I0Mu78VS4d",
+     vimeoUrl: "https://vimeo.com/1114222701",
+    },
+    {
+     id: 69,
+     title: "Sanofi",
+     subtitle: "Motion design",
+     description: "Episode 3 de la série animée de Sanofi France, Mon système immunitaire et moi.",
+     services: ["Scénario", "Graphismes animés", "Voix-off","Étalonnage"],
+     videoType: "Motion design",
+     industry: "Santé",
+     thumbnail: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVhmAzhbLDI024dcPOMo9lrEN6UY8eWLTbkv3Q",
+     vimeoUrl: "https://vimeo.com/1114222623",
+    },
+    
 
 
 
@@ -724,33 +791,8 @@ const portfolioProjects = getUniqueAndShuffledProjects([
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-])
+  ]
+)
 
 export default function WorkPage() {
   const [selectedIndustry, setSelectedIndustry] = useState("All")

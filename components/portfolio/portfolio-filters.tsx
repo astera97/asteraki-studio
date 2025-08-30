@@ -35,6 +35,8 @@ const videoTypes = [
   { value: "Animation 2D", label: "Animation 2D" },
   { value: "Vidéo éducative", label: "Vidéo éducative" },
   { value: "Vidéo de recrutement", label: "Vidéo de recrutement" },
+  { value: "Motion design", label: "Motion design" },
+  { value: "Publicité", label: "Publicité" },
 ]
 
 export default function PortfolioFilters({

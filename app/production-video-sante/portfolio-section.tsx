@@ -6,39 +6,29 @@ import Link from "next/link"
 // This is the component that will be imported into the brand page
 export default function PortfolioSection() {
   const portfolioProjects = [
-    {
-      id: 1,
-      title: "Sanofi",
-      subtitle: "Vidéo de marque",
-      description: "Campagne de 3 vidéos de portraits collaborateurs pour valoriser l'alternance chez Microsoft France.",
-      services: ["Scénario", "Cinématographie", "Intégration VFX", "Étalonnage colorimétrique"],
-      videoType: "Vidéo de Marque",
-      industry: "SaaS",
-      thumbnail: "/brand-videos/images/Lettuce_brand_video.webp?height=400&width=600&text=Microsoft+Employee+Portrait",
-      vimeoUrl: "https://vimeo.com/1104256442",
+     {
+     id: 1,
+     title: "Cegedim",
+     subtitle: "Démonstration produit",
+     description: "Vidéo de présentation de Cegedim Pharma.",
+     services: ["Scénario", "Graphismes animés", "Étalonnage"],
+     videoType: "Démonstration produit",
+     industry: "Santé",
+     thumbnail: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVfsA1Zb5a93bxoLyhcW8aNnVRf0tO2vu4mHdZ",
+     vimeoUrl: "https://vimeo.com/1113713798",
     },
     {
-      id: 2,
-      title: "Framery",
-      subtitle: "Vidéo de marque",
-      description: "Vidéo de présentation de la nouvelle interface utilisateur de l'application mobile Spotify.",
-      services: ["Scénario", "Cinématographie", "Intégration VFX", "Étalonnage colorimétrique"],
-      videoType: "Vidéo de Marque",
-      industry: "Technologie",
-      thumbnail: "/brand-videos/images/framery_brand_video.webp?height=400&width=600&text=Spotify+Mobile+App+Demo",
-      vimeoUrl: "https://vimeo.com/1106893991",
+     id: 2,
+     title: "Sanofi",
+     subtitle: "Vidéo de marque",
+     description: "Vidéo de marque présantant la culture de l'entreprise Sanofi France.",
+     services: ["Scénario", "Cinématographie", "Graphismes animés", "Étalonnage"],
+     videoType: "Vidéo de marque",
+     industry: "Santé",
+     thumbnail: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztV6XA4z2yuM0sOH4LRiZ2hEraGKUtQVDIYCP3b",
+     vimeoUrl: "https://vimeo.com/1114223480",
     },
-    {
-      id: 3,
-      title: "Xencelabs",
-      subtitle: "Vidéo de marque",
-      description: "Présentation du programme de certification média de TikTok avec un contenu vidéo social engageant.",
-      services: ["Scénario", "Cinématographie", "Intégration VFX", "Étalonnage colorimétrique"],
-      videoType: "Vidéo de Marque",
-      industry: "E-commerce",
-      thumbnail: "/brand-videos/images/xencelabs_brand_video.webp?height=400&width=600&text=TikTok+Certification+Program",
-      vimeoUrl: "https://vimeo.com/1106895426",
-    }
+
   ]
 
   return (
