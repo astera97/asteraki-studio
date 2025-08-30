@@ -27,6 +27,7 @@ const videoTypes = [
   { value: "All", label: "Tous" },
   { value: "Vidéo de marque", label: "Vidéo de marque" },
   { value: "Démonstration produit", label: "Démonstration produit" },
+  { value: "Conseil d'expert", label: "Conseil d'expert" },
   { value: "Vidéo explicative", label: "Vidéo explicative" },
   { value: "Vidéo d'application", label: "Vidéo d'application" },
   { value: "Témoignage client", label: "Témoignage client" },

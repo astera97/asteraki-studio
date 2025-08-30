@@ -276,7 +276,7 @@ export default function HealthcareVideoProductionPage() {
               <div className="relative">
                 <div className="rounded-2xl overflow-hidden">
                   <img
-                    src="https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVaBLRs8ZsONX0DMj54Vk3gxKWAvEe9Tmohn6Y  "
+                    src="https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVaBLRs8ZsONX0DMj54Vk3gxKWAvEe9Tmohn6Y"
                     alt="Image de vidéo de marque Sanofi"
                     className="w-full"
                   />
@@ -292,7 +292,7 @@ export default function HealthcareVideoProductionPage() {
             <div className="max-w-xl">
               <div className="flex items-center mb-5">
                 <img
-                  src="https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVx8C1HvkdfVjkbuO409UhABiKIpeEqDgnCNwH  "
+                  src="https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVx8C1HvkdfVjkbuO409UhABiKIpeEqDgnCNwH"
                   alt="Logo Clinique Mayo"
                   className="w-24 h-20 mr-3"
                 />

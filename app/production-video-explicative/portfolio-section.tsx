@@ -7,15 +7,15 @@ import Link from "next/link"
 export default function PortfolioSection() {
   const portfolioProjects = [
     {
-      id: 1,
-      title: "Asana",
-      subtitle: "Vidéo explicative",
-      description: "Vidéo animée expliquant comment utiliser Asana.",
-      services: ["Développement du scénario", "Animation 2D", "Production de voix off", "Livraison multi-format"],
-      videoType: "Vidéo explicative",
-      industry: "Technologie",
-      thumbnail: "https://xb26hl5f9h.ufs.sh/f/myb9AtBX9KywrSBTVdYmuwfKNGhJOVdR9k1bQE3sWzcXegDS  ",
-      vimeoUrl: "https://vimeo.com/1110585868  ",
+     id: 1,
+     title: "Malt",
+     subtitle: "Vidéo explicative",
+     description: "Vidéo explicative du term Super team avec l'équipe de Malt",
+     services: ["Scénario", "Cinématographie", "Graphismes animés", "Étalonnage des couleurs"],
+     videoType: "Vidéo explicative",
+     industry: "Startup",
+     thumbnail: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztV21oGj537WJBOGwHyYpLQ8mtukDFsr9nVZ07e",
+     vimeoUrl: "https://vimeo.com/1114350408",
     },
     {
       id: 2,

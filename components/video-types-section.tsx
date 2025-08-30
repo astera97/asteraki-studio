@@ -21,70 +21,63 @@ const videoTypes: VideoType[] = [
     title: "Motion Design",
     description: "Transformez vos diapositives en contenus percutants.",
     image: "/illustration_vt.webp?height=200&width=300&text=Motion+Design",
-    link: "/services/motion-design",  // Custom link
+    link: "/motion-design",  // Custom link
   },
   {
     id: "recruitment-video",
     title: "Vidéo de Recrutement",
     description: "Scale your social media design effortlessly.",
     image: "/social_ads_vt.webp?height=200&width=300&text=Social+Media",
-    link: "/services/recruitment-video",  // Default pattern
+    link: "/production-video-recrutement",  // Default pattern
   },
   {
     id: "crowdfunding-video",
-    title: "Vidéo de Crowdfunding",
+    title: "Vidéo de financement",
     description: "Gagnez en visibilité avec des vidéos sociales mensuelles.",
     image: "https://xb26hl5f9h.ufs.sh/f/myb9AtBX9KywC58mNn6dH7rVT25qFa9GQY8gkxhfvsZSXJMC?height=200&width=300&text=Social+Video",
-    link: "/services/crowdfunding-video",  // Default pattern
+    link: "/production-video-financement",  // Default pattern
   },
   {
     id: "app-video",
     title: "Vidéo d'Application",
     description: "Visualisez vos applications, produits digitaux, interfaces et workflows.",
     image: "/app_vt.webp?height=200&width=300&text=App+Video",
-    link: "/services/app-video",  // Default pattern
+    link: "/production-video-application",  // Default pattern
   },
   {
     id: "brand-video",
     title: "Vidéo de Marque",
     description: "Contenu personnalisé et sur mesure pour votre prochaine campagne.",
     image: "  https://xb26hl5f9h.ufs.sh/f/myb9AtBX9KywciX7BI0w7eqHupO4CMz98UaWrhviA3ItxKEd  ",
-    link: "/services/brand-video",  // Default pattern
+    link: "/production-video-marque",  // Default pattern
   },
   {
     id: "explainer-video",
     title: "Vidéo Explicative",
     description: "Simplifiez les concepts complexes avec des animations engageantes.",
     image: "/tutorial_vt.webp?height=200&width=300&text=Explainer+Video",
-    link: "/services/explainer-video",  // Default pattern
+    link: "/production-video-explicative",  // Default pattern
   },
   {
     id: "product-demo",
     title: "Démonstration Produit",
     description: "Mettez en valeur les fonctionnalités de votre produit en action.",
     image: "/overview_vt.webp?height=200&width=300&text=Product+Demo",
-    link: "/services/product-demo",  // Default pattern
+    link: "/production-video-demonstration-produit",  // Default pattern
   },
   {
     id: "customer-story",
     title: "Témoignage Client",
     description: "Renforcez la confiance avec des histoires clients authentiques.",
     image: "/testimonial_vt.webp?height=200&width=300&text=Testimonial",
-    link: "/services/customer-story",  // Default pattern
-  },
-  {
-    id: "short-form",
-    title: "Vidéos Courtes",
-    description: "Multipliez votre ROI avec du contenu multi-formats.",
-    image: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVSTLP9vUCDrvtja6n9zgLHo1Uq5I0Mu78VS4d  ",
-    link: "/services/short-form",  // Default pattern
+    link: "/production-video-temoignage-client",  // Default pattern
   },
   {
     id: "event-video",
     title: "Vidéos d'Événement",
     description: "Capturez vos moments clés pendant vos événements.",
     image: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVawLVXGpZsONX0DMj54Vk3gxKWAvEe9Tmohn6  ",
-    link: "/services/event-video",  // Default pattern
+    link: "/production-video-evenementielle",  // Default pattern
   },
 
 ]
