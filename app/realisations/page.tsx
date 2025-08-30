@@ -570,7 +570,7 @@ const portfolioProjects = getUniqueAndShuffledProjects([
       description: "Retour en images sur le Sage Partner Day 2025 au Hangar Y",
       services: ["Cinématographie", "Graphismes animés", "Étalonnage des couleurs"],
       videoType: "Évènement",
-      industry: "Technology",
+      industry: "Technologie",
       thumbnail: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVtDlmftdTBWldAyg2P0M5Chku4INecjLo9UbH",
       vimeoUrl: "https://vimeo.com/1113690563",
     },
@@ -581,7 +581,7 @@ const portfolioProjects = getUniqueAndShuffledProjects([
      description: "Vidéo d'animation expliquant comment utiliser Sage.",
      services: ["Scénario", "Cinématographie", "Graphismes animés", "Étalonnage des couleurs"],
      videoType: "Vidéo explicative",
-     industry: "Technology",
+     industry: "Technologie",
      thumbnail: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVVINHJYcCRjU0PEv7T9OCi5BZ8hqeAgSKnaIz",
      vimeoUrl: "https://vimeo.com/1113692995",
     },
@@ -592,7 +592,7 @@ const portfolioProjects = getUniqueAndShuffledProjects([
      description: "Vidéo d'animation expliquant la procédure d'insciption à la PDP Sage.",
      services: ["Scénario", "Cinématographie", "Graphismes animés", "Étalonnage des couleurs"],
      videoType: "Vidéo explicative",
-     industry: "Technology",
+     industry: "Technologie",
      thumbnail: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVj1XY6Gnk6Z0aKAOH3TspmrCuFeME74fB5QqN",
      vimeoUrl: "https://vimeo.com/1113692472",
     },
@@ -617,7 +617,7 @@ const portfolioProjects = getUniqueAndShuffledProjects([
     videoType: "Évènement",
     industry: "Startup",
     thumbnail: "https://xb26hl5f9h.ufs.sh/f/myb9AtBX9KywbwgrntOiCeEItjw1VXN8kvL65WuUqFRDcO24    ",
-    vimeoUrl: "https://vimeo.com/1104168315?share=copy",
+    vimeoUrl: "https://vimeo.com/1104168315",
   },
   {
     id: 61,
@@ -628,7 +628,7 @@ const portfolioProjects = getUniqueAndShuffledProjects([
     videoType: "Vidéo de recrutement",
     industry: "Startup",
     thumbnail: "https://xb26hl5f9h.ufs.sh/f/myb9AtBX9KywvuM8M7GgmR8DzbQXG4njAStoPfq2aTk7JiFL    ",
-    vimeoUrl: "https://vimeo.com/1104256442  ",
+    vimeoUrl: "https://vimeo.com/1104256442",
   },
   //Cannes Lions
   {
@@ -640,7 +640,7 @@ const portfolioProjects = getUniqueAndShuffledProjects([
     videoType: "Évènement",
     industry: "B2B",
     thumbnail: "https://xb26hl5f9h.ufs.sh/f/myb9AtBX9KywFEh98fCNwlOAdeRuaZXQ5tqKECrYJpbk7ojh",
-    vimeoUrl: "https://vimeo.com/1102886401    ",
+    vimeoUrl: "https://vimeo.com/1102886401",
   },
   //Girard-Perregaux
   {
@@ -652,7 +652,7 @@ const portfolioProjects = getUniqueAndShuffledProjects([
     videoType: "Vidéo de marque",
     industry: "B2C",
     thumbnail: "https://xb26hl5f9h.ufs.sh/f/myb9AtBX9Kyw7rLCbZwavFUfw5SNg3PlOHYAIuB0yjRm1hpK    ",
-    vimeoUrl: "https://vimeo.com/1102877371    ",
+    vimeoUrl: "https://vimeo.com/1102877371",
   },
   //Xencelabs
   {
@@ -664,7 +664,7 @@ const portfolioProjects = getUniqueAndShuffledProjects([
     videoType: "Vidéo de financement",
     industry: "Ecommerce",
     thumbnail: "https://xb26hl5f9h.ufs.sh/f/myb9AtBX9KywFV2JNdCNwlOAdeRuaZXQ5tqKECrYJpbk7ojh    ",
-    vimeoUrl: "https://vimeo.com/1106895426    ",
+    vimeoUrl: "https://vimeo.com/1106895426",
   },  
   //Framery
   {
@@ -676,7 +676,7 @@ const portfolioProjects = getUniqueAndShuffledProjects([
     videoType: "Vidéo de marque",
     industry: "SaaS",
     thumbnail: "https://xb26hl5f9h.ufs.sh/f/myb9AtBX9KywWxh7Tdiab8RMjqt25cZzSeDlVIhg1Y3fnXCT    ",
-    vimeoUrl: "https://vimeo.com/1110291462    ",
+    vimeoUrl: "https://vimeo.com/1110291462",
   },
   //Growe
   {
@@ -688,7 +688,7 @@ const portfolioProjects = getUniqueAndShuffledProjects([
     videoType: "Évènement",
     industry: "Startup",
     thumbnail: "https://xb26hl5f9h.ufs.sh/f/myb9AtBX9Kyw9RO7p8dcY8QMfmcb0oqhrSvFPJjk5al3EDgu  ",
-    vimeoUrl: "https://vimeo.com/1104168902  ",
+    vimeoUrl: "https://vimeo.com/1104168902",
   },
 //62 Cegedim - Pharmaceuticals
  {
@@ -780,7 +780,66 @@ const portfolioProjects = getUniqueAndShuffledProjects([
      thumbnail: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVhmAzhbLDI024dcPOMo9lrEN6UY8eWLTbkv3Q",
      vimeoUrl: "https://vimeo.com/1114222623",
     },
-    
+    //MSD France - Pharmaceuticals
+    {
+     id: 70,
+     title: "MSD France",
+     subtitle: "Vidéo de recrutement",
+     description: "Vidéo de recrutement montrant le parcours professionnel des collaborateurs chez MSD.",
+     services: ["Scénario", "Cinématographie", "Graphismes animés", "Étalonnage"],
+     videoType: "Vidéo de recrutement",
+     industry: "Santé",
+     thumbnail: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztV6XyUc9juM0sOH4LRiZ2hEraGKUtQVDIYCP3b",
+     vimeoUrl: "https://vimeo.com/1114255241",
+    },
+    {
+     id: 71,
+     title: "MSD France",
+     subtitle: "Vidéo de recrutement",
+     description: "Vidéo de recrutement montrant le parcours professionnel des collaborateurs chez MSD.",
+     services: ["Scénario", "Cinématographie", "Graphismes animés", "Étalonnage"],
+     videoType: "Vidéo de recrutement",
+     industry: "Santé",
+     thumbnail: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVcKRLzH9r3QfKI0dziE8sFt4BVwMqT2bChkLN",
+     vimeoUrl: "https://vimeo.com/1114255323",
+    },
+    {
+     id: 72,
+     title: "MSD France",
+     subtitle: "Vidéo de recrutement",
+     description: "Vidéo de recrutement montrant le parcours professionnel des collaborateurs chez MSD.",
+     services: ["Scénario", "Cinématographie", "Graphismes animés", "Étalonnage"],
+     videoType: "Vidéo de recrutement",
+     industry: "Santé",
+     thumbnail: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVXCrXCKyU25xHY6yjCthZbQeBr3P09VOWigE8",
+     vimeoUrl: "https://vimeo.com/1114255577",
+    },
+    {
+     id: 73,
+     title: "MSD France",
+     subtitle: "Coneil d'expert",
+     description: "Conseil d'expert au sujet de l'immunothérapie.",
+     services: ["Scénario", "Cinématographie", "Graphismes animés", "Étalonnage"],
+     videoType: "Conseil d'expert",
+     industry: "Santé",
+     thumbnail: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVlMLwbKpzsmTAV4v5ZlCLMrhXaKHPkY1W98jb",
+     vimeoUrl: "https://vimeo.com/1114255679",
+    },
+    {
+     id: 74,
+     title: "MSD France",
+     subtitle: "Vidéo de marque",
+     description: "Vidéo de marque au siège de MSD France présentant la culture d'entreprise.",
+     services: ["Scénario", "Cinématographie", "Graphismes animés", "Étalonnage"],
+     videoType: "Vidéo de marque",
+     industry: "Santé",
+     thumbnail: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVG0CLLPBHNo2Fl95RE1eVgdJmnxZq4zjfCtBK",
+     vimeoUrl: "https://vimeo.com/1114255401",
+    },
+
+
+
+
 
 
 
