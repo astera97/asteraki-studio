@@ -837,19 +837,6 @@ const portfolioProjects = getUniqueAndShuffledProjects([
      vimeoUrl: "https://vimeo.com/1114255401",
     },
 
-
-
-
-
-
-
-
-
-
-
-
-
-
   ]
 )
 

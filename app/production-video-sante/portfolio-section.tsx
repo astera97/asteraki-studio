@@ -28,6 +28,17 @@ export default function PortfolioSection() {
      thumbnail: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztV6XA4z2yuM0sOH4LRiZ2hEraGKUtQVDIYCP3b",
      vimeoUrl: "https://vimeo.com/1114223480",
     },
+    {
+     id: 3,
+     title: "MSD France",
+     subtitle: "Vidéo de marque",
+     description: "Vidéo de marque au siège de MSD France présentant la culture d'entreprise.",
+     services: ["Scénario", "Cinématographie", "Graphismes animés", "Étalonnage"],
+     videoType: "Vidéo de marque",
+     industry: "Santé",
+     thumbnail: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVG0CLLPBHNo2Fl95RE1eVgdJmnxZq4zjfCtBK",
+     vimeoUrl: "https://vimeo.com/1114255401",
+    },
 
   ]
 
