@@ -47,25 +47,18 @@ const industries = [
 
 const videoTypes = [
   { value: "All", label: "Tous" },
-  { value: "Brand Video", label: "Vidéo de marque" },
-  { value: "Product Demo", label: "Démonstration produit" },
-  { value: "Explainer Video", label: "Vidéo explicative" },
-  { value: "App Video", label: "Vidéo d'application" },
-  { value: "Social Video", label: "Vidéo sociale" },
-  { value: "Commercial", label: "Publicité" },
-  { value: "Testimonial", label: "Témoignage" },
-  { value: "Training Video", label: "Vidéo de formation" },
-  { value: "Event Video", label: "Vidéo d'événement" },
-  { value: "Animation", label: "Animation" },
-  { value: "Documentary", label: "Documentaire" },
-  { value: "Corporate Video", label: "Vidéo d'entreprise" },
-  { value: "Promotional Video", label: "Vidéo promotionnelle" },
-  { value: "Educational Video", label: "Vidéo éducative" },
-  { value: "Recruitment Video", label: "Vidéo de recrutement" },
-  { value: "Case Study Video", label: "Vidéo d'étude de cas" },
-  { value: "How-to Video", label: "Vidéo tutoriel" },
-  { value: "Webinar", label: "Webinaire" },
-  { value: "Live Action", label: "Prise de vue réelle" },
+  { value: "Vidéo de marque", label: "Vidéo de marque" },
+  { value: "Démonstration produit", label: "Démonstration produit" },
+  { value: "Vidéo explicative", label: "Vidéo explicative" },
+  { value: "Vidéo d'application", label: "Vidéo d'application" },
+  { value: "B2C", label: "B2C" },
+  { value: "Témoignage client", label: "Témoignage client" },
+  { value: "événement", label: "événement" },
+  { value: "Animation 2D", label: "Animation 2D" },
+  { value: "Vidéo éducative", label: "Vidéo éducative" },
+  { value: "Vidéo de recrutement", label: "Vidéo de recrutement" },
+  { value: "Vidéo tutoriel", label: "Vidéo tutoriel" },
+  
 ]
 
 export default function PortfolioFilters({

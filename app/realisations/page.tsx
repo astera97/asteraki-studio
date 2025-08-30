@@ -690,7 +690,65 @@ const portfolioProjects = getUniqueAndShuffledProjects([
     thumbnail: "https://xb26hl5f9h.ufs.sh/f/myb9AtBX9Kyw9RO7p8dcY8QMfmcb0oqhrSvFPJjk5al3EDgu  ",
     vimeoUrl: "https://vimeo.com/1104168902  ",
   },
-//62
+//62 Cegedim - Pharmaceuticals
+ {
+     id: 62,
+     title: "Cegedim",
+     subtitle: "Démonstration produit",
+     description: "Vidéo de présentation de Cegedim Pharma.",
+     services: ["Scénario", "Graphismes animés", "Étalonnage"],
+     videoType: "Démonstration produit",
+     industry: "Santé",
+     thumbnail: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVfsA1Zb5a93bxoLyhcW8aNnVRf0tO2vu4mHdZ",
+     vimeoUrl: "https://vimeo.com/1113713798",
+    },
+    {
+     id: 63,
+     title: "Cegedim",
+     subtitle: "Vidéo explicative",
+     description: "Vidéo animée expliquant les différentes expertises de Cegedim Pharma.",
+     services: ["Scénario", "Graphismes animés", "Étalonnage"],
+     videoType: "Vidéo explicative",
+     industry: "Santé",
+     thumbnail: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVL3177Lbf8wJFWPDVs4Ky3z2UpGML7SAeE10r",
+     vimeoUrl: "https://vimeo.com/1113713647",
+    },
+,
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ])
 
