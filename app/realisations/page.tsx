@@ -836,6 +836,17 @@ const portfolioProjects = getUniqueAndShuffledProjects([
      thumbnail: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVG0CLLPBHNo2Fl95RE1eVgdJmnxZq4zjfCtBK",
      vimeoUrl: "https://vimeo.com/1114255401",
     },
+    {
+     id: 75,
+     title: "MSD France",
+     subtitle: "Vidéo de marque",
+     description: "Vidéo de marque sur l'histoire de MSD.",
+     services: ["Scénario", "Cinématographie", "Graphismes animés", "Étalonnage"],
+     videoType: "Vidéo de marque",
+     industry: "Santé",
+     thumbnail: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVjXyrAAnk6Z0aKAOH3TspmrCuFeME74fB5QqN",
+     vimeoUrl: "https://vimeo.com/1114255401",
+    },
 
   ]
 )
