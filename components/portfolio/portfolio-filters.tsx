@@ -13,36 +13,14 @@ interface PortfolioFiltersProps {
 
 const industries = [
   { value: "All", label: "Tous" },
-  { value: "AI", label: "IA" },
-  { value: "Beauty", label: "Beauté" },
-  { value: "Computer Software", label: "Logiciels informatiques" },
-  { value: "Consumer electronics", label: "Électronique grand public" },
-  { value: "Consumer goods", label: "Biens de consommation" },
-  { value: "Crypto & Blockchain", label: "Crypto et Blockchain" },
-  { value: "Cybersecurity", label: "Cybersécurité" },
-  { value: "Data & Analytics", label: "Données et Analytique" },
-  { value: "eCommerce", label: "Commerce électronique" },
-  { value: "Education", label: "Éducation" },
-  { value: "Energy", label: "Énergie" },
-  { value: "Enterprise", label: "Entreprise" },
-  { value: "Environment", label: "Environnement" },
+  { value: "ecommerce", label: "E-commerce" },
+  { value: "Éducation", label: "Éducation" },
+  { value: "B2C", label: "B2C" },
+  { value: "B2B", label: "B2B" },
   { value: "Finance", label: "Finance" },
-  { value: "FMCG", label: "Grands consommateurs" },
-  { value: "Healthcare", label: "Santé" },
-  { value: "HR-Tech", label: "Technologie RH" },
-  { value: "Insurance", label: "Assurance" },
-  { value: "Legal", label: "Juridique" },
-  { value: "Manufacturing", label: "Industrie manufacturière" },
-  { value: "Marketing", label: "Marketing" },
-  { value: "Media & Entertainment", label: "Médias et divertissement" },
-  { value: "Non-profit", label: "Organisme à but non lucratif" },
-  { value: "Real Estate", label: "Immobilier" },
-  { value: "Retail", label: "Commerce de détail" },
+  { value: "Santé", label: "Santé" },
   { value: "SaaS", label: "SaaS" },
-  { value: "Sports", label: "Sport" },
-  { value: "Technology", label: "Technologie" },
-  { value: "Travel & Tourism", label: "Voyage et tourisme" },
-  { value: "Wellness", label: "Bien-être" },
+  { value: "Technologie", label: "Technologie" },
 ]
 
 const videoTypes = [
@@ -51,14 +29,11 @@ const videoTypes = [
   { value: "Démonstration produit", label: "Démonstration produit" },
   { value: "Vidéo explicative", label: "Vidéo explicative" },
   { value: "Vidéo d'application", label: "Vidéo d'application" },
-  { value: "B2C", label: "B2C" },
   { value: "Témoignage client", label: "Témoignage client" },
   { value: "événement", label: "événement" },
   { value: "Animation 2D", label: "Animation 2D" },
   { value: "Vidéo éducative", label: "Vidéo éducative" },
   { value: "Vidéo de recrutement", label: "Vidéo de recrutement" },
-  { value: "Vidéo tutoriel", label: "Vidéo tutoriel" },
-  
 ]
 
 export default function PortfolioFilters({
