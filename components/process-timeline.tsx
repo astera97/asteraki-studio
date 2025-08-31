@@ -3,7 +3,7 @@
 import React from "react"
 import type { ReactNode } from "react"
 import { useState, useEffect, useRef } from "react"
-import { ChevronRight, Star, Pencil, Camera, Edit, Square } from "lucide-react"
+import { ChevronRight, Star, Pencil, Camera, Edit } from "lucide-react"
 import Image from "next/image"
 
 interface ProcessStage {
@@ -35,19 +35,14 @@ const stages: ProcessStage[] = [
     image: "/conception_process.webp?height=300&width=400&text=Creative+Concept",
   },
   {
-    id: "pre-production",
-    title: "Pré-production",
-    icon: (
-      <div className="flex gap-1">
-        <Square className="w-3 h-3 fill-current" />
-        <Square className="w-3 h-3 fill-current" />
-      </div>
-    ),
-    heading: "Planifier la production de votre vidéo",
-    description:
-      "La pré-production planifie chaque détail : lieux, équipe, permis, planning et logistique pour assurer un tournage fluide et maîtrisé.",
-    image: "/pre-production_process.webp?height=300&width=400&text=Pre-production+Planning",
-  },
+      id: "pre-production",
+      title: "Pré-production",
+      icon: <Pencil className="w-6 h-6" />,
+      heading: "Planifier la production de votre vidéo",
+      description:
+        "La pré-production planifie chaque détail : lieux, équipe, permis, planning et logistique pour assurer un tournage fluide et maîtrisé.",
+      image: "/pre-production_process.webp?height=300&width=400&text=Pre-production+Planning",
+    },
   {
     id: "production",
     title: "Production",
@@ -156,10 +151,7 @@ export default function ProcessTimeline() {
   }
 
   return (
-    <section 
-      ref={sectionRef} 
-      className="pt-12 pb-24 text-black bg-white"
-    >
+    <section ref={sectionRef} className="pt-12 pb-24 text-black" style={{ backgroundColor: "rgba(255, 255, 255, 1)" }}>
       <div className="max-w-[1200px] mx-auto px-4">
         {/* Section Header */}
         <div className="mb-16">
@@ -194,7 +186,16 @@ export default function ProcessTimeline() {
                   <div
                     className={`transition-all duration-500 ${index === currentStage ? "text-white" : "text-black"}`}
                   >
-                    {stage.icon}
+                    {stage.id === "pre-production" ? (
+                      <div className="flex gap-1">
+                        <Square className="w-3 h-3 fill-current" />
+                        <Square className="w-3 h-3 fill-current" />
+                      </div>
+                    ) : (
+                      React.cloneElement(stage.icon as React.ReactElement, {
+                        className: "w-6 h-6",
+                      })
+                    )}
                   </div>
                 </div>
 
