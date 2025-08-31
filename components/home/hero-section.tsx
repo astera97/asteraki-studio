@@ -38,7 +38,7 @@ export default function HeroSection() {
         {/* Right side - Single Video Preview (No Blue Border) */}
 <div className="w-full lg:flex-1 flex justify-center">
   <div className="relative rounded-lg overflow-hidden max-w-md mx-auto lg:max-w-none">
-    <div className="rounded-2xl overflow-hidden bg-gray-800 flex items-center justify-center h-96">
+    <div className="rounded-2xl overflow-hidden flex items-center justify-center h-96">
                   <video
                     autoPlay
                     loop

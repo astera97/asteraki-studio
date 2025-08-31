@@ -29,15 +29,13 @@ const videoTypes = [
   { value: "Démonstration produit", label: "Démonstration produit" },
   { value: "Conseil d'expert", label: "Conseil d'expert" },
   { value: "Vidéo explicative", label: "Vidéo explicative" },
-  { value: "Vidéo d'application", label: "Vidéo d'application" },
   { value: "Vidéo de financement", label: "Vidéo de financment" },
   { value: "Témoignage client", label: "Témoignage client" },
-  { value: "événement", label: "événement" },
-  { value: "Animation 2D", label: "Animation 2D" },
+  { value: "Événement", label: "Événement" },
   { value: "Vidéo éducative", label: "Vidéo éducative" },
   { value: "Vidéo de recrutement", label: "Vidéo de recrutement" },
   { value: "Motion design", label: "Motion design" },
-  { value: "Publicité", label: "Publicité" },
+  
 ]
 
 export default function PortfolioFilters({

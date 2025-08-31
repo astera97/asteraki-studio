@@ -58,7 +58,7 @@ export default function PortfolioSection() {
         
         {/* Bouton CTA */}
         <div className="text-center mt-16">
-          <Link href="/work">
+          <Link href="/realisations">
             <button className="btn-luxury border-0 px-6 sm:px-8 py-3 rounded-full text-base text-white text-semibold sm:text-lg mb-4 sm:mb-2">
               Voir notre portfolio
             </button>

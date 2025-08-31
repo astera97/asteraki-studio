@@ -37,7 +37,7 @@ export default function ExplainerVideoProductionPage() {
                   nous gérons tous les aspects de la production.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4">
-                  <Link href="/quiz" passHref>
+                  <Link href="/contact" passHref>
                     <button className="btn-luxury border-0 px-6 sm:px-8 py-3 rounded-full text-base text-white text-semibold sm:text-lg mb-4 sm:mb-2">
                       Obtenir un devis
                     </button>
@@ -45,14 +45,14 @@ export default function ExplainerVideoProductionPage() {
                 </div>
               </div>
               <div className="relative">
-                <div className="rounded-2xl overflow-hidden bg-gray-800 flex items-center justify-center h-96">
+                <div className="rounded-2xl overflow-hidden flex items-center justify-center h-96">
                   <video
                     autoPlay
                     loop
                     muted
                     className="w-full h-full object-cover"
                   >
-                    <source src="https://xb26hl5f9h.ufs.sh/f/myb9AtBX9KywYDYsbzMBbdoyAp3vE5DRa9SFiUfT6lkr4qsN  " type="video/mp4" />
+                    <source src="https://xb26hl5f9h.ufs.sh/f/myb9AtBX9KywYDYsbzMBbdoyAp3vE5DRa9SFiUfT6lkr4qsN" type="video/mp4" />
                     Votre navigateur ne prend pas en charge la balise vidéo.
                   </video>
                 </div>
@@ -159,7 +159,7 @@ export default function ExplainerVideoProductionPage() {
                       ))}
                     </div>
                   </div>
-                  <p className="text-black text-xs sm:text-sm">Basé sur plus de 50 avis</p>
+                  
                 </div>
               </a>
             </div>
@@ -173,7 +173,7 @@ export default function ExplainerVideoProductionPage() {
               <div className="relative">
                 <div className="rounded-2xl overflow-hidden">
                   <img
-                    src="https://xb26hl5f9h.ufs.sh/f/myb9AtBX9KywCes3OW6dH7rVT25qFa9GQY8gkxhfvsZSXJMC  "
+                    src="https://xb26hl5f9h.ufs.sh/f/myb9AtBX9KywCes3OW6dH7rVT25qFa9GQY8gkxhfvsZSXJMC"
                     alt="Image de vidéo explicative avec l'interface Kickstarter"
                     className="w-full"
                   />
@@ -189,7 +189,7 @@ export default function ExplainerVideoProductionPage() {
                   </p>
                 </div>
                 <div className="mt-10">
-                  <Link href="/quiz" passHref>
+                  <Link href="/contact" passHref>
                     <button className="btn-luxury border-0 px-6 sm:px-8 py-3 rounded-full text-base text-white text-semibold sm:text-lg mb-4 sm:mb-2">
                       Obtenir un devis
                     </button>
@@ -211,19 +211,19 @@ export default function ExplainerVideoProductionPage() {
             <div className="grid lg:grid-cols-3 gap-16">
               {[
                 {
-                  image: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVh2BelJLDI024dcPOMo9lrEN6UY8eWLTbkv3Q  ",
+                  image: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVh2BelJLDI024dcPOMo9lrEN6UY8eWLTbkv3Q",
                   alt: "Expertise en simplification",
                   title: "Expertise en simplification",
                   desc: "Nous transformons les concepts complexes en récits clairs et engageants qui résonnent avec votre public cible et rendent votre produit facile à comprendre.",
                 },
                 {
-                  image: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVh2BelJLDI024dcPOMo9lrEN6UY8eWLTbkv3Q  ", 
+                  image: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVh2BelJLDI024dcPOMo9lrEN6UY8eWLTbkv3Q", 
                   alt: "Animation et prise de vue réelle",
                   title: "Animation et prise de vue réelle",
                   desc: "Nous créons des vidéos explicatives animées et en prise de vue réelle adaptées à la voix de votre marque, au type de produit et aux préférences de votre audience.",
                 },
                 {
-                  image: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVh2BelJLDI024dcPOMo9lrEN6UY8eWLTbkv3Q  ",
+                  image: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVh2BelJLDI024dcPOMo9lrEN6UY8eWLTbkv3Q",
                   alt: "Axé sur la conversion",
                   title: "Axé sur la conversion",
                   desc: "Nos vidéos sont conçues avec des appels à l'action stratégiques et une messagerie qui orientent les spectateurs vers vos objectifs de conversion souhaités.",
@@ -270,14 +270,14 @@ export default function ExplainerVideoProductionPage() {
                 </div>
                 <Link href="/contact" passHref>
                     <button className="btn-luxury border-0 px-6 sm:px-8 py-3 rounded-full text-base text-white text-semibold sm:text-lg mb-4 sm:mb-2">
-                      Entrer en contact
+                      Obtenir un devis
                     </button>
                   </Link>
               </div>
               <div className="relative">
                 <div className="rounded-2xl overflow-hidden">
                   <img
-                    src="https://xb26hl5f9h.ufs.sh/f/myb9AtBX9Kywmp7JyRX9KywSWq0Ob7e64m32pHZ8kCQuLAfB  "
+                    src="https://xb26hl5f9h.ufs.sh/f/myb9AtBX9Kywmp7JyRX9KywSWq0Ob7e64m32pHZ8kCQuLAfB"
                     alt="Démo de produit de la vidéo explicative Kandji"
                     className="w-full"
                   />
@@ -287,26 +287,7 @@ export default function ExplainerVideoProductionPage() {
           </div>
         </section>
 
-        {/* Section Témoignage */}
-        <section className="pt-1 pb-24" style={{ backgroundColor: "rgba(255, 255, 255, 1)" }}>
-          <div className="max-w-7xl mx-auto px-6 lg:px-8">
-            <div className="max-w-xl">
-              <div className="flex items-center mb-5">
-                <img
-                  src="https://xb26hl5f9h.ufs.sh/f/myb9AtBX9KywWPFgmCOiab8RMjqt25cZzSeDlVIhg1Y3fnXC  "
-                  alt="Logo Clickup"
-                  className="w-24 h-20 mr-3"
-                />
-              </div>
-              <blockquote className="font-normal text-black mb-3 leading-relaxed">
-                "La vidéo explicative créée par Asteraki pour notre nouvelle fonctionnalité de paiement a été essentielle pour favoriser son adoption. 
-                Nous avons constaté une augmentation de 42 % de l'utilisation de la fonctionnalité après avoir diffusé la vidéo sur notre site web et nos canaux d'assistance. 
-                La clarté et la simplicité correspondaient exactement aux besoins de nos utilisateurs."
-              </blockquote>
-              <div className="text-black font-semibold mb-4">Sarah Chen, Directrice Marketing Produit chez PayPal</div>
-            </div>
-          </div>
-        </section>
+        
 
         {/* Pourquoi les vidéos explicatives fonctionnent */}
         <section className="py-24" style={{ backgroundColor: "#111111" }}>
@@ -318,7 +299,7 @@ export default function ExplainerVideoProductionPage() {
                   La puissance de la simplicité
                 </div>
                 
-                <h2 className="text-4xl lg:text-5xl font-bold text-white mb-8">
+                <h2 className="text-3xl lg:text-4xl font-bold text-white mb-8">
                   Pourquoi les vidéos explicatives favorisent une meilleure compréhension du produit
                 </h2>
                 
@@ -400,7 +381,7 @@ export default function ExplainerVideoProductionPage() {
                       playsInline
                       className="w-full h-full object-cover"
                     >
-                      <source src="https://xb26hl5f9h.ufs.sh/f/myb9AtBX9KywbFyRv3OiCeEItjw1VXN8kvL65WuUqFRDcO24  " type="video/mp4" />
+                      <source src="https://xb26hl5f9h.ufs.sh/f/myb9AtBX9KywbFyRv3OiCeEItjw1VXN8kvL65WuUqFRDcO24" type="video/mp4" />
                       Votre navigateur ne prend pas en charge la balise vidéo.
                     </video>
                     <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent pointer-events-none"></div>
