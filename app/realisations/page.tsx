@@ -25,6 +25,29 @@ function getUniqueAndShuffledProjects(projects) {
 const portfolioProjects = getUniqueAndShuffledProjects([
   
     
+  //Logistique
+  {
+      id: 1,
+      title: "Geodis",
+      subtitle: "Vidéo explicative",
+      description: "Vidéo explcative sur le processus de Geodis.",
+      services: ["Scénario", "Motion design", "Storyboard"],
+      videoType: "Vidéo explicative",
+      industry: "Logistique",
+      thumbnail: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVnA96qWDx46ydSpE25FeO3PBXUsDz80LqGmi7",
+      vimeoUrl: "https://vimeo.com/1114621314",
+    },
+    {
+      id: 2,
+      title: "Kuehne+Nagel",
+      subtitle: "Démonstration produit",
+      description: "Vidéo explcative sur la solution de Kuehne+Nagel, myFairLOG.",
+      services: ["Scénario", "Motion design", "Storyboard"],
+      videoType: "Démonstration produit",
+      industry: "Logistique",
+      thumbnail: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztV2AB1ak7WJBOGwHyYpLQ8mtukDFsr9nVZ07eK",
+      vimeoUrl: "https://vimeo.com/1111696360",
+    },
     {
       id: 3,
       title: "Uber",
@@ -244,7 +267,7 @@ const portfolioProjects = getUniqueAndShuffledProjects([
      id: 22,
      title: "Lucca",
      subtitle: "Vidéo explicative",
-     description: "Vidéo d'animation expliquant la maîtrise des paiements des frais professionnels avec les cartes Lucca .",
+     description: "Vidéo d'animation expliquant la maîtrise des paiements des frais professionnels avec les cartes Lucca.",
      services: ["Scénario", "Cinématographie", "Graphismes animés", "Étalonnage des couleurs"],
      videoType: "Vidéo explicative",
      industry: "Startup",
@@ -846,6 +869,39 @@ const portfolioProjects = getUniqueAndShuffledProjects([
      industry: "Santé",
      thumbnail: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVjXyrAAnk6Z0aKAOH3TspmrCuFeME74fB5QqN",
      vimeoUrl: "https://vimeo.com/1114255401",
+    },
+    {
+      id: 76,
+      title: "Société Générale",
+      subtitle: "Témoignage client",
+      description: "Témoignage client avec le client Société Générale, Maison Lorho.",
+      services: ["Scénario", "Cinématographie", "Motion design", "Étalonnage colorimétrique"],
+      videoType: "Témoignage client",
+      industry: "Finance",
+      thumbnail: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVoHl9pq6CsnPrFwBgUiXEaet6jdqyMYbAL9p5",
+      vimeoUrl: "https://vimeo.com/1114623280",
+    },
+    {
+      id: 77,
+      title: "Société Générale",
+      subtitle: "Conseil d'expert",
+      description: "Discussion sur le sujet de la franchise.",
+      services: ["Cinématographie", "Motion design", "Étalonnage colorimétrique"],
+      videoType: "Conseil d'expert",
+      industry: "Finance",
+      thumbnail: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVhDwkIgLDI024dcPOMo9lrEN6UY8eWLTbkv3Q",
+      vimeoUrl: "https://vimeo.com/1114622167",
+    },
+    {
+      id: 78,
+      title: "Société Générale",
+      subtitle: "Vidéo explicative",
+      description: "Vidéo explcative sur le sujet de l'Assurance Accidents de la Vie chez SG.",
+      services: ["Scénario", "Motion design", "Storyboard"],
+      videoType: "Vidéo explicative",
+      industry: "Finance",
+      thumbnail: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVVFd9J6CRjU0PEv7T9OCi5BZ8hqeAgSKnaIzt",
+      vimeoUrl: "https://vimeo.com/1114621314",
     },
 
   ]
