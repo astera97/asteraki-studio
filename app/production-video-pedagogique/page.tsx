@@ -28,7 +28,7 @@ export default function EducationalVideoProductionPage() {
                 <div className="text-sm font-semibold text-black mb-3 tracking-widest">
                   Production de vidéos pour l'éducation
                 </div>
-                <h1 className="text-4xl lg:text-5xl font-bold text-black mb-8 leading-tight">
+                <h1 className="text-3xl lg:text-4xl font-bold text-black mb-8 leading-tight">
                   Transformez le savoir complexe en expériences d'apprentissage engageantes.
                 </h1>
                 <p className="text-normal mb-5">
@@ -37,7 +37,7 @@ export default function EducationalVideoProductionPage() {
                 <div className="flex flex-col sm:flex-row gap-4">
                   <Link href="/contact" passHref>
                     <button className="btn-luxury border-0 px-6 sm:px-8 py-3 rounded-full text-base text-white text-semibold sm:text-lg mb-4 sm:mb-2">
-                      Obtenir une consultation gratuite
+                      Obtenir un devis
                     </button>
                   </Link>
                 </div>
@@ -51,7 +51,7 @@ export default function EducationalVideoProductionPage() {
                     className="w-full h-full object-cover"
                     
                   >
-                    <source src="https://xb26hl5f9h.ufs.sh/f/myb9AtBX9KywrFdzrhYmuwfKNGhJOVdR9k1bQE3sWzcXegDS  " type="video/mp4" />
+                    <source src="https://xb26hl5f9h.ufs.sh/f/myb9AtBX9KywrFdzrhYmuwfKNGhJOVdR9k1bQE3sWzcXegDS" type="video/mp4" />
                     Votre navigateur ne prend pas en charge la balise vidéo.
                   </video>
                 </div>
@@ -64,7 +64,7 @@ export default function EducationalVideoProductionPage() {
         <section className="pt-1 pb-24" style={{ backgroundColor: "rgba(255, 255, 255, 1)" }}>
           <div className="max-w-7xl mx-auto px-6 lg:px-8 text-center">
             <p className="text-center text-black font-normal mt-4 sm:mt-6 text-sm sm:text-base px-4">
-              Fait confiance à plus de 250 marques – 5/5 avis Google
+              Nous avons accompagné plus de 250 marques – 5/5 avis Google
             </p>
 
             {/* Carrousel de logos */}
@@ -158,7 +158,7 @@ export default function EducationalVideoProductionPage() {
                       ))}
                     </div>
                   </div>
-                  <p className="text-black text-xs sm:text-sm">Basé sur plus de 50 avis</p>
+                  
                 </div>
               </a>
             </div>
@@ -172,7 +172,7 @@ export default function EducationalVideoProductionPage() {
               <div className="relative">
                 <div className="rounded-2xl overflow-hidden">
                   <img
-                    src="https://xb26hl5f9h.ufs.sh/f/myb9AtBX9Kyw2eUFmo7LRoDnSIZdyi1KBFNT7vmeUt5Xckg4  "
+                    src="https://xb26hl5f9h.ufs.sh/f/myb9AtBX9Kyw2eUFmo7LRoDnSIZdyi1KBFNT7vmeUt5Xckg4"
                     alt="Cérémonie de remise des diplômes de la classe MBA 2025 à l'INSEAD"
                     className="w-full"
                   />
@@ -190,7 +190,7 @@ export default function EducationalVideoProductionPage() {
                 <div className="mt-10">
                   <Link href="/contact" passHref>
                     <button className="btn-luxury border-0 px-6 sm:px-8 py-3 rounded-full text-base text-white text-semibold sm:text-lg mb-4 sm:mb-2">
-                      Obtenir une consultation gratuite
+                      Obtenir un devis
                     </button>
                   </Link>
                 </div>
@@ -204,25 +204,25 @@ export default function EducationalVideoProductionPage() {
           <div className="max-w-7xl mx-auto px-6 lg:px-8">
             <div className="text-center mb-20">
               <h2 className="text-4xl lg:text-5xl font-bold text-black mb-4">
-                Comment nous garantissons la livraison de vidéos pédagogiques<br/> qui améliorent les résultats d'apprentissage
+                Comment nous garantissons la livraison de vidéos pédagogiques qui améliorent les résultats d'apprentissage
               </h2>
             </div>
             <div className="grid lg:grid-cols-3 gap-16">
               {[
                 {
-                  image: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVh2BelJLDI024dcPOMo9lrEN6UY8eWLTbkv3Q  ",
+                  image: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVh2BelJLDI024dcPOMo9lrEN6UY8eWLTbkv3Q",
                   alt: "Expertise en sciences de l'apprentissage",
                   title: "Expertise en sciences de l'apprentissage",
                   desc: "Nous appliquons la théorie de la charge cognitive, les principes du codage dual et des stratégies d'apprentissage basées sur des preuves pour créer des vidéos qui maximisent la rétention des connaissances et minimisent la surcharge cognitive.",
                 },
                 {
-                  image: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVh2BelJLDI024dcPOMo9lrEN6UY8eWLTbkv3Q  ", 
+                  image: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVh2BelJLDI024dcPOMo9lrEN6UY8eWLTbkv3Q", 
                   alt: "Parcours d'apprentissage structurés",
                   title: "Parcours d'apprentissage structurés",
                   desc: "Nos vidéos pédagogiques suivent une structure pédagogique claire avec des objectifs d'apprentissage, des vérifications des connaissances et une complexité progressive pour guider les apprenants à travers un parcours logique.",
                 },
                 {
-                  image: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVh2BelJLDI024dcPOMo9lrEN6UY8eWLTbkv3Q  ",
+                  image: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVh2BelJLDI024dcPOMo9lrEN6UY8eWLTbkv3Q",
                   alt: "Design axé sur l'engagement",
                   title: "Design axé sur l'engagement",
                   desc: "Nous intégrons des techniques d'engagement éprouvées, notamment le récit, des exemples concrets et des éléments interactifs, pour maintenir l'attention et la motivation tout au long de l'expérience d'apprentissage.",
@@ -268,7 +268,7 @@ export default function EducationalVideoProductionPage() {
                   </p>
                 </div>
                 <button className="btn-luxury border-0 px-6 sm:px-8 py-3 rounded-full text-base text-white text-semibold sm:text-lg mb-4 sm:mb-2">
-                  Obtenir une consultation gratuite
+                  Obtenir un devis
                 </button>
               </div>
               <div className="relative">
@@ -284,26 +284,7 @@ export default function EducationalVideoProductionPage() {
           </div>
         </section>
 
-        {/* Section Témoignage */}
-        <section className="pt-1 pb-24" style={{ backgroundColor: "rgba(255, 255, 255, 1)" }}>
-          <div className="max-w-7xl mx-auto px-6 lg:px-8">
-            <div className="max-w-xl">
-              <div className="flex items-center mb-5">
-                <img
-                  src="  https://xb26hl5f9h.ufs.sh/f/myb9AtBX9KywrNVEkCYmuwfKNGhJOVdR9k1bQE3sWzcXegDS  "
-                  alt="Logo Udemy"
-                  className="w-30 h-20 mr-3"
-                />
-              </div>
-              <blockquote className="font-normal text-black mb-3 leading-relaxed">
-                "Les vidéos pédagogiques créées par Asteraki pour notre spécialisation en apprentissage automatique ont été essentielles pour améliorer les résultats des apprenants. 
-                Nous avons constaté une augmentation de 43 % des taux d'achèvement des cours et une amélioration de 37 % des scores d'évaluation par rapport aux itérations précédentes des cours. 
-                L'approche pédagogique et la clarté visuelle correspondaient exactement aux besoins de nos apprenants."
-              </blockquote>
-              <div className="text-black font-semibold mb-4">Nirmla Sharma, Responsable marketing chez Udemy</div>
-            </div>
-          </div>
-        </section>
+        
 
         {/* Pourquoi les vidéos pédagogiques fonctionnent */}
         <section className="py-24" style={{ backgroundColor: "#111111" }}>
@@ -315,7 +296,7 @@ export default function EducationalVideoProductionPage() {
                   LA PUISSANCE DE L'APPRENTISSAGE VISUEL
                 </div>
                 
-                <h2 className="text-4xl lg:text-5xl font-bold text-white mb-8">
+                <h2 className="text-3xl lg:text-4xl font-bold text-white mb-8">
                   Pourquoi les vidéos pédagogiques favorisent de meilleurs résultats d'apprentissage
                 </h2>
                 
@@ -380,7 +361,7 @@ export default function EducationalVideoProductionPage() {
                 <div className="mt-12">
                   <Link href="/contact" passHref>
                     <button className="btn-luxury border-0 px-6 sm:px-8 py-3 rounded-full text-base text-white text-semibold sm:text-lg mb-4 sm:mb-2">
-                       Entrer en contact
+                       Obtenir un deviss
                     </button>
                   </Link>
                 </div>
@@ -398,7 +379,7 @@ export default function EducationalVideoProductionPage() {
                       playsInline
                       className="w-full h-full object-cover"
                     >
-                      <source src="https://xb26hl5f9h.ufs.sh/f/myb9AtBX9KywnwuOCzz2GAKUwrqsXVlt1BHPRSjJzvoTuZfC  " type="video/mp4" />
+                      <source src="https://xb26hl5f9h.ufs.sh/f/myb9AtBX9KywnwuOCzz2GAKUwrqsXVlt1BHPRSjJzvoTuZfC" type="video/mp4" />
                       Votre navigateur ne prend pas en charge la balise vidéo.
                     </video>
                     <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent pointer-events-none"></div>
@@ -446,3 +427,4 @@ export default function EducationalVideoProductionPage() {
     </>
   )
 }
+

@@ -35,9 +35,9 @@ export default function FinalCTASection() {
                 Notre équipe se spécialise dans la création de vidéos pédagogiques authentiques qui appliquent les principes des sciences de l'apprentissage pour transformer les concepts complexes en connaissances durables, destinées à la formation professionnelle, aux cours académiques ou aux programmes de développement professionnel.
               </p>
 
-              <Link href="/contact" passHref>
+              <Link href="/quiz" passHref>
                 <Button className="btn-luxury border-0 px-6 py-3 w-full sm:w-auto sm:px-8 sm:py-3 rounded-full text-base sm:text-lg mb-4 sm:mb-6">
-                  Obtenir une consultation gratuite
+                   Estimer votre projet
                 </Button>
               </Link>
             </div>
