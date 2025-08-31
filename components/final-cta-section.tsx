@@ -41,36 +41,7 @@ export default function FinalCTASection() {
 
             </div>
 
-            {/* Floating Avatars */}
-            <div className="absolute top-16 right-16 w-12 h-12 rounded-full overflow-hidden">
-              <Image
-                src="https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVTA9kki0ins5ZGYgUmLXN6jkRIWfT8d4Sc0F2"
-                alt="Membre de l'équipe 1"
-                width={64}
-                height={64}
-                className="object-cover w-full h-full"
-              />
-            </div>
-
-            <div className="absolute top-32 right-32 w-14 h-14 rounded-full overflow-hidden">
-              <Image
-                src="https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztV5j8jtbrsL7zTQVi2HU8O5SmBt4lP6dAIRbFv"
-                alt="Membre de l'équipe 2"
-                width={64}
-                height={64}
-                className="object-cover w-full h-full"
-              />
-            </div>
-
-            <div className="absolute bottom-20 right-20 w-14 h-14 rounded-full overflow-hidden">
-              <Image
-                src="https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVZgrZvGsT3M8YKQp7XOUWxIjLVJhstl1Gv6iq"
-                alt="Membre de l'équipe 3"
-                width={64}
-                height={64}
-                className="object-cover w-full h-full"
-              />
-            </div>
+            
           </div>
         </div>
       </div>

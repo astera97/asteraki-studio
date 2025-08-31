@@ -361,7 +361,7 @@ export default function EducationalVideoProductionPage() {
                 <div className="mt-12">
                   <Link href="/contact" passHref>
                     <button className="btn-luxury border-0 px-6 sm:px-8 py-3 rounded-full text-base text-white text-semibold sm:text-lg mb-4 sm:mb-2">
-                       Obtenir un deviss
+                       Obtenir un devis
                     </button>
                   </Link>
                 </div>

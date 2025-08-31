@@ -26,20 +26,10 @@ const stages: ProcessStage[] = [
     image: "/kickoff_process.webp?height=300&width=400&text=Kick-off+Meeting",
   },
   {
-    id: "conception",
-    title: "Conception",
-    icon: <Pencil className="w-6 h-6" />,
-    heading: "Développer le concept créatif",
-    description:
-      "Durant la conception, nous transformons vos idées en vision créative, en définissant le storytelling, les visuels, le ton et le style artistique.",
-    image: "/conception_process.webp?height=300&width=400&text=Creative+Concept",
-  },
-  {
     id: "pre-production",
     title: "Pré-production",
     icon: (
       <div className="flex gap-1">
-        <Square className="w-3 h-3" />
         <Square className="w-3 h-3" />
       </div>
     ),

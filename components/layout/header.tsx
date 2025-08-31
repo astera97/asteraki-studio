@@ -121,16 +121,16 @@ const servicesDropdown = {
   ],
   bottomMessages: [
     {
-      icon: "/icon_construction.svg",
-      text: "Nous créons à la main, mais avançons rapidement grâce à l'IA et aux outils modernes",
+      icon: "",
+      text: "",
     },
     {
-      icon: "/icon_playlist.svg",
-      text: "Contenu créatif de haute qualité. Géré de bout en bout par une équipe compétente",
+      icon: "",
+      text: "",
     },
     {
-      icon: "/icon_gift.svg",
-      text: "Super ! Si vous êtes un nouveau client, vous êtes éligible à un script gratuit",
+      icon: "",
+      text: "",
     },
   ],
 }
@@ -193,7 +193,7 @@ const expertiseDropdown = {
         title: "Marque de mode ?",
         description: "Séances photo rapides et simples pour l'e-commerce. À partir de 24 $/photo et 63 $/vidéo",
         image: "https://xb26hl5f9h.ufs.sh/f/myb9AtBX9KywMPzHKyjroe97sS0GkHRwD6OVtv1Ez4ubBYFa?height=120&width=200&text=Vidi+Service",
-        backgroundColor: "bg-purple-100",
+        backgroundColor: "bg-purple-700",
         href: "/#"
       },
     },
@@ -208,16 +208,16 @@ const expertiseDropdown = {
   },
   bottomMessages: [
     {
-      icon: "/icon_construction.svg",
-      text: "Nous créons à la main, mais avançons rapidement grâce à l'IA et aux outils modernes",
+      icon: "",
+      text: "",
     },
     {
-      icon: "/icon_playlist.svg",
-      text: "Contenu créatif de haute qualité. Géré de bout en bout par une équipe compétente",
+      icon: "",
+      text: "",
     },
     {
-      icon: "/icon_gift.svg",
-      text: "Super ! Si vous êtes un nouveau client, vous êtes éligible à un script gratuit",
+      icon: "",
+      text: "",
     },
   ],
 }
