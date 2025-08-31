@@ -28,14 +28,14 @@ export default function EcommerceVideoProductionPage() {
                 <div className="text-sm font-semibold text-black mb-3 tracking-widest">
                   Production de vidéos e-commerce
                 </div>
-                <h1 className="text-5xl lg:text-4xl font-bold text-black mb-8 leading-tight">
+                <h1 className="text-3xl lg:text-3xl font-bold text-black mb-8 leading-tight">
                   Des vidéos produits qui augmentent les conversions, réduisent les retours et renforcent la confiance des clients.
                 </h1>
                 <p className="text-normal mb-5">
                   Nous créons des vidéos authentiques et cinématographiques spécialement conçues pour les marques e-commerce qui présentent les produits dans des contextes réels, fixent des attentes précises et favorisent les décisions d'achat. De la conception initiale à la livraison finale, nous gérons tous les aspects de la production avec une expertise approfondie de l'e-commerce et une connaissance de l'optimisation des conversions.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4">
-                  <Link href="/quiz" passHref>
+                  <Link href="/contact" passHref>
                     <button className="btn-luxury border-0 px-6 sm:px-8 py-3 rounded-full text-base text-white text-semibold sm:text-lg mb-4 sm:mb-2">
                       Obtenir un devis
                     </button>
@@ -51,7 +51,7 @@ export default function EcommerceVideoProductionPage() {
                     className="w-full h-full object-cover"
                     
                   >
-                    <source src="https://xb26hl5f9h.ufs.sh/f/myb9AtBX9Kywm3f61YX9KywSWq0Ob7e64m32pHZ8kCQuLAfB  " type="video/mp4" />
+                    <source src="https://xb26hl5f9h.ufs.sh/f/myb9AtBX9Kywm3f61YX9KywSWq0Ob7e64m32pHZ8kCQuLAfB" type="video/mp4" />
                     Votre navigateur ne prend pas en charge la balise vidéo.
                   </video>
                 </div>
@@ -64,7 +64,7 @@ export default function EcommerceVideoProductionPage() {
         <section className="pt-1 pb-24" style={{ backgroundColor: "rgba(255, 255, 255, 1)" }}>
           <div className="max-w-7xl mx-auto px-6 lg:px-8 text-center">
             <p className="text-center text-black font-normal mt-4 sm:mt-6 text-sm sm:text-base px-4">
-              Fait confiance à plus de 100 marques e-commerce – 5/5 avis Google
+              Nous avons accompagné plus de 250 marques <br/> 5/5 avis Google
             </p>
 
             {/* Carrousel de logos */}
@@ -158,7 +158,7 @@ export default function EcommerceVideoProductionPage() {
                       ))}
                     </div>
                   </div>
-                  <p className="text-black text-xs sm:text-sm">Basé sur plus de 50 avis</p>
+                  
                 </div>
               </a>
             </div>
@@ -179,7 +179,7 @@ export default function EcommerceVideoProductionPage() {
                 </div>
               </div>
               <div className="max-w-xl">
-                <h2 className="text-4xl lg:text-5xl font-bold text-black mb-8 leading-tight">
+                <h2 className="text-3xl lg:text-4xl font-bold text-black mb-8 leading-tight">
                   Contexte produit réel. Attentes précises. Conversions plus élevées.
                 </h2>
                 <div className="space-y-6 text-lg text-black leading-relaxed">
@@ -190,7 +190,7 @@ export default function EcommerceVideoProductionPage() {
                 <div className="mt-10">
                   <Link href="/contact" passHref>
                     <button className="btn-luxury border-0 px-6 sm:px-8 py-3 rounded-full text-base text-white text-semibold sm:text-lg mb-4 sm:mb-2">
-                      Entrer en contact
+                      Obtenir un devis
                     </button>
                   </Link>
                 </div>
@@ -203,26 +203,26 @@ export default function EcommerceVideoProductionPage() {
         <section className="py-24" style={{ backgroundColor: "#ffffffff" }}>
           <div className="max-w-7xl mx-auto px-6 lg:px-8">
             <div className="text-center mb-20">
-              <h2 className="text-4xl lg:text-5xl font-bold text-black mb-4">
+              <h2 className="text-3xl lg:text-4xl font-bold text-black mb-4">
                 Comment nous garantissons la livraison de vidéos e-commerce<br/> qui stimulent les ventes et réduisent les retours
               </h2>
             </div>
             <div className="grid lg:grid-cols-3 gap-16">
               {[
                 {
-                  image: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVh2BelJLDI024dcPOMo9lrEN6UY8eWLTbkv3Q  ",
+                  image: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVh2BelJLDI024dcPOMo9lrEN6UY8eWLTbkv3Q",
                   alt: "Démonstration du produit",
                   title: "Démonstration du produit",
                   desc: "Notre équipe comprend d'anciens chefs de produit et des spécialistes de l'e-commerce qui savent exactement comment présenter les produits dans des contextes réels qui renforcent la confiance et fixent des attentes précises, réduisant les taux de retour en démontrant la taille réelle, la texture et la fonctionnalité.",
                 },
                 {
-                  image: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVh2BelJLDI024dcPOMo9lrEN6UY8eWLTbkv3Q  ", 
+                  image: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVh2BelJLDI024dcPOMo9lrEN6UY8eWLTbkv3Q", 
                   alt: "Optimisation des conversions",
                   title: "Optimisation des conversions",
                   desc: "Nous appliquons des principes éprouvés de psychologie de l'e-commerce à chaque vidéo, plaçant stratégiquement les informations clés aux moments où les spectateurs sont les plus réceptifs, créant des vidéos qui convertissent 23 % mieux que les images de produits standard.",
                 },
                 {
-                  image: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVh2BelJLDI024dcPOMo9lrEN6UY8eWLTbkv3Q  ",
+                  image: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVh2BelJLDI024dcPOMo9lrEN6UY8eWLTbkv3Q",
                   alt: "Approche mobile-first",
                   title: "Approche mobile-first",
                   desc: "Avec 79 % du trafic e-commerce provenant des appareils mobiles, nous concevons toutes les vidéos spécifiquement pour les petits écrans, en veillant à ce que les détails clés du produit soient visibles même sans son et en créant des expériences d'achat fluides sur tous les appareils.",
@@ -257,7 +257,7 @@ export default function EcommerceVideoProductionPage() {
           <div className="max-w-7xl mx-auto px-6 lg:px-8">
             <div className="grid lg:grid-cols-2 gap-16 items-center">
               <div className="max-w-xl">
-                <h2 className="text-4xl lg:text-5xl font-bold text-black mb-8 leading-tight">
+                <h2 className="text-3xl lg:text-4xl font-bold text-black mb-8 leading-tight">
                   Transformez l'incertitude du produit en confiance d'achat.
                 </h2>
                 <div className="text-lg text-black mb-10 leading-relaxed">
@@ -269,7 +269,7 @@ export default function EcommerceVideoProductionPage() {
                 </div>
                 <Link href="/contact" passHref>
                     <button className="btn-luxury border-0 px-6 sm:px-8 py-3 rounded-full text-base text-white text-semibold sm:text-lg mb-4 sm:mb-2">
-                      Entrer en contact
+                      Obtenir un devis
                     </button>
                   </Link>
               </div>
@@ -286,26 +286,7 @@ export default function EcommerceVideoProductionPage() {
           </div>
         </section>
 
-        {/* Section Témoignage */}
-        <section className="pt-1 pb-24" style={{ backgroundColor: "rgba(255, 255, 255, 1)" }}>
-          <div className="max-w-7xl mx-auto px-6 lg:px-8">
-            <div className="max-w-xl">
-              <div className="flex items-center mb-5">
-                <img
-                  src="https://xb26hl5f9h.ufs.sh/f/myb9AtBX9KywTlBNbRnNIhGEmKzHa9uJoMcX14OLy02lZebV?height=32&width=32&text=AMZN"
-                  alt="Logo Midea"
-                  className="w-24 h-20 mr-3"
-                />
-              </div>
-              <blockquote className="font-normal text-black mb-3 leading-relaxed">
-                "Les vidéos produits créées par Asteraki pour notre catégorie d'électronique haut de gamme ont été essentielles pour améliorer la satisfaction client et réduire les taux de retour. 
-                Nous avons constaté une augmentation de 23 % des taux de conversion et une réduction de 31 % des retours pour les produits avec des vidéos de démonstration de haute qualité par rapport aux produits avec uniquement des images statiques. 
-                L'expertise approfondie de l'e-commerce combinée à la production vidéo stratégique était exactement ce dont nos équipes produits avaient besoin pour présenter les articles de la manière la plus convaincante."
-              </blockquote>
-              <div className="text-black font-semibold mb-4">Amy McNeal, Responsable Marketing Canal chez Midea America</div>
-            </div>
-          </div>
-        </section>
+        
 
         {/* Pourquoi les vidéos e-commerce fonctionnent */}
         <section className="py-24" style={{ backgroundColor: "#111111" }}>
@@ -317,7 +298,7 @@ export default function EcommerceVideoProductionPage() {
                   La puissance de la visualisation produit
                 </div>
                 
-                <h2 className="text-4xl lg:text-5xl font-bold text-white mb-8">
+                <h2 className="text-3xl lg:text-4xl font-bold text-white mb-8">
                   Pourquoi les vidéos e-commerce favorisent des conversions plus élevées et des retours plus faibles
                 </h2>
                 
@@ -402,7 +383,7 @@ export default function EcommerceVideoProductionPage() {
                       playsInline
                       className="w-full h-full object-cover"
                     >
-                      <source src="  https://xb26hl5f9h.ufs.sh/f/myb9AtBX9KywVABWPrZk9bJcHXMNUQfstv87OVhrZn4GzoAa  " type="video/mp4" />
+                      <source src="  https://xb26hl5f9h.ufs.sh/f/myb9AtBX9KywVABWPrZk9bJcHXMNUQfstv87OVhrZn4GzoAa" type="video/mp4" />
                       Votre navigateur ne prend pas en charge la balise vidéo.
                     </video>
                     <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent pointer-events-none"></div>

@@ -26,9 +26,9 @@ export default function LogisticsVideoProductionPage() {
             <div className="grid lg:grid-cols-2 gap-16 items-center">
               <div className="max-w-xl">
                 <div className="text-sm font-semibold text-black mb-3 tracking-widest">
-                  PRODUCTION VIDÉO LOGISTIQUE
+                  Production vidéo pour les entreprises de logistique
                 </div>
-                <h1 className="text-5xl lg:text-5xl font-bold text-black mb-8 leading-tight">
+                <h1 className="text-3xl lg:text-4xl font-bold text-black mb-8 leading-tight">
                   Transformez les opérations logistiques complexes en histoires visuelles claires et engageantes.
                 </h1>
                 <p className="text-normal mb-5">
@@ -64,7 +64,7 @@ export default function LogisticsVideoProductionPage() {
         <section className="pt-1 pb-24" style={{ backgroundColor: "rgba(255, 255, 255, 1)" }}>
           <div className="max-w-7xl mx-auto px-6 lg:px-8 text-center">
             <p className="text-center text-black font-normal mt-4 sm:mt-6 text-sm sm:text-base px-4">
-              Fiable par 50+ marques logistiques – 5/5 avis Google
+              Nous avons accompagné plus de 250 marques <br/> 5/5 avis Google
             </p>
 
             {/* Logo Carousel */}
@@ -158,7 +158,7 @@ export default function LogisticsVideoProductionPage() {
                       ))}
                     </div>
                   </div>
-                  <p className="text-black text-xs sm:text-sm">Basé sur 50+ avis</p>
+             
                 </div>
               </a>
             </div>
@@ -172,7 +172,7 @@ export default function LogisticsVideoProductionPage() {
               <div className="relative">
                 <div className="rounded-2xl overflow-hidden">
                   <img
-                    src="https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVTM1vZl0ins5ZGYgUmLXN6jkRIWfT8d4Sc0F2  "
+                    src="https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVTM1vZl0ins5ZGYgUmLXN6jkRIWfT8d4Sc0F2"
                     alt="Image de vidéo logistique avec interface UPS"
                     className="w-full"
                   />
@@ -190,7 +190,7 @@ export default function LogisticsVideoProductionPage() {
                 <div className="mt-10">
                   <Link href="/contact" passHref>
                     <button className="btn-luxury border-0 px-6 sm:px-8 py-3 rounded-full text-base text-white text-semibold sm:text-lg mb-4 sm:mb-2">
-                      Obtenir une consultation gratuite
+                      Obtenir un devis
                     </button>
                   </Link>
                 </div>
@@ -204,25 +204,25 @@ export default function LogisticsVideoProductionPage() {
           <div className="max-w-7xl mx-auto px-6 lg:px-8">
             <div className="text-center mb-20">
               <h2 className="text-4xl lg:text-5xl font-bold text-black mb-4">
-                Comment nous assurons la livraison de vidéos logistiques<br/> qui stimulent la confiance des clients
+                Comment nous assurons la livraison de vidéos logistiques qui stimulent la confiance des clients
               </h2>
             </div>
             <div className="grid lg:grid-cols-3 gap-16">
               {[
                 {
-                  image: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVh2BelJLDI024dcPOMo9lrEN6UY8eWLTbkv3Q  ",
+                  image: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVh2BelJLDI024dcPOMo9lrEN6UY8eWLTbkv3Q",
                   alt: "Expertise logistique",
                   title: "Expertise logistique",
                   desc: "Notre équipe comprend d'anciens professionnels de la logistique qui comprennent profondément les opérations de chaîne d'approvisionnement, la gestion des transports et l'optimisation des entrepôts, ce qui nous permet d'expliquer avec précision les concepts logistiques les plus complexes sans les simplifier excessivement.",
                 },
                 {
-                  image: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVh2BelJLDI024dcPOMo9lrEN6UY8eWLTbkv3Q  ", 
+                  image: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVh2BelJLDI024dcPOMo9lrEN6UY8eWLTbkv3Q", 
                   alt: "Démonstration technologique",
                   title: "Démonstration technologique",
                   desc: "Nous nous spécialisons dans la démonstration visuelle des plateformes technologiques logistiques, des systèmes de suivi et des solutions d'automatisation, rendant la technologie sophistiquée accessible aux clients et prospects sans les submerger de détails techniques.",
                 },
                 {
-                  image: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVh2BelJLDI024dcPOMo9lrEN6UY8eWLTbkv3Q  ",
+                  image: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVh2BelJLDI024dcPOMo9lrEN6UY8eWLTbkv3Q",
                   alt: "Storytelling axé sur le client",
                   title: "Storytelling axé sur le client",
                   desc: "Nos vidéos traitent des points de douleur spécifiques des clients logistiques - visibilité des expéditions, fiabilité et communication - en utilisant des techniques de narration authentiques qui renforcent la crédibilité et différencient vos services.",
@@ -257,7 +257,7 @@ export default function LogisticsVideoProductionPage() {
           <div className="max-w-7xl mx-auto px-6 lg:px-8">
             <div className="grid lg:grid-cols-2 gap-16 items-center">
               <div className="max-w-xl">
-                <h2 className="text-4xl lg:text-5xl font-bold text-black mb-8 leading-tight">
+                <h2 className="text-3xl lg:text-4xl font-bold text-black mb-8 leading-tight">
                   Transformez les opérations complexes en valeur client claire.
                 </h2>
                 <div className="text-lg text-black mb-10 leading-relaxed">
@@ -269,14 +269,14 @@ export default function LogisticsVideoProductionPage() {
                 </div>
                 <Link href="/contact" passHref>
                     <button className="btn-luxury border-0 px-6 sm:px-8 py-3 rounded-full text-base text-white text-semibold sm:text-lg mb-4 sm:mb-2">
-                      Obtenir une consultation gratuite
+                      Obtenir un devis
                     </button>
                 </Link>
               </div>
               <div className="relative">
                 <div className="rounded-2xl overflow-hidden">
                   <img
-                    src="https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztV5Oc4QUrsL7zTQVi2HU8O5SmBt4lP6dAIRbFv  "
+                    src="https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztV5Oc4QUrsL7zTQVi2HU8O5SmBt4lP6dAIRbFv"
                     alt="Démonstration logistique"
                     className="w-full"
                   />
@@ -286,26 +286,7 @@ export default function LogisticsVideoProductionPage() {
           </div>
         </section>
 
-        {/* Testimonial Section */}
-        <section className="pt-1 pb-24" style={{ backgroundColor: "rgba(255, 255, 255, 1)" }}>
-          <div className="max-w-7xl mx-auto px-6 lg:px-8">
-            <div className="max-w-xl">
-              <div className="flex items-center mb-5">
-                <img
-                  src="https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVfPZAFBa93bxoLyhcW8aNnVRf0tO2vu4mHdZJ  "
-                  alt="Logo UPS"
-                  className="w-30 h-20 mr-3"
-                />
-              </div>
-              <blockquote className="font-normal text-black mb-3 leading-relaxed">
-                "La série vidéo qu'Asteraki a créée pour notre plateforme logistique mondiale a été essentielle pour améliorer la compréhension et la satisfaction des clients. 
-                Nous avons constaté une réduction de 32 % des demandes de service client concernant le suivi des expéditions et une augmentation de 24 % de l'adoption de la plateforme après avoir mis en œuvre leurs vidéos dans nos canaux de communication client. 
-                La connaissance approfondie de la logistique combinée à un storytelling visuel clair correspondait exactement à ce dont nos clients avaient besoin pour comprendre nos solutions complexes de chaîne d'approvisionnement."
-              </blockquote>
-              <div className="text-black font-semibold mb-4">Carol Tome, PDG d'UPS</div>
-            </div>
-          </div>
-        </section>
+        
 
         {/* Why Logistics Videos Work */}
         <section className="py-24" style={{ backgroundColor: "#111111" }}>
@@ -317,7 +298,7 @@ export default function LogisticsVideoProductionPage() {
                   LA PUISSANCE DE LA VISUALISATION LOGISTIQUE
                 </div>
                 
-                <h2 className="text-4xl lg:text-5xl font-bold text-white mb-8">
+                <h2 className="text-3xl lg:text-4xl font-bold text-white mb-8">
                   Pourquoi les vidéos logistiques stimulent une meilleure compréhension et satisfaction client
                 </h2>
                 
@@ -383,7 +364,7 @@ export default function LogisticsVideoProductionPage() {
                 <div className="mt-12">
                   <Link href="/contact" passHref>
                     <button className="btn-luxury border-0 px-6 sm:px-8 py-3 rounded-full text-base text-white text-semibold sm:text-lg mb-4 sm:mb-2">
-                       Obtenir une consultation vidéo logistique gratuite
+                       Obtenir un devis
                     </button>
                   </Link>
                 </div>

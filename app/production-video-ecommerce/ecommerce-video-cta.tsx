@@ -26,7 +26,7 @@ export default function FinalCTASection() {
           <div className="relative z-10">
             {/* Contenu principal */}
             <div className="max-w-xl">
-              <h2 className="text-3xl xs:text-2xl sm:text-2xl lg:text-4xl font-bold leading-tight mb-6 xs:mb-6 sm:mb-8">
+              <h2 className="text-2xl xs:text-2xl sm:text-2xl lg:text-3xl font-bold leading-tight mb-6 xs:mb-6 sm:mb-8">
                 Prêt à transformer l'incertitude
                 <span className="text-orange-400 block mt-2">du produit en ventes ?</span>
               </h2>
@@ -42,36 +42,7 @@ export default function FinalCTASection() {
               </Link>
             </div>
 
-            {/* Avatars flottants - Positionnement optimisé pour mobile */}
-            <div className="absolute top-9 right-4 xs:top-6 xs:right-4 sm:top-10 sm:right-10 w-10 h-10 xs:w-12 xs:h-12 sm:w-16 sm:h-16 rounded-full overflow-hidden border-2 border-orange-500/30">
-              <Image
-                src="https://xb26hl5f9h.ufs.sh/f/myb9AtBX9KywkgMgc0SlcW3D857iBTUgqdxmP61bMa4NoXFA  "
-                alt="Appareil connecté Framery"
-                width={64}
-                height={64}
-                className="object-cover w-full h-full"
-              />
-            </div>
-
-            <div className="absolute top-20 right-1 xs:top-20 xs:right-20 sm:top-40 sm:right-32 w-8 h-8 xs:w-10 xs:h-10 sm:w-14 sm:h-14 rounded-full overflow-hidden border-2 border-orange-500/30">
-              <Image
-                src="https://xb26hl5f9h.ufs.sh/f/myb9AtBX9Kyw4U5A9hBdbrNXRB5hFw18ligkq0uMPIcdKxms  "
-                alt="Publicité réfrigérateur Midea"
-                width={64}
-                height={64}
-                className="object-cover w-full h-full"
-              />
-            </div>
-
-            <div className="absolute bottom-14 right-1 xs:bottom-6 xs:right-6 sm:bottom-20 sm:right-4 w-10 h-10 xs:w-12 xs:h-12 sm:w-16 sm:h-16 rounded-full overflow-hidden border-2 border-orange-500/30">
-              <Image
-                src="https://xb26hl5f9h.ufs.sh/f/myb9AtBX9KywNYuQg3HKkRlYVgetUZPzh1ASjJ0GOXMEQaDx  "
-                alt="Scène animée Native Instruments"
-                width={64}
-                height={64}
-                className="object-cover w-full h-full"
-              />
-            </div>
+            
           </div>
         </div>
       </div>
