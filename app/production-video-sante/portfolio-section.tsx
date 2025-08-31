@@ -47,11 +47,8 @@ export default function PortfolioSection() {
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold text-black mb-4">
-            Découvrez quelques-unes de nos réalisations pour <br/>des campagnes vidéo de marque gagnantes.
+            Exemples de campagnes vidéos réussies pour les entreprises de Santé.
           </h2>
-          <p className="text-xl text-black max-w-3xl mx-auto leading-relaxed">
-            Nous avons obtenu plus de 1 milliard de vues sur 580+ projets vidéo. <br/>Nous savons ce qui fonctionne, et ce qui ne fonctionne pas.
-          </p>
         </div>
         
         <PortfolioGrid projects={portfolioProjects} />

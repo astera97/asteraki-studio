@@ -30,6 +30,7 @@ const videoTypes = [
   { value: "Conseil d'expert", label: "Conseil d'expert" },
   { value: "Vidéo explicative", label: "Vidéo explicative" },
   { value: "Vidéo d'application", label: "Vidéo d'application" },
+  { value: "Vidéo de financement", label: "Vidéo de financment" },
   { value: "Témoignage client", label: "Témoignage client" },
   { value: "événement", label: "événement" },
   { value: "Animation 2D", label: "Animation 2D" },

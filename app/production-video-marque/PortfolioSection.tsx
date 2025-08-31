@@ -7,15 +7,15 @@ import Link from "next/link"
 export default function PortfolioSection() {
   const portfolioProjects = [
     {
-      id: 1,
-      title: "Lettuce",
-      subtitle: "Vidéo de marque",
-      description: "Production de la vidéo de marque Lettuce présentant les fonctionnalités du logiciel.",
-      services: ["Scénario", "Cinématographie", "Intégration VFX", "Étalonnage des couleurs"],
-      videoType: "Vidéo de Marque",
-      industry: "SaaS",
-      thumbnail: "https://xb26hl5f9h.ufs.sh/f/myb9AtBX9KywWxh7Tdiab8RMjqt25cZzSeDlVIhg1Y3fnXCT  ",
-      vimeoUrl: "https://vimeo.com/1110291462  ",
+     id: 1,
+     title: "MSD France",
+     subtitle: "Vidéo de marque",
+     description: "Vidéo de marque au siège de MSD France présentant la culture d'entreprise.",
+     services: ["Scénario", "Cinématographie", "Graphismes animés", "Étalonnage"],
+     videoType: "Vidéo de marque",
+     industry: "Santé",
+     thumbnail: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVG0CLLPBHNo2Fl95RE1eVgdJmnxZq4zjfCtBK",
+     vimeoUrl: "https://vimeo.com/1114255401",
     },
     {
      id: 2,

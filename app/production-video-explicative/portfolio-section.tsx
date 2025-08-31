@@ -35,7 +35,7 @@ export default function PortfolioSection() {
      description: "Vidéo d'animation expliquant la procédure d'insciption à la PDP Sage.",
      services: ["Scénario", "Cinématographie", "Graphismes animés", "Étalonnage des couleurs"],
      videoType: "Vidéo explicative",
-     industry: "Technology",
+     industry: "Technologie",
      thumbnail: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVj1XY6Gnk6Z0aKAOH3TspmrCuFeME74fB5QqN",
      vimeoUrl: "https://vimeo.com/1113692472",
     },
