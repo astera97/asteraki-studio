@@ -1,5 +1,4 @@
 "use client"
-
 import { useState, useEffect, useRef } from "react"
 import { Button } from "@/components/ui/button"
 import { Play, X, Check } from "lucide-react"
@@ -14,146 +13,114 @@ interface Project {
   description: string
   details: string[]
   videoUrl: string
-  logo?: string
   thumbnail: string
 }
 
 const projectsRow1: Project[] = [
+  
   {
-    id: "Bolt",
-    title: "Bolt",
-    category: "Vidéo carrière",
-    client: "Vidéo carrière",
-    description: "Campagne de recrutement pour Bolt mettant en avant la culture d'entreprise à travers les parcours des employés.",
+    id: "2",
+    title: "Kuehne+Nagel",
+    category: "Démonstration produit",
+    client: "Kuehne+Nagel",
+    description: "Vidéo explcative sur la solution de Kuehne+Nagel, myFairLOG.",
     details: ["Scénario", "Cinématographie", "Mixage sonore", "Étalonnage colorimétrique"],
-    videoUrl: "https://player.vimeo.com/video/1104256442  ",
-    thumbnail: "/bolt_portfolio.webp?height=180&width=320&text=Career+Videos+Klarna",
+    videoUrl: "https://player.vimeo.com/video/1111696360",
+    thumbnail: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztV2AB1ak7WJBOGwHyYpLQ8mtukDFsr9nVZ07eK",
   },
   {
-    id: "Mercury Bank",
-    title: "Mercury Bank",
-    category: "Vidéo marque",
-    client: "Mercury Bank",
-    description: "Campagne vidéo promotionnelle pour Mercury, mettant en avant les valeurs uniques de l'entreprise.",
+    id: "3",
+    title: "Malt",
+    category: "Keynote",
+    client: "Malt",
+    description: "Keynote à propos de la nouvelle fonctionnalité de Malt, AI search.",
     details: ["Scénario", "Cinématographie", "Mixage sonore", "Étalonnage colorimétrique"],
-    videoUrl: "https://player.vimeo.com/video/1104166857  ",
-    logo: "💻",
-    thumbnail: "/paid_ch.webp?height=180&width=320&text=SaaS+Presentation+TechCorp",
+    videoUrl: "https://player.vimeo.com/video/1114349973",
+    thumbnail: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVJeYdFwKuqgdOsGVhtpIHWTxEMPov1QX37nkB",
   },
   {
-    id: "career-video",
-    title: "Klarna",
-    category: "Vidéo carrière",
-    client: "Vidéo carrière",
-    description: "Portrait d'employés chez Klarna pour présenter la culture d'entreprise.",
+    id: "4",
+    title: "Aircall",
+    category: "Vidéo de marque",
+    client: "Aircall",
+    description: "Vidéo de marque pour l'entreprise Aircall.",
     details: ["Scénario", "Cinématographie", "Mixage sonore", "Étalonnage colorimétrique"],
-    videoUrl: "https://player.vimeo.com/video/1104267844  ",
-    thumbnail: "/klarna_portfolio.webp?height=180&width=320&text=Client+Testimonial+StartupXYZ",
+    videoUrl: "https://player.vimeo.com/video/1114342036",
+    thumbnail: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVcmINPu9r3QfKI0dziE8sFt4BVwMqT2bChkLN",
   },
   {
-    id: "brand-video",
-    title: "Vacheron Constantin",
-    category: "Vidéo marque",
-    client: "Vidéo marque",
-    description: "Mise en avant de la collaboration entre la marque et l'artiste à travers des images cinématographiques.",
-    details: ["Scénario", "Cinématographie", "Mixage sonore", "Étalonnage colorimétrique"],
-    videoUrl: "https://player.vimeo.com/video/1104169646  ",
-    thumbnail: "/vacheron_portfolio.webp?height=180&width=320&text=TV+Advertisement+BrandCorp",
-  },
-  {
-    id: "customer-testimonial",
-    title: "HSBC",
+    id: "5",
+    title: "Lucca",
     category: "Témoignage client",
-    client: "Témoignage client",
-    description: "Témoignage du directeur financier de Cinépolis sur la manière dont HSBC soutient leur croissance.",
+    client: "Lucca",
+    description: "Vidéo témoignage client avec le client Lucca, ICSEO.",
     details: ["Scénario", "Cinématographie", "Mixage sonore", "Étalonnage colorimétrique"],
-    videoUrl: "https://player.vimeo.com/video/1102894973  ",
-    thumbnail: "/hsbc_testim_portfolio.webp?height=180&width=320&text=Motion+Design+Creative",
+    videoUrl: "https://player.vimeo.com/video/1114336847",
+    thumbnail: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVAxxMJwhHjGD6UJSv1WeB5b7LYpa8COcwltVf",
   },
   {
-    id: "expert talk",
-    title: "Okta",
-    category: "Discussion d'expert",
-    client: "Discussion d'expert",
-    description: "Un aperçu de l'avenir avec des leaders de la sécurité informatique.",
+    id: "6",
+    title: "HP France",
+    category: "Conseil d'expert",
+    client: "HP France",
+    description: "Série HP sur la cybersécurité en partenariat avec le Figaro.",
     details: ["Scénario", "Cinématographie", "Mixage sonore", "Étalonnage colorimétrique"],
-    videoUrl: "https://player.vimeo.com/video/1103750819  ",
-    thumbnail: "/okta_portfolio.webp?height=180&width=320&text=Motion+Design+Creative",
+    videoUrl: "https://player.vimeo.com/video/1114325979",
+    thumbnail: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVvGjVXi13dJewK5HDhqcx2ks9fTPaG0RgtMrU",
   },
 ]
 
 const projectsRow2: Project[] = [
   {
-    id: "Girard Perregaux",
+    id: "1",
     title: "Girard Perregaux",
-    category: "Vidéo Marque",
-    client: "Vidéo Marque",
+    category: "Vidéo de marque",
+    client: "Girard Perregaux",
     description: "Vidéo promotionnelle pour Girard Perregaux présentant leur dernière montre.",
     details: ["Scénario", "Cinématographie", "Mixage sonore", "Étalonnage colorimétrique"],
-    videoUrl: "https://player.vimeo.com/video/1102877371  ",
-    thumbnail: "/gp_portfolio.webp?height=180&width=320&text=Explainer+Video+FinTech",
+    videoUrl: "https://player.vimeo.com/video/1102877371",
+    thumbnail: "/gp_portfolio.webp?height=180&width=320&text=Girard+Perregaux+Watch",
   },
   {
-    id: "Promotional video",
-    title: "Framery",
-    category: "Vidéo promotionnelle",
-    client: "Vidéo promotionnelle",
-    description: "Vidéo promotionnelle pour Framery présentant leur nouveau meuble et ses caractéristiques.",
-    details: ["Scénario", "Cinématographie", "Mixage sonore", "Étalonnage colorimétrique"],
-    videoUrl: "https://player.vimeo.com/video/1106893991  ",
-    thumbnail: "/framery_portfolio.webp?height=180&width=320&text=Explainer+Video+FinTech",
-  },
-  {
-    id: "Brand video",
-    title: "Xencelabs",
-    category: "Vidéo marque",
-    client: "Vidéo marque",
-    description: "Vidéo marque pour Xencelabs afin de promouvoir le Xencelabs Pen Display 24.",
-    details: ["Scénario", "Cinématographie", "Mixage sonore", "Étalonnage colorimétrique"],
-    videoUrl: "https://player.vimeo.com/video/1106895426  ",
-    thumbnail: "/xencelabs_portfolio.webp?height=180&width=320&text=Corporate+Film+Global",
-  },
-  {
-    id: "Customer testimonial",
-    title: "HP",
+    id: "2",
+    title: "Deloitte",
     category: "Témoignage client",
-    client: "Témoignage client",
-    description: "Témoignage de Digital Etikett sur la manière dont HP soutient leurs opérations.",
+    client: "Deloitte",
+    description: "Vidéo témoignage client avec le client de Deloitte, EXEL.",
     details: ["Scénario", "Cinématographie", "Mixage sonore", "Étalonnage colorimétrique"],
-    videoUrl: "https://player.vimeo.com/video/1106899507  ",
-    thumbnail: "/hp_portfolio.webp?height=180&width=320&text=Training+Video+LearnCorp",
+    videoUrl: "https://player.vimeo.com/video/1113694980",
+    thumbnail: "https://xb26hl5f9h.ufs.sh/f/myb9AtBX9KywZN3ImH5DmjQM0nVEs2BHNKk8yJeWpug7rf34",
   },
   {
-    id: "Animation",
+    id: "3",
+    title: "Sage",
+    category: "Vidéo explicative",
+    client: "Sage",
+    description: "Vidéo d'animation expliquant comment utiliser Sage.",
+    details: ["Scénario", "Cinématographie", "Mixage sonore", "Étalonnage colorimétrique"],
+    videoUrl: "https://player.vimeo.com/video/1113692995",
+    thumbnail: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVVINHJYcCRjU0PEv7T9OCi5BZ8hqeAgSKnaIz",
+  },
+  {
+    id: "4",
+    title: "Bolt",
+    category: "Évènement",
+    client: "Bolt",
+    description: "Aftermovie avec Bolt lors de leur événement team building.",
+    details: ["Cinématographie", "Mixage sonore", "Étalonnage colorimétrique"],
+    videoUrl: "https://player.vimeo.com/video/1104168315",
+    thumbnail: "https://xb26hl5f9h.ufs.sh/f/myb9AtBX9KywbwgrntOiCeEItjw1VXN8kvL65WuUqFRDcO24",
+  },
+  {
+    id: "5",
     title: "Tag Heuer",
     category: "Vidéo d'animation",
     client: "Tag Heuer",
     description: "Vidéo promotionnelle animée présentant la dernière montre TAG Heuer en collaboration avec Malbon Golf.",
     details: ["Scénario", "Cinématographie", "Mixage sonore", "Étalonnage colorimétrique"],
-    videoUrl: "https://player.vimeo.com/video/1103809113  ",
-    thumbnail: "/tag_heuer_portfolio.webp?height=180&width=320&text=Product+Demo+InnovateTech",
+    videoUrl: "https://player.vimeo.com/video/1104256442",
+    thumbnail: "/tag_heuer_portfolio.webp?height=180&width=320&text=TAG+Heuer+Malbon+Golf",
   },
-  {
-    id: "promo-video",
-    title: "Native Instruments",
-    category: "Vidéo promotionnelle",
-    client: "Vidéo promotionnelle",
-    description: "Vidéo promotionnelle pour Native Instruments présentant leur nouvel instrument Kontrol/N.",
-    details: ["Scénario", "Cinématographie", "Mixage sonore", "Étalonnage colorimétrique"],
-    videoUrl: "https://player.vimeo.com/video/1106896654  ",
-    thumbnail: "/native_instruments_portfolio.webp?height=180&width=320&text=Event+Coverage+EventPro",
-  },
-  {
-    id: "Customer testimonial",
-    title: "Salesforce",
-    category: "Témoignage client",
-    client: "Témoignage client",
-    description: "Témoignage de Fisher & Paykel sur la manière dont Salesforce Dreamforce soutient leurs opérations.",
-    details: ["Scénario", "Cinématographie", "Mixage sonore", "Étalonnage colorimétrique"],
-    videoUrl: "https://player.vimeo.com/video/1106899743  ",
-    thumbnail: "/salesforce_portfolio.webp?height=180&width=320&text=Social+Media+BrandBoost",
-  },
-  
 ]
 
 export default function ServicesSection() {
@@ -163,29 +130,26 @@ export default function ServicesSection() {
   const [translateX2, setTranslateX2] = useState(0)
   const animationRef = useRef<number>()
 
-  // Initialiser le deuxième carrousel pour qu'il commence depuis la gauche (position négative)
   useEffect(() => {
     const itemWidth = 320 + 24
     const totalWidth = itemWidth * projectsRow2.length
     setTranslateX2(-totalWidth)
   }, [])
 
-  // Mouvement continu du carrousel avec animation de référence
   useEffect(() => {
     const animate = () => {
-      const speed = isHovered ? 0.2 : 0.8 // Plus lent au survol
+      const speed = isHovered ? 0.2 : 0.8
       setTranslateX1((prev) => {
-        const itemWidth = 320 + 24 // largeur + écart
+        const itemWidth = 320 + 24
         const resetPoint = -(itemWidth * projectsRow1.length)
         const newX = prev - speed
         return newX <= resetPoint ? 0 : newX
       })
 
       setTranslateX2((prev) => {
-        const itemWidth = 320 + 24 // largeur + écart
+        const itemWidth = 320 + 24
         const totalWidth = itemWidth * projectsRow2.length
         const newX = prev + speed
-        // Réinitialiser à la largeur totale négative quand on atteint 0 (pour le mouvement de droite à gauche)
         return newX >= 0 ? -totalWidth : newX
       })
 
@@ -209,28 +173,28 @@ export default function ServicesSection() {
     setSelectedProject(null)
   }
 
-  // Dupliquer les éléments pour une boucle continue
   const duplicatedProjectsRow1 = [...projectsRow1, ...projectsRow1]
   const duplicatedProjectsRow2 = [...projectsRow2, ...projectsRow2]
 
   return (
     <>
+      {/* Section Title */}
       <section className="py-12 sm:py-1" style={{ backgroundColor: "#ffffffff" }}>
-        {/* Titre de la section - Centré avec padding */}
         <div className="text-center mb-12 sm:mb-16 px-4">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight mb-6 sm:mb-8 text-black">
-            Nos services de production <br/>
+            Nos services de production <br />
             audiovisuelle pour entreprises
           </h2>
           <p className="text-black text-base sm:text-lg max-w-4xl mx-auto leading-relaxed px-4">
-            Produire des vidéos ne suffit plus. Il est désormais crucial de choisir les bons formats, 
-            <br/>d’en maîtriser les codes, et de développer des idées créatives pertinentes <br/>pour optimiser l’impact de vos contenus. 
-            
+            Produire des vidéos ne suffit plus. Il est désormais crucial de choisir les bons formats,
+            <br />
+            d’en maîtriser les codes, et de développer des idées créatives pertinentes <br />
+            pour optimiser l’impact de vos contenus.
           </p>
         </div>
       </section>
 
-      {/* Première ligne de carrousel vidéo - Responsive avec animation fluide */}
+      {/* First Carousel (Row 1) */}
       <div
         className="overflow-hidden mb-6 sm:mb-8"
         style={{ backgroundColor: "rgba(255, 255, 255, 1)" }}
@@ -246,22 +210,35 @@ export default function ServicesSection() {
         >
           {duplicatedProjectsRow1.map((project, index) => (
             <div key={`row1-${project.id}-${index}`} className="flex-shrink-0 w-64 sm:w-80 group">
-              <div className="relative rounded-2xl overflow-hidden cursor-pointer" onClick={() => openModal(project)}>
-                <div className="aspect-video bg-gray-800 flex items-center justify-center relative">
+              <div
+                className="relative rounded-2xl overflow-hidden cursor-pointer"
+                onClick={() => openModal(project)}
+              >
+                <div className="aspect-video bg-gray-800 flex items-center justify-center relative overflow-hidden">
                   <Image
-                    src={project.thumbnail || "/placeholder.svg"}
+                    src={project.thumbnail}
                     alt={project.title}
                     width={320}
                     height={180}
                     className="object-cover w-full h-full"
                   />
+              {/* Dark overlay */}
+              <div className="absolute inset-0 bg-black bg-opacity-40"></div>
                   <div className="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
                     <div className="w-10 h-10 sm:w-12 sm:h-12 bg-orange-500 bg-opacity-90 rounded-full flex items-center justify-center">
                       <Play className="w-5 h-5 sm:w-6 sm:h-6 text-white ml-1" />
                     </div>
                   </div>
-                  <div className="absolute bottom-3 sm:bottom-4 left-3 sm:left-4 text-white font-medium text-sm sm:text-base">
-                    {project.title}
+
+                  {/* Title + Category with reduced spacing and orange branding */}
+                  <div className="absolute bottom-3 sm:bottom-4 left-3 sm:left-4 text-white space-y-0">
+                    <div className="font-bold text-base sm:text-lg mb-0.5">{project.title}</div>
+                    <div
+                      className="text-xs sm:text-sm font-medium"
+                      style={{ color: "#FF6B35" }} // Couleur orange de branding
+                    >
+                      {project.id === "1" ? `${project.client} • ${project.category}` : project.category}
+                    </div>
                   </div>
                 </div>
               </div>
@@ -270,7 +247,7 @@ export default function ServicesSection() {
         </div>
       </div>
 
-      {/* Deuxième ligne de carrousel vidéo - Responsive avec animation inversée */}
+      {/* Second Carousel (Row 2) */}
       <div
         className="overflow-hidden mb-8 sm:mb-12"
         style={{ backgroundColor: "rgba(255, 255, 255, 1)" }}
@@ -286,22 +263,35 @@ export default function ServicesSection() {
         >
           {duplicatedProjectsRow2.map((project, index) => (
             <div key={`row2-${project.id}-${index}`} className="flex-shrink-0 w-64 sm:w-80 group">
-              <div className="relative rounded-2xl overflow-hidden cursor-pointer" onClick={() => openModal(project)}>
-                <div className="aspect-video bg-gray-800 flex items-center justify-center relative">
-                  <Image
-                    src={project.thumbnail || "/placeholder.svg"}
-                    alt={project.title}
-                    width={320}
-                    height={180}
-                    className="object-cover w-full h-full"
-                  />
+              <div
+                className="relative rounded-2xl overflow-hidden cursor-pointer"
+                onClick={() => openModal(project)}
+              >
+                <div className="aspect-video bg-gray-800 flex items-center justify-center relative overflow-hidden">
+  <Image
+    src={project.thumbnail}
+    alt={project.title}
+    width={320}
+    height={180}
+    className="object-cover w-full h-full"
+  />
+  {/* Dark overlay */}
+  <div className="absolute inset-0 bg-black bg-opacity-40"></div>
                   <div className="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
                     <div className="w-10 h-10 sm:w-12 sm:h-12 bg-orange-500 bg-opacity-90 rounded-full flex items-center justify-center">
                       <Play className="w-5 h-5 sm:w-6 sm:h-6 text-white ml-1" />
                     </div>
                   </div>
-                  <div className="absolute bottom-3 sm:bottom-4 left-3 sm:left-4 text-white font-medium text-sm sm:text-base">
-                    {project.title}
+
+                  {/* Title + Category for Row 2 */}
+                  <div className="absolute bottom-3 sm:bottom-4 left-3 sm:left-4 text-white space-y-0">
+                    <div className="font-bold text-base sm:text-lg mb-0.5">{project.title}</div>
+                    <div
+                      className="text-xs sm:text-sm font-medium"
+                      style={{ color: "#FF6B35" }}
+                    >
+                      {project.category}
+                    </div>
                   </div>
                 </div>
               </div>
@@ -310,7 +300,7 @@ export default function ServicesSection() {
         </div>
       </div>
 
-      {/* Indicateur de vitesse */}
+      {/* Speed Indicator */}
       <div className="flex justify-center mb-8 sm:mb-12" style={{ backgroundColor: "rgba(255, 255, 255, 1)" }}>
         <div className="flex items-center space-x-2 text-sm text-gray-400">
           <div
@@ -320,25 +310,24 @@ export default function ServicesSection() {
         </div>
       </div>
 
-      {/* Section du bouton Portfolio */}
+      {/* Portfolio Button */}
       <section className="pb-12 sm:pb-16" style={{ backgroundColor: "hsla(0, 0%, 100%, 1.00)" }}>
-  <div className="text-center px-4">
-    <Link href="/work" passHref>
-      <Button className="btn-luxury border-0 px-6 sm:px-8 py-3 rounded-full text-base sm:text-lg mb-4 sm:mb-6">
-        Découvrez nos réalisations
-      </Button>
-    </Link>
-    <p className="text-black text-sm max-w-md mx-auto">
-      Trouvez l'inspiration pour votre prochain projet parmi <br/>des dizaines de vidéos créées par notre agence.
-    </p>
-  </div>
-</section>
+        <div className="text-center px-4">
+          <Link href="/realisations" passHref>
+            <Button className="btn-luxury border-0 px-6 sm:px-8 py-3 rounded-full text-base sm:text-lg mb-4 sm:mb-6">
+              Découvrez nos réalisations
+            </Button>
+          </Link>
+          <p className="text-black text-sm max-w-md mx-auto">
+            Trouvez l'inspiration pour votre prochain projet parmi <br />des dizaines de vidéos créées par notre agence.
+          </p>
+        </div>
+      </section>
 
-      {/* Nouveau design de la modale - Inspiré par Asteraki */}
+      {/* Modal */}
       {selectedProject && (
         <div className="fixed inset-0 bg-black bg-opacity-90 flex items-center justify-center z-50 p-4 animate-modal-backdrop">
           <div className="bg-white rounded-3xl max-w-7xl w-full max-h-[90vh] overflow-hidden relative animate-modal-content">
-            {/* Bouton de fermeture */}
             <button
               onClick={closeModal}
               className="absolute top-6 right-6 w-12 h-12 bg-white bg-opacity-10 hover:bg-opacity-20 rounded-full flex items-center justify-center z-10 transition-colors"
@@ -347,23 +336,20 @@ export default function ServicesSection() {
             </button>
 
             <div className="grid grid-cols-1 lg:grid-cols-2 h-full min-h-[600px]">
-              {/* Panneau de gauche - Sombre */}
+              {/* Left Panel - Dark */}
               <div className="bg-black text-white p-8 lg:p-12 flex flex-col justify-between">
                 <div className="space-y-8">
-                  {/* Section du titre */}
                   <div>
                     <h1 className="text-4xl lg:text-5xl font-light mb-2">{selectedProject.client}</h1>
-                    <h2 className="text-2xl lg:text-3xl font-light text-gray-300 mb-6">{selectedProject.title}</h2>
-                    <div className="w-16 h-1 bg-white"></div>
+                    <div className="w-16 h-1 bg-white mb-4"></div>
+                    <h2 className="text-2xl lg:text-3xl font-light text-gray-300 mb-6">{selectedProject.category}</h2>
                   </div>
 
-                  {/* Résumé du projet */}
                   <div>
                     <h3 className="text-xl font-semibold mb-4">Aperçu du projet</h3>
                     <p className="text-gray-300 leading-relaxed text-lg">{selectedProject.description}</p>
                   </div>
 
-                  {/* Implication d'Asteraki */}
                   <div>
                     <h3 className="text-xl font-semibold mb-6">Notre rôle</h3>
                     <div className="space-y-4">
@@ -379,7 +365,6 @@ export default function ServicesSection() {
                   </div>
                 </div>
 
-                {/* Bouton CTA */}
                 <div className="pt-8">
                   <Button className="w-full bg-orange-500 hover:bg-orange-600 text-white text-lg py-4 rounded-2xl font-semibold transition-colors">
                     Obtenir un devis similaire
@@ -387,9 +372,8 @@ export default function ServicesSection() {
                 </div>
               </div>
 
-              {/* Panneau de droite - Clair */}
+              {/* Right Panel - Video */}
               <div className="bg-white p-8 lg:p-12 flex flex-col">
-                {/* Lecteur vidéo */}
                 <div className="flex-1 flex items-center justify-center">
                   <div className="w-full max-w-2xl">
                     <div className="aspect-video bg-white rounded-2xl overflow-hidden shadow-2xl">

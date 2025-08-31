@@ -35,7 +35,7 @@ export default function PortfolioSection() {
       description: "Production d'une vidéo de marque de luxe pour la Laureato Chronograph Ti49 de Girard-Perregaux",
       services: ["Scénario", "Cinématographie", "Intégration VFX", "Étalonnage des couleurs"],
       videoType: "Vidéo de marque",
-      industry: "DTC",
+      industry: "B2C",
       thumbnail: "https://xb26hl5f9h.ufs.sh/f/myb9AtBX9Kyw7rLCbZwavFUfw5SNg3PlOHYAIuB0yjRm1hpK  ",
       vimeoUrl: "https://vimeo.com/1102877371  ",
     },

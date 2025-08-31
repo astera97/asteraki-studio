@@ -19,7 +19,7 @@ export default function HeroSection() {
         {/* Left side - Title, Description and CTA */}
         <div className="w-full lg:flex-1 space-y-4 sm:space-y-5 text-center lg:text-left">
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight text-black">
-            Boostez votre croissance avec une production vidéo sur-mesure à Paris
+            Des vidéos sur mesure pour augmenter votre visibilité et accélérer votre croissance
           </h1>
           <p className="text-black text-base sm:text-lg leading-relaxed max-w-lg mx-auto lg:mx-0">
             Chez Asteraki, nous accompagnons les entreprises de toutes tailles avec des vidéos claires, 
@@ -220,7 +220,7 @@ export default function HeroSection() {
                 ))}
               </div>
             </div>
-            <p className="text-black text-xs sm:text-sm">Basé sur 50+ avis</p>
+            
           </div>
         </a>
       </div>

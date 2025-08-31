@@ -33,7 +33,7 @@ export default function FinalCTASection() {
                 Notre équipe répond à vos questions et crée des solutions personnalisées adaptées à vos besoins.
               </p>
 
-              <Link href="/quiz" passHref>
+              <Link href="/contact" passHref>
       <Button className="btn-luxury border-0 px-6 sm:px-8 py-3 rounded-full text-base sm:text-lg mb-4 sm:mb-6">
         Obtenir un devis
       </Button>
