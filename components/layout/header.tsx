@@ -264,16 +264,16 @@ const resourcesDropdown = {
   },
   bottomMessages: [
     {
-      icon: "/icon_construction.svg",
-      text: "Nous créons à la main, mais avançons rapidement grâce à l'IA et aux outils modernes",
+      icon: "",
+      text: "",
     },
     {
-      icon: "/icon_playlist.svg",
-      text: "Contenu créatif de haute qualité. Géré de bout en bout par une équipe compétente",
+      icon: "",
+      text: "",
     },
     {
-      icon: "/icon_gift.svg",
-      text: "Super ! Si vous êtes un nouveau client, vous êtes éligible à un script gratuit",
+      icon: "",
+      text: "",
     },
   ],
 }

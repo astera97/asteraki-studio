@@ -274,7 +274,7 @@ export default function EducationalVideoProductionPage() {
               <div className="relative">
                 <div className="rounded-2xl overflow-hidden">
                   <img
-                    src="https://xb26hl5f9h.ufs.sh/f/myb9AtBX9KywiFohTXfBrTARJGXZkYLKW6sdH5N4B0vywIoj?height=400&width=500&text=Educational+Demo"
+                    src="https://xb26hl5f9h.ufs.sh/f/myb9AtBX9KywCKxYlE6dH7rVT25qFa9GQY8gkxhfvsZSXJMC"
                     alt="Démo pédagogique"
                     className="w-full"
                   />
