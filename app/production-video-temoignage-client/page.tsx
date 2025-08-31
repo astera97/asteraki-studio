@@ -28,7 +28,7 @@ export default function CustomerStoryVideoPage() {
                 <div className="text-sm font-semibold text-black mb-3 tracking-widest">
                   Production de vidéos témoignages clients
                 </div>
-                <h1 className="text-5xl lg:text-6xl font-bold text-black mb-8 leading-tight">
+                <h1 className="text-4xl lg:text-5xl font-bold text-black mb-8 leading-tight">
                   Transformez vos clients en vos meilleurs vendeurs.
                 </h1>
                 <p className="text-normal mb-5">
@@ -158,7 +158,7 @@ export default function CustomerStoryVideoPage() {
                       ))}
                     </div>
                   </div>
-                  <p className="text-black text-xs sm:text-sm">Basé sur plus de 50 avis</p>
+                 
                 </div>
               </a>
             </div>
@@ -271,7 +271,7 @@ export default function CustomerStoryVideoPage() {
                 </div>
                 <Link href="/contact" passHref>
                     <button className="btn-luxury border-0 px-6 sm:px-8 py-3 rounded-full text-base text-white text-semibold sm:text-lg mb-4 sm:mb-2">
-                      Devis gratuit
+                      Obtenir un devis
                     </button>
                   </Link>
               </div>
@@ -288,27 +288,6 @@ export default function CustomerStoryVideoPage() {
           </div>
         </section>
 
-        {/* Section Témoignage */}
-        <section className="pt-1 pb-24" style={{ backgroundColor: "rgba(255, 255, 255, 1)" }}>
-          <div className="max-w-7xl mx-auto px-6 lg:px-8">
-            <div className="max-w-xl">
-              <div className="flex items-center mb-5">
-                <img
-                  src="/logos/dell-logo-black.svg?height=32&width=32&text=DO"
-                  alt="Logo Dell"
-                  className="w-24 h-20 mr-3"
-                />
-              </div>
-              <blockquote className="font-normal text-black mb-3 leading-relaxed">
-                "Les vidéos témoignages clients créées par Asteraki ont été des éléments déclencheurs pour nous. 
-                Notre équipe commerciale les utilise dans chaque présentation, et nous avons constaté une augmentation de 35 % 
-                des taux de conversion depuis leur mise en œuvre. La qualité et l'authenticité sont exceptionnelles."
-              </blockquote>
-              <div className="text-black font-semibold mb-4">Geraldine Tunnell, Directrice Marketing</div>
-            </div>
-          </div>
-        </section>
-
         {/* Pourquoi les témoignages clients fonctionnent */}
         <section className="py-24" style={{ backgroundColor: "#111111" }}>
           <div className="max-w-7xl mx-auto px-6 lg:px-8">
@@ -319,7 +298,7 @@ export default function CustomerStoryVideoPage() {
                   La puissance de la preuve sociale
                 </div>
                 
-                <h2 className="text-4xl lg:text-5xl font-bold text-white mb-8">
+                <h2 className="text-3xl lg:text-4xl font-bold text-white mb-8">
                   Pourquoi les témoignages clients convertissent mieux que tout autre contenu
                 </h2>
                 
@@ -378,13 +357,13 @@ export default function CustomerStoryVideoPage() {
                 </div>
                 
                 <blockquote className="border-l-4 border-orange-500 pl-6 py-2 mt-10 italic text-gray-300">
-                  Chez Asteraki, nous ne filmions pas seulement des témoignages - nous créons des récits percutants qui mettent en valeur la transformation que vos clients vivent. Laissez-nous vous aider à transformer vos clients satisfaits en vos vendeurs les plus persuasifs.
+                  Chez Asteraki, nous ne réalisations pas seulement des témoignages - nous créons des récits percutants qui mettent en valeur la transformation que vos clients vivent. Laissez-nous vous aider à transformer vos clients satisfaits en vos vendeurs les plus persuasifs.
                 </blockquote>
                 
                 <div className="mt-12">
                   <Link href="/contact" passHref>
                     <button className="btn-luxury border-0 px-6 sm:px-8 py-3 rounded-full text-base text-white text-semibold sm:text-lg mb-4 sm:mb-2">
-                       Parler à un expert
+                       Obtenir un devis
                     </button>
                   </Link>
                 </div>

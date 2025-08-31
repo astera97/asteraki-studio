@@ -26,7 +26,7 @@ export default function FinalCTASection() {
           <div className="relative z-10">
             {/* Contenu principal */}
             <div className="max-w-xl">
-              <h2 className="text-3xl xs:text-2xl sm:text-2xl lg:text-5xl font-bold leading-tight mb-4 xs:mb-6 sm:mb-8">
+              <h2 className="text-2xl xs:text-2xl sm:text-2xl lg:text-4xl font-bold leading-tight mb-4 xs:mb-6 sm:mb-8">
                 Prêt à réaliser vos
                 <span className="text-orange-400 block mt-2">témoignages clients les plus puissants ?</span>
               </h2>
@@ -37,7 +37,7 @@ export default function FinalCTASection() {
 
               <Link href="/contact" passHref>
                 <Button className="btn-luxury border-0 px-6 py-3 w-full sm:w-auto sm:px-8 sm:py-3 rounded-full text-base sm:text-lg mb-4 sm:mb-6">
-                  Parler à un expert
+                  Estimer votre projet
                 </Button>
               </Link>
             </div>

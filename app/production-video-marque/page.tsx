@@ -39,7 +39,7 @@ export default function BrandVideosPage() {
                 <div className="flex flex-col sm:flex-row gap-4">
                   <Link href="/contact" passHref>
                     <button className="btn-luxury border-0 px-6 sm:px-8 py-3 rounded-full text-base text-white text-semibold sm:text-lg mb-4 sm:mb-2">
-                      Entrer en contact
+                      Obtenir un devis
                     </button>
                   </Link>
                 </div>
@@ -52,7 +52,7 @@ export default function BrandVideosPage() {
                     muted
                     className="w-full h-full object-cover"
                   >
-                    <source src="https://xb26hl5f9h.ufs.sh/f/myb9AtBX9KywYQvV1RMBbdoyAp3vE5DRa9SFiUfT6lkr4qsN  " type="video/mp4" />
+                    <source src="https://xb26hl5f9h.ufs.sh/f/myb9AtBX9KywYQvV1RMBbdoyAp3vE5DRa9SFiUfT6lkr4qsN" type="video/mp4" />
                     Votre navigateur ne prend pas en charge la balise vidéo.
                   </video>
                 </div>
@@ -65,7 +65,7 @@ export default function BrandVideosPage() {
         <section className="pt-1 pb-24" style={{ backgroundColor: "rgba(255, 255, 255, 1)" }}>
           <div className="max-w-7xl mx-auto px-6 lg:px-8 text-center">
             <p className="text-center text-black font-normal mt-4 sm:mt-6 text-sm sm:text-base px-4">
-              Fait confiance à des marques innovantes – 5/5 avis Google
+              Nous avons accompagné plus de 250 marques – 5/5 avis Google
             </p>
 
             {/* Carrousel de logos */}
@@ -159,7 +159,7 @@ export default function BrandVideosPage() {
                       ))}
                     </div>
                   </div>
-                  <p className="text-black text-xs sm:text-sm">Basé sur plus de 50 avis</p>
+                  
                 </div>
               </a>
             </div>
@@ -173,7 +173,7 @@ export default function BrandVideosPage() {
               <div className="relative">
                 <div className="rounded-2xl overflow-hidden">
                   <img
-                    src="https://xb26hl5f9h.ufs.sh/f/myb9AtBX9KywwP6D71p8bKgyaVXAm3Widen0SEzUPqYQGJFT  "
+                    src="https://xb26hl5f9h.ufs.sh/f/myb9AtBX9KywwP6D71p8bKgyaVXAm3Widen0SEzUPqYQGJFT"
                     alt="Illustration de récit créatif"
                     className="w-full"
                   />
@@ -216,19 +216,19 @@ export default function BrandVideosPage() {
             <div className="grid lg:grid-cols-3 gap-16">
               {[
                 {
-                  image: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVh2BelJLDI024dcPOMo9lrEN6UY8eWLTbkv3Q  ",
+                  image: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVh2BelJLDI024dcPOMo9lrEN6UY8eWLTbkv3Q",
                   alt: "Stratégie créative",
                   title: "Stratégie créative",
                   desc: "Nous commençons par comprendre votre marque, votre audience et vos objectifs pour créer une vidéo qui s'aligne sur votre vision et génère des résultats.",
                 },
                 {
-                  image: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVh2BelJLDI024dcPOMo9lrEN6UY8eWLTbkv3Q  ",
+                  image: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVh2BelJLDI024dcPOMo9lrEN6UY8eWLTbkv3Q",
                   alt: "Production complète",
                   title: "Production complète",
                   desc: "Du storyboard et du scénario au tournage, à l'animation et à la conception sonore — nous gérons chaque détail avec précision.",
                 },
                 {
-                  image: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVh2BelJLDI024dcPOMo9lrEN6UY8eWLTbkv3Q  ",
+                  image: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVh2BelJLDI024dcPOMo9lrEN6UY8eWLTbkv3Q",
                   alt: "Réutilisation du contenu",
                   title: "Maximisez votre investissement",
                   desc: "Une vidéo devient des dizaines d'actifs : clips sociaux, en-têtes d'e-mails, pages de destination, et plus encore — tous adaptés à vos canaux.",
@@ -274,14 +274,16 @@ export default function BrandVideosPage() {
                     la vidéo est votre outil le plus puissant.
                   </p>
                 </div>
-                <button className="btn-luxury border-0 px-6 sm:px-8 py-3 rounded-full text-base text-white text-semibold sm:text-lg mb-4 sm:mb-2">
-                  Obtenir un devis
-                </button>
+                <Link href="/contact" passHref>
+                    <button className="btn-luxury border-0 px-6 sm:px-8 py-3 rounded-full text-base text-white text-semibold sm:text-lg mb-4 sm:mb-2">
+                      Obtenir un devis
+                    </button>
+                  </Link>
               </div>
               <div className="relative">
                 <div className="rounded-2xl overflow-hidden">
                   <img
-                    src="https://xb26hl5f9h.ufs.sh/f/myb9AtBX9Kyw7rLCbZwavFUfw5SNg3PlOHYAIuB0yjRm1hpK  "
+                    src="https://xb26hl5f9h.ufs.sh/f/myb9AtBX9Kyw7rLCbZwavFUfw5SNg3PlOHYAIuB0yjRm1hpK"
                     alt="Visualisation des données et du récit"
                     className="w-full"
                   />
@@ -291,26 +293,7 @@ export default function BrandVideosPage() {
           </div>
         </section>
 
-        {/* Section Témoignage */}
-        <section className="pt-1 pb-24" style={{ backgroundColor: "rgba(255, 255, 255, 1)" }}>
-          <div className="max-w-7xl mx-auto px-6 lg:px-8">
-            <div className="max-w-xl">
-              <div className="flex items-center mb-1">
-                <img
-                  src="https://xb26hl5f9h.ufs.sh/f/myb9AtBX9KywRg40T1b8OzUNk9MpYQHDLngqS5jCPli03eFw  "
-                  alt="Témoignage client"
-                  className="w-24 h-20 mr-3"
-                />
-              </div>
-              <blockquote className="font-normal text-black mb-3 leading-relaxed">
-                "Travailler avec cette équipe a été exceptionnel. Ils ont immédiatement compris notre marque et créé une vidéo 
-                qui capturait parfaitement notre essence. L'inspiration créative et l'attention aux détails ont élevé notre histoire 
-                et nous ont aidés à nous connecter avec les clients d'une toute nouvelle manière."
-              </blockquote>
-              <div className="text-black font-semibold mb-4">Sarah Chen, Directrice Créative</div>
-            </div>
-          </div>
-        </section>
+        
 
         {/* Pourquoi la vidéo de marque ? – Section améliorée */}
         <section className="py-24" style={{ backgroundColor: "#111111" }}>
@@ -322,7 +305,7 @@ export default function BrandVideosPage() {
                   La puissance de la vidéo de marque
                 </div>
 
-                <h2 className="text-4xl lg:text-5xl font-bold text-white mb-8">
+                <h2 className="text-3xl lg:text-4xl font-bold text-white mb-8">
                   Pourquoi votre marque a besoin d'une vidéo percutante
                 </h2>
 
@@ -389,7 +372,7 @@ export default function BrandVideosPage() {
                 <div className="mt-12">
                   <Link href="/contact" passHref>
                     <button className="btn-luxury border-0 px-6 sm:px-8 py-3 rounded-full text-base text-white text-semibold sm:text-lg mb-4 sm:mb-2">
-                      Entrer en contact
+                      Obtenir un devis
                     </button>
                   </Link>
                 </div>
@@ -401,7 +384,7 @@ export default function BrandVideosPage() {
                 <div className="relative rounded-2xl overflow-hidden shadow-2xl mb-8">
                   <div className="aspect-video bg-gray-800 border-2 border-white rounded-2xl overflow-hidden">
                     <video autoPlay loop muted playsInline className="w-full h-full object-cover">
-                      <source src="https://xb26hl5f9h.ufs.sh/f/myb9AtBX9KywqC3fguyucagDQM1fypRjomx7Ct05zsVwrhkY  " type="video/mp4" />
+                      <source src="https://xb26hl5f9h.ufs.sh/f/myb9AtBX9KywqC3fguyucagDQM1fypRjomx7Ct05zsVwrhkY" type="video/mp4" />
                       Votre navigateur ne prend pas en charge la balise vidéo.
                     </video>
                     <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent pointer-events-none"></div>

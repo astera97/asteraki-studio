@@ -35,7 +35,7 @@ export default function DemoVideoProductionPage() {
                   Nous créons des vidéos de démonstration de produits authentiques et cinématographiques qui mettent en valeur vos fonctionnalités, avantages et expérience utilisateur. De la conception initiale à la livraison finale, nous gérons tous les aspects de la production.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4">
-                  <Link href="/quiz" passHref>
+                  <Link href="/contact" passHref>
                     <button className="btn-luxury border-0 px-6 sm:px-8 py-3 rounded-full text-base text-white text-semibold sm:text-lg mb-4 sm:mb-2">
                       Obtenir un devis
                     </button>
@@ -50,7 +50,7 @@ export default function DemoVideoProductionPage() {
                     muted
                     className="w-full h-full object-cover"
                   >
-                    <source src="https://xb26hl5f9h.ufs.sh/f/myb9AtBX9KywbFyRv3OiCeEItjw1VXN8kvL65WuUqFRDcO24  " type="video/mp4" />
+                    <source src="https://xb26hl5f9h.ufs.sh/f/myb9AtBX9KywbFyRv3OiCeEItjw1VXN8kvL65WuUqFRDcO24" type="video/mp4" />
                     Votre navigateur ne prend pas en charge la balise vidéo.
                   </video>
                 </div>
@@ -63,7 +63,7 @@ export default function DemoVideoProductionPage() {
         <section className="pt-1 pb-24" style={{ backgroundColor: "rgba(255, 255, 255, 1)" }}>
           <div className="max-w-7xl mx-auto px-6 lg:px-8 text-center">
             <p className="text-center text-black font-normal mt-4 sm:mt-6 text-sm sm:text-base px-4">
-              Fait confiance à plus de 250 marques – 5/5 avis Google
+              Nous avons accompagné plus de 250 marques – 5/5 avis Google
             </p>
 
             {/* Carrousel de logos */}
@@ -157,7 +157,7 @@ export default function DemoVideoProductionPage() {
                       ))}
                     </div>
                   </div>
-                  <p className="text-black text-xs sm:text-sm">Basé sur plus de 50 avis</p>
+                  
                 </div>
               </a>
             </div>
@@ -171,7 +171,7 @@ export default function DemoVideoProductionPage() {
               <div className="relative">
                 <div className="rounded-2xl overflow-hidden">
                   <img
-                    src="https://xb26hl5f9h.ufs.sh/f/myb9AtBX9KywygeFJbtsdpIWi7BXtnEN2YOvmFLjb4rV6Pux  "
+                    src="https://xb26hl5f9h.ufs.sh/f/myb9AtBX9KywygeFJbtsdpIWi7BXtnEN2YOvmFLjb4rV6Pux"
                     alt="Image de vidéo de démonstration avec l'interface Kandji"
                     className="w-full"
                   />
@@ -189,7 +189,7 @@ export default function DemoVideoProductionPage() {
                 <div className="mt-10">
                   <Link href="/contact" passHref>
                     <button className="btn-luxury border-0 px-6 sm:px-8 py-3 rounded-full text-base text-white text-semibold sm:text-lg mb-4 sm:mb-2">
-                      Entrer en contact
+                      Obtenir un devis
                     </button>
                   </Link>
                 </div>
@@ -209,19 +209,19 @@ export default function DemoVideoProductionPage() {
             <div className="grid lg:grid-cols-3 gap-16">
               {[
                 {
-                  image: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVh2BelJLDI024dcPOMo9lrEN6UY8eWLTbkv3Q  ",
+                  image: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVh2BelJLDI024dcPOMo9lrEN6UY8eWLTbkv3Q",
                   alt: "Récit axé sur les fonctionnalités",
                   title: "Récit axé sur les fonctionnalités",
                   desc: "Nous mettons en avant les fonctionnalités et avantages clés de votre produit grâce à un récit stratégique qui résonne avec votre public cible et présente ce qui compte le plus.",
                 },
                 {
-                  image: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVh2BelJLDI024dcPOMo9lrEN6UY8eWLTbkv3Q  ", 
+                  image: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVh2BelJLDI024dcPOMo9lrEN6UY8eWLTbkv3Q", 
                   alt: "Mise en valeur de l'expérience utilisateur",
                   title: "Mise en valeur de l'expérience utilisateur",
                   desc: "Nous créons des scénarios d'utilisation réalistes qui montrent votre produit en action dans des contextes concrets, rendant l'expérience familière et engageante.",
                 },
                 {
-                  image: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVh2BelJLDI024dcPOMo9lrEN6UY8eWLTbkv3Q  ",
+                  image: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVh2BelJLDI024dcPOMo9lrEN6UY8eWLTbkv3Q",
                   alt: "Optimisé pour la conversion",
                   title: "Optimisé pour la conversion",
                   desc: "Nos vidéos sont conçues avec des appels à l'action stratégiques et une messagerie qui orientent les spectateurs vers vos objectifs de conversion souhaités et les actions des utilisateurs.",
@@ -267,15 +267,15 @@ export default function DemoVideoProductionPage() {
                   </p>
                 </div>
                 <Link href="/contact" passHref>
-                <button className="btn-luxury border-0 px-6 py-3 w-full sm:w-auto sm:px-8 sm:py-3 rounded-full text-base sm:text-lg mb-4 sm:mb-6">
-                  Entrer en contact
+                <button className="btn-luxury border-0 px-6 py-3 w-full sm:w-auto sm:px-8 sm:py-3 rounded-full text-white text-base sm:text-lg mb-4 sm:mb-6">
+                  Obtenir un devis
                 </button>
               </Link>
               </div>
               <div className="relative">
                 <div className="rounded-2xl overflow-hidden">
                   <img
-                    src="https://xb26hl5f9h.ufs.sh/f/myb9AtBX9KywrSBTVdYmuwfKNGhJOVdR9k1bQE3sWzcXegDS  "
+                    src="https://xb26hl5f9h.ufs.sh/f/myb9AtBX9KywrSBTVdYmuwfKNGhJOVdR9k1bQE3sWzcXegDS"
                     alt="Démo de produit"
                     className="w-full"
                   />
@@ -285,26 +285,7 @@ export default function DemoVideoProductionPage() {
           </div>
         </section>
 
-        {/* Section Témoignage */}
-        <section className="pt-1 pb-24" style={{ backgroundColor: "rgba(255, 255, 255, 1)" }}>
-          <div className="max-w-7xl mx-auto px-6 lg:px-8">
-            <div className="max-w-xl">
-              <div className="flex items-center mb-5">
-                <img
-                  src="https://xb26hl5f9h.ufs.sh/f/myb9AtBX9KywQ5gpdzTdUSZb4s2QuhpMIVX39kROC6fF1xzj  "
-                  alt="Logo Kandji"
-                  className="w-30 h-20 mr-3"
-                />
-              </div>
-              <blockquote className="font-normal text-black mb-3 leading-relaxed">
-                "La vidéo de démonstration créée par Asteraki pour notre nouvelle fonctionnalité de constructeur de flux de travail a été essentielle pour favoriser son adoption. 
-                Nous avons constaté une augmentation de 38 % de l'utilisation de la fonctionnalité après avoir diffusé la vidéo sur notre site web et dans le processus d'intégration. 
-                La clarté et l'accent mis sur les avantages pour l'utilisateur correspondaient exactement aux besoins de nos clients."
-              </blockquote>
-              <div className="text-black font-semibold mb-4">Cal Henderson, Directeur Marketing chez Kandji</div>
-            </div>
-          </div>
-        </section>
+        
 
         {/* Pourquoi les vidéos de démonstration fonctionnent */}
         <section className="py-24" style={{ backgroundColor: "#111111" }}>
@@ -316,7 +297,7 @@ export default function DemoVideoProductionPage() {
                   La puissance de la démonstration de produits
                 </div>
                 
-                <h2 className="text-4xl lg:text-5xl font-bold text-white mb-8">
+                <h2 className="text-3xl lg:text-4xl font-bold text-white mb-8">
                   Pourquoi les vidéos de démonstration favorisent une meilleure compréhension du produit et la conversion
                 </h2>
                 
@@ -378,7 +359,7 @@ export default function DemoVideoProductionPage() {
                 </blockquote>
                 
                 <div className="mt-12">
-                  <Link href="/quiz" passHref>
+                  <Link href="/contact" passHref>
                     <button className="btn-luxury border-0 px-6 sm:px-8 py-3 rounded-full text-base text-white text-semibold sm:text-lg mb-4 sm:mb-2">
                        Obtenir un devis
                     </button>
@@ -398,7 +379,7 @@ export default function DemoVideoProductionPage() {
                       playsInline
                       className="w-full h-full object-cover"
                     >
-                      <source src="https://xb26hl5f9h.ufs.sh/f/myb9AtBX9KywnwuOCzz2GAKUwrqsXVlt1BHPRSjJzvoTuZfC  " type="video/mp4" />
+                      <source src="https://xb26hl5f9h.ufs.sh/f/myb9AtBX9KywnwuOCzz2GAKUwrqsXVlt1BHPRSjJzvoTuZfC" type="video/mp4" />
                       Votre navigateur ne prend pas en charge la balise vidéo.
                     </video>
                     <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent pointer-events-none"></div>

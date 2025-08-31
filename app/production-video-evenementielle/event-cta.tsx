@@ -26,7 +26,7 @@ export default function FinalCTASection() {
           <div className="relative z-10">
             {/* Contenu principal */}
             <div className="max-w-xl">
-              <h2 className="text-3xl xs:text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight mb-4 xs:mb-6 sm:mb-8">
+              <h2 className="text-2xl xs:text-3xl sm:text-54xl lg:text-5xl font-bold leading-tight mb-4 xs:mb-6 sm:mb-8">
                 Prêt à capturer votre
                 <span className="text-orange-400 block mt-2">prochain événement inoubliable ?</span>
               </h2>
@@ -37,7 +37,7 @@ export default function FinalCTASection() {
 
               <Link href="/contact" passHref>
                 <Button className="btn-luxury border-0 px-6 py-3 w-full sm:w-auto sm:px-8 sm:py-3 rounded-full text-base sm:text-lg mb-4 sm:mb-6">
-                  Obtenir une consultation gratuite pour votre événement
+                  Estimer votre vidéo événementielle
                 </Button>
               </Link>
             </div>
@@ -45,7 +45,7 @@ export default function FinalCTASection() {
             {/* Avatars flottants - Positionnement optimisé pour mobile */}
             <div className="absolute top-4 right-4 xs:top-6 xs:right-6 sm:top-10 sm:right-10 w-10 h-10 xs:w-12 xs:h-12 sm:w-16 sm:h-16 rounded-full overflow-hidden border-2 border-orange-500/30">
               <Image
-                src="https://xb26hl5f9h.ufs.sh/f/myb9AtBX9KywNqZ6t0KkRlYVgetUZPzh1ASjJ0GOXMEQaDxd  "
+                src="https://xb26hl5f9h.ufs.sh/f/myb9AtBX9KywNqZ6t0KkRlYVgetUZPzh1ASjJ0GOXMEQaDxd"
                 alt="Spécialiste vidéo d'événements"
                 width={64}
                 height={64}
@@ -55,7 +55,7 @@ export default function FinalCTASection() {
 
             <div className="absolute top-16 right-16 xs:top-20 xs:right-20 sm:top-40 sm:right-32 w-8 h-8 xs:w-10 xs:h-10 sm:w-14 sm:h-14 rounded-full overflow-hidden border-2 border-orange-500/30">
               <Image
-                src="https://xb26hl5f9h.ufs.sh/f/myb9AtBX9KywtHUgpW134vBTOxF8dARqINU9EX5yck2foZjG  "
+                src="https://xb26hl5f9h.ufs.sh/f/myb9AtBX9KywtHUgpW134vBTOxF8dARqINU9EX5yck2foZjG"
                 alt="Équipe de tournage"
                 width={64}
                 height={64}
@@ -65,7 +65,7 @@ export default function FinalCTASection() {
 
             <div className="absolute bottom-4 right-4 xs:bottom-6 xs:right-6 sm:bottom-20 sm:right-4 w-10 h-10 xs:w-12 xs:h-12 sm:w-16 sm:h-16 rounded-full overflow-hidden border-2 border-orange-500/30">
               <Image
-                src="https://xb26hl5f9h.ufs.sh/f/myb9AtBX9KywFEh98fCNwlOAdeRuaZXQ5tqKECrYJpbk7ojh  "
+                src="https://xb26hl5f9h.ufs.sh/f/myb9AtBX9KywFEh98fCNwlOAdeRuaZXQ5tqKECrYJpbk7ojh"
                 alt="Événement Cannes Lions"
                 width={64}
                 height={64}

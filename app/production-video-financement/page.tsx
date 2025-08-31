@@ -26,13 +26,13 @@ export default function CrowdfundingVideoProductionPage() {
             <div className="grid lg:grid-cols-2 gap-16 items-center">
               <div className="max-w-xl">
                 <div className="text-sm font-semibold text-black mb-3 tracking-widest">
-                  Production de vidéos de financement participatif
+                  Production de vidéos de financement
                 </div>
-                <h1 className="text-5xl lg:text-5xl font-bold text-black mb-8 leading-tight">
-                  Rendez votre campagne de financement participatif impossible à ignorer.
+                <h1 className="text-3xl lg:text-4xl font-bold text-black mb-8 leading-tight">
+                  Rendez votre campagne de financement impossible à ignorer.
                 </h1>
                 <p className="text-normal mb-5">
-                  Nous créons des vidéos de financement participatif authentiques et cinématographiques qui racontent votre histoire, présentent votre produit et incitent les contributeurs à soutenir votre campagne. De la conception initiale à la livraison finale, nous gérons tous les aspects de la production.
+                  Nous créons des vidéos de financement authentiques et cinématographiques qui racontent votre histoire, présentent votre produit et incitent les contributeurs à soutenir votre campagne. De la conception initiale à la livraison finale, nous gérons tous les aspects de la production.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4">
                   <Link href="/contact" passHref>
@@ -51,7 +51,7 @@ export default function CrowdfundingVideoProductionPage() {
                     className="w-full h-full object-cover"
                     
                   >
-                    <source src="https://xb26hl5f9h.ufs.sh/f/myb9AtBX9KywNf6bLKkRlYVgetUZPzh1ASjJ0GOXMEQaDxdv  " type="video/mp4" />
+                    <source src="https://xb26hl5f9h.ufs.sh/f/myb9AtBX9KywNf6bLKkRlYVgetUZPzh1ASjJ0GOXMEQaDxdv" type="video/mp4" />
                     Votre navigateur ne prend pas en charge la balise vidéo.
                   </video>
                 </div>
@@ -64,7 +64,7 @@ export default function CrowdfundingVideoProductionPage() {
         <section className="pt-1 pb-24" style={{ backgroundColor: "rgba(255, 255, 255, 1)" }}>
           <div className="max-w-7xl mx-auto px-6 lg:px-8 text-center">
             <p className="text-center text-black font-normal mt-4 sm:mt-6 text-sm sm:text-base px-4">
-              Fait confiance à plus de 250 marques – 5/5 avis Google
+              Nous avons accompagné plus de 250 marques – 5/5 avis Google
             </p>
 
             {/* Carrousel de logos */}
@@ -158,7 +158,7 @@ export default function CrowdfundingVideoProductionPage() {
                       ))}
                     </div>
                   </div>
-                  <p className="text-black text-xs sm:text-sm">Basé sur plus de 50 avis</p>
+                  
                 </div>
               </a>
             </div>
@@ -184,13 +184,13 @@ export default function CrowdfundingVideoProductionPage() {
                 </h2>
                 <div className="space-y-6 text-lg text-black leading-relaxed">
                   <p>
-                    Les vidéos de financement participatif constituent l'élément le plus critique de votre campagne. Elles présentent votre produit authentique, racontent votre histoire percutante et motivent les contributeurs à soutenir votre projet, en renforçant la confiance et le lien avec les soutiens potentiels.
+                    Les vidéos de financement constituent l'élément le plus critique de votre campagne. Elles présentent votre produit authentique, racontent votre histoire percutante et motivent les contributeurs à soutenir votre projet, en renforçant la confiance et le lien avec les soutiens potentiels.
                   </p>
                 </div>
                 <div className="mt-10">
                   <Link href="/contact" passHref>
                     <button className="btn-luxury border-0 px-6 sm:px-8 py-3 rounded-full text-base text-white text-semibold sm:text-lg mb-4 sm:mb-2">
-                      Entrer en contact
+                      Obtenir un devis
                     </button>
                   </Link>
                 </div>
@@ -204,25 +204,25 @@ export default function CrowdfundingVideoProductionPage() {
           <div className="max-w-7xl mx-auto px-6 lg:px-8">
             <div className="text-center mb-20">
               <h2 className="text-4xl lg:text-5xl font-bold text-black mb-4">
-                Comment nous garantissons la livraison de vidéos de financement participatif<br/> qui financent votre projet
+                Comment nous garantissons la livraison de vidéos de financement participatif qui financent votre projet
               </h2>
             </div>
             <div className="grid lg:grid-cols-3 gap-16">
               {[
                 {
-                  image: "  https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVh2BelJLDI024dcPOMo9lrEN6UY8eWLTbkv3Q  ",
+                  image: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVh2BelJLDI024dcPOMo9lrEN6UY8eWLTbkv3Q",
                   alt: "Récit percutant",
                   title: "Récit percutant",
                   desc: "Nous créons des récits qui établissent un lien émotionnel avec les spectateurs, en mettant en avant votre parcours, votre passion et le problème que votre produit résout.",
                 },
                 {
-                  image: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVh2BelJLDI024dcPOMo9lrEN6UY8eWLTbkv3Q  ", 
+                  image: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVh2BelJLDI024dcPOMo9lrEN6UY8eWLTbkv3Q", 
                   alt: "Présentation du produit",
                   title: "Présentation du produit",
                   desc: "Nous mettons en valeur les fonctionnalités, les avantages et la proposition de valeur unique de votre produit grâce à un tournage professionnel et une présentation créative.",
                 },
                 {
-                  image: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVh2BelJLDI024dcPOMo9lrEN6UY8eWLTbkv3Q  ",
+                  image: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVh2BelJLDI024dcPOMo9lrEN6UY8eWLTbkv3Q",
                   alt: "Stratégie de financement participatif",
                   title: "Stratégie de financement participatif",
                   desc: "Nos vidéos sont conçues selon des principes éprouvés de financement participatif pour maximiser les taux de conversion et inciter les contributeurs à passer à l'action.",
@@ -276,33 +276,12 @@ export default function CrowdfundingVideoProductionPage() {
               <div className="relative">
                 <div className="rounded-2xl overflow-hidden">
                   <img
-                    src="https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztV6XxlOTcuM0sOH4LRiZ2hEraGKUtQVDIYCP3b  "
+                    src="https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztV6XxlOTcuM0sOH4LRiZ2hEraGKUtQVDIYCP3b"
                     alt="Présentation du produit"
                     className="w-full"
                   />
                 </div>
               </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Section Témoignage */}
-        <section className="pt-1 pb-24" style={{ backgroundColor: "rgba(255, 255, 255, 1)" }}>
-          <div className="max-w-7xl mx-auto px-6 lg:px-8">
-            <div className="max-w-xl">
-              <div className="flex items-center mb-5">
-                <img
-                  src="https://xb26hl5f9h.ufs.sh/f/myb9AtBX9Kywgoi5Z0VfVWtRqG5128kLSxdCylOInE6DP3Ac?height=32&width=32&text=OMO"
-                  alt="Logo Kickstarter"
-                  className="w-30 h-20 mr-3"
-                />
-              </div>
-              <blockquote className="font-normal text-black mb-3 leading-relaxed">
-                "La vidéo de financement participatif créée par Asteraki pour différents projets sur Kickstarter était très engageante et le récit était excellent. 
-                Nous avons décidé de collaborer avec le studio pour créer une série de vidéos pour notre dernier lancement, le Pledge Manager Fulfillment, et je suis content de l'avoir fait.
-                Le récit et la présentation du produit correspondaient parfaitement à notre image de marque."
-              </blockquote>
-              <div className="text-black font-semibold mb-4">Courtney Brown, Directrice Marketing</div>
             </div>
           </div>
         </section>
@@ -317,7 +296,7 @@ export default function CrowdfundingVideoProductionPage() {
                   La puissance du récit de financement participatif
                 </div>
                 
-                <h2 className="text-4xl lg:text-5xl font-bold text-white mb-8">
+                <h2 className="text-3xl lg:text-4xl font-bold text-white mb-8">
                   Pourquoi les vidéos de financement participatif font ou brisent votre campagne
                 </h2>
                 
@@ -399,7 +378,7 @@ export default function CrowdfundingVideoProductionPage() {
                       playsInline
                       className="w-full h-full object-cover"
                     >
-                      <source src="  https://xb26hl5f9h.ufs.sh/f/myb9AtBX9Kywqq9KjTyucagDQM1fypRjomx7Ct05zsVwrhkY  " type="video/mp4" />
+                      <source src="  https://xb26hl5f9h.ufs.sh/f/myb9AtBX9Kywqq9KjTyucagDQM1fypRjomx7Ct05zsVwrhkY" type="video/mp4" />
                       Votre navigateur ne prend pas en charge la balise vidéo.
                     </video>
                     <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent pointer-events-none"></div>
@@ -424,8 +403,8 @@ export default function CrowdfundingVideoProductionPage() {
                   </div>
                   
                   <div className="bg-black/40 rounded-xl p-6 border border-white">
-                    <div className="text-3xl font-bold text-orange-400 mb-2">200+</div>
-                    <p className="text-gray-400 text-sm">Vidéos de financement participatif produites pour nos clients</p>
+                    <div className="text-3xl font-bold text-orange-400 mb-2">50+</div>
+                    <p className="text-gray-400 text-sm">Vidéos de financement produites pour nos clients</p>
                   </div>
                 </div>
                 

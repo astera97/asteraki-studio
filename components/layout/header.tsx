@@ -36,13 +36,7 @@ const servicesDropdown = {
           description: "Votre meilleur vendeur",
           image: "https://xb26hl5f9h.ufs.sh/f/myb9AtBX9KywZq2L825DmjQM0nVEs2BHNKk8yJeWpug7rf34?height=40&width=40&text=🎯",
           href: "/production-video-demonstration-produit"
-        },
-        {
-          title: "Vidéos d'applications",
-          description: "Votre application en beauté",
-          image: "https://xb26hl5f9h.ufs.sh/f/myb9AtBX9KywZq2L825DmjQM0nVEs2BHNKk8yJeWpug7rf34?height=40&width=40&text=🎯",
-          href: "/production-video-application"
-        },
+        }
       ],
     },
     {
@@ -209,7 +203,7 @@ const expertiseDropdown = {
     description: "Découvrez comment tout se passe et faites connaissance avec notre équipe",
     videoThumbnail: "https://xb26hl5f9h.ufs.sh/f/myb9AtBX9Kyw28Hr9S7LRoDnSIZdyi1KBFNT7vmeUt5Xckg4?height=300&width=350&text=Video+Testimonial",
     videoUrl: "https://player.vimeo.com/video/1105886150?autoplay=1&controls=1&muted=0",
-    ctaButton: "Obtenir un devis",
+    ctaButton: "Estimer votre projet",
     href: "/quiz"
   },
   bottomMessages: [
@@ -939,7 +933,7 @@ export default function Header() {
                     {/* Work */}
                     <div>
                       <Link
-                        href="/work"
+                        href="/realisations"
                         className="block py-4 text-white text-lg font-medium border-b border-gray-800"
                         onClick={toggleMobileMenu}>
                         Réalisations

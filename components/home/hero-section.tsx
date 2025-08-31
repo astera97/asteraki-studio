@@ -36,22 +36,22 @@ export default function HeroSection() {
         </div>
 
         {/* Right side - Single Video Preview (No Blue Border) */}
-<div className="w-full lg:flex-1 flex justify-center">
-  <div className="relative rounded-lg overflow-hidden max-w-md mx-auto lg:max-w-none">
-    <div className="rounded-2xl overflow-hidden bg-gray-800 flex items-center justify-center h-96">
+            <div className="w-full lg:flex-1 flex justify-center">
+              <div className="relative rounded-lg overflow-hidden max-w-md mx-auto lg:max-w-none">
+                <div className="rounded-2xl overflow-hidden bg-gray-800 flex items-center justify-center h-96">
                   <video
                     autoPlay
                     loop
                     muted
                     className="w-full h-full object-cover"
                   >
-                    <source src="https://xb26hl5f9h.ufs.sh/f/myb9AtBX9KywO1YZG6DldM8Th1Y46jXqf7KG5xJvzIoicVbS    " type="video/mp4" />
+                    <source src="https://xb26hl5f9h.ufs.sh/f/myb9AtBX9KywO1YZG6DldM8Th1Y46jXqf7KG5xJvzIoicVbS" type="video/mp4" />
                     Votre navigateur ne supporte pas les vidéos.
                   </video>
                 </div>
-  </div>
-</div>
-      </div>
+              </div>
+            </div>
+         </div>
 
       {/* Logo Carousel */}
       <div className="relative overflow-hidden mb-8 sm:mb-12 inverted">

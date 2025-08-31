@@ -46,7 +46,7 @@ export default function PortfolioSection() {
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold text-black mb-4">
-            Découvrez certains de nos travaux pour <br/>une couverture vidéo d'événements captivante.
+            Découvrez certains de nos travaux pour une couverture vidéo d'événements captivante.
           </h2>
           <p className="text-xl text-black max-w-3xl mx-auto leading-relaxed">
             Nous avons couvert plus de 150 événements dans plus de 20 pays. <br/>Notre approche cinématographique garantit que vous ne manquez aucun moment clé.
@@ -57,7 +57,7 @@ export default function PortfolioSection() {
         
         {/* Bouton CTA */}
         <div className="text-center mt-16">
-          <Link href="/réalisations">
+          <Link href="/realisations">
             <button className="btn-luxury border-0 px-6 sm:px-8 py-3 rounded-full text-base text-white text-semibold sm:text-lg mb-4 sm:mb-2">
               Voir notre portfolio
             </button>

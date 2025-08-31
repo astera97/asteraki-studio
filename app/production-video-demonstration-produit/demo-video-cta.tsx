@@ -26,7 +26,7 @@ export default function FinalCTASection() {
           <div className="relative z-10">
             {/* Contenu principal */}
             <div className="max-w-xl">
-              <h2 className="text-3xl xs:text-2xl sm:text-2xl lg:text-5xl font-bold leading-tight mb-4 xs:mb-6 sm:mb-8">
+              <h2 className="text-3xl xs:text-2xl sm:text-2xl lg:text-4xl font-bold leading-tight mb-4 xs:mb-6 sm:mb-8">
                 Prêt à mettre en valeur vos
                 <span className="text-orange-400 block mt-2">fonctionnalités les plus impressionnantes ?</span>
               </h2>
@@ -35,9 +35,9 @@ export default function FinalCTASection() {
                 Notre équipe se spécialise dans la création de vidéos de démonstration de produits authentiques qui mettent en valeur vos fonctionnalités, avantages et expérience utilisateur pour stimuler les conversions de votre entreprise.
               </p>
 
-              <Link href="/contact" passHref>
+              <Link href="/quiz" passHref>
                 <Button className="btn-luxury border-0 px-6 py-3 w-full sm:w-auto sm:px-8 sm:py-3 rounded-full text-base sm:text-lg mb-4 sm:mb-6">
-                  Entrer en contact
+                  Estimer votre projet
                 </Button>
               </Link>
             </div>
@@ -45,7 +45,7 @@ export default function FinalCTASection() {
             {/* Avatars flottants - Positionnement optimisé pour mobile */}
             <div className="absolute top-4 right-4 xs:top-6 xs:right-6 sm:top-10 sm:right-10 w-10 h-10 xs:w-12 xs:h-12 sm:w-16 sm:h-16 rounded-full overflow-hidden border-2 border-orange-500/30">
               <Image
-                src="https://xb26hl5f9h.ufs.sh/f/myb9AtBX9KywmKjU4EX9KywSWq0Ob7e64m32pHZ8kCQuLAfB  "
+                src="https://xb26hl5f9h.ufs.sh/f/myb9AtBX9KywmKjU4EX9KywSWq0Ob7e64m32pHZ8kCQuLAfB"
                 alt="Spécialiste des vidéos explicatives"
                 width={64}
                 height={64}
@@ -55,7 +55,7 @@ export default function FinalCTASection() {
 
             <div className="absolute top-16 right-16 xs:top-20 xs:right-20 sm:top-40 sm:right-32 w-8 h-8 xs:w-10 xs:h-10 sm:w-14 sm:h-14 rounded-full overflow-hidden border-2 border-orange-500/30">
               <Image
-                src="https://xb26hl5f9h.ufs.sh/f/myb9AtBX9KywrSBTVdYmuwfKNGhJOVdR9k1bQE3sWzcXegDS  "
+                src="https://xb26hl5f9h.ufs.sh/f/myb9AtBX9KywrSBTVdYmuwfKNGhJOVdR9k1bQE3sWzcXegDS"
                 alt="Expert en production de vidéos explicatives"
                 width={64}
                 height={64}
@@ -65,7 +65,7 @@ export default function FinalCTASection() {
 
             <div className="absolute bottom-4 right-4 xs:bottom-6 xs:right-6 sm:bottom-20 sm:right-4 w-10 h-10 xs:w-12 xs:h-12 sm:w-16 sm:h-16 rounded-full overflow-hidden border-2 border-orange-500/30">
               <Image
-                src="https://xb26hl5f9h.ufs.sh/f/myb9AtBX9Kywt06sFn134vBTOxF8dARqINU9EX5yck2foZjG  "
+                src="https://xb26hl5f9h.ufs.sh/f/myb9AtBX9Kywt06sFn134vBTOxF8dARqINU9EX5yck2foZjG"
                 alt="Éditeur de vidéos explicatives"
                 width={64}
                 height={64}

@@ -14,8 +14,8 @@ export default function PortfolioSection() {
       services: ["Scénario", "Cinématographie", "Intégration VFX", "Étalonnage des couleurs"],
       videoType: "Vidéo de Financement",
       industry: "E-commerce",
-      thumbnail: "https://xb26hl5f9h.ufs.sh/f/myb9AtBX9KywC58mNn6dH7rVT25qFa9GQY8gkxhfvsZSXJMC  ",
-      vimeoUrl: "https://vimeo.com/1110393011  ",
+      thumbnail: "https://xb26hl5f9h.ufs.sh/f/myb9AtBX9KywC58mNn6dH7rVT25qFa9GQY8gkxhfvsZSXJMC",
+      vimeoUrl: "https://vimeo.com/1110393011",
     },
     {
       id: 2,
@@ -23,10 +23,10 @@ export default function PortfolioSection() {
       subtitle: "Vidéo de financement",
       description: "Présentation du nouveau Display Pen 24 de Xencelabs pour les artistes.",
       services: ["Scénario", "Cinématographie", "Intégration VFX", "Étalonnage des couleurs"],
-      videoType: "Vidéo de financement participatif",
+      videoType: "Vidéo de financement",
       industry: "E-commerce",
-      thumbnail: "https://xb26hl5f9h.ufs.sh/f/myb9AtBX9KywFV2JNdCNwlOAdeRuaZXQ5tqKECrYJpbk7ojh  ",
-      vimeoUrl: "https://vimeo.com/1106895426  ",
+      thumbnail: "https://xb26hl5f9h.ufs.sh/f/myb9AtBX9KywFV2JNdCNwlOAdeRuaZXQ5tqKECrYJpbk7ojh",
+      vimeoUrl: "https://vimeo.com/1106895426",
     },
     {
       id: 3,
@@ -36,8 +36,8 @@ export default function PortfolioSection() {
       services: ["Scénario", "Cinématographie", "Intégration VFX", "Étalonnage des couleurs"],
       videoType: "Vidéo de financement",
       industry: "SaaS",
-      thumbnail: "https://xb26hl5f9h.ufs.sh/f/myb9AtBX9KywWxh7Tdiab8RMjqt25cZzSeDlVIhg1Y3fnXCT  ",
-      vimeoUrl: "https://vimeo.com/1110291462  ",
+      thumbnail: "https://xb26hl5f9h.ufs.sh/f/myb9AtBX9KywWxh7Tdiab8RMjqt25cZzSeDlVIhg1Y3fnXCT",
+      vimeoUrl: "https://vimeo.com/1110291462",
     },
   ]
 
@@ -46,7 +46,7 @@ export default function PortfolioSection() {
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold text-black mb-4">
-            Découvrez certains de nos travaux pour <br/>des campagnes vidéo de marque gagnantes.
+            Découvrez certains de nos travaux pour des campagnes vidéo de marque gagnantes.
           </h2>
           <p className="text-xl text-black max-w-3xl mx-auto leading-relaxed">
             Nous avons obtenu plus de 1 milliard de vues sur plus de 580 projets vidéo. <br/>Nous savons ce qui fonctionne, et ce qui ne fonctionne pas.
@@ -57,7 +57,7 @@ export default function PortfolioSection() {
         
         {/* Bouton CTA */}
         <div className="text-center mt-16">
-          <Link href="/work">
+          <Link href="/realisations">
             <button className="btn-luxury border-0 px-6 sm:px-8 py-3 rounded-full text-base text-white text-semibold sm:text-lg mb-4 sm:mb-2">
               Voir notre portfolio
             </button>

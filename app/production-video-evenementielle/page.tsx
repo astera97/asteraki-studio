@@ -28,8 +28,8 @@ export default function EventVideoProductionPage() {
                 <div className="text-sm font-semibold text-black mb-3 tracking-widest">
                   Services de production de vidéos d'événements
                 </div>
-                <h1 className="text-5xl lg:text-6xl font-bold text-black mb-8 leading-tight">
-                  Rendez votre événement inoubliable avec une couverture vidéo cinématographique.
+                <h1 className="text-4xl lg:text-5xl font-bold text-black mb-8 leading-tight">
+                  Rendez votre événement inoubliable avec une couverture vidéo de qualité
                 </h1>
                 <p className="text-normal mb-5">
                   Nous créons des vidéos d'événements professionnelles qui capturent l'énergie, l'émotion et les moments clés de votre conférence, salon professionnel ou événement d'entreprise. De la configuration multi-caméras aux réels de temps forts, nous gérons tous les aspects de la production.
@@ -51,7 +51,7 @@ export default function EventVideoProductionPage() {
                     className="w-full h-full object-cover"
                     poster="/event-video-poster.jpg"
                   >
-                    <source src="https://xb26hl5f9h.ufs.sh/f/myb9AtBX9KywsggTPJAh9tIXKsu1OETl2SqkiA0bH7zG5eao  " type="video/mp4" />
+                    <source src="https://xb26hl5f9h.ufs.sh/f/myb9AtBX9KywsggTPJAh9tIXKsu1OETl2SqkiA0bH7zG5eao" type="video/mp4" />
                     Votre navigateur ne prend pas en charge la balise vidéo.
                   </video>
                 </div>
@@ -64,7 +64,7 @@ export default function EventVideoProductionPage() {
         <section className="pt-1 pb-24" style={{ backgroundColor: "rgba(255, 255, 255, 1)" }}>
           <div className="max-w-7xl mx-auto px-6 lg:px-8 text-center">
             <p className="text-center text-black font-normal mt-4 sm:mt-6 text-sm sm:text-base px-4">
-              Fait confiance à plus de 250 marques – 5/5 avis Google
+              Nous avons accompagné plus de 250 marques – 5/5 avis Google
             </p>
 
             {/* Carrousel de logos */}
@@ -158,7 +158,7 @@ export default function EventVideoProductionPage() {
                       ))}
                     </div>
                   </div>
-                  <p className="text-black text-xs sm:text-sm">Basé sur plus de 50 avis</p>
+                  
                 </div>
               </a>
             </div>
@@ -172,7 +172,7 @@ export default function EventVideoProductionPage() {
               <div className="relative">
                 <div className="rounded-2xl overflow-hidden">
                   <img
-                    src="https://xb26hl5f9h.ufs.sh/f/myb9AtBX9KywplYRsP6IpEkOY8D0GBumXaioq9CjFLZxsPM1  "
+                    src="https://xb26hl5f9h.ufs.sh/f/myb9AtBX9KywplYRsP6IpEkOY8D0GBumXaioq9CjFLZxsPM1"
                     alt="Couverture vidéo d'événement avec Insead"
                     className="w-full"
                   />
@@ -204,25 +204,25 @@ export default function EventVideoProductionPage() {
           <div className="max-w-7xl mx-auto px-6 lg:px-8">
             <div className="text-center mb-20">
               <h2 className="text-4xl lg:text-5xl font-bold text-black mb-4">
-                Comment nous garantissons la livraison de vidéos d'événements<br/> qui engagent votre audience
+                Comment nous garantissons la livraison de vidéos d'événements qui engagent votre audience
               </h2>
             </div>
             <div className="grid lg:grid-cols-3 gap-16">
               {[
                 {
-                  image: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVh2BelJLDI024dcPOMo9lrEN6UY8eWLTbkv3Q  ",
+                  image: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVh2BelJLDI024dcPOMo9lrEN6UY8eWLTbkv3Q",
                   alt: "Couverture multi-caméras",
                   title: "Couverture multi-caméras",
                   desc: "Nous déployons plusieurs angles de caméra pour capturer chaque moment important depuis les meilleures perspectives, garantissant des plans dynamiques et engageants.",
                 },
                 {
-                  image: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVh2BelJLDI024dcPOMo9lrEN6UY8eWLTbkv3Q  ", 
+                  image: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVh2BelJLDI024dcPOMo9lrEN6UY8eWLTbkv3Q", 
                   alt: "Montage en temps réel",
                   title: "Montage en temps réel",
                   desc: "Notre équipe fournit un rendu rapide pour les réels de temps forts pendant votre événement, vous permettant de partager du contenu pendant que l'excitation est encore vive.",
                 },
                 {
-                  image: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVh2BelJLDI024dcPOMo9lrEN6UY8eWLTbkv3Q  ",
+                  image: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVh2BelJLDI024dcPOMo9lrEN6UY8eWLTbkv3Q",
                   alt: "Livraison multi-format",
                   title: "Livraison multi-format",
                   desc: "Nous livrons votre contenu événementiel dans plusieurs formats optimisés pour les réseaux sociaux, le site web, les campagnes par e-mail et les communications internes.",
@@ -276,7 +276,7 @@ export default function EventVideoProductionPage() {
               <div className="relative">
                 <div className="rounded-2xl overflow-hidden">
                   <img
-                    src="https://xb26hl5f9h.ufs.sh/f/myb9AtBX9KywvWc9HMGgmR8DzbQXG4njAStoPfq2aTk7JiFL  "
+                    src="https://xb26hl5f9h.ufs.sh/f/myb9AtBX9KywvWc9HMGgmR8DzbQXG4njAStoPfq2aTk7JiFL"
                     alt="Couverture de l'événement Salesforce Dreamforce"
                     className="w-full"
                   />
@@ -286,26 +286,7 @@ export default function EventVideoProductionPage() {
           </div>
         </section>
 
-        {/* Section Témoignage */}
-        <section className="pt-1 pb-24" style={{ backgroundColor: "rgba(255, 255, 255, 1)" }}>
-          <div className="max-w-7xl mx-auto px-6 lg:px-8">
-            <div className="max-w-xl">
-              <div className="flex items-center mb-5">
-                <img
-                  src="https://xb26hl5f9h.ufs.sh/f/myb9AtBX9Kyw0OCyTXWR8WsTpDM4vfx3okKnUj7QwOVuazAZ  "
-                  alt="Logo Salesforce"
-                  className="w-30 h-20 mr-3"
-                />
-              </div>
-              <blockquote className="font-normal text-black mb-3 leading-relaxed">
-                "La couverture vidéo d'événement d'Asteraki pour notre conférence Dreamforce a été exceptionnelle. 
-                Ils ont capturé l'énergie et les moments clés parfaitement, et ont livré des réels de temps forts 
-                dans les heures qui suivaient chaque session. L'engagement de nos réseaux sociaux a augmenté de 40 % grâce à leur travail."
-              </blockquote>
-              <div className="text-black font-semibold mb-4">Mark Benioff, PDG</div>
-            </div>
-          </div>
-        </section>
+        
 
         {/* Pourquoi les vidéos d'événements fonctionnent */}
         <section className="py-24" style={{ backgroundColor: "#111111" }}>
@@ -317,7 +298,7 @@ export default function EventVideoProductionPage() {
                   La puissance des vidéos d'événements
                 </div>
                 
-                <h2 className="text-4xl lg:text-5xl font-bold text-white mb-8">
+                <h2 className="text-3xl lg:text-4xl font-bold text-white mb-8">
                   Pourquoi les vidéos d'événements offrent plus de valeur que vous ne le pensez
                 </h2>
                 
@@ -378,7 +359,7 @@ export default function EventVideoProductionPage() {
                 <div className="mt-12">
                   <Link href="/contact" passHref>
                     <button className="btn-luxury border-0 px-6 sm:px-8 py-3 rounded-full text-base text-white text-semibold sm:text-lg mb-4 sm:mb-2">
-                       Contactez-nous
+                       Obtenir un devis
                     </button>
                   </Link>
                 </div>
@@ -396,7 +377,7 @@ export default function EventVideoProductionPage() {
                       playsInline
                       className="w-full h-full object-cover"
                     >
-                      <source src="https://xb26hl5f9h.ufs.sh/f/myb9AtBX9Kywn8vvPL2GAKUwrqsXVlt1BHPRSjJzvoTuZfCE  " type="video/mp4" />
+                      <source src="https://xb26hl5f9h.ufs.sh/f/myb9AtBX9Kywn8vvPL2GAKUwrqsXVlt1BHPRSjJzvoTuZfCE" type="video/mp4" />
                       Votre navigateur ne prend pas en charge la balise vidéo.
                     </video>
                     <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent pointer-events-none"></div>

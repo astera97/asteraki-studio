@@ -28,14 +28,14 @@ export default function CareerVideoProductionPage() {
                 <div className="text-sm font-semibold text-black mb-3 tracking-widest">
                   Production de vidéos de recrutement
                 </div>
-                <h1 className="text-5xl lg:text-6xl font-bold text-black mb-8 leading-tight">
+                <h1 className="text-4xl lg:text-5xl font-bold text-black mb-8 leading-tight">
                   Montrez votre culture d'entreprise pour attirer les meilleurs talents.
                 </h1>
                 <p className="text-normal mb-5">
                   Nous créons des vidéos de carrière authentiques et cinématographiques qui mettent en valeur votre culture d'entreprise, vos valeurs et votre environnement de travail pour attirer et fidéliser les meilleurs talents. De la conception initiale à la livraison finale, nous gérons tous les aspects de la production.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4">
-                  <Link href="/quiz" passHref>
+                  <Link href="/contact" passHref>
                     <button className="btn-luxury border-0 px-6 sm:px-8 py-3 rounded-full text-base text-white text-semibold sm:text-lg mb-4 sm:mb-2">
                       Obtenir un devis
                     </button>
@@ -51,7 +51,7 @@ export default function CareerVideoProductionPage() {
                     className="w-full h-full object-cover"
                     
                   >
-                    <source src="https://xb26hl5f9h.ufs.sh/f/myb9AtBX9KywM4ZzNHJjroe97sS0GkHRwD6OVtv1Ez4ubBYF  " type="video/mp4" />
+                    <source src="https://xb26hl5f9h.ufs.sh/f/myb9AtBX9KywM4ZzNHJjroe97sS0GkHRwD6OVtv1Ez4ubBYF" type="video/mp4" />
                     Votre navigateur ne prend pas en charge la balise vidéo.
                   </video>
                 </div>
@@ -64,7 +64,7 @@ export default function CareerVideoProductionPage() {
         <section className="pt-1 pb-24" style={{ backgroundColor: "rgba(255, 255, 255, 1)" }}>
           <div className="max-w-7xl mx-auto px-6 lg:px-8 text-center">
             <p className="text-center text-black font-normal mt-4 sm:mt-6 text-sm sm:text-base px-4">
-              Fait confiance à plus de 250 marques – 5/5 avis Google
+              Nous avons accompagné plus de 250 marques – 5/5 avis Google
             </p>
 
             {/* Carrousel de logos */}
@@ -158,7 +158,7 @@ export default function CareerVideoProductionPage() {
                       ))}
                     </div>
                   </div>
-                  <p className="text-black text-xs sm:text-sm">Basé sur plus de 50 avis</p>
+                  
                 </div>
               </a>
             </div>
@@ -204,25 +204,25 @@ export default function CareerVideoProductionPage() {
           <div className="max-w-7xl mx-auto px-6 lg:px-8">
             <div className="text-center mb-20">
               <h2 className="text-4xl lg:text-5xl font-bold text-black mb-4">
-                Comment nous garantissons la livraison de vidéos de carrière<br/> qui attirent les meilleurs talents
+                Comment nous garantissons la livraison de vidéos de carrière qui attirent les meilleurs talents
               </h2>
             </div>
             <div className="grid lg:grid-cols-3 gap-16">
               {[
                 {
-                  image: "  https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVh2BelJLDI024dcPOMo9lrEN6UY8eWLTbkv3Q  ",
+                  image: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVh2BelJLDI024dcPOMo9lrEN6UY8eWLTbkv3Q",
                   alt: "Représentation authentique du lieu de travail",
                   title: "Représentation authentique du lieu de travail",
                   desc: "Nous nous concentrons sur des moments réels et non scénarisés qui mettent en lumière les expériences authentiques des employés et la culture unique de votre entreprise.",
                 },
                 {
-                  image: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVh2BelJLDI024dcPOMo9lrEN6UY8eWLTbkv3Q  ", 
+                  image: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVh2BelJLDI024dcPOMo9lrEN6UY8eWLTbkv3Q", 
                   alt: "Production de bout en bout",
                   title: "Production de bout en bout",
                   desc: "De la planification au tournage sur site et au montage de la pièce finale, nous gérons tout pour que vous puissiez vous concentrer sur la gestion de votre entreprise.",
                 },
                 {
-                  image: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVh2BelJLDI024dcPOMo9lrEN6UY8eWLTbkv3Q  ",
+                  image: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVh2BelJLDI024dcPOMo9lrEN6UY8eWLTbkv3Q",
                   alt: "Distribution multi-canaux",
                   title: "Distribution multi-canaux",
                   desc: "Nous livrons votre vidéo de carrière dans plusieurs formats optimisés pour les pages de carrière, les réseaux sociaux, les offres d'emploi et les événements de recrutement.",
@@ -269,14 +269,14 @@ export default function CareerVideoProductionPage() {
                 </div>
                 <Link href="/contact" passHref>
                     <button className="btn-luxury border-0 px-6 sm:px-8 py-3 rounded-full text-base text-white text-semibold sm:text-lg mb-4 sm:mb-2">
-                      Entrer en contact
+                      Obtenir un devis
                     </button>
                   </Link>
               </div>
               <div className="relative">
                 <div className="rounded-2xl overflow-hidden">
                   <img
-                    src="https://xb26hl5f9h.ufs.sh/f/myb9AtBX9KywbclKbhOiCeEItjw1VXN8kvL65WuUqFRDcO24  "
+                    src="https://xb26hl5f9h.ufs.sh/f/myb9AtBX9KywbclKbhOiCeEItjw1VXN8kvL65WuUqFRDcO24"
                     alt="Témoignage d'employé"
                     className="w-full"
                   />
@@ -286,26 +286,7 @@ export default function CareerVideoProductionPage() {
           </div>
         </section>
 
-        {/* Section Témoignage */}
-        <section className="pt-1 pb-24" style={{ backgroundColor: "rgba(255, 255, 255, 1)" }}>
-          <div className="max-w-7xl mx-auto px-6 lg:px-8">
-            <div className="max-w-xl">
-              <div className="flex items-center mb-5">
-                <img
-                  src="https://xb26hl5f9h.ufs.sh/f/myb9AtBX9KywyeFb04tsdpIWi7BXtnEN2YOvmFLjb4rV6Pux  "
-                  alt="Logo Klarna"
-                  className="w-30 h-20 mr-3"
-                />
-              </div>
-              <blockquote className="font-normal text-black mb-3 leading-relaxed">
-                "Les vidéos de carrière créées par Asteraki ont été des éléments déclencheurs. 
-                Notre équipe de recrutement les utilise dans toutes nos offres d'emploi, et nous avons constaté une augmentation de 28 % 
-                de candidats qualifiés depuis leur mise en œuvre. La qualité et l'authenticité sont exceptionnelles."
-              </blockquote>
-              <div className="text-black font-semibold mb-4">Hirey McHireface, Responsable Acquisition de Talents</div>
-            </div>
-          </div>
-        </section>
+       
 
         {/* Pourquoi les vidéos de carrière fonctionnent */}
         <section className="py-24" style={{ backgroundColor: "#111111" }}>
@@ -317,7 +298,7 @@ export default function CareerVideoProductionPage() {
                   La puissance du recrutement authentique
                 </div>
                 
-                <h2 className="text-4xl lg:text-5xl font-bold text-white mb-8">
+                <h2 className="text-3xl lg:text-4xl font-bold text-white mb-8">
                   Pourquoi les vidéos de carrière attirent de meilleurs candidats que les offres d'emploi traditionnelles
                 </h2>
                 
@@ -407,7 +388,7 @@ export default function CareerVideoProductionPage() {
                       playsInline
                       className="w-full h-full object-cover"
                     >
-                      <source src="https://xb26hl5f9h.ufs.sh/f/myb9AtBX9KywrTtvjzYmuwfKNGhJOVdR9k1bQE3sWzcXegDS  " type="video/mp4" />
+                      <source src="https://xb26hl5f9h.ufs.sh/f/myb9AtBX9KywrTtvjzYmuwfKNGhJOVdR9k1bQE3sWzcXegDS" type="video/mp4" />
                       Votre navigateur ne prend pas en charge la balise vidéo.
                     </video>
                     <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent pointer-events-none"></div>
