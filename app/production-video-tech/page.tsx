@@ -26,9 +26,9 @@ export default function TechVideoProductionPage() {
             <div className="grid lg:grid-cols-2 gap-16 items-center">
               <div className="max-w-xl">
                 <div className="text-sm font-semibold text-black mb-3 tracking-widest">
-                  PRODUCTION VIDÉO TECH
+                  Production vidéo pour les entreprises Technologiques
                 </div>
-                <h1 className="text-5xl lg:text-6xl font-bold text-black mb-8 leading-tight">
+                <h1 className="text-4xl lg:text-5xl font-bold text-black mb-8 leading-tight">
                   Expliquez la technologie complexe avec un storytelling vidéo percutant.
                 </h1>
                 <p className="text-normal mb-5">
@@ -64,7 +64,7 @@ export default function TechVideoProductionPage() {
         <section className="pt-1 pb-24" style={{ backgroundColor: "rgba(255, 255, 255, 1)" }}>
           <div className="max-w-7xl mx-auto px-6 lg:px-8 text-center">
             <p className="text-center text-black font-normal mt-4 sm:mt-6 text-sm sm:text-base px-4">
-              Fiable par 50+ marques tech – 5/5 avis Google
+              Nous avons accompagné plus de 250 marques – 5/5 avis Google
             </p>
 
             {/* Logo Carousel */}
@@ -158,7 +158,7 @@ export default function TechVideoProductionPage() {
                       ))}
                     </div>
                   </div>
-                  <p className="text-black text-xs sm:text-sm">Basé sur 50+ avis</p>
+                  
                 </div>
               </a>
             </div>
@@ -204,7 +204,7 @@ export default function TechVideoProductionPage() {
           <div className="max-w-7xl mx-auto px-6 lg:px-8">
             <div className="text-center mb-20">
               <h2 className="text-4xl lg:text-5xl font-bold text-black mb-4">
-                Comment nous assurons la livraison de vidéos tech<br/> qui stimulent les résultats commerciaux
+                Comment nous assurons la livraison de vidéos tech qui stimulent les résultats commerciaux
               </h2>
             </div>
             <div className="grid lg:grid-cols-3 gap-16">
@@ -286,27 +286,7 @@ export default function TechVideoProductionPage() {
           </div>
         </section>
 
-        {/* Testimonial Section */}
-        <section className="pt-1 pb-24" style={{ backgroundColor: "rgba(255, 255, 255, 1)" }}>
-          <div className="max-w-7xl mx-auto px-6 lg:px-8">
-            <div className="max-w-xl">
-              <div className="flex items-center mb-5">
-                <img
-                  src="https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztV1xD1dlojqztV0JATyZN26ohPfmBaei9cuLXR"
-                  alt="Logo Microsoft"
-                  className="w-30 h-20 mr-3"
-                />
-              </div>
-              <blockquote className="font-normal text-black mb-3 leading-relaxed">
-                "La série vidéo qu'Asteraki a créée pour notre plateforme Azure AI a été essentielle pour stimuler l'adoption par les clients professionnels. 
-                Nous avons constaté une augmentation de 34 % des inscriptions à la plateforme et une réduction de 28 % de la durée du cycle de vente après avoir mis en œuvre leurs vidéos dans nos canaux marketing et commerciaux. 
-                L'exactitude technique combinée à un storytelling clair correspondait exactement à ce dont nos clients avaient besoin pour comprendre nos solutions IA complexes."
-              </blockquote>
-              <div className="text-black font-semibold mb-4">Vincent Desmazes, Partner Marketing Manager chez Microsoft</div>
-            </div>
-          </div>
-        </section>
-
+        
         {/* Why Tech Videos Work */}
         <section className="py-24" style={{ backgroundColor: "#111111" }}>
           <div className="max-w-7xl mx-auto px-6 lg:px-8">
@@ -317,7 +297,7 @@ export default function TechVideoProductionPage() {
                   LA PUISSANCE DE LA COMMUNICATION TECH
                 </div>
                 
-                <h2 className="text-4xl lg:text-5xl font-bold text-white mb-8">
+                <h2 className="text-3xl lg:text-4xl font-bold text-white mb-8">
                   Pourquoi les vidéos tech stimulent une meilleure compréhension et adoption
                 </h2>
                 
@@ -382,7 +362,7 @@ export default function TechVideoProductionPage() {
                 <div className="mt-12">
                   <Link href="/contact" passHref>
                     <button className="btn-luxury border-0 px-6 sm:px-8 py-3 rounded-full text-base text-white text-semibold sm:text-lg mb-4 sm:mb-2">
-                       Parlez à un expert
+                       Obtenir un devis
                     </button>
                   </Link>
                 </div>

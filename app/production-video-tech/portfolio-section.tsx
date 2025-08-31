@@ -48,9 +48,7 @@ export default function PortfolioSection() {
           <h2 className="text-4xl lg:text-5xl font-bold text-black mb-4">
             Découvrez quelques-unes de nos réalisations pour les entreprises de technologie.
           </h2>
-          <p className="text-xl text-black max-w-3xl mx-auto leading-relaxed">
-            Nous avons obtenu plus de 1 milliard de vues sur 580+ projets vidéo. <br/>Nous savons ce qui fonctionne, et ce qui ne fonctionne pas.
-          </p>
+          
         </div>
         
         <PortfolioGrid projects={portfolioProjects} />

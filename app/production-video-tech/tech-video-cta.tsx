@@ -35,9 +35,9 @@ export default function FinalCTASection() {
                 Notre équipe se spécialise dans la création de vidéos tech authentiques qui transforment des concepts complexes en histoires claires et engageantes pour stimuler l'adoption de produits, réduire les cycles de vente et communiquer la valeur à des audiences techniques diverses.
               </p>
 
-              <Link href="/contact" passHref>
+              <Link href="/quiz" passHref>
                 <Button className="btn-luxury border-0 px-6 py-3 w-full sm:w-auto sm:px-8 sm:py-3 rounded-full text-base sm:text-lg mb-4 sm:mb-6">
-                  Obtenir un devis
+                  Estimer votre projet
                 </Button>
               </Link>
             </div>

@@ -28,7 +28,7 @@ export default function SaaSVideoProductionPage() {
                 <div className="text-sm font-semibold text-black mb-3 tracking-widest">
                   Vidéos pour logiciels SaaS
                 </div>
-                <h1 className="text-5xl lg:text-6xl font-bold text-black mb-8 leading-tight">
+                <h1 className="text-3xl lg:text-4xl font-bold text-black mb-8 leading-tight">
                   Transformez vos utilisateurs gratuits en clients payants avec des vidéos stratégiques.
                 </h1>
                 <p className="text-normal mb-5">
@@ -37,7 +37,7 @@ export default function SaaSVideoProductionPage() {
                 <div className="flex flex-col sm:flex-row gap-4">
                   <Link href="/contact" passHref>
                     <button className="btn-luxury border-0 px-6 sm:px-8 py-3 rounded-full text-base text-white text-semibold sm:text-lg mb-4 sm:mb-2">
-                      Contactez-nous
+                      Obtenir un devis
                     </button>
                   </Link>
                 </div>
@@ -50,7 +50,7 @@ export default function SaaSVideoProductionPage() {
                     muted
                     className="w-full h-full object-cover"
                   >
-                    <source src="https://xb26hl5f9h.ufs.sh/f/myb9AtBX9KywO1YZG6DldM8Th1Y46jXqf7KG5xJvzIoicVbS    " type="video/mp4" />
+                    <source src="https://xb26hl5f9h.ufs.sh/f/myb9AtBX9KywO1YZG6DldM8Th1Y46jXqf7KG5xJvzIoicVbS" type="video/mp4" />
                     Votre navigateur ne supporte pas les vidéos.
                   </video>
                 </div>
@@ -63,7 +63,7 @@ export default function SaaSVideoProductionPage() {
         <section className="pt-1 pb-24" style={{ backgroundColor: "rgba(255, 255, 255, 1)" }}>
           <div className="max-w-7xl mx-auto px-6 lg:px-8 text-center">
             <p className="text-center text-black font-normal mt-4 sm:mt-6 text-sm sm:text-base px-4">
-              Ils nous font confiance : plus de 250 marques SaaS – Note Google : 5/5
+              Nous avons accompagné plus de 50 SaaS  <br/>5/5 avis Google
             </p>
 
             {/* Carrousel de logos */}
@@ -128,7 +128,7 @@ export default function SaaSVideoProductionPage() {
             </div>
 
             {/* Widget Avis Google */}
-            <div className="flex justify-center mt-6 sm:mt-8 px-4">
+            <div className="flex justify-center mt-2 sm:mt-8 px-4">
               <a
                 href="#"
                 target="_blank"
@@ -157,7 +157,7 @@ export default function SaaSVideoProductionPage() {
                       ))}
                     </div>
                   </div>
-                  <p className="text-black text-xs sm:text-sm">Plus de 50 avis</p>
+                  
                 </div>
               </a>
             </div>
@@ -171,7 +171,7 @@ export default function SaaSVideoProductionPage() {
               <div className="relative">
                 <div className="rounded-2xl overflow-hidden">
                   <img
-                    src="https://xb26hl5f9h.ufs.sh/f/myb9AtBX9Kywmp7JyRX9KywSWq0Ob7e64m32pHZ8kCQuLAfB    "
+                    src="https://xb26hl5f9h.ufs.sh/f/myb9AtBX9Kywmp7JyRX9KywSWq0Ob7e64m32pHZ8kCQuLAfB"
                     alt="Exemple de vidéo SaaS avec Kandji"
                     className="w-full"
                   />
@@ -189,7 +189,7 @@ export default function SaaSVideoProductionPage() {
                 <div className="mt-10">
                   <Link href="/contact" passHref>
                     <button className="btn-luxury border-0 px-6 sm:px-8 py-3 rounded-full text-base text-white text-semibold sm:text-lg mb-4 sm:mb-2">
-                      Contactez-nous
+                      Obtenir un devis
                     </button>
                   </Link>
                 </div>
@@ -209,19 +209,19 @@ export default function SaaSVideoProductionPage() {
             <div className="grid lg:grid-cols-3 gap-16">
               {[
                 {
-                  image: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVh2BelJLDI024dcPOMo9lrEN6UY8eWLTbkv3Q    ",
+                  image: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVh2BelJLDI024dcPOMo9lrEN6UY8eWLTbkv3Q",
                   alt: "Histoires centrées sur la valeur",
                   title: "Histoires centrées sur la valeur",
                   desc: "Nous racontons des histoires qui montrent clairement la valeur de votre produit pour différents types d'utilisateurs, en expliquant comment il résout leurs problèmes et en montrant le bénéfice concret.",
                 },
                 {
-                  image: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVh2BelJLDI024dcPOMo9lrEN6UY8eWLTbkv3Q    ", 
+                  image: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVh2BelJLDI024dcPOMo9lrEN6UY8eWLTbkv3Q", 
                   alt: "Approche centrée sur le produit",
                   title: "Approche centrée sur le produit",
                   desc: "Nos vidéos s'intègrent parfaitement dans votre stratégie de croissance. Elles créent du contenu qui aide les utilisateurs à découvrir, utiliser et aimer votre produit à chaque étape.",
                 },
                 {
-                  image: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVh2BelJLDI024dcPOMo9lrEN6UY8eWLTbkv3Q    ",
+                  image: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVh2BelJLDI024dcPOMo9lrEN6UY8eWLTbkv3Q",
                   alt: "Optimisé pour la conversion",
                   title: "Optimisé pour la conversion",
                   desc: "Nous utilisons des données concrètes pour créer des vidéos qui poussent les gens à agir : terminer leur inscription, utiliser des fonctionnalités importantes ou passer à une version payante.",
@@ -267,14 +267,14 @@ export default function SaaSVideoProductionPage() {
                 </div>
                 <Link href="/contact" passHref>
                     <button className="btn-luxury border-0 px-6 sm:px-8 py-3 rounded-full text-base text-white text-semibold sm:text-lg mb-4 sm:mb-2">
-                      Contactez-nous
+                      Obtenir un devis
                     </button>
                   </Link>
               </div>
               <div className="relative">
                 <div className="rounded-2xl overflow-hidden">
                   <img
-                    src="https://xb26hl5f9h.ufs.sh/f/myb9AtBX9KywWxh7Tdiab8RMjqt25cZzSeDlVIhg1Y3fnXCT    "
+                    src="https://xb26hl5f9h.ufs.sh/f/myb9AtBX9KywWxh7Tdiab8RMjqt25cZzSeDlVIhg1Y3fnXCT"
                     alt="Démo SaaS"
                     className="w-full"
                   />
@@ -284,26 +284,6 @@ export default function SaaSVideoProductionPage() {
           </div>
         </section>
 
-        {/* Section Témoignage */}
-        <section className="pt-1 pb-24" style={{ backgroundColor: "rgba(255, 255, 255, 1)" }}>
-          <div className="max-w-7xl mx-auto px-6 lg:px-8">
-            <div className="max-w-xl">
-              <div className="flex items-center mb-5">
-                <img
-                  src="https://xb26hl5f9h.ufs.sh/f/myb9AtBX9Kywa7miBoQW6cbV58LvMdJS0skQ9yGeoPAiFT3Y    "
-                  alt="Logo Lettuce"
-                  className="w-30 h-20 mr-3"
-                />
-              </div>
-              <blockquote className="font-normal text-black mb-3 leading-relaxed">
-                "Les vidéos SaaS créées par Asteraki pour notre processus d'intégration ont été essentielles pour améliorer nos taux de conversion. 
-                Nous avons vu une augmentation de 29 % de la conversion gratuite vers payante et une réduction de 22 % du taux de départ prématuré après avoir intégré leurs vidéos. 
-                L'accent mis sur les problèmes des utilisateurs et la démonstration de la valeur était exactement ce dont notre équipe avait besoin."
-              </blockquote>
-              <div className="text-black font-semibold mb-4">Marc Benioff, PDG de Salesforce</div>
-            </div>
-          </div>
-        </section>
 
         {/* Pourquoi les vidéos SaaS fonctionnent */}
         <section className="py-24" style={{ backgroundColor: "#111111" }}>
@@ -312,10 +292,10 @@ export default function SaaSVideoProductionPage() {
               {/* Colonne de gauche - Contenu principal */}
               <div>
                 <div className="inline-block px-4 py-1 bg-orange-500/10 text-orange-400 rounded-full text-sm font-medium mb-6">
-                  La puissance de la croissance par le produit
+                  La puissance de la vidéo pour les SaaS
                 </div>
                 
-                <h2 className="text-4xl lg:text-5xl font-bold text-white mb-8">
+                <h2 className="text-3xl lg:text-4xl font-bold text-white mb-8">
                   Pourquoi les vidéos SaaS améliorent la conversion et la fidélité
                 </h2>
                 
@@ -375,7 +355,7 @@ export default function SaaSVideoProductionPage() {
                 </blockquote>
                 
                 <div className="mt-12">
-                  <Link href="/quiz" passHref>
+                  <Link href="/contact" passHref>
                     <button className="btn-luxury border-0 px-6 sm:px-8 py-3 rounded-full text-base text-white text-semibold sm:text-lg mb-4 sm:mb-2">
                        Obtenir un devis
                     </button>
@@ -395,7 +375,7 @@ export default function SaaSVideoProductionPage() {
                       playsInline
                       className="w-full h-full object-cover"
                     >
-                      <source src="https://xb26hl5f9h.ufs.sh/f/myb9AtBX9KywrTtvjzYmuwfKNGhJOVdR9k1bQE3sWzcXegDS    " type="video/mp4" />
+                      <source src="https://xb26hl5f9h.ufs.sh/f/myb9AtBX9KywrTtvjzYmuwfKNGhJOVdR9k1bQE3sWzcXegDS" type="video/mp4" />
                       Votre navigateur ne supporte pas les vidéos.
                     </video>
                     <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent pointer-events-none"></div>

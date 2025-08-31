@@ -35,9 +35,9 @@ export default function FinalCTASection() {
                 Notre équipe se spécialise dans la création de vidéos de startup authentiques, conçues pour stimuler des indicateurs de croissance spécifiques, avec des tarifs adaptés aux startups et des délais rapides, afin de vous aider à atteindre vos objectifs ambitieux malgré des ressources limitées.
               </p>
 
-              <Link href="/contact" passHref>
+              <Link href="/quiz" passHref>
                 <Button className="btn-luxury border-0 px-6 py-3 w-full sm:w-auto sm:px-8 sm:py-3 rounded-full text-base sm:text-lg mb-4 sm:mb-6">
-                  Obtenir une consultation gratuite
+                  Estimer votre projet
                 </Button>
               </Link>
             </div>

@@ -224,7 +224,7 @@ const expertiseDropdown = {
 const resourcesDropdown = {
   sections: [
     {
-      title: "Entreprise",
+      title: "Notre agence",
       description: "On produit du contenu que vous adorerez",
       heroImage: "https://xb26hl5f9h.ufs.sh/f/myb9AtBX9Kywjd5d0D1AXDwEq0U4C87KsF9Tplh2ZmP5R1ad?height=200&width=350&text=Vidico+Office",
       href: "/a-propos", // Added href for clickable section
@@ -243,7 +243,7 @@ const resourcesDropdown = {
       title: "Conseils créatifs actionnables",
       description: "Rejoignez plus de 5000 marketeurs",
       heroImage: "https://xb26hl5f9h.ufs.sh/f/myb9AtBX9Kyw1aH2UwL0yHGBKOREhLxl4Ti6nuevra7FcWC5?height=200&width=350&text=Newsletter+Preview",
-      href: "/newsletter-creative-insights", // Added href for clickable section
+      href: "#", // Added href for clickable section
       items: [
         {
           title: "Blog",

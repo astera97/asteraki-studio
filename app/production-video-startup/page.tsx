@@ -28,7 +28,7 @@ export default function StartupVideoProductionPage() {
                 <div className="text-sm font-semibold text-black mb-3 tracking-widest">
                   Production vidéo pour startups
                 </div>
-                <h1 className="text-5xl lg:text-6xl font-bold text-black mb-8 leading-tight">
+                <h1 className="text-3xl lg:text-4xl font-bold text-black mb-8 leading-tight">
                   Des vidéos à fort impact avec des prix et des délais adaptés aux startups.
                 </h1>
                 <p className="text-normal mb-5">
@@ -37,7 +37,7 @@ export default function StartupVideoProductionPage() {
                 <div className="flex flex-col sm:flex-row gap-4">
                   <Link href="/contact" passHref>
                     <button className="btn-luxury border-0 px-6 sm:px-8 py-3 rounded-full text-base text-white text-semibold sm:text-lg mb-4 sm:mb-2">
-                      Contactez-nous
+                      Obtenir un devis
                     </button>
                   </Link>
                 </div>
@@ -158,7 +158,7 @@ export default function StartupVideoProductionPage() {
                       ))}
                     </div>
                   </div>
-                  <p className="text-black text-xs sm:text-sm">Basé sur 50+ avis</p>
+                  
                 </div>
               </a>
             </div>
@@ -190,7 +190,7 @@ export default function StartupVideoProductionPage() {
                 <div className="mt-10">
                   <Link href="/contact" passHref>
                     <button className="btn-luxury border-0 px-6 sm:px-8 py-3 rounded-full text-base text-white text-semibold sm:text-lg mb-4 sm:mb-2">
-                      Contactez-nous
+                      Obtenir un devis
                     </button>
                   </Link>
                 </div>
@@ -204,7 +204,7 @@ export default function StartupVideoProductionPage() {
           <div className="max-w-7xl mx-auto px-6 lg:px-8">
             <div className="text-center mb-20">
               <h2 className="text-4xl lg:text-5xl font-bold text-black mb-4">
-                Comment nous assurons la livraison de vidéos startup<br/> qui stimulent la croissance
+                Comment nous assurons la livraison de vidéos startup qui stimulent la croissance
               </h2>
             </div>
             <div className="grid lg:grid-cols-3 gap-16">
@@ -270,7 +270,7 @@ export default function StartupVideoProductionPage() {
                 </div>
                 <Link href="/contact" passHref>
                     <button className="btn-luxury border-0 px-6 sm:px-8 py-3 rounded-full text-base text-white text-semibold sm:text-lg mb-4 sm:mb-2">
-                      Contactez-nous
+                      Obtenir un devis
                     </button>
                   </Link>
               </div>
@@ -287,27 +287,7 @@ export default function StartupVideoProductionPage() {
           </div>
         </section>
 
-        {/* Testimonial Section */}
-        <section className="pt-1 pb-24" style={{ backgroundColor: "rgba(255, 255, 255, 1)" }}>
-          <div className="max-w-7xl mx-auto px-6 lg:px-8">
-            <div className="max-w-xl">
-              <div className="flex items-center mb-5">
-                <img
-                  src="https://xb26hl5f9h.ufs.sh/f/myb9AtBX9KywWPFgmCOiab8RMjqt25cZzSeDlVIhg1Y3fnXC"
-                  alt="Logo Clickup"
-                  className="w-24 h-20 mr-3"
-                />
-              </div>
-              <blockquote className="font-normal text-black mb-3 leading-relaxed">
-                "La vidéo qu'Asteraki a créée pour notre levée de fonds Series A a été absolument cruciale pour notre succès. 
-                Nous avons sécurisé 15 millions de dollars en financement dans les 6 semaines suivant le lancement de la vidéo auprès des investisseurs. 
-                L'accent stratégique mis sur nos indicateurs de croissance et notre opportunité de marché, combiné à la tarification adaptée aux startups, 
-                correspondait exactement à ce dont nous avions besoin à notre stade."
-              </blockquote>
-              <div className="text-black font-semibold mb-4">Brian Chesky, PDG de Clickup</div>
-            </div>
-          </div>
-        </section>
+        
 
         {/* Why Startup Videos Work */}
         <section className="py-24" style={{ backgroundColor: "#111111" }}>
@@ -319,7 +299,7 @@ export default function StartupVideoProductionPage() {
                   Le Pouvoir du Storytelling Startup
                 </div>
                 
-                <h2 className="text-4xl lg:text-5xl font-bold text-white mb-8">
+                <h2 className="text-3xl lg:text-4xl font-bold text-white mb-8">
                   Pourquoi les vidéos de startup stimulent une meilleure croissance avec des ressources limitées
                 </h2>
                 

@@ -18,7 +18,7 @@ export default function PortfolioSection() {
      vimeoUrl: "https://vimeo.com/1114350408",
     },
     {
-     id: 1,
+     id: 2,
      title: "Aircall",
      subtitle: "Démonstration produit",
      description: "Vidéo démonstration expliquant ce qu'Aircall peut faire.",
@@ -27,17 +27,6 @@ export default function PortfolioSection() {
      industry: "Startup",
      thumbnail: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVjkkmAsOnk6Z0aKAOH3TspmrCuFeME74fB5Qq",
      vimeoUrl: "https://vimeo.com/1114342087",
-    },
-    {
-    id: 2,
-    title: "Notion",
-    subtitle: "Démonstration produit",
-    description: "Vidéo animée expliquant Notion et ses fonctionnalités.",
-    services: ["Scénario", "Cinématographie", "Graphismes animés", "Étalonnage colorimétrique"],
-    videoType: "Démonstration produit",
-    industry: "Startup",
-    thumbnail: "https://xb26hl5f9h.ufs.sh/f/myb9AtBX9Kywt87OYL134vBTOxF8dARqINU9EX5yck2foZjG",
-    vimeoUrl: "https://vimeo.com/1110392859",  
     },
     {
      id: 3,
@@ -57,18 +46,16 @@ export default function PortfolioSection() {
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold text-black mb-4">
-            Découvrez quelques-unes de nos réalisations pour <br/>des campagnes vidéo de marque gagnantes.
+            Découvrez quelques-unes de nos campagnes vidéos réussies pour les startups.
           </h2>
-          <p className="text-xl text-black max-w-3xl mx-auto leading-relaxed">
-            Nous avons obtenu plus de 1 milliard de vues sur 580+ projets vidéo. <br/>Nous savons ce qui fonctionne, et ce qui ne fonctionne pas.
-          </p>
+          
         </div>
         
         <PortfolioGrid projects={portfolioProjects} />
         
         {/* CTA Button */}
         <div className="text-center mt-16">
-          <Link href="/work">
+          <Link href="/realisations">
             <button className="btn-luxury border-0 px-6 sm:px-8 py-3 rounded-full text-base text-white text-semibold sm:text-lg mb-4 sm:mb-2">
               Voir notre portfolio
             </button>
