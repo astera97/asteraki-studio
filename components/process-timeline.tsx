@@ -35,19 +35,14 @@ const stages: ProcessStage[] = [
     image: "/conception_process.webp?height=300&width=400&text=Creative+Concept",
   },
   {
-    id: "pre-production",
-    title: "Pré-production",
-    icon: (
-      <div className="flex gap-1">
-        <Square className="w-3 h-3" />
-        <Square className="w-3 h-3" />
-      </div>
-    ),
-    heading: "Planifier soigneusement la production de votre vidéo",
-    description:
-      "La pré-production planifie chaque détail : lieux, équipe, permis, planning et logistique pour assurer un tournage fluide et maîtrisé.",
-    image: "/pre-production_process.webp?height=300&width=400&text=Pre-production+Planning",
-  },
+      id: "pre-production",
+      title: "Pré-production",
+      icon: <Pencil className="w-6 h-6" />,
+      heading: "Planifier la production de votre vidéo",
+      description:
+        "La pré-production planifie chaque détail : lieux, équipe, permis, planning et logistique pour assurer un tournage fluide et maîtrisé.",
+      image: "/pre-production_process.webp?height=300&width=400&text=Pre-production+Planning",
+    },
   {
     id: "production",
     title: "Production",

@@ -3,7 +3,7 @@
 import React from "react"
 import type { ReactNode } from "react"
 import { useState, useEffect, useRef } from "react"
-import { ChevronRight, Star, Pencil, Square, Camera, Edit } from "lucide-react"
+import { ChevronRight, Star, Pencil, Camera, Edit } from "lucide-react"
 import Image from "next/image"
 
 interface ProcessStage {
@@ -28,12 +28,8 @@ const stages: ProcessStage[] = [
   {
     id: "pre-production",
     title: "Pré-production",
-    icon: (
-      <div className="flex gap-1">
-        <Square className="w-3 h-3" />
-      </div>
-    ),
-    heading: "Planifier soigneusement la production de votre vidéo",
+    icon: <Pencil className="w-6 h-6" />,
+    heading: "Planifier la production de votre vidéo",
     description:
       "La pré-production planifie chaque détail : lieux, équipe, permis, planning et logistique pour assurer un tournage fluide et maîtrisé.",
     image: "/pre-production_process.webp?height=300&width=400&text=Pre-production+Planning",
@@ -183,8 +179,8 @@ export default function ProcessTimeline() {
                   >
                     {stage.id === "pre-production" ? (
                       <div className="flex gap-1">
-                        <Square className="w-3 h-3 fill-current" />
-                        <Square className="w-3 h-3 fill-current" />
+                        <Pencil className="w-3 h-6 fill-current" />
+                        <Pencil className="w-3 h-6 fill-current" />
                       </div>
                     ) : (
                       React.cloneElement(stage.icon as React.ReactElement, {
