@@ -35,7 +35,7 @@ export default function ConsumerVideoProductionPage() {
                   Nous créons des vidéos authentiques et cinématographiques spécialement conçues pour les marques B2C qui établissent des connexions émotionnelles, stimulent l'engagement et transforment les spectateurs en clients fidèles. De la conception initiale à la livraison finale, nous gérons tous les aspects de la production avec une expertise approfondie de la psychologie du consommateur et un storytelling créatif.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4">
-                  <Link href="/quiz" passHref>
+                  <Link href="/contact" passHref>
                     <button className="btn-luxury border-0 px-6 sm:px-8 py-3 rounded-full text-base text-white text-semibold sm:text-lg mb-4 sm:mb-2">
                       Obtenir un devis
                     </button>
@@ -64,7 +64,7 @@ export default function ConsumerVideoProductionPage() {
         <section className="pt-1 pb-24" style={{ backgroundColor: "rgba(255, 255, 255, 1)" }}>
           <div className="max-w-7xl mx-auto px-6 lg:px-8 text-center">
             <p className="text-center text-black font-normal mt-4 sm:mt-6 text-sm sm:text-base px-4">
-              Fiable par 120+ marques B2C – 5/5 avis Google
+              Fiable par 50+ marques B2C <br/> 5/5 avis Google
             </p>
 
             {/* Logo Carousel */}
@@ -158,7 +158,7 @@ export default function ConsumerVideoProductionPage() {
                       ))}
                     </div>
                   </div>
-                  <p className="text-black text-xs sm:text-sm">Basé sur 50+ avis</p>
+                  
                 </div>
               </a>
             </div>
@@ -172,19 +172,19 @@ export default function ConsumerVideoProductionPage() {
               <div className="relative">
                 <div className="rounded-2xl overflow-hidden">
                   <img
-                    src="https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztV5j8jtbrsL7zTQVi2HU8O5SmBt4lP6dAIRbFv  "
+                    src="https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztV5j8jtbrsL7zTQVi2HU8O5SmBt4lP6dAIRbFv"
                     alt="Image de vidéo B2C avec interface Nike"
                     className="w-full"
                   />
                 </div>
               </div>
               <div className="max-w-xl">
-                <h2 className="text-4xl lg:text-5xl font-bold text-black mb-8 leading-tight">
+                <h2 className="text-2xl lg:text-3xl font-bold text-black mb-8 leading-tight">
                   Connexion émotionnelle. Fidélité à la marque. Croissance des ventes.
                 </h2>
                 <div className="space-y-6 text-lg text-black leading-relaxed">
                   <p>
-                    Les vidéos B2C constituent le moyen le plus efficace pour établir des connexions émotionnelles avec votre audience et stimuler les décisions d'achat. Elles associent le storytelling stratégique à l'exécution créative pour fidéliser la marque, créer des moments partageables et transformer les spectateurs en clients fidèles dans un marché où la connexion émotionnelle influence 70 % des décisions d'achat.
+                    Les vidéos B2C constituent le moyen le plus efficace pour établir des connexions émotionnelles avec votre audience et stimuler les décisions d'achat. 
                   </p>
                 </div>
                 <div className="mt-10">
@@ -210,19 +210,19 @@ export default function ConsumerVideoProductionPage() {
             <div className="grid lg:grid-cols-3 gap-16">
               {[
                 {
-                  image: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVh2BelJLDI024dcPOMo9lrEN6UY8eWLTbkv3Q  ",
+                  image: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVh2BelJLDI024dcPOMo9lrEN6UY8eWLTbkv3Q",
                   alt: "Storytelling émotionnel",
                   title: "Storytelling émotionnel",
                   desc: "Notre équipe comprend des psychologues du consommateur et des directeurs créatifs qui conçoivent des récits qui touchent les moteurs émotionnels spécifiques de votre public cible, créant des vidéos qui résonnent à un niveau plus profond et stimulent la fidélité à la marque.",
                 },
                 {
-                  image: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVh2BelJLDI024dcPOMo9lrEN6UY8eWLTbkv3Q  ", 
+                  image: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVh2BelJLDI024dcPOMo9lrEN6UY8eWLTbkv3Q", 
                   alt: "Excellence créative",
                   title: "Excellence créative",
                   desc: "Nous combinons une direction créative primée avec des techniques de production de pointe pour créer des vidéos qui se démarquent dans les fils d'actualité saturés et capturent l'attention dans les 3 premières secondes critiques.",
                 },
                 {
-                  image: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVh2BelJLDI024dcPOMo9lrEN6UY8eWLTbkv3Q  ",
+                  image: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVh2BelJLDI024dcPOMo9lrEN6UY8eWLTbkv3Q",
                   alt: "Approche centrée sur les réseaux sociaux",
                   title: "Approche centrée sur les réseaux sociaux",
                   desc: "Nos vidéos sont conçues dès le départ pour le partage social, avec un formatage spécifique aux plateformes, des versions avec et sans son, et des moments partageables qui stimulent la portée organique et la viralité.",
@@ -257,7 +257,7 @@ export default function ConsumerVideoProductionPage() {
           <div className="max-w-7xl mx-auto px-6 lg:px-8">
             <div className="grid lg:grid-cols-2 gap-16 items-center">
               <div className="max-w-xl">
-                <h2 className="text-4xl lg:text-5xl font-bold text-black mb-8 leading-tight">
+                <h2 className="text-3xl lg:text-4xl font-bold text-black mb-8 leading-tight">
                   Transformer les spectateurs en clients fidèles par le storytelling émotionnel.
                 </h2>
                 <div className="text-lg text-black mb-10 leading-relaxed">
@@ -269,14 +269,14 @@ export default function ConsumerVideoProductionPage() {
                 </div>
                 <Link href="/contact" passHref>
                   <button className="btn-luxury border-0 px-6 sm:px-8 py-3 rounded-full text-base text-white text-semibold sm:text-lg mb-4 sm:mb-2">
-                    Obtenir une consultation gratuite
+                    Obtenir un devis
                   </button>
                 </Link>
               </div>
               <div className="relative">
                 <div className="rounded-2xl overflow-hidden">
                   <img
-                    src="https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVifFx5TGcOpNoz2fj0GxlAQw71ZgD4a3WUYEF  "
+                    src="https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVifFx5TGcOpNoz2fj0GxlAQw71ZgD4a3WUYEF"
                     alt="Image de vidéo B2C Tag Heuer"
                     className="w-full"
                   />
@@ -286,26 +286,7 @@ export default function ConsumerVideoProductionPage() {
           </div>
         </section>
 
-        {/* Testimonial Section */}
-        <section className="pt-1 pb-24" style={{ backgroundColor: "rgba(255, 255, 255, 1)" }}>
-          <div className="max-w-7xl mx-auto px-6 lg:px-8">
-            <div className="max-w-xl">
-              <div className="flex items-center mb-5">
-                <img
-                  src="https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVyOFjjVf7jHwWMkUO0E4Y25ImLfS3X8vyRBib  "
-                  alt="Logo Nike"
-                  className="w-24 h-20 mr-3"
-                />
-              </div>
-              <blockquote className="font-normal text-black mb-3 leading-relaxed">
-                "La campagne vidéo qu'Asteraki a créée pour notre série réinterprétée 'Just Do It' a été essentielle pour revitaliser notre connexion de marque avec les jeunes audiences. 
-                Nous avons constaté une augmentation de 39 % de l'engagement social et une hausse de 28 % des ventes parmi la démographie 18-34 ans après le lancement de leurs vidéos sur nos canaux sociaux. 
-                La compréhension approfondie de la psychologie du consommateur combinée à l'excellence créative correspondait exactement à ce dont notre équipe marketing avait besoin pour créer un contenu véritablement partageable."
-              </blockquote>
-              <div className="text-black font-semibold mb-4">Jason MacLeod, Responsable Marketing</div>
-            </div>
-          </div>
-        </section>
+        
 
         {/* Why Consumer Videos Work */}
         <section className="py-24" style={{ backgroundColor: "#111111" }}>
@@ -317,7 +298,7 @@ export default function ConsumerVideoProductionPage() {
                   LA PUISSANCE DE LA CONNEXION ÉMOTIONNELLE
                 </div>
                 
-                <h2 className="text-4xl lg:text-5xl font-bold text-white mb-8">
+                <h2 className="text-3xl lg:text-4xl font-bold text-white mb-8">
                   Pourquoi les vidéos B2C stimulent un meilleur engagement et des ventes
                 </h2>
                 
@@ -383,7 +364,7 @@ export default function ConsumerVideoProductionPage() {
                 <div className="mt-12">
                   <Link href="/contact" passHref>
                     <button className="btn-luxury border-0 px-6 sm:px-8 py-3 rounded-full text-base text-white text-semibold sm:text-lg mb-4 sm:mb-2">
-                       Obtenir une consultation vidéo B2C gratuite
+                       Obtenir un devis
                     </button>
                   </Link>
                 </div>

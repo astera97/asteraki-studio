@@ -26,7 +26,7 @@ export default function FinalCTASection() {
           <div className="relative z-10">
             {/* Main Content */}
             <div className="max-w-xl">
-              <h2 className="text-3xl xs:text-2xl sm:text-2xl lg:text-4xl font-bold leading-tight mb-6 xs:mb-6 sm:mb-8">
+              <h2 className="text-2xl xs:text-2xl sm:text-2xl lg:text-3xl font-bold leading-tight mb-6 xs:mb-6 sm:mb-8">
                 Prêt à amplifier votre vidéo
                 <span className="text-orange-400 block mt-2">à l'échelle mondiale ?</span>
               </h2>
@@ -35,43 +35,14 @@ export default function FinalCTASection() {
                 Notre équipe se spécialise dans la création de vidéos d'entreprise authentiques qui maintiennent l'intégrité de la marque à travers les marchés mondiaux tout en délivrant un ROI mesurable grâce à des processus de production de niveau entreprise et des systèmes vidéo stratégiques.
               </p>
 
-              <Link href="/contact" passHref>
+              <Link href="/quiz" passHref>
                 <Button className="btn-luxury border-0 px-6 py-3 w-full sm:w-auto sm:px-8 sm:py-3 rounded-full text-base sm:text-lg mb-4 sm:mb-6">
-                  Obtenir un devis
+                  Estimer votre projet
                 </Button>
               </Link>
             </div>
 
-            {/* Floating Avatars - Mobile optimized positioning */}
-            <div className="absolute top-9 right-0 xs:top-6 xs:right-4 sm:top-10 sm:right-10 w-10 h-10 xs:w-12 xs:h-12 sm:w-16 sm:h-16 rounded-full overflow-hidden border-2 border-orange-500/30">
-              <Image
-                src="https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVyNcas5f7jHwWMkUO0E4Y25ImLfS3X8vyRBib  "
-                alt="Spécialiste des interviews clients"
-                width={64}
-                height={64}
-                className="object-cover w-full h-full"
-              />
-            </div>
-
-            <div className="absolute top-20 right-8 xs:top-20 xs:right-20 sm:top-40 sm:right-32 w-8 h-8 xs:w-10 xs:h-10 sm:w-14 sm:h-14 rounded-full overflow-hidden border-2 border-orange-500/30">
-              <Image
-                src="https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVaSyv0eZsONX0DMj54Vk3gxKWAvEe9Tmohn6Y  "
-                alt="Expert en développement de récits"
-                width={64}
-                height={64}
-                className="object-cover w-full h-full"
-              />
-            </div>
-
-            <div className="absolute bottom-14 right-1 xs:bottom-6 xs:right-6 sm:bottom-20 sm:right-4 w-10 h-10 xs:w-12 xs:h-12 sm:w-16 sm:h-16 rounded-full overflow-hidden border-2 border-orange-500/30">
-              <Image
-                src="https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVO3ViFBYJZW4R1QFJwXPpL9hSmvrajAoYdntb  "
-                alt="Monteur vidéo de témoignages"
-                width={64}
-                height={64}
-                className="object-cover w-full h-full"
-              />
-            </div>
+            
           </div>
         </div>
       </div>

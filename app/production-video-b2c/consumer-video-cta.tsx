@@ -35,43 +35,14 @@ export default function FinalCTASection() {
                  Notre équipe se spécialise dans la création de vidéos grand public authentiques qui établissent des connexions émotionnelles, stimulent l'engagement et transforment les spectateurs en clients fidèles par le biais d'un storytelling stratégique.
               </p>
 
-              <Link href="/contact" passHref>
+              <Link href="/quiz" passHref>
                 <Button className="btn-luxury border-0 px-6 py-3 w-full sm:w-auto sm:px-8 sm:py-3 rounded-full text-base sm:text-lg mb-4 sm:mb-6">
-                  Obtenir une consultation gratuite
+                  Estimer votre projet
                 </Button>
               </Link>
             </div>
 
-            {/* Floating Avatars - Mobile optimized positioning */}
-            <div className="absolute top-9 right-0 xs:top-6 xs:right-4 sm:top-10 sm:right-10 w-10 h-10 xs:w-12 xs:h-12 sm:w-16 sm:h-16 rounded-full overflow-hidden border-2 border-orange-500/30">
-              <Image
-                src="/customer-story/images/hsbc_cta.webp"
-                alt="Spécialiste des interviews clients"
-                width={64}
-                height={64}
-                className="object-cover w-full h-full"
-              />
-            </div>
-
-            <div className="absolute top-20 right-8 xs:top-20 xs:right-20 sm:top-40 sm:right-32 w-8 h-8 xs:w-10 xs:h-10 sm:w-14 sm:h-14 rounded-full overflow-hidden border-2 border-orange-500/30">
-              <Image
-                src="/customer-story/images/klarna_cta.webp"
-                alt="Expert en développement de récits"
-                width={64}
-                height={64}
-                className="object-cover w-full h-full"
-              />
-            </div>
-
-            <div className="absolute bottom-14 right-0 xs:bottom-6 xs:right-5 sm:bottom-20 sm:right-4 w-10 h-10 xs:w-12 xs:h-12 sm:w-16 sm:h-16 rounded-full overflow-hidden border-2 border-orange-500/30">
-              <Image
-                src="/customer-story/images/salesforce_cta.webp"
-                alt="Monteur vidéo de témoignages"
-                width={64}
-                height={64}
-                className="object-cover w-full h-full"
-              />
-            </div>
+            
           </div>
         </div>
       </div>

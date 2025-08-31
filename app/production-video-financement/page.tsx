@@ -28,7 +28,7 @@ export default function CrowdfundingVideoProductionPage() {
                 <div className="text-sm font-semibold text-black mb-3 tracking-widest">
                   Production de vidéos de financement
                 </div>
-                <h1 className="text-3xl lg:text-4xl font-bold text-black mb-8 leading-tight">
+                <h1 className="text-3=2xl lg:text-3xl font-bold text-black mb-8 leading-tight">
                   Rendez votre campagne de financement impossible à ignorer.
                 </h1>
                 <p className="text-normal mb-5">
@@ -64,7 +64,7 @@ export default function CrowdfundingVideoProductionPage() {
         <section className="pt-1 pb-24" style={{ backgroundColor: "rgba(255, 255, 255, 1)" }}>
           <div className="max-w-7xl mx-auto px-6 lg:px-8 text-center">
             <p className="text-center text-black font-normal mt-4 sm:mt-6 text-sm sm:text-base px-4">
-              Nous avons accompagné plus de 250 marques – 5/5 avis Google
+              Nous avons accompagné plus de 250 marques <br/> 5/5 avis Google
             </p>
 
             {/* Carrousel de logos */}

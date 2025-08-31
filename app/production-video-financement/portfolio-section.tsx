@@ -48,9 +48,7 @@ export default function PortfolioSection() {
           <h2 className="text-4xl lg:text-5xl font-bold text-black mb-4">
             Découvrez certains de nos travaux pour des campagnes vidéo de marque gagnantes.
           </h2>
-          <p className="text-xl text-black max-w-3xl mx-auto leading-relaxed">
-            Nous avons obtenu plus de 1 milliard de vues sur plus de 580 projets vidéo. <br/>Nous savons ce qui fonctionne, et ce qui ne fonctionne pas.
-          </p>
+          
         </div>
         
         <PortfolioGrid projects={portfolioProjects} />

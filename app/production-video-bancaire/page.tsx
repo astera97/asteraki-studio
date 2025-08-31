@@ -26,16 +26,16 @@ export default function FinanceVideoProductionPage() {
             <div className="grid lg:grid-cols-2 gap-16 items-center">
               <div className="max-w-xl">
                 <div className="text-sm font-semibold text-black mb-3 tracking-widest">
-                  PRODUCTION VIDÉO FINANCE
+                  Production vidéo pour le secteur bancaire
                 </div>
-                <h1 className="text-5xl lg:text-6xl font-bold text-black mb-8 leading-tight">
+                <h1 className="text-4xl lg:text-5xl font-bold text-black mb-8 leading-tight">
                   Des vidéos conformes aux réglementations qui renforcent la confiance dans les services financiers.
                 </h1>
                 <p className="text-normal mb-5">
                   Nous créons des vidéos authentiques et cinématographiques spécialement conçues pour les institutions financières qui équilibrent le storytelling captivant avec une stricte conformité réglementaire. De la conception initiale à la livraison finale, nous gérons tous les aspects de la production avec une expertise approfondie de l'industrie financière et des connaissances réglementaires.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4">
-                  <Link href="/quiz" passHref>
+                  <Link href="/contact" passHref>
                     <button className="btn-luxury border-0 px-6 sm:px-8 py-3 rounded-full text-base text-white text-semibold sm:text-lg mb-4 sm:mb-2">
                       Obtenir un devis
                     </button>
@@ -63,7 +63,7 @@ export default function FinanceVideoProductionPage() {
         <section className="pt-1 pb-24" style={{ backgroundColor: "rgba(255, 255, 255, 1)" }}>
           <div className="max-w-7xl mx-auto px-6 lg:px-8 text-center">
             <p className="text-center text-black font-normal mt-4 sm:mt-6 text-sm sm:text-base px-4">
-              Fiable par 75+ institutions financières – 5/5 avis Google
+              Fiable par 15+ institutions financières <br/> 5/5 avis Google
             </p>
 
             {/* Logo Carousel */}
@@ -157,7 +157,7 @@ export default function FinanceVideoProductionPage() {
                       ))}
                     </div>
                   </div>
-                  <p className="text-black text-xs sm:text-sm">Basé sur 50+ avis</p>
+                  
                 </div>
               </a>
             </div>
@@ -171,7 +171,7 @@ export default function FinanceVideoProductionPage() {
               <div className="relative">
                 <div className="rounded-2xl overflow-hidden">
                   <img
-                    src="https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVaSyv0eZsONX0DMj54Vk3gxKWAvEe9Tmohn6Y  "
+                    src="https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVaSyv0eZsONX0DMj54Vk3gxKWAvEe9Tmohn6Y"
                     alt="Image de vidéo financière avec interface bancaire Mercury"
                     className="w-full"
                   />
@@ -189,7 +189,7 @@ export default function FinanceVideoProductionPage() {
                 <div className="mt-10">
                   <Link href="/contact" passHref>
                     <button className="btn-luxury border-0 px-6 sm:px-8 py-3 rounded-full text-base text-white text-semibold sm:text-lg mb-4 sm:mb-2">
-                      Obtenir une consultation gratuite
+                      Obtenir un devis
                     </button>
                   </Link>
                 </div>
@@ -209,19 +209,19 @@ export default function FinanceVideoProductionPage() {
             <div className="grid lg:grid-cols-3 gap-16">
               {[
                 {
-                  image: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVh2BelJLDI024dcPOMo9lrEN6UY8eWLTbkv3Q  ",
+                  image: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVh2BelJLDI024dcPOMo9lrEN6UY8eWLTbkv3Q",
                   alt: "Conformité réglementaire",
                   title: "Conformité réglementaire",
                   desc: "Notre équipe comprend d'anciens agents de conformité et des experts juridiques qui garantissent que tout le contenu respecte les réglementations SEC, FINRA, GDPR et autres normes financières. Nous mettons en œuvre des flux de révision rigoureux qui satisfont même les départements de conformité les plus stricts.",
                 },
                 {
-                  image: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVh2BelJLDI024dcPOMo9lrEN6UY8eWLTbkv3Q  ", 
+                  image: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVh2BelJLDI024dcPOMo9lrEN6UY8eWLTbkv3Q", 
                   alt: "Storytelling de confiance",
                   title: "Storytelling de confiance",
                   desc: "Nous créons des récits qui traitent des barrières spécifiques à la confiance dans les services financiers, en utilisant des techniques de narration authentiques qui renforcent la crédibilité tout en respectant les exigences réglementaires pour les divulgations et les mentions de risque.",
                 },
                 {
-                  image: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVh2BelJLDI024dcPOMo9lrEN6UY8eWLTbkv3Q  ",
+                  image: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVh2BelJLDI024dcPOMo9lrEN6UY8eWLTbkv3Q",
                   alt: "Simplification des concepts complexes",
                   title: "Simplification des concepts complexes",
                   desc: "Nos experts financiers traduisent des produits et services complexes en explications claires et engageantes sans les simplifier excessivement ni violer les directives réglementaires, rendant des concepts financiers sophistiqués accessibles à votre public cible.",
@@ -256,7 +256,7 @@ export default function FinanceVideoProductionPage() {
           <div className="max-w-7xl mx-auto px-6 lg:px-8">
             <div className="grid lg:grid-cols-2 gap-16 items-center">
               <div className="max-w-xl">
-                <h2 className="text-4xl lg:text-5xl font-bold text-black mb-8 leading-tight">
+                <h2 className="text-3xl lg:text-4xl font-bold text-black mb-8 leading-tight">
                   Transformer la complexité en clarté sans compromettre la conformité.
                 </h2>
                 <div className="text-lg text-black mb-10 leading-relaxed">
@@ -275,7 +275,7 @@ export default function FinanceVideoProductionPage() {
               <div className="relative">
                 <div className="rounded-2xl overflow-hidden">
                   <img
-                    src="https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVaSyv0eZsONX0DMj54Vk3gxKWAvEe9Tmohn6Y  "
+                    src="https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVaSyv0eZsONX0DMj54Vk3gxKWAvEe9Tmohn6Y"
                     alt="Démonstration financière"
                     className="w-full"
                   />
@@ -285,27 +285,7 @@ export default function FinanceVideoProductionPage() {
           </div>
         </section>
 
-        {/* Testimonial Section */}
-        <section className="pt-1 pb-24" style={{ backgroundColor: "rgba(255, 255, 255, 1)" }}>
-          <div className="max-w-7xl mx-auto px-6 lg:px-8">
-            <div className="max-w-xl">
-              <div className="flex items-center mb-5">
-                <img
-                  src="https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVMFjJM8X6YLO1BSGiKj2D5WhHcuQrys4MloaJ  "
-                  alt="Logo JPMorgan"
-                  className="w-24 h-20 mr-3"
-                />
-              </div>
-              <blockquote className="font-normal text-black mb-3 leading-relaxed">
-                "La série vidéo qu'Asteraki a créée pour notre division de gestion de patrimoine a été essentielle pour améliorer l'acquisition de clients et les indicateurs de confiance. 
-                Nous avons constaté une augmentation de 27 % des prospects qualifiés et une amélioration de 33 % de la vitesse d'examen de conformité après avoir mis en œuvre leur processus de production spécifique à la finance. 
-                La connaissance approfondie des réglementations combinée à un storytelling financier clair correspondait exactement à ce dont notre équipe marketing avait besoin pour communiquer efficacement des produits d'investissement complexes."
-              </blockquote>
-              <div className="text-black font-semibold mb-4">Rosa Rita, Directrice Marketing Globale chez JP Morgan</div>
-            </div>
-          </div>
-        </section>
-
+        
         {/* Why Finance Videos Work */}
         <section className="py-24" style={{ backgroundColor: "#111111" }}>
           <div className="max-w-7xl mx-auto px-6 lg:px-8">
@@ -316,7 +296,7 @@ export default function FinanceVideoProductionPage() {
                   LA PUISSANCE DE LA COMMUNICATION DE CONFIANCE
                 </div>
                 
-                <h2 className="text-4xl lg:text-5xl font-bold text-white mb-8">
+                <h2 className="text-3xl lg:text-4xl font-bold text-white mb-8">
                   Pourquoi les vidéos de finance stimulent une meilleure confiance et conformité dans les services financiers
                 </h2>
                 
@@ -382,7 +362,7 @@ export default function FinanceVideoProductionPage() {
                 <div className="mt-12">
                   <Link href="/contact" passHref>
                     <button className="btn-luxury border-0 px-6 sm:px-8 py-3 rounded-full text-base text-white text-semibold sm:text-lg mb-4 sm:mb-2">
-                       Entrer en contact
+                       Obtenir un devis
                     </button>
                   </Link>
                 </div>

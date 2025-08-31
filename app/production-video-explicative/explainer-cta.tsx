@@ -42,36 +42,7 @@ export default function ExplainerFinalCTASection() {
               </Link>
             </div>
 
-            {/* Avatars flottants - Positionnement optimisé pour mobile */}
-            <div className="absolute top-4 right-4 xs:top-6 xs:right-6 sm:top-10 sm:right-10 w-10 h-10 xs:w-12 xs:h-12 sm:w-16 sm:h-16 rounded-full overflow-hidden border-2 border-orange-500/30">
-              <Image
-                src="https://xb26hl5f9h.ufs.sh/f/myb9AtBX9KywygeFJbtsdpIWi7BXtnEN2YOvmFLjb4rV6Pux"
-                alt="Spécialiste des vidéos explicatives"
-                width={64}
-                height={64}
-                className="object-cover w-full h-full"
-              />
-            </div>
-
-            <div className="absolute top-16 right-16 xs:top-20 xs:right-20 sm:top-40 sm:right-32 w-8 h-8 xs:w-10 xs:h-10 sm:w-14 sm:h-14 rounded-full overflow-hidden border-2 border-orange-500/30">
-              <Image
-                src="https://xb26hl5f9h.ufs.sh/f/myb9AtBX9KywrSBTVdYmuwfKNGhJOVdR9k1bQE3sWzcXegDS"
-                alt="Expert en production de vidéos explicatives"
-                width={64}
-                height={64}
-                className="object-cover w-full h-full"
-              />
-            </div>
-
-            <div className="absolute bottom-4 right-4 xs:bottom-6 xs:right-6 sm:bottom-20 sm:right-4 w-10 h-10 xs:w-12 xs:h-12 sm:w-16 sm:h-16 rounded-full overflow-hidden border-2 border-orange-500/30">
-              <Image
-                src="https://xb26hl5f9h.ufs.sh/f/myb9AtBX9KywmKjU4EX9KywSWq0Ob7e64m32pHZ8kCQuLAfB"
-                alt="Éditeur de vidéos explicatives"
-                width={64}
-                height={64}
-                className="object-cover w-full h-full"
-              />
-            </div>
+            
           </div>
         </div>
       </div>
