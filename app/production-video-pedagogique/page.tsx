@@ -64,7 +64,7 @@ export default function EducationalVideoProductionPage() {
         <section className="pt-1 pb-24" style={{ backgroundColor: "rgba(255, 255, 255, 1)" }}>
           <div className="max-w-7xl mx-auto px-6 lg:px-8 text-center">
             <p className="text-center text-black font-normal mt-4 sm:mt-6 text-sm sm:text-base px-4">
-              Nous avons accompagné plus de 250 marques – 5/5 avis Google
+              Nous avons accompagné plus de 250 marques <br/> 5/5 avis Google
             </p>
 
             {/* Carrousel de logos */}
