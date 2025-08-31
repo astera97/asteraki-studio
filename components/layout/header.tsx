@@ -77,7 +77,7 @@ const servicesDropdown = {
     },
     {
       title: "Éducation & Formations",
-      description: "Contenu authentique et pertinent produit en volume, pour publicités, réseaux sociaux et formation",
+      description: "Contenu authentique produit en volume, pour publicités, réseaux et formation",
       items: [
         {
           title: "Éducation & Infodivertissement",
@@ -158,7 +158,7 @@ const expertiseDropdown = {
     },
     {
       title: "Pour les entreprises",
-      description: "Les grandes entreprises nous adorent. En plus de notre engagement envers la qualité, nous respectons les guidelines de marque",
+      description: "En plus de notre engagement envers la qualité, nous respectons les guidelines de marque",
       heroImage: "https://xb26hl5f9h.ufs.sh/f/myb9AtBX9KywhPxURjesIX8uUOrt39b1FRWBpdfEcgCMKvw6?height=200&width=350&text=Enterprise+Meeting",
       href: "/production-video-b2b", // Added href for clickable section
       items: [
@@ -225,7 +225,7 @@ const resourcesDropdown = {
   sections: [
     {
       title: "Entreprise",
-      description: "Nous produisons du contenu que vous adorerez !",
+      description: "On produit du contenu que vous adorerez",
       heroImage: "https://xb26hl5f9h.ufs.sh/f/myb9AtBX9Kywjd5d0D1AXDwEq0U4C87KsF9Tplh2ZmP5R1ad?height=200&width=350&text=Vidico+Office",
       href: "/a-propos", // Added href for clickable section
       items: [
