@@ -28,8 +28,8 @@ export default function EventVideoProductionPage() {
                 <div className="text-sm font-semibold text-black mb-3 tracking-widest">
                   Services de production de vidéos d'événements
                 </div>
-                <h1 className="text-4xl lg:text-5xl font-bold text-black mb-8 leading-tight">
-                  Rendez votre événement inoubliable avec une couverture vidéo de qualité
+                <h1 className="text-3xl lg:text-4xl font-bold text-black mb-8 leading-tight">
+                  Rendez votre événement inoubliable avec une couverture vidéo de qualités
                 </h1>
                 <p className="text-normal mb-5">
                   Nous créons des vidéos d'événements professionnelles qui capturent l'énergie, l'émotion et les moments clés de votre conférence, salon professionnel ou événement d'entreprise. De la configuration multi-caméras aux réels de temps forts, nous gérons tous les aspects de la production.

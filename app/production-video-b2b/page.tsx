@@ -28,7 +28,7 @@ export default function B2BVideoProductionPage() {
                 <div className="text-sm font-semibold text-black mb-3 tracking-widest">
                 Production vidéo B2B 
                 </div>
-                <h1 className="text-5xl lg:text-6xl font-bold text-black mb-8 leading-tight">
+                <h1 className="text-3xl lg:text-4xl font-bold text-black mb-8 leading-tight">
                   Production vidéo de qualité professionnelle qui s'adapte mondialement avec cohérence de marque.
                 </h1>
                 <p className="text-normal mb-5">
@@ -37,7 +37,7 @@ export default function B2BVideoProductionPage() {
                 <div className="flex flex-col sm:flex-row gap-4">
                   <Link href="/contact" passHref>
                     <button className="btn-luxury border-0 px-6 sm:px-8 py-3 rounded-full text-base text-white text-semibold sm:text-lg mb-4 sm:mb-2">
-                      Obtenir une consultation gratuite
+                      Obtenir un devis
                     </button>
                   </Link>
                 </div>
@@ -64,7 +64,7 @@ export default function B2BVideoProductionPage() {
         <section className="pt-1 pb-24" style={{ backgroundColor: "rgba(255, 255, 255, 1)" }}>
           <div className="max-w-7xl mx-auto px-6 lg:px-8 text-center">
             <p className="text-center text-black font-normal mt-4 sm:mt-6 text-sm sm:text-base px-4">
-              Fiable par 100+ marques B2B – 5/5 avis Google
+              Fiable par 100+ marques B2B <br/> 5/5 avis Google
             </p>
 
             {/* Logo Carousel */}
@@ -158,7 +158,7 @@ export default function B2BVideoProductionPage() {
                       ))}
                     </div>
                   </div>
-                  <p className="text-black text-xs sm:text-sm">Basé sur 50+ avis</p>
+                  
                 </div>
               </a>
             </div>
@@ -172,7 +172,7 @@ export default function B2BVideoProductionPage() {
               <div className="relative">
                 <div className="rounded-2xl overflow-hidden">
                   <img
-                    src="https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztV26fQMQ7WJBOGwHyYpLQ8mtukDFsr9nVZ07eK  "
+                    src="https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztV26fQMQ7WJBOGwHyYpLQ8mtukDFsr9nVZ07eK"
                     alt="Image de vidéo B2B avec interface Microsoft"
                     className="w-full"
                   />
@@ -190,7 +190,7 @@ export default function B2BVideoProductionPage() {
                 <div className="mt-10">
                   <Link href="/contact" passHref>
                     <button className="btn-luxury border-0 px-6 sm:px-8 py-3 rounded-full text-base text-white text-semibold sm:text-lg mb-4 sm:mb-2">
-                      Obtenir une consultation gratuite
+                      Obtenir un devis
                     </button>
                   </Link>
                 </div>
@@ -210,19 +210,19 @@ export default function B2BVideoProductionPage() {
             <div className="grid lg:grid-cols-3 gap-16">
               {[
                 {
-                  image: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVh2BelJLDI024dcPOMo9lrEN6UY8eWLTbkv3Q  ",
+                  image: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVh2BelJLDI024dcPOMo9lrEN6UY8eWLTbkv3Q",
                   alt: "Processus de qualité professionnelle",
                   title: "Processus de qualité professionnelle",
                   desc: "Nous mettons en œuvre des flux de travail conçus spécifiquement pour les besoins B2B, incluant le contrôle de version, les hiérarchies d'approbation, les vérifications de conformité et les capacités de localisation mondiale qui répondent aux normes les plus élevées de gouvernance B2B.",
                 },
                 {
-                  image: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVh2BelJLDI024dcPOMo9lrEN6UY8eWLTbkv3Q  ", 
+                  image: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVh2BelJLDI024dcPOMo9lrEN6UY8eWLTbkv3Q", 
                   alt: "Cohérence de marque",
                   title: "Cohérence de marque",
                   desc: "Notre système de gestion de marque propriétaire garantit un respect parfait des directives de votre marque dans toutes les vidéos, régions et langues, en maintenant la cohérence visuelle tout en permettant des adaptations spécifiques au marché.",
                 },
                 {
-                  image: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVh2BelJLDI024dcPOMo9lrEN6UY8eWLTbkv3Q  ",
+                  image: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVh2BelJLDI024dcPOMo9lrEN6UY8eWLTbkv3Q",
                   alt: "Mesure du ROI",
                   title: "Mesure du ROI",
                   desc: "Nous intégrons des cadres de mesure directement dans votre stratégie vidéo, en suivant les indicateurs d'engagement, l'impact commercial et le renforcement de la marque pour démontrer un ROI clair et orienter les futurs investissements en contenu.",
@@ -269,14 +269,14 @@ export default function B2BVideoProductionPage() {
                 </div>
                 <Link href="/contact" passHref>
                     <button className="btn-luxury border-0 px-6 sm:px-8 py-3 rounded-full text-base text-white text-semibold sm:text-lg mb-4 sm:mb-2">
-                      Obtenir une consultation gratuite
+                      Obtenir un devis
                     </button>
                 </Link>
               </div>
               <div className="relative">
                 <div className="rounded-2xl overflow-hidden">
                   <img
-                    src="https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVTA9kki0ins5ZGYgUmLXN6jkRIWfT8d4Sc0F2  "
+                    src="https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVTA9kki0ins5ZGYgUmLXN6jkRIWfT8d4Sc0F2"
                     alt="Démonstration B2B"
                     className="w-full"
                   />
@@ -286,27 +286,7 @@ export default function B2BVideoProductionPage() {
           </div>
         </section>
 
-        {/* Testimonial Section */}
-        <section className="pt-1 pb-24" style={{ backgroundColor: "rgba(255, 255, 255, 1)" }}>
-          <div className="max-w-7xl mx-auto px-6 lg:px-8">
-            <div className="max-w-xl">
-              <div className="flex items-center mb-5">
-                <img
-                  src="https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztV1xD1dlojqztV0JATyZN26ohPfmBaei9cuLXR  "
-                  alt="Logo Microsoft"
-                  className="w-30 h-20 mr-3"
-                />
-              </div>
-              <blockquote className="font-normal text-black mb-3 leading-relaxed">
-                "Le programme vidéo B2B qu'Asteraki a créé pour notre stimulation des ventes mondiale a été essentiel pour standardiser notre message à travers 40+ pays. 
-                Nous avons constaté une augmentation de 22 % de la productivité des ventes et une amélioration de 31 % des scores de cohérence de marque après avoir mis en œuvre leur système. 
-                Les processus de qualité professionnelle et les capacités de gestion de marque correspondaient exactement à ce dont notre équipe marketing mondiale avait besoin pour adapter efficacement notre contenu vidéo."
-              </blockquote>
-              <div className="text-black font-semibold mb-4">Scott Allen, Directeur Général de la Transformation du Marketing Mondial</div>
-            </div>
-          </div>
-        </section>
-
+        
         {/* Why B2B Videos Work */}
         <section className="py-24" style={{ backgroundColor: "#111111" }}>
           <div className="max-w-7xl mx-auto px-6 lg:px-8">
@@ -317,7 +297,7 @@ export default function B2BVideoProductionPage() {
                   LA PUISSANCE DE LA STRATÉGIE VIDÉO MONDIALE
                 </div>
                 
-                <h2 className="text-4xl lg:text-5xl font-bold text-white mb-8">
+                <h2 className="text-3xl lg:text-4xl font-bold text-white mb-8">
                   Pourquoi les vidéos B2B stimulent une meilleure cohérence mondiale et un ROI
                 </h2>
                 
@@ -382,7 +362,7 @@ export default function B2BVideoProductionPage() {
                 <div className="mt-12">
                   <Link href="/contact" passHref>
                     <button className="btn-luxury border-0 px-6 sm:px-8 py-3 rounded-full text-base text-white text-semibold sm:text-lg mb-4 sm:mb-2">
-                       Obtenir une consultation vidéo B2B gratuite
+                       Obtenir un devis
                     </button>
                   </Link>
                 </div>

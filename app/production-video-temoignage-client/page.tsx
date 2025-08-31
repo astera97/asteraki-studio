@@ -28,7 +28,7 @@ export default function CustomerStoryVideoPage() {
                 <div className="text-sm font-semibold text-black mb-3 tracking-widest">
                   Production de vidéos témoignages clients
                 </div>
-                <h1 className="text-4xl lg:text-5xl font-bold text-black mb-8 leading-tight">
+                <h1 className="text-3xl lg:text-4xl font-bold text-black mb-8 leading-tight">
                   Transformez vos clients en vos meilleurs vendeurs.
                 </h1>
                 <p className="text-normal mb-5">
