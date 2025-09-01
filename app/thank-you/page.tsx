@@ -8,10 +8,23 @@ import { useEffect } from "react"
 
 export default function ThankYouPage() {
   useEffect(() => {
-    // Trigger Google Ads conversion when page loads
-    if (typeof window !== "undefined" && (window as any).gtag) {
+    // Récupérer le GCLID de l'URL
+    const urlParams = new URLSearchParams(window.location.search);
+    const gclid = urlParams.get('gclid');
+    
+    // Déclencher la conversion si le GCLID existe
+    if (gclid && typeof window !== "undefined" && (window as any).gtag) {
       (window as any).gtag('event', 'conversion', {
-        'send_to': 'AW-17523897704', // ← Remplacez par votre étiquette de conversion réelle
+        'send_to': 'AW-17523897704', // ID de conversion Google Ads
+        'value': 1.0,
+        'currency': 'EUR',
+        'gclid': gclid
+      });
+    }
+    // Déclencher la conversion même sans GCLID (pour les cas non trackés)
+    else if (typeof window !== "undefined" && (window as any).gtag) {
+      (window as any).gtag('event', 'conversion', {
+        'send_to': 'AW-17523897704',
         'value': 1.0,
         'currency': 'EUR'
       });

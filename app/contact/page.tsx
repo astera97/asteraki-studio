@@ -3,7 +3,7 @@ import Header from "@/components/layout/header";
 import Footer from "@/components/layout/footer";
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import { useRouter } from "next/navigation"; // Import useRouter for navigation
+import { useRouter } from "next/navigation";
 
 export default function ContactPage() {
   const [isClient, setIsClient] = useState(false);
@@ -17,7 +17,7 @@ export default function ContactPage() {
     additionalNotes: "",
   });
   const [errorMessage, setErrorMessage] = useState("");
-  const router = useRouter(); // Initialize the router
+  const router = useRouter();
 
   useEffect(() => {
     setIsClient(true);
@@ -26,7 +26,6 @@ export default function ContactPage() {
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
-    // Validate required fields
     if (!formData.fullName || !formData.companyEmail || !formData.additionalNotes) {
       setErrorMessage("Veuillez remplir tous les champs obligatoires.");
       return;
@@ -35,6 +34,10 @@ export default function ContactPage() {
     setErrorMessage("");
 
     try {
+      // Récupérer le GCLID depuis l'URL actuelle
+      const urlParams = new URLSearchParams(window.location.search);
+      const gclid = urlParams.get('gclid');
+      
       await fetch("https://submit-form.com/kdy5C8QCz", {
         method: "POST",
         headers: {
@@ -48,7 +51,7 @@ export default function ContactPage() {
           projectBudget: formData.projectBudget,
           howDidYouFindUs: formData.howDidYouFindUs,
           message: formData.additionalNotes,
-          _redirect: "/thank-you", // This is ignored by the fetch API but good for Formspark
+          _redirect: "/thank-you", // Pour Formspark (optionnel)
           _email: {
             from: formData.companyEmail,
             replyTo: formData.companyEmail,
@@ -57,13 +60,17 @@ export default function ContactPage() {
         }),
       });
 
-      // On success, redirect to the thank you page
-      router.push("/thank-you");
+      // Redirection avec conservation du GCLID
+      const thankYouUrl = gclid ? `/thank-you?gclid=${gclid}` : '/thank-you';
+      router.push(thankYouUrl);
 
     } catch (error: any) {
-      // Even if the fetch fails, we assume the submission went through for the user
       console.warn("Erreur réseau, mais la soumission a peut-être fonctionné:", error);
-      router.push("/thank-you");
+      // Même redirection en cas d'erreur
+      const urlParams = new URLSearchParams(window.location.search);
+      const gclid = urlParams.get('gclid');
+      const thankYouUrl = gclid ? `/thank-you?gclid=${gclid}` : '/thank-you';
+      router.push(thankYouUrl);
     }
   };
 
