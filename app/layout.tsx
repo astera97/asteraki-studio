@@ -3,8 +3,10 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { Toaster } from "@/components/ui/toaster";
 import "./globals.css";
+import CookiebotScript from "@/components/CookiebotScript";
 import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -22,6 +24,7 @@ export default function RootLayout({
   return (
     <html lang="fr">
       <head>
+        <CookiebotScript />
         <link rel="icon" type="image/svg+xml" href="/Asteraki_favicon.svg" />
         
         {/* Prevent iOS from auto-linking */}
@@ -29,17 +32,6 @@ export default function RootLayout({
           name="format-detection"
           content="telephone=no, date=no, email=no, address=no"
         />
-
-        {/* === 🔥 Cookiebot - Load Early in Head === */}
-        <script
-          id="Cookiebot"
-          src="https://consent.cookiebot.com/uc.js"
-          data-cbid="c05fc2f7-db53-4cc3-852b-8b8e77a03151"
-          data-blockingmode="auto"
-          type="text/javascript"
-          async
-        />
-        {/* ========================================= */}
 
         {/* Google Ads Conversion Tag (gtag.js) */}
         <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17523897704"></script>
@@ -53,6 +45,7 @@ export default function RootLayout({
             `,
           }}
         />
+        {/* End Google Ads Conversion Tag */}
 
         {/* Google Tag Manager (GTM) */}
         <script
@@ -64,6 +57,8 @@ export default function RootLayout({
             })(window,document,'script','dataLayer','GTM-TB9X7VPG');`,
           }}
         />
+        {/* End Google Tag Manager */}
+
       </head>
       <body className={inter.className}>
         {/* Google Tag Manager (noscript) */}
@@ -75,12 +70,13 @@ export default function RootLayout({
             style={{ display: 'none', visibility: 'hidden' }}
           />
         </noscript>
-
+        {/* End Google Tag Manager (noscript) */}
+        
         {children}
         <Toaster />
         <Analytics />
         <SpeedInsights />
-        {/* ❌ Do NOT include <CookiebotScript /> here */}
+        <CookiebotScript />
       </body>
     </html>
   );
