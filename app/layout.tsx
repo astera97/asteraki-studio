@@ -5,7 +5,6 @@ import { Toaster } from "@/components/ui/toaster";
 import "./globals.css";
 import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
-import CookiebotScript from "@/components/CookiebotScript";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -31,6 +30,17 @@ export default function RootLayout({
           content="telephone=no, date=no, email=no, address=no"
         />
 
+        {/* === 🔥 Cookiebot - Load Early in Head === */}
+        <script
+          id="Cookiebot"
+          src="https://consent.cookiebot.com/uc.js"
+          data-cbid="c05fc2f7-db53-4cc3-852b-8b8e77a03151"
+          data-blockingmode="auto"
+          type="text/javascript"
+          async
+        />
+        {/* ========================================= */}
+
         {/* Google Ads Conversion Tag (gtag.js) */}
         <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17523897704"></script>
         <script
@@ -43,7 +53,6 @@ export default function RootLayout({
             `,
           }}
         />
-        {/* End Google Ads Conversion Tag */}
 
         {/* Google Tag Manager (GTM) */}
         <script
@@ -55,8 +64,6 @@ export default function RootLayout({
             })(window,document,'script','dataLayer','GTM-TB9X7VPG');`,
           }}
         />
-        {/* End Google Tag Manager */}
-
       </head>
       <body className={inter.className}>
         {/* Google Tag Manager (noscript) */}
@@ -68,13 +75,12 @@ export default function RootLayout({
             style={{ display: 'none', visibility: 'hidden' }}
           />
         </noscript>
-        {/* End Google Tag Manager (noscript) */}
-        
+
         {children}
         <Toaster />
         <Analytics />
         <SpeedInsights />
-        <CookiebotScript />
+        {/* ❌ Do NOT include <CookiebotScript /> here */}
       </body>
     </html>
   );
