@@ -31,7 +31,7 @@ export default function RootLayout({
           content="telephone=no, date=no, email=no, address=no"
         />
 
-        {/* Google Ads Conversion Tag (gtag.js) - Doit être en premier */}
+        {/* Google Ads Conversion Tag (gtag.js) */}
         <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17523897704"></script>
         <script
           dangerouslySetInnerHTML={{
