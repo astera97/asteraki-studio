@@ -4,8 +4,20 @@ import { Button } from "@/components/ui/button"
 import { Check, ExternalLink, ArrowRight, Play } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
+import { useEffect } from "react"
 
 export default function ThankYouPage() {
+  useEffect(() => {
+    // Trigger Google Ads conversion when page loads
+    if (typeof window !== "undefined" && (window as any).gtag) {
+      (window as any).gtag('event', 'conversion', {
+        'send_to': 'AW-17523897704', // ← Remplacez par votre étiquette de conversion réelle
+        'value': 1.0,
+        'currency': 'EUR'
+      });
+    }
+  }, []);
+
   return (
     <div className="min-h-screen bg-white">
       <div className="max-w-4xl mx-auto px-6 py-16">
