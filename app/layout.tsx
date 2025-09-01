@@ -31,9 +31,7 @@ export default function RootLayout({
           content="telephone=no, date=no, email=no, address=no"
         />
 
-        {/* End Google Tag Manager */}
-
-        {/* Google Ads Conversion Tag (gtag.js) */}
+        {/* Google Ads Conversion Tag (gtag.js) - Doit être en premier */}
         <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17523897704"></script>
         <script
           dangerouslySetInnerHTML={{
@@ -57,7 +55,7 @@ export default function RootLayout({
             })(window,document,'script','dataLayer','GTM-TB9X7VPG');`,
           }}
         />
-        
+        {/* End Google Tag Manager */}
 
       </head>
       <body className={inter.className}>
