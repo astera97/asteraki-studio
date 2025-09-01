@@ -5,7 +5,7 @@ import { Toaster } from "@/components/ui/toaster";
 import "./globals.css";
 import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
-import CookiebotScript from "@/components/CookiebotScript"; // ← New Client Component
+import CookiebotScript from "@/components/CookiebotScript";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -31,7 +31,7 @@ export default function RootLayout({
           content="telephone=no, date=no, email=no, address=no"
         />
 
-        {/* Google Tag Manager */}
+        {/* Google Tag Manager (GTM) */}
         <script
           dangerouslySetInnerHTML={{
             __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -42,6 +42,21 @@ export default function RootLayout({
           }}
         />
         {/* End Google Tag Manager */}
+
+        {/* Google Ads Conversion Tag (gtag.js) */}
+        <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17523897704"></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'AW-17523897704');
+            `,
+          }}
+        />
+        {/* End Google Ads Conversion Tag */}
+
       </head>
       <body className={inter.className}>
         {/* Google Tag Manager (noscript) */}
@@ -59,7 +74,7 @@ export default function RootLayout({
         <Toaster />
         <Analytics />
         <SpeedInsights />
-        <CookiebotScript /> {/* Loaded only on client */}
+        <CookiebotScript />
       </body>
     </html>
   );
