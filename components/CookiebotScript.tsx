@@ -11,7 +11,7 @@ export default function CookiebotScript() {
     const script = document.createElement('script');
     script.id = 'Cookiebot';
     script.src = 'https://consent.cookiebot.com/uc.js';
-    script.setAttribute('data-cbid', 'ddd87ead-fdbb-4d86-bafc-e977dac4bbc4');
+    script.setAttribute('data-cbid', 'c05fc2f7-db53-4cc3-852b-8b8e77a03151');
     script.setAttribute('data-blockingmode', 'auto');
     script.type = 'text/javascript';
     script.async = true;
