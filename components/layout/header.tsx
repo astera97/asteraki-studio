@@ -260,7 +260,7 @@ const resourcesDropdown = {
     image: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVT1mSpf0ins5ZGYgUmLXN6jkRIWfT8d4Sc0F2",
     backgroundColor: "bg-gradient-to-br from-orange-500 to-orange-600",
     ctaButton: "Télécharger maintenant",
-    href: "/resources/playbook"
+    href: "#"
   },
   bottomMessages: [
     {
