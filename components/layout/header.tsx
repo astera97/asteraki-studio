@@ -991,7 +991,7 @@ export default function Header() {
                 <div className="p-4 border-t border-gray-800">
                  <Link href="/contact" passHref>
                    <Button className="btn-luxury border-0 px-6 sm:px-8 py-3 rounded-full text-base sm:text-lg mb-4 sm:mb-2">
-                     Contactez-nous
+                     Devis gratuit en 1h
                    </Button>
                  </Link>
                 </div>
