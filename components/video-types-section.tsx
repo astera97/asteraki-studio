@@ -38,13 +38,6 @@ const videoTypes: VideoType[] = [
     link: "/production-video-financement",  // Default pattern
   },
   {
-    id: "app-video",
-    title: "Vidéo d'Application",
-    description: "Visualisez vos applications, produits digitaux, interfaces et workflows.",
-    image: "/app_vt.webp?height=200&width=300&text=App+Video",
-    link: "/production-video-application",  // Default pattern
-  },
-  {
     id: "brand-video",
     title: "Vidéo de Marque",
     description: "Contenu personnalisé et sur mesure pour votre prochaine campagne.",

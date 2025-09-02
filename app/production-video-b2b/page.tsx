@@ -191,10 +191,10 @@ export default function B2BVideoProductionPage() {
   <div className="max-w-7xl mx-auto px-6 lg:px-8">
     <div className="text-center mb-20">
       <h2 className="text-4xl lg:text-5xl font-bold text-black mb-4">
-        Ce qui rend votre projet avec Asteraki différent
+        Pourquoi Asteraki ?
       </h2>
       <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-        Pas juste une agence de production. Une expérience fluide, rapide et sans stress.
+        Pas juste une agence de production. <br/>Une expérience fluide, rapide et sans stress.
       </p>
     </div>
 
@@ -207,13 +207,11 @@ export default function B2BVideoProductionPage() {
             <path d="M10 3c-3.866 0-7 3.134-7 7s3.134 7 7 7 7-3.134 7-7-3.134-7-7-7zm0 12c-3.314 0-6-2.686-6-6s2.686-6 6-6 6 2.686 6 6-2.686 6-6 6z"/>
           </svg>
         </div>
-        <h3 className="text-2xl font-bold text-black mb-6">Votre premier projet ? Les frais de pré-production sont offerts</h3>
+        <h3 className="text-2xl font-bold text-black mb-6">1er projet ? Les frais de pré-production sont offerts</h3>
         <p className="text-lg text-black mb-8 leading-relaxed">
           Chez Asteraki, on vous dit <strong>merci de nous faire confiance</strong>. Pour votre premier projet, on prend en charge les frais de pré-production : brief, scénario, storyboard, repérage. Vous commencez à 0€ de frais cachés.
         </p>
-        <div className="text-sm font-semibold text-orange-500 uppercase tracking-wider">
-          Offre valable pour les nouveaux clients
-        </div>
+        
       </div>
 
       {/* Rapidité de livraison */}
@@ -227,9 +225,7 @@ export default function B2BVideoProductionPage() {
         <p className="text-lg text-black mb-8 leading-relaxed">
           Fini les semaines d'attente. On vous livre votre vidéo <strong>en 5 jours ouvrés</strong> après le tournage. Pas de retards, pas de mauvaises surprises. Un planning respecté, un contenu prêt à diffuser.
         </p>
-        <div className="text-sm font-semibold text-blue-500 uppercase tracking-wider">
-          Engagement de délai
-        </div>
+        
       </div>
 
       {/* Multi-format inclus */}
@@ -244,9 +240,7 @@ export default function B2BVideoProductionPage() {
         <p className="text-lg text-black mb-8 leading-relaxed">
           Votre projet n’est pas qu’une seule vidéo. On vous livre <strong>plusieurs versions optimisées</strong> : version longue, teaser 15s, version sans son, format carré, etc. Prêt à diffuser sur tous vos canaux.
         </p>
-        <div className="text-sm font-semibold text-green-500 uppercase tracking-wider">
-          Valeur ajoutée incluse
-        </div>
+        
       </div>
     </div>
   </div>
@@ -399,13 +393,12 @@ export default function B2BVideoProductionPage() {
         {/* Client Section */}
         <ClientsSection />
 
-
-
         {/* FAQ Section */}
         <B2BVideoFAQSection />     
 
         {/* Final CTA Section */}
         <FinalCTASection />  
+
       </main>
       <Footer />
     </>
