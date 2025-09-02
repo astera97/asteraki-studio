@@ -87,7 +87,7 @@ export default function ContactPage() {
         }
 
         window.grecaptcha.render('recaptcha-container', {
-          'sitekey': '6LdGxLsrAAAAAOSqbGG1qy5dntT_IvWZpq-7zsVD',
+          'sitekey': '6LenzrsrAAAAAILCsTdrFPX5oXdEkFyIdq1wHC18',
           'callback': (token: string) => {
             setFormData(prev => ({ ...prev, recaptchaToken: token }));
           },
