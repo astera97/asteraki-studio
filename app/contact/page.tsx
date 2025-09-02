@@ -9,12 +9,14 @@ import { useRouter } from "next/navigation";
 declare global {
   interface Window {
     grecaptcha: any;
-    grecaptchaLoaded?: boolean;
+    __RECAPTCHA_INITIALIZED__?: boolean;
   }
 }
 
 export default function ContactPage() {
   const [isClient, setIsClient] = useState(false);
+  const [isRecaptchaReady, setIsRecaptchaReady] = useState(false);
+  const [recaptchaError, setRecaptchaError] = useState(false);
   const [formData, setFormData] = useState({
     fullName: "",
     companyEmail: "",
@@ -26,45 +28,127 @@ export default function ContactPage() {
     recaptchaToken: ""
   });
   const [errorMessage, setErrorMessage] = useState("");
-  const [isRecaptchaLoaded, setIsRecaptchaLoaded] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const router = useRouter();
 
+  // Initialisation du composant
   useEffect(() => {
     setIsClient(true);
-    
-    // Charger le script reCAPTCHA
-    const script = document.createElement('script');
-    script.src = "https://www.google.com/recaptcha/api.js?render=explicit";
-    script.async = true;
-    script.defer = true;
-    script.onload = () => setIsRecaptchaLoaded(true);
-    
-    document.head.appendChild(script);
-    
-    return () => {
-      document.head.removeChild(script);
-    };
   }, []);
 
-  // Initialiser reCAPTCHA une fois le script chargé
+  // Chargement et gestion de reCAPTCHA
   useEffect(() => {
-    if (isRecaptchaLoaded && window.grecaptcha && !window.grecaptcha.rendered) {
-      window.grecaptcha.render('recaptcha-container', {
-        'sitekey': '6LenzrsrAAAAAILCsTdrFPX5oXdEkFyIdq1wHC18',
-        'callback': (token) => {
-          setFormData(prev => ({ ...prev, recaptchaToken: token }));
+    if (!isClient) return;
+
+    let script: HTMLScriptElement | null = null;
+    let attempts = 0;
+    const maxAttempts = 3;
+
+    const loadRecaptcha = () => {
+      // Nettoyage préalable
+      cleanupRecaptcha();
+      
+      script = document.createElement('script');
+      script.src = "https://www.google.com/recaptcha/api.js?render=explicit";
+      script.async = true;
+      script.defer = true;
+      
+      script.onload = () => {
+        // Attendre que grecaptcha soit disponible
+        const checkGrecaptcha = setInterval(() => {
+          if (window.grecaptcha && typeof window.grecaptcha.render === 'function') {
+            clearInterval(checkGrecaptcha);
+            initializeRecaptcha();
+          } else if (attempts >= maxAttempts) {
+            clearInterval(checkGrecaptcha);
+            handleRecaptchaError();
+          }
+        }, 500);
+      };
+
+      script.onerror = () => {
+        if (attempts < maxAttempts) {
+          attempts++;
+          setTimeout(loadRecaptcha, 1000 * attempts);
+        } else {
+          handleRecaptchaError();
         }
-      });
-      window.grecaptcha.rendered = true;
-    }
-  }, [isRecaptchaLoaded]);
+      };
+
+      document.head.appendChild(script);
+    };
+
+    const initializeRecaptcha = () => {
+      try {
+        // Vérifier si déjà initialisé
+        const container = document.getElementById('recaptcha-container');
+        if (container && container.hasChildNodes()) {
+          container.innerHTML = '';
+        }
+
+        window.grecaptcha.render('recaptcha-container', {
+          'sitekey': '6LdGxLsrAAAAAOSqbGG1qy5dntT_IvWZpq-7zsVD',
+          'callback': (token: string) => {
+            setFormData(prev => ({ ...prev, recaptchaToken: token }));
+          },
+          'expired-callback': () => {
+            setFormData(prev => ({ ...prev, recaptchaToken: '' }));
+          }
+        });
+
+        setIsRecaptchaReady(true);
+        setRecaptchaError(false);
+        window.__RECAPTCHA_INITIALIZED__ = true;
+      } catch (error) {
+        console.error('Erreur d\'initialisation reCAPTCHA:', error);
+        handleRecaptchaError();
+      }
+    };
+
+    const handleRecaptchaError = () => {
+      setRecaptchaError(true);
+      setIsRecaptchaReady(false);
+      console.warn('reCAPTCHA n\'a pas pu être chargé après plusieurs tentatives');
+    };
+
+    const cleanupRecaptcha = () => {
+      // Nettoyer les scripts existants
+      const existingScripts = document.querySelectorAll('script[src*="google.com/recaptcha"]');
+      existingScripts.forEach(s => s.remove());
+
+      // Nettoyer l'élément reCAPTCHA
+      const container = document.getElementById('recaptcha-container');
+      if (container) {
+        container.innerHTML = '';
+      }
+
+      // Nettoyer la variable globale
+      if (window.grecaptcha) {
+        delete window.grecaptcha;
+      }
+      
+      window.__RECAPTCHA_INITIALIZED__ = false;
+    };
+
+    // Charger reCAPTCHA
+    loadRecaptcha();
+
+    // Nettoyage lors du démontage
+    return () => {
+      cleanupRecaptcha();
+      if (script) {
+        script.onload = null;
+        script.onerror = null;
+      }
+    };
+  }, [isClient]);
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setIsSubmitting(true);
     setErrorMessage("");
 
+    // Validation des champs obligatoires
     if (!formData.fullName || !formData.companyEmail || !formData.additionalNotes) {
       setErrorMessage("Veuillez remplir tous les champs obligatoires.");
       setIsSubmitting(false);
@@ -98,9 +182,9 @@ export default function ContactPage() {
       return;
     }
 
-    // Vérifier que reCAPTCHA a été résolu
-    if (!formData.recaptchaToken) {
-      setErrorMessage("Veuillez compléter le test reCAPTCHA.");
+    // Vérification reCAPTCHA (optionnelle si erreur de chargement)
+    if (!recaptchaError && (!formData.recaptchaToken || formData.recaptchaToken.length === 0)) {
+      setErrorMessage("Veuillez compléter le test de sécurité.");
       setIsSubmitting(false);
       return;
     }
@@ -304,14 +388,24 @@ export default function ContactPage() {
               </div>
 
               {/* Conteneur reCAPTCHA */}
-              <div className="flex justify-center mb-6">
-                <div id="recaptcha-container"></div>
+              <div className="mb-6">
+                {recaptchaError ? (
+                  <div className="text-center p-4 bg-yellow-50 border border-yellow-200 rounded-lg text-yellow-700">
+                    <p className="font-medium">Problème de sécurité détecté</p>
+                    <p className="text-sm mt-1">Veuillez actualiser la page et réessayer.</p>
+                  </div>
+                ) : (
+                  <div 
+                    id="recaptcha-container" 
+                    className="flex justify-center min-h-[78px]"
+                  ></div>
+                )}
               </div>
 
               <div className="pt-4">
                 <button
                   type="submit"
-                  disabled={isSubmitting}
+                  disabled={isSubmitting || recaptchaError}
                   className={`w-full md:w-auto bg-gradient-to-r from-orange-500 to-pink-500 hover:from-orange-600 hover:to-pink-600 text-white px-10 py-5 rounded-xl transition duration-300 text-lg font-medium shadow-lg hover:shadow-xl ${isSubmitting ? 'opacity-75 cursor-not-allowed' : ''}`}
                 >
                   {isSubmitting ? "Envoi en cours..." : "Envoyer le message"}
