@@ -55,7 +55,7 @@ export default function B2BVideoProductionPage() {
                     className="w-full h-full object-cover"
                     
                   >
-                    <source src="/b2b-video-demo.mp4" type="video/mp4" />
+                    <source src="https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVKCUwvV3f3Wsd1EZQ4zPStY5JB97kxm6Ac8Hy" type="video/mp4" />
                     Votre navigateur ne supporte pas la balise vidéo.
                   </video>
                 </div>
@@ -72,65 +72,63 @@ export default function B2BVideoProductionPage() {
             </p>
 
             {/* Logo Carousel */}
-            <div className="relative overflow-hidden mb-8 sm:mb-12 inverted">
-              {/* Left fade gradient */}
-              <div
-                className="absolute left-0 top-0 w-16 sm:w-32 h-full z-10 pointer-events-none"
-                style={{
-                  background:
-                    "linear-gradient(to right, rgba(255, 255, 255, 0), rgba(237, 237, 237, 0), transparent)",
-                }}
-              ></div>
-              {/* Right fade gradient */}
-              <div
-                className="absolute right-0 top-0 w-16 sm:w-32 h-full z-10 pointer-events-none"
-                style={{
-                  background:
-                    "linear-gradient(to left, hsla(0, 0%, 100%, 0.00), rgba(237, 237, 237, 0), transparent)",
-                }}
-              ></div>
-            
-              <div className="flex animate-scroll-seamless invert-images">
-                {[
-                  { name: "airbnb", src: "/airbnb.png?height=40&width=120&text=AIRBNB" },
-                  { name: "azus", src: "/azus.png?height=40&width=120&text=AZUS." },
-                  { name: "dell", src: "/dell.png?height=40&width=120&text=DELL" },
-                  { name: "lions", src: "/lions.png?height=40&width=120&text=LIONS" },
-                  { name: "logitech", src: "/logitech.png?height=40&width=120&text=LOGITECH" },
-                  { name: "salesforce", src: "/salesforce.png?height=40&width=120&text=SALESFORCE" },
-                  { name: "sanofi", src: "/sanofi.png?height=40&width=120&text=SANOFI" },
-                  { name: "toyota", src: "/toyota.png?height=40&width=120&text=TOYOTA" },
-                  { name: "uber", src: "/uber.png?height=40&width=120&text=UBER" },
-                  { name: "zapier", src: "/zapier.png?height=40&width=120&text=ZAPIER" },
-                ]
-                  .concat([
-                    { name: "airbnb", src: "/airbnb.png?height=40&width=120&text=AIRBNB" },
-                    { name: "azus", src: "/azus.png?height=40&width=120&text=AZUS." },
-                    { name: "dell", src: "/dell.png?height=40&width=120&text=DELL" },
-                    { name: "lions", src: "/lions.png?height=40&width=120&text=LIONS" },
-                    { name: "logitech", src: "/logitech.png?height=40&width=120&text=LOGITECH" },
-                    { name: "salesforce", src: "/salesforce.png?height=40&width=120&text=SALESFORCE" },
-                    { name: "sanofi", src: "/sanofi.png?height=40&width=120&text=SANOFI" },
-                    { name: "toyota", src: "/toyota.png?height=40&width=120&text=TOYOTA" },
-                    { name: "uber", src: "/uber.png?height=40&width=120&text=UBER" },
-                    { name: "zapier", src: "/zapier.png?height=40&width=120&text=ZAPIER" },
-                  ])
-                  .map((logo, index) => (
-                    <div
-                      key={index}
-                      className="flex items-center justify-center min-w-[120px] sm:min-w-[160px] mx-2 sm:mx-4"
-                    >
-                      <Image
-                        src={logo.src || "/placeholder.svg"}
-                        alt={`${logo.name} logo`}
-                        width={120}
-                        height={40}
-                        className="opacity-60 hover:opacity-80 transition-opacity object-contain"
-                      />
-                    </div>
-                  ))}
-              </div>
-            </div>
+<div className="relative overflow-hidden mb-8 sm:mb-12">
+  {/* Left fade gradient */}
+  <div
+    className="absolute left-0 top-0 w-16 sm:w-32 h-full z-10 pointer-events-none"
+    style={{
+      background:
+        "linear-gradient(to right, rgba(255, 255, 255, 0), rgba(237, 237, 237, 0), transparent)",
+    }}
+  ></div>
+  {/* Right fade gradient */}
+  <div
+    className="absolute right-0 top-0 w-16 sm:w-32 h-full z-10 pointer-events-none"
+    style={{
+      background:
+        "linear-gradient(to left, hsla(0, 0%, 100%, 0.00), rgba(237, 237, 237, 0), transparent)",
+    }}
+  ></div>
+
+  <div className="flex animate-scroll-seamless">
+    {[
+      { name: "sage", src: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztV4bnvwY2lTHSXo8DmjG0ZWyuahPUIeOpds65E" },
+      { name: "notion", src: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVRjuai5V8xN4tsZSVcawW35TIh0CgyLOYHAiX" },
+      { name: "dell", src: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVyVJ83Vf7jHwWMkUO0E4Y25ImLfS3X8vyRBib" },
+      { name: "deloitte", src: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVufQdOSMM0kbnN9ZpEL8lYQRazuvgOVG4Fot2" },
+      { name: "malt", src: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVN72SnQD45FgMDujBmTbOY28pnK0y4lkrZfWx" },
+      { name: "aircall", src: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVUlYofGSq2CrN5MjsDJkoHGX6AzxuROT8Sgfw" },
+      { name: "sanofi", src: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVUlVYsEdq2CrN5MjsDJkoHGX6AzxuROT8Sgfw" },
+      { name: "uber", src: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVci8fmc9r3QfKI0dziE8sFt4BVwMqT2bChkLN" },
+      { name: "zapier", src: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVNLoseK45FgMDujBmTbOY28pnK0y4lkrZfWxe" },
+    ]
+      .concat([
+        { name: "sage", src: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztV4bnvwY2lTHSXo8DmjG0ZWyuahPUIeOpds65E" },
+        { name: "notion", src: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVRjuai5V8xN4tsZSVcawW35TIh0CgyLOYHAiX" },
+        { name: "dell", src: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVyVJ83Vf7jHwWMkUO0E4Y25ImLfS3X8vyRBib" },
+        { name: "deloitte", src: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVufQdOSMM0kbnN9ZpEL8lYQRazuvgOVG4Fot2" },
+        { name: "malt", src: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVN72SnQD45FgMDujBmTbOY28pnK0y4lkrZfWx" },
+        { name: "aircall", src: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVUlYofGSq2CrN5MjsDJkoHGX6AzxuROT8Sgfw" },
+        { name: "sanofi", src: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVUlVYsEdq2CrN5MjsDJkoHGX6AzxuROT8Sgfw" }, 
+        { name: "uber", src: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVci8fmc9r3QfKI0dziE8sFt4BVwMqT2bChkLN" },
+        { name: "zapier", src: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVNLoseK45FgMDujBmTbOY28pnK0y4lkrZfWxe" },
+      ])
+      .map((logo, index) => (
+        <div
+          key={index}
+          className="flex items-center justify-center min-w-[120px] sm:min-w-[160px] mx-2 sm:mx-4"
+        >
+          <Image
+            src={logo.src || "/placeholder.svg"}
+            alt={`${logo.name} logo`}
+            width={120}
+            height={40}
+            className="opacity-60 hover:opacity-80 transition-opacity object-contain"
+          />
+        </div>
+      ))}
+  </div>
+</div>
           </div>
         </section>
 

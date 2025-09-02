@@ -419,16 +419,3 @@
 .animate-pulse-slow {
   animation: pulseSlow 1.6s infinite ease-in-out;
 }
-
-.inverted {
-  filter: invert(1) hue-rotate(180deg);
-}
-
-.inverted .invert-images,
-.inverted img,
-.inverted svg {
-  filter: invert(1) hue-rotate(180deg);
-}
-
-
-
