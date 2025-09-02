@@ -24,113 +24,113 @@ export default function B2BVideoProductionPage() {
     <>
       <Header />
       <main className="min-h-screen" style={{ backgroundColor: "rgba(255, 255, 255, 1)" }}>
-        {/* Hero Section */}
-        <section className="pt-16 pb-24" style={{ backgroundColor: "rgba(255, 255, 255, 1)" }}>
-          <div className="max-w-7xl mx-auto px-6 lg:px-8">
-            <div className="grid lg:grid-cols-2 gap-16 items-center">
-              <div className="max-w-xl">
-                <div className="text-sm font-semibold text-black mb-3 tracking-widest">
-                Production vidéo pour les entreprises
-                </div>
-                <h1 className="text-3xl lg:text-4xl font-bold text-black mb-8 leading-tight">
-                  Production vidéo de qualité professionnelle pour augmenter votre visibilité et accélérer votre croissance
-                </h1>
-                <p className="text-normal mb-5">
-                  Chez Asteraki, nous créons des vidéos d’entreprise d’excellente qualité, avec un rendu rapide sans compromis sur le résultat. Que ce soit pour un événement professionnel, un témoignage client, une vidéo de recrutement ou un message institutionnel, nous vous livrons un contenu percutant, soigné et 100 % sur mesure.
-                </p>
-                <div className="flex flex-col sm:flex-row gap-4">
-                  <Link href="/contact" passHref>
-                    <button className="btn-luxury border-0 px-6 sm:px-8 py-3 rounded-full text-base text-white text-semibold sm:text-lg mb-4 sm:mb-2">
-                      Obtenir un devis
-                    </button>
-                  </Link>
-                </div>
-              </div>
-              <div className="relative">
-                <div className="rounded-2xl overflow-hidden bg-gray-800 flex items-center justify-center h-96">
-                  <video
-                    autoPlay
-                    loop
-                    muted
-                    className="w-full h-full object-cover"
-                    
-                  >
-                    <source src="https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVKCUwvV3f3Wsd1EZQ4zPStY5JB97kxm6Ac8Hy" type="video/mp4" />
-                    Votre navigateur ne supporte pas la balise vidéo.
-                  </video>
-                </div>
-              </div>
-            </div>
+  {/* Hero Section */}
+  <section className="pt-16 pb-12" style={{ backgroundColor: "rgba(255, 255, 255, 1)" }}>
+    <div className="max-w-7xl mx-auto px-6 lg:px-8">
+      <div className="grid lg:grid-cols-2 gap-16 items-center">
+        <div className="max-w-xl">
+          <div className="text-sm font-semibold text-black mb-3 tracking-widest">
+          Production vidéo pour les entreprises
           </div>
-        </section>
-
-        {/* Client Logos Section */}
-        <section className="pt-1 pb-24" style={{ backgroundColor: "rgba(255, 255, 255, 1)" }}>
-          <div className="max-w-7xl mx-auto px-6 lg:px-8 text-center">
-            <p className="text-center text-black font-normal mt-4 sm:mt-6 text-sm sm:text-base px-4">
-              Nous avons accompagné plus de 250 entreprises en France
-            </p>
-
-            {/* Logo Carousel */}
-<div className="relative overflow-hidden mb-8 sm:mb-12">
-  {/* Left fade gradient */}
-  <div
-    className="absolute left-0 top-0 w-16 sm:w-32 h-full z-10 pointer-events-none"
-    style={{
-      background:
-        "linear-gradient(to right, rgba(255, 255, 255, 0), rgba(237, 237, 237, 0), transparent)",
-    }}
-  ></div>
-  {/* Right fade gradient */}
-  <div
-    className="absolute right-0 top-0 w-16 sm:w-32 h-full z-10 pointer-events-none"
-    style={{
-      background:
-        "linear-gradient(to left, hsla(0, 0%, 100%, 0.00), rgba(237, 237, 237, 0), transparent)",
-    }}
-  ></div>
-
-  <div className="flex animate-scroll-seamless">
-    {[
-      { name: "sage", src: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztV4bnvwY2lTHSXo8DmjG0ZWyuahPUIeOpds65E" },
-      { name: "notion", src: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVRjuai5V8xN4tsZSVcawW35TIh0CgyLOYHAiX" },
-      { name: "dell", src: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVyVJ83Vf7jHwWMkUO0E4Y25ImLfS3X8vyRBib" },
-      { name: "deloitte", src: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVufQdOSMM0kbnN9ZpEL8lYQRazuvgOVG4Fot2" },
-      { name: "malt", src: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVN72SnQD45FgMDujBmTbOY28pnK0y4lkrZfWx" },
-      { name: "aircall", src: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVUlYofGSq2CrN5MjsDJkoHGX6AzxuROT8Sgfw" },
-      { name: "sanofi", src: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVUlVYsEdq2CrN5MjsDJkoHGX6AzxuROT8Sgfw" },
-      { name: "uber", src: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVci8fmc9r3QfKI0dziE8sFt4BVwMqT2bChkLN" },
-      { name: "zapier", src: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVNLoseK45FgMDujBmTbOY28pnK0y4lkrZfWxe" },
-    ]
-      .concat([
-        { name: "sage", src: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztV4bnvwY2lTHSXo8DmjG0ZWyuahPUIeOpds65E" },
-        { name: "notion", src: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVRjuai5V8xN4tsZSVcawW35TIh0CgyLOYHAiX" },
-        { name: "dell", src: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVyVJ83Vf7jHwWMkUO0E4Y25ImLfS3X8vyRBib" },
-        { name: "deloitte", src: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVufQdOSMM0kbnN9ZpEL8lYQRazuvgOVG4Fot2" },
-        { name: "malt", src: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVN72SnQD45FgMDujBmTbOY28pnK0y4lkrZfWx" },
-        { name: "aircall", src: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVUlYofGSq2CrN5MjsDJkoHGX6AzxuROT8Sgfw" },
-        { name: "sanofi", src: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVUlVYsEdq2CrN5MjsDJkoHGX6AzxuROT8Sgfw" }, 
-        { name: "uber", src: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVci8fmc9r3QfKI0dziE8sFt4BVwMqT2bChkLN" },
-        { name: "zapier", src: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVNLoseK45FgMDujBmTbOY28pnK0y4lkrZfWxe" },
-      ])
-      .map((logo, index) => (
-        <div
-          key={index}
-          className="flex items-center justify-center min-w-[120px] sm:min-w-[160px] mx-2 sm:mx-4"
-        >
-          <Image
-            src={logo.src || "/placeholder.svg"}
-            alt={`${logo.name} logo`}
-            width={120}
-            height={40}
-            className="opacity-60 hover:opacity-80 transition-opacity object-contain"
-          />
+          <h1 className="text-3xl lg:text-4xl font-bold text-black mb-8 leading-tight">
+            Production vidéo de qualité professionnelle pour augmenter votre visibilité et accélérer votre croissance
+          </h1>
+          <p className="text-normal mb-5">
+            Chez Asteraki, nous créons des vidéos d'entreprise d'excellente qualité, avec un rendu rapide sans compromis sur le résultat. Que ce soit pour un événement professionnel, un témoignage client, une vidéo de recrutement ou un message institutionnel, nous vous livrons un contenu percutant, soigné et 100 % sur mesure.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4">
+            <Link href="/contact" passHref>
+              <button className="btn-luxury border-0 px-6 sm:px-8 py-3 rounded-full text-base text-white text-semibold sm:text-lg mb-4 sm:mb-2">
+                Obtenir un devis
+              </button>
+            </Link>
+          </div>
         </div>
-      ))}
-  </div>
-</div>
+        <div className="relative">
+          <div className="rounded-2xl overflow-hidden bg-gray-800 flex items-center justify-center h-96">
+            <video
+              autoPlay
+              loop
+              muted
+              className="w-full h-full object-cover"
+              
+            >
+              <source src="https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVKCUwvV3f3Wsd1EZQ4zPStY5JB97kxm6Ac8Hy" type="video/mp4" />
+              Votre navigateur ne supporte pas la balise vidéo.
+            </video>
           </div>
-        </section>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {/* Client Logos Section */}
+  <section className="pt-0 pb-24" style={{ backgroundColor: "rgba(255, 255, 255, 1)" }}>
+    <div className="max-w-7xl mx-auto px-6 lg:px-8 text-center">
+      <p className="text-center text-black font-normal mt-4 sm:mt-6 text-sm sm:text-base px-4">
+        Nous avons accompagné plus de 250 entreprises en France
+      </p>
+
+      {/* Logo Carousel */}
+      <div className="relative overflow-hidden mb-8 sm:mb-12">
+        {/* Left fade gradient */}
+        <div
+          className="absolute left-0 top-0 w-16 sm:w-32 h-full z-10 pointer-events-none"
+          style={{
+            background:
+              "linear-gradient(to right, rgba(255, 255, 255, 0), rgba(237, 237, 237, 0), transparent)",
+          }}
+        ></div>
+        {/* Right fade gradient */}
+        <div
+          className="absolute right-0 top-0 w-16 sm:w-32 h-full z-10 pointer-events-none"
+          style={{
+            background:
+              "linear-gradient(to left, hsla(0, 0%, 100%, 0.00), rgba(237, 237, 237, 0), transparent)",
+          }}
+        ></div>
+
+        <div className="flex animate-scroll-seamless">
+          {[
+            { name: "sage", src: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztV4bnvwY2lTHSXo8DmjG0ZWyuahPUIeOpds65E" },
+            { name: "notion", src: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVRjuai5V8xN4tsZSVcawW35TIh0CgyLOYHAiX" },
+            { name: "dell", src: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVyVJ83Vf7jHwWMkUO0E4Y25ImLfS3X8vyRBib" },
+            { name: "deloitte", src: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVufQdOSMM0kbnN9ZpEL8lYQRazuvgOVG4Fot2" },
+            { name: "malt", src: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVN72SnQD45FgMDujBmTbOY28pnK0y4lkrZfWx" },
+            { name: "aircall", src: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVUlYofGSq2CrN5MjsDJkoHGX6AzxuROT8Sgfw" },
+            { name: "sanofi", src: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVUlVYsEdq2CrN5MjsDJkoHGX6AzxuROT8Sgfw" },
+            { name: "uber", src: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVci8fmc9r3QfKI0dziE8sFt4BVwMqT2bChkLN" },
+            { name: "zapier", src: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVNLoseK45FgMDujBmTbOY28pnK0y4lkrZfWxe" },
+          ]
+            .concat([
+              { name: "sage", src: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztV4bnvwY2lTHSXo8DmjG0ZWyuahPUIeOpds65E" },
+              { name: "notion", src: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVRjuai5V8xN4tsZSVcawW35TIh0CgyLOYHAiX" },
+              { name: "dell", src: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVyVJ83Vf7jHwWMkUO0E4Y25ImLfS3X8vyRBib" },
+              { name: "deloitte", src: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVufQdOSMM0kbnN9ZpEL8lYQRazuvgOVG4Fot2" },
+              { name: "malt", src: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVN72SnQD45FgMDujBmTbOY28pnK0y4lkrZfWx" },
+              { name: "aircall", src: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVUlYofGSq2CrN5MjsDJkoHGX6AzxuROT8Sgfw" },
+              { name: "sanofi", src: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVUlVYsEdq2CrN5MjsDJkoHGX6AzxuROT8Sgfw" }, 
+              { name: "uber", src: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVci8fmc9r3QfKI0dziE8sFt4BVwMqT2bChkLN" },
+              { name: "zapier", src: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVNLoseK45FgMDujBmTbOY28pnK0y4lkrZfWxe" },
+            ])
+            .map((logo, index) => (
+              <div
+                key={index}
+                className="flex items-center justify-center min-w-[120px] sm:min-w-[160px] mx-2 sm:mx-4"
+              >
+                <Image
+                  src={logo.src || "/placeholder.svg"}
+                  alt={`${logo.name} logo`}
+                  width={120}
+                  height={40}
+                  className="opacity-60 hover:opacity-80 transition-opacity object-contain"
+                />
+              </div>
+            ))}
+        </div>
+      </div>
+    </div>
+  </section>
 
 
         {/* Portfolio */}

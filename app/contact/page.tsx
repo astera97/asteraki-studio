@@ -38,7 +38,7 @@ export default function ContactPage() {
       const urlParams = new URLSearchParams(window.location.search);
       const gclid = urlParams.get('gclid');
       
-      await fetch("https://submit-form.com/kdy5C8QCz", {
+      await fetch("https://submit-form.com/8wJcGYxuL", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

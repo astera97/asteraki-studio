@@ -9,8 +9,8 @@ import Link from "next/link";
 
 export default function Step6Contact() {
   const { quizData, updateQuizData, nextStep } = useQuiz();
-
-  // Initialisation sécurisée des données du formulaire
+  
+  // Initialisation des données avec les valeurs du quiz
   const [formData, setFormData] = useState({
     fullName: [quizData.contact?.firstName || "", quizData.contact?.lastName || ""]
       .filter(Boolean)
@@ -22,17 +22,20 @@ export default function Step6Contact() {
     projectBudget: "",
     howDidYouFindUs: "",
     additionalNotes: quizData.contact?.additionalNotes || "",
-    getExtraHooks: false,
   });
-
+  
   const [errorMessage, setErrorMessage] = useState("");
-  const [showSuccess, setShowSuccess] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setIsSubmitting(true);
+    setErrorMessage("");
 
+    // Validation des champs obligatoires
     if (!formData.fullName || !formData.companyEmail || !formData.additionalNotes) {
       setErrorMessage("Veuillez remplir tous les champs obligatoires.");
+      setIsSubmitting(false);
       return;
     }
 
@@ -40,15 +43,20 @@ export default function Step6Contact() {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailRegex.test(formData.companyEmail)) {
       setErrorMessage("Veuillez entrer une adresse e-mail professionnelle valide.");
+      setIsSubmitting(false);
       return;
     }
 
-    setErrorMessage("");
-
     try {
+      // Récupérer le GCLID depuis l'URL actuelle
+      const urlParams = new URLSearchParams(window.location.search);
+      const gclid = urlParams.get('gclid');
+      
       await fetch("https://submit-form.com/8wJcGYxuL", {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
+        headers: {
+          "Content-Type": "application/json",
+        },
         body: JSON.stringify({
           fullName: formData.fullName,
           companyEmail: formData.companyEmail,
@@ -57,11 +65,10 @@ export default function Step6Contact() {
           projectBudget: formData.projectBudget,
           howDidYouFindUs: formData.howDidYouFindUs,
           message: formData.additionalNotes,
-          getExtraHooks: formData.getExtraHooks ? "Oui" : "Non",
           _email: {
             from: formData.companyEmail,
             replyTo: formData.companyEmail,
-            subject: `Nouvelle demande de devis de ${formData.fullName}`,
+            subject: `Nouveau message de ${formData.fullName}`,
           },
         }),
       });
@@ -69,6 +76,7 @@ export default function Step6Contact() {
       // Mise à jour des données du quiz
       const [firstName, ...lastNameParts] = formData.fullName.split(" ");
       const lastName = lastNameParts.join(" ") || "";
+      
       updateQuizData({
         email: formData.companyEmail,
         contact: {
@@ -77,23 +85,19 @@ export default function Step6Contact() {
           company: formData.companyName,
           phone: formData.phoneNumber,
           additionalNotes: formData.additionalNotes,
-          getExtraHooks: formData.getExtraHooks,
         },
         projectBudget: formData.projectBudget,
         howDidYouFindUs: formData.howDidYouFindUs,
       });
 
-      // Afficher le succès et passer à l'étape suivante
-      setShowSuccess(true);
+      // Passage à l'étape suivante après succès
       setTimeout(() => {
-        setShowSuccess(false);
         nextStep();
       }, 1000);
     } catch (error) {
-      console.warn("La soumission a peut-être réussi :", error);
-      setShowSuccess(true);
+      console.warn("Erreur réseau, mais la soumission a peut-être fonctionné:", error);
+      // Même si erreur, on passe à l'étape suivante
       setTimeout(() => {
-        setShowSuccess(false);
         nextStep();
       }, 1000);
     }
@@ -118,7 +122,7 @@ export default function Step6Contact() {
         {/* Bouton Passer - Orange */}
         <Button
           onClick={nextStep}
-          disabled={showSuccess}
+          disabled={isSubmitting}
           className="bg-orange-500 hover:bg-orange-600 text-white px-4 py-2 rounded-lg flex items-center disabled:opacity-50"
         >
           Passer <ArrowLeft className="w-4 h-4 ml-1 rotate-180" />
@@ -138,121 +142,109 @@ export default function Step6Contact() {
 
         {/* Formulaire */}
         <div className="w-full max-w-4xl space-y-8">
-          <form onSubmit={handleSubmit} className="space-y-8">
-            {/* Nom complet & Numéro de contact */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div>
-                <label className="block text-sm font-medium text-gray-900 mb-2">Nom complet *</label>
-                <input
-                  type="text"
-                  value={formData.fullName}
-                  onChange={(e) => setFormData({ ...formData, fullName: e.target.value })}
-                  className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-orange-500"
-                  placeholder="Entrez votre nom"
-                  required
-                />
-              </div>
-              <div>
-                <label className="block text-sm font-medium text-gray-900 mb-2">Numéro de contact *</label>
-                <div className="relative">
-                  <div className="absolute left-3 top-1/2 transform -translate-y-1/2 flex items-center">
-                    <span className="text-lg mr-2">🇫🇷</span>
+          <div className="bg-white rounded-3xl shadow-xl p-8 md:p-12 lg:p-16">
+            <div className="max-w-4xl mx-auto">
+              <h2 className="text-3xl md:text-4xl font-bold mb-2 text-gray-900">Contactez-nous</h2>
+              <p className="text-xl text-gray-600 mb-10">Nous aimerions beaucoup vous entendre. Envoyez-nous un message et nous vous répondrons dès que possible.</p>
+
+              <form onSubmit={handleSubmit} className="space-y-8">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                  <div>
+                    <label htmlFor="fullName" className="block text-lg font-medium text-gray-900 mb-3">
+                      Nom complet *
+                    </label>
+                    <input
+                      type="text"
+                      id="fullName"
+                      name="fullName"
+                      value={formData.fullName}
+                      onChange={(e) => setFormData({ ...formData, fullName: e.target.value })}
+                      className="w-full px-6 py-4 border border-gray-300 rounded-xl shadow-sm focus:ring-2 focus:ring-orange-500 focus:border-orange-500 text-lg"
+                      placeholder="Entrez votre nom"
+                      required
+                    />
                   </div>
-                  <input
-                    type="tel"
-                    value={formData.phoneNumber}
-                    onChange={(e) => setFormData({ ...formData, phoneNumber: e.target.value })}
-                    className="w-full pl-16 pr-4 py-3 border-2 border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-orange-500"
-                    placeholder="06 12 34 56 78"
-                    required
-                  />
+                  <div>
+                    <label htmlFor="companyEmail" className="block text-lg font-medium text-gray-900 mb-3">
+                      Email professionnel *
+                    </label>
+                    <input
+                      type="email"
+                      id="companyEmail"
+                      name="companyEmail"
+                      value={formData.companyEmail}
+                      onChange={(e) => setFormData({ ...formData, companyEmail: e.target.value })}
+                      className="w-full px-6 py-4 border border-gray-300 rounded-xl shadow-sm focus:ring-2 focus:ring-orange-500 focus:border-orange-500 text-lg"
+                      placeholder="votre@entreprise.com"
+                      required
+                    />
+                  </div>
                 </div>
-              </div>
+
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                  <div>
+                    <label htmlFor="phoneNumber" className="block text-lg font-medium text-gray-900 mb-3">
+                      Numéro de contact
+                    </label>
+                    <input
+                      type="tel"
+                      id="phoneNumber"
+                      name="phoneNumber"
+                      value={formData.phoneNumber}
+                      onChange={(e) => setFormData({ ...formData, phoneNumber: e.target.value })}
+                      className="w-full px-6 py-4 border border-gray-300 rounded-xl shadow-sm focus:ring-2 focus:ring-orange-500 focus:border-orange-500 text-lg"
+                      placeholder="+1 234 567 890"
+                    />
+                  </div>
+                  <div>
+                    <label htmlFor="companyName" className="block text-lg font-medium text-gray-900 mb-3">
+                      Nom de l'entreprise
+                    </label>
+                    <input
+                      type="text"
+                      id="companyName"
+                      name="companyName"
+                      value={formData.companyName}
+                      onChange={(e) => setFormData({ ...formData, companyName: e.target.value })}
+                      className="w-full px-6 py-4 border border-gray-300 rounded-xl shadow-sm focus:ring-2 focus:ring-orange-500 focus:border-orange-500 text-lg"
+                      placeholder="Nom de votre entreprise"
+                    />
+                  </div>
+                </div>
+
+                
+
+                <div>
+                  <label htmlFor="additionalNotes" className="block text-lg font-medium text-gray-900 mb-3">
+                    Votre message * (Parlez-nous de votre projet)
+                  </label>
+                  <textarea
+                    id="additionalNotes"
+                    name="additionalNotes"
+                    rows={6}
+                    value={formData.additionalNotes}
+                    onChange={(e) => setFormData({ ...formData, additionalNotes: e.target.value })}
+                    className="w-full px-6 py-4 border border-gray-300 rounded-xl shadow-sm focus:ring-2 focus:ring-orange-500 focus:border-orange-500 text-lg"
+                    placeholder="Parlez-nous de votre campagne marketing—quel est son objectif principal, et qu'est-ce qui vous a amené à envisager ce projet ?"
+                    required
+                  ></textarea>
+                </div>
+
+                <div className="pt-4">
+                  <button
+                    type="submit"
+                    disabled={isSubmitting}
+                    className="w-full md:w-auto bg-gradient-to-r from-orange-500 to-pink-500 hover:from-orange-600 hover:to-pink-600 text-white px-10 py-5 rounded-xl transition duration-300 text-lg font-medium shadow-lg hover:shadow-xl"
+                  >
+                    {isSubmitting ? "Envoi en cours..." : "Envoyer le message"}
+                  </button>
+                  {errorMessage && (
+                    <p className="text-red-500 mt-4 text-lg">{errorMessage}</p>
+                  )}
+                </div>
+              </form>
             </div>
-
-            {/* Nom de l'entreprise & Email professionnel */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div>
-                <label className="block text-sm font-medium text-gray-900 mb-2">Nom de l'entreprise *</label>
-                <input
-                  type="text"
-                  value={formData.companyName}
-                  onChange={(e) => setFormData({ ...formData, companyName: e.target.value })}
-                  className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-orange-500"
-                  placeholder="Nom de votre entreprise"
-                  required
-                />
-              </div>
-              <div>
-                <label className="block text-sm font-medium text-gray-900 mb-2">Email professionnel *</label>
-                <input
-                  type="email"
-                  value={formData.companyEmail}
-                  onChange={(e) => setFormData({ ...formData, companyEmail: e.target.value })}
-                  className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-orange-500"
-                  placeholder="vous@entreprise.com"
-                  required
-                />
-              </div>
-            </div>
-
-            {/* Notes supplémentaires */}
-            <div>
-              <label className="block text-sm font-medium text-gray-900 mb-2">Notes supplémentaires *</label>
-              <textarea
-                value={formData.additionalNotes}
-                onChange={(e) => setFormData({ ...formData, additionalNotes: e.target.value })}
-                rows={6}
-                className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-orange-500 resize-none"
-                placeholder="Ajoutez les détails de votre projet ainsi que le délai souhaité pour la livraison."
-                required
-              />
-            </div>
-
-            {/* Case à cocher */}
-            <div className="flex items-start space-x-3">
-              <input
-                type="checkbox"
-                id="getExtraHooks"
-                checked={formData.getExtraHooks}
-                onChange={(e) => setFormData({ ...formData, getExtraHooks: e.target.checked })}
-                className="mt-1 w-4 h-4 text-orange-500 border-2 border-gray-300 rounded focus:ring-orange-500"
-              />
-              <label htmlFor="getExtraHooks" className="text-sm text-gray-700">
-                Obtenir 5 variations de capsules vidéo supplémentaires sans frais supplémentaires
-              </label>
-            </div>
-
-            {/* Avertissement */}
-            <p className="text-sm text-gray-600 text-center">
-              *Vous devez avoir un appel de découverte dans les 7 jours pour être éligible.
-            </p>
-
-            {/* Bouton de soumission */}
-            <div className="flex justify-center pt-8">
-              <button
-                type="submit"
-                disabled={showSuccess}
-                className="bg-black hover:bg-gray-800 text-white px-12 py-4 rounded-lg text-lg font-medium disabled:opacity-50 disabled:cursor-not-allowed transition-colors w-full md:w-auto"
-              >
-                Obtenir votre devis
-              </button>
-            </div>
-
-            {/* Message de succès */}
-            {showSuccess && (
-              <div className="mt-4 p-4 bg-green-50 border border-green-200 rounded-lg text-center">
-                <p className="text-green-800 text-sm">
-                  ✅ Merci ! Votre devis est en chemin.
-                </p>
-              </div>
-            )}
-
-            {/* Message d'erreur */}
-            {errorMessage && (
-              <p className="text-red-500 text-sm mt-2 text-center">{errorMessage}</p>
-            )}
-          </form>
+          </div>
         </div>
       </div>
     </div>

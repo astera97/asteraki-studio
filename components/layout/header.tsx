@@ -257,7 +257,7 @@ const resourcesDropdown = {
   featuredReport: {
     title: "Le guide marketing vidéo 2025",
     description: "Obtenez notre guide complet pour réussir votre marketing vidéo",
-    image: "/header/images/report_header.webp",
+    image: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVT1mSpf0ins5ZGYgUmLXN6jkRIWfT8d4Sc0F2",
     backgroundColor: "bg-gradient-to-br from-orange-500 to-orange-600",
     ctaButton: "Télécharger maintenant",
     href: "/resources/playbook"
