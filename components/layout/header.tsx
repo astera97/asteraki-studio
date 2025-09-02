@@ -444,7 +444,7 @@ export default function Header() {
           <div className="hidden lg:block">
             <Link href="/contact" passHref>
                    <Button className="btn-luxury border-0 px-6 sm:px-8 py-3 rounded-full text-base sm:text-lg mb-4 sm:mb-2">
-                     Contactez-nous
+                     Devis gratuit en 1h
                    </Button>
                  </Link>
           </div>

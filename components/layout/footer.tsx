@@ -108,23 +108,18 @@ export default function Footer() {
               <h4 className="text-gray-400 text-sm font-bold mb-4 sm:mb-6 uppercase tracking-wider">VIDÉOS</h4>
               <ul className="space-y-3 sm:space-y-4">
                 <li>
-                  <a href="#" className="text-white hover:text-gray-300 transition-colors text-sm sm:text-base">
-                    Par secteur
+                  <a href="/production-video-marque" className="text-white hover:text-gray-300 transition-colors text-sm sm:text-base">
+                    Vidéo de marque
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="text-white hover:text-gray-300 transition-colors text-sm sm:text-base">
-                    Par type de vidéo
+                  <a href="/production-video-entreprise" className="text-white hover:text-gray-300 transition-colors text-sm sm:text-base">
+                    Vidéos d'entreprise
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="text-white hover:text-gray-300 transition-colors text-sm sm:text-base">
-                    Vidéos corporate
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="text-white hover:text-gray-300 transition-colors text-sm sm:text-base">
-                    Vidéos animées
+                  <a href="/production-video-evenementielle" className="text-white hover:text-gray-300 transition-colors text-sm sm:text-base">
+                    Vidéos évènementielles
                   </a>
                 </li>
               </ul>
@@ -133,22 +128,22 @@ export default function Footer() {
             {/* Régions desservies */}
             <div className="text-center sm:text-left">
               <h4 className="text-gray-400 text-sm font-bold mb-4 sm:mb-6 uppercase tracking-wider">
-                Nos studios
+                Expertise
               </h4>
               <ul className="space-y-3 sm:space-y-4">
                 <li>
-                  <a href="#" className="text-white hover:text-gray-300 transition-colors text-sm sm:text-base">
-                    Lyon
+                  <a href="production-video-b2b" className="text-white hover:text-gray-300 transition-colors text-sm sm:text-base">
+                    B2B
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="text-white hover:text-gray-300 transition-colors text-sm sm:text-base">
-                    Toulouse
+                  <a href="production-video-b2c" className="text-white hover:text-gray-300 transition-colors text-sm sm:text-base">
+                    B2C
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="text-white hover:text-gray-300 transition-colors text-sm sm:text-base">
-                    Paris
+                  <a href="production-video-tech" className="text-white hover:text-gray-300 transition-colors text-sm sm:text-base">
+                    Technologie & SaaS
                   </a>
                 </li>
               </ul>
@@ -156,7 +151,7 @@ export default function Footer() {
 
             {/* Entreprise */}
             <div className="text-center sm:text-left">
-              <h4 className="text-gray-400 text-sm font-bold mb-4 sm:mb-6 uppercase tracking-wider">ENTREPRISE</h4>
+              <h4 className="text-gray-400 text-sm font-bold mb-4 sm:mb-6 uppercase tracking-wider">L'agence</h4>
               <ul className="space-y-3 sm:space-y-4">
                 <li>
                   <a href="/a-propos" className="text-white hover:text-gray-300 transition-colors text-sm sm:text-base">
@@ -164,8 +159,8 @@ export default function Footer() {
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="text-white hover:text-gray-300 transition-colors text-sm sm:text-base">
-                    Carrières
+                  <a href="/journal" className="text-white hover:text-gray-300 transition-colors text-sm sm:text-base">
+                    Blog
                   </a>
                 </li>
                 <li>
