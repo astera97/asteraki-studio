@@ -10,39 +10,39 @@ interface FAQItem {
 
 const b2bVideoFAQItems: FAQItem[] = [
   {
-    question: "Quels types de vidéos B2B créez-vous ?",
+    question: "Est-ce que la vidéo est vraiment efficace pour les entreprises ?",
     answer:
-      "Nous nous spécialisons dans les campagnes de marque globales, les vidéos de stimulation des ventes, les programmes de formation B2B, les communications dirigeants, le contenu pour les relations investisseurs et les systèmes vidéo B2B personnalisés. Chaque vidéo est conçue pour répondre à des défis B2B spécifiques, notamment l'évolutivité mondiale, la cohérence de la marque, les exigences de conformité et la mesure du ROI à travers des structures organisationnelles complexes.",
+      "Oui, et de plus en plus. Une vidéo bien faite capte l’attention 3x plus vite qu’un texte ou une présentation. Pour les décideurs B2B, c’est souvent la seule façon de comprendre un message complexe en peu de temps. Nos clients constatent une augmentation de 40 % du taux d’engagement sur leurs supports commerciaux après intégration de vidéos.",
   },
   {
-    question: "Combien de temps faut-il pour produire des vidéos B2B ?",
+    question: "Combien ça coûte ? Et est-ce que c’est un bon investissement ?",
     answer:
-      "La plupart des projets vidéo B2B prennent 4 à 6 semaines de la conception initiale à la livraison finale, les campagnes mondiales plus importantes prenant 8 à 12 semaines. Cela inclut les examens de gouvernance B2B, la planification de la localisation, les plongées techniques approfondies, le développement du scénario, le storyboard, la production et le montage. Nous prévoyons du temps pour plusieurs examens de parties prenantes et vérifications de conformité qui sont standard dans les environnements B2B.",
+      "Nos vidéos corporate commencent à 2 000 € (hors TVA), avec la plupart des projets entre 3 500 € et 6 000 € selon la complexité. Pour votre premier projet, **les frais de pré-production sont offerts**. Et oui, c’est un excellent investissement : une seule vidéo bien utilisée en interne ou en prospection peut remplacer des dizaines d’heures de présentations répétées.",
   },
   {
-    question: "Comment garantissez-vous la cohérence de la marque à travers les marchés mondiaux ?",
+    question: "Vous livrez vraiment en 5 jours après le tournage ?",
     answer:
-      "Nous utilisons notre système propriétaire BrandLock qui applique les directives de marque à chaque étape de la production. Cela inclut des modèles pré-approuvés, des vérifications automatiques de couleur et de typographie, des bibliothèques d'actifs centralisées et des flux de travail d'adaptation régionale qui maintiennent les éléments de base de la marque tout en permettant du contenu spécifique au marché. Nous fournissons également des rapports détaillés de conformité de marque avec chaque livrable.",
+      "Oui, c’est un engagement. Une fois le tournage terminé, vous recevez votre vidéo finale en 5 jours ouvrés maximum. Pas de retards, pas de mauvaises surprises. Nous tenons ce délai depuis plus de 100 projets, car nous avons un processus de montage optimisé et une équipe interne dédiée.",
   },
   {
-    question: "Quelle est votre approche de la conformité et de la gouvernance B2B ?",
+    question: "Et si on n’est pas satisfait du résultat ?",
     answer:
-      "Notre processus de production B2B inclut plusieurs couches de vérifications de conformité : points de contrôle d'examen juridique, protections de confidentialité des données, normes d'accessibilité (WCAG 2.1) et flux de travail de gouvernance qui s'alignent sur les hiérarchies d'approbation B2B. Nous avons de l'expérience avec le RGPD, HIPAA et les exigences de conformité spécifiques à l'industrie, et nous documentons nos processus de conformité à des fins d'audit.",
+      "Nous travaillons en étroite collaboration avec vous à chaque étape : brief, storyboard, première version. Mais si jamais un ajustement est nécessaire, nous proposons 3 tours de retouches inclus dans le prix. Notre objectif est que vous soyez 100 % satisfait.",
   },
   {
-    question: "Combien coûtent les vidéos B2B ?",
+    question: "On a déjà une agence de com, pourquoi vous choisir ?",
     answer:
-      "La production de vidéos B2B commence à 8 000 € par vidéo pour le contenu de base de stimulation des ventes, avec la plupart des projets se situant entre 12 000 € et 25 000 € par vidéo selon la complexité, les exigences d'adaptation mondiale et la qualité de production. Les systèmes vidéo B2B (modèles, flux de travail, gouvernance) se situent généralement entre 50 000 € et 150 000 €. Nous fournissons des devis détaillés de niveau entreprise sans frais cachés, incluant des ventilations par région et langue.",
+      "Beaucoup de nos clients viennent d’agences généralistes qui font de la vidéo “à côté”. Nous, c’est notre cœur de métier. On ne fait que ça. Résultat : une qualité cinéma, des délais respectés, et des formats prêts à diffuser partout. Vous gagnez du temps, de la qualité, et un contenu qui marche.",
   },
   {
-    question: "Travaillez-vous avec des piles technologiques marketing B2B ?",
+    question: "Faut-il être à Paris pour faire appel à Asteraki ?",
     answer:
-      "Oui, nous avons une vaste expérience de l'intégration avec les piles marketing B2B, notamment Salesforce Marketing Cloud, Adobe Experience Cloud, Marketo, HubSpot Enterprise et les plateformes CMS personnalisées. Nous fournissons des spécifications techniques, une documentation API et un support de mise en œuvre pour assurer une intégration transparente avec votre écosystème technologique existant.",
+      "Pas du tout. Nous tournons dans toute la France et à l’international. Pour les interviews ou événements, notre équipe se déplace. Pour les autres formats, on peut tout gérer à distance : brief, validation, livraison. Beaucoup de nos clients sont basés à Lyon, Marseille, Lille, ou à l’étranger.",
   },
   {
-    question: "Comment mesurez-vous le ROI des programmes vidéo B2B ?",
+    question: "On obtient plusieurs formats ? Ou juste un fichier ?",
     answer:
-      "Nous intégrons la mesure du ROI directement dans votre stratégie vidéo en utilisant un cadre à trois niveaux : indicateurs d'engagement (vues, taux d'achèvement), impact commercial (productivité des ventes, taux de conversion) et renforcement de la marque (scores de cohérence, reconnaissance). Nous implémentons des codes de suivi, des paramètres UTM et des tableaux de bord analytiques personnalisés qui relient la performance vidéo à vos KPI commerciaux, fournissant des rapports trimestriels sur le ROI avec des informations exploitables.",
+      "Vous obtenez plusieurs versions optimisées : version longue, teaser 15-30s, version verticale, format carré pour LinkedIn, etc. Tout est inclus. Vous pouvez diffuser votre contenu sur votre site, vos réseaux, vos présentations, ou vos emails, sans rien avoir à recadrer.",
   },
 ]
 
@@ -61,14 +61,14 @@ export default function B2BVideoFAQSection() {
           {/* Badge */}
           <div className="mb-8">
             <span className="inline-block px-6 py-2 border border-gray-600 rounded-full text-sm font-medium text-gray-300 uppercase tracking-wider">
-              FAQ VIDÉO B2B
+              QUESTIONS FRÉQUENTES
             </span>
           </div>
 
           {/* Title */}
           <h2 className="text-3xl lg:text-6xl font-bold leading-tight text-white">
-            Des questions sur nos <br />
-            services vidéo B2B ?
+            Vous avez des questions ? <br />
+            On a les réponses.
           </h2>
         </div>
 

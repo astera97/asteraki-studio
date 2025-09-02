@@ -27,15 +27,15 @@ export default function FinalCTASection() {
             {/* Main Content */}
             <div className="max-w-xl">
               <h2 className="text-3xl xs:text-2xl sm:text-2xl lg:text-4xl font-bold leading-tight mb-6 xs:mb-6 sm:mb-8">
-                Prêt à amplifier votre vidéo
-                <span className="text-orange-400 block mt-2">à l'échelle mondiale?</span>
+                Prêt à réaliser votre meilleure
+                <span className="text-orange-400 block mt-2">vidéo d'entreprise</span>
               </h2>
 
               <p className="text-gray-300 text-base xs:text-lg leading-relaxed mb-6 xs:mb-8 sm:mb-12 max-w-lg">
                 Notre équipe se spécialise dans la création de vidéos B2B authentiques qui maintiennent l'intégrité de la marque à travers les marchés mondiaux tout en délivrant un ROI mesurable grâce à des processus de production de qualité professionnelle et des systèmes vidéo stratégiques.
               </p>
 
-              <Link href="/quiz" passHref>
+              <Link href="/contact" passHref>
                 <Button className="btn-luxury border-0 px-6 py-3 w-full sm:w-auto sm:px-8 sm:py-3 rounded-full text-base sm:text-lg mb-4 sm:mb-6">
                   Estimer votre projet
                 </Button>
