@@ -1,11 +1,13 @@
-"use client"
+// src/app/services/healthcare-video-production/healthcare-video-faq.tsx
+"use client";
 
-import { useState } from "react"
-import { ChevronDown } from "lucide-react"
+import { useState } from "react";
+import { ChevronDown } from "lucide-react";
+import Script from "next/script";
 
 interface FAQItem {
-  question: string
-  answer: string
+  question: string;
+  answer: string;
 }
 
 const healthcareVideoFAQItems: FAQItem[] = [
@@ -44,62 +46,93 @@ const healthcareVideoFAQItems: FAQItem[] = [
     answer:
       "Les vidéos de santé stratégiques renforcent la confiance, expliquent clairement les traitements complexes et font preuve d'empathie - autant de facteurs critiques dans la prise de décision et l'observance thérapeutique des patients. Les patients qui s'engagent avec des vidéos explicatives de santé conformes montrent des taux d'observance thérapeutique 29 % plus élevés et signalent des niveaux d'anxiété 33 % plus faibles concernant les traitements. Pour l'éducation des patients, une communication claire et régulière maintient les patients informés et engagés, améliorant les résultats et réduisant les complications. Nous intégrons des cadres de mesure directement dans votre stratégie vidéo pour suivre ces indicateurs.",
   },
-]
+];
 
 export default function HealthcareVideoFAQSection() {
-  const [openItems, setOpenItems] = useState<number[]>([])
+  const [openItems, setOpenItems] = useState<number[]>([]);
 
   const toggleItem = (index: number) => {
-    setOpenItems((prev) => (prev.includes(index) ? prev.filter((i) => i !== index) : [...prev, index]))
-  }
+    setOpenItems((prev) =>
+      prev.includes(index)
+        ? prev.filter((i) => i !== index)
+        : [...prev, index]
+    );
+  };
+
+  // ✅ Generate structured data for Google
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: healthcareVideoFAQItems.map((item) => ({
+      "@type": "Question",
+      name: item.question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: item.answer,
+      },
+    })),
+  };
 
   return (
-    <section className="py-24" style={{ backgroundColor: "#111111" }}>
-      <div className="max-w-[1300px] mx-auto px-4">
-        {/* Section Header */}
-        <div className="text-center mb-16">
-          {/* Badge */}
-          <div className="mb-8">
-            <span className="inline-block px-6 py-2 border border-gray-600 rounded-full text-sm font-medium text-gray-300 uppercase tracking-wider">
-              FAQ VIDÉO SANTÉ
-            </span>
+    <>
+      {/* ✅ Inject JSON-LD structured data */}
+      <Script
+        id="healthcare-video-faq-schema"
+        type="application/ld+json"
+        strategy="afterInteractive"
+      >
+        {JSON.stringify(faqSchema)}
+      </Script>
+
+      {/* FAQ UI */}
+      <section className="py-24" style={{ backgroundColor: "#111111" }}>
+        <div className="max-w-[1300px] mx-auto px-4">
+          {/* Section Header */}
+          <div className="text-center mb-16">
+            <div className="mb-8">
+              <span className="inline-block px-6 py-2 border border-gray-600 rounded-full text-sm font-medium text-gray-300 uppercase tracking-wider">
+                FAQ VIDÉO SANTÉ
+              </span>
+            </div>
+            <h2 className="text-3xl lg:text-6xl font-bold leading-tight text-white">
+              Des questions sur nos <br />
+              services vidéo de santé ?
+            </h2>
           </div>
 
-          {/* Title */}
-          <h2 className="text-3xl lg:text-6xl font-bold leading-tight text-white">
-            Des questions sur nos <br />
-            services vidéo de santé ?
-          </h2>
-        </div>
-
-        {/* FAQ Items */}
-        <div className="max-w-4xl mx-auto space-y-4">
-          {healthcareVideoFAQItems.map((item, index) => (
-            <div key={index} className="bg-[#F1F1F1] rounded-3xl overflow-hidden">
-              <button
-                onClick={() => toggleItem(index)}
-                className="w-full px-8 py-6 text-left flex items-center justify-between hover:bg-gray-750 transition-colors"
-              >
-                <span className="text-[19px] font-medium text-black pr-4">{item.question}</span>
-                <ChevronDown
-                  className={`w-6 h-6 text-black transition-transform duration-500 flex-shrink-0 ${
-                    openItems.includes(index) ? "rotate-180" : ""
+          {/* FAQ List */}
+          <div className="max-w-4xl mx-auto space-y-4">
+            {healthcareVideoFAQItems.map((item, index) => (
+              <div key={index} className="bg-[#F1F1F1] rounded-3xl overflow-hidden">
+                <button
+                  onClick={() => toggleItem(index)}
+                  className="w-full px-8 py-6 text-left flex items-center justify-between hover:bg-gray-750 transition-colors"
+                >
+                  <span className="text-[19px] font-medium text-black pr-4">
+                    {item.question}
+                  </span>
+                  <ChevronDown
+                    className={`w-6 h-6 text-black transition-transform duration-500 flex-shrink-0 ${
+                      openItems.includes(index) ? "rotate-180" : ""
+                    }`}
+                  />
+                </button>
+                <div
+                  className={`overflow-hidden transition-all duration-500 ease-in-out ${
+                    openItems.includes(index)
+                      ? "max-h-96 opacity-100"
+                      : "max-h-0 opacity-0"
                   }`}
-                />
-              </button>
-              <div
-                className={`overflow-hidden transition-all duration-500 ease-in-out ${
-                  openItems.includes(index) ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
-                }`}
-              >
-                <div className="mx-4 mb-4 bg-[#111111] rounded-2xl px-8 py-6">
-                  <p className="text-white leading-relaxed">{item.answer}</p>
+                >
+                  <div className="mx-4 mb-4 bg-[#111111] rounded-2xl px-8 py-6">
+                    <p className="text-white leading-relaxed">{item.answer}</p>
+                  </div>
                 </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
-      </div>
-    </section>
-  )
+      </section>
+    </>
+  );
 }
