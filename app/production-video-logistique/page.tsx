@@ -51,7 +51,7 @@ export default function LogisticsVideoProductionPage() {
                     className="w-full h-full object-cover"
                     poster="/logistics-video-poster.jpg"
                   >
-                    <source src="/logistics-video-demo.mp4" type="video/mp4" />
+                    <source src="https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVKCUwvV3f3Wsd1EZQ4zPStY5JB97kxm6Ac8Hy" type="video/mp4" />
                     Votre navigateur ne supporte pas la balise vidéo.
                   </video>
                 </div>

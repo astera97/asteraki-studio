@@ -50,7 +50,7 @@ export default function DemoVideoProductionPage() {
                     muted
                     className="w-full h-full object-cover"
                   >
-                    <source src="https://xb26hl5f9h.ufs.sh/f/myb9AtBX9KywbFyRv3OiCeEItjw1VXN8kvL65WuUqFRDcO24" type="video/mp4" />
+                    <source src="https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVKCUwvV3f3Wsd1EZQ4zPStY5JB97kxm6Ac8Hy" type="video/mp4" />
                     Votre navigateur ne prend pas en charge la balise vidéo.
                   </video>
                 </div>

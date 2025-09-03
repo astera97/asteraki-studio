@@ -51,7 +51,7 @@ export default function StartupVideoProductionPage() {
                     className="w-full h-full object-cover"
                     
                   >
-                    <source src="https://xb26hl5f9h.ufs.sh/f/myb9AtBX9KywYDYsbzMBbdoyAp3vE5DRa9SFiUfT6lkr4qsN" type="video/mp4" />
+                    <source src="https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVKCUwvV3f3Wsd1EZQ4zPStY5JB97kxm6Ac8Hy" type="video/mp4" />
                     Votre navigateur ne supporte pas la balise vidéo.
                   </video>
                 </div>
@@ -64,7 +64,7 @@ export default function StartupVideoProductionPage() {
         <section className="pt-1 pb-24" style={{ backgroundColor: "rgba(255, 255, 255, 1)" }}>
           <div className="max-w-7xl mx-auto px-6 lg:px-8 text-center">
             <p className="text-center text-black font-normal mt-4 sm:mt-6 text-sm sm:text-base px-4">
-              Nous avons accompagné plus de 50 startups – 5/5 avis Google
+              Nous avons accompagné plus de 50 startups <br/> 5/5 avis Google
             </p>
 
             {/* Logo Carousel */}

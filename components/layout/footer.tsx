@@ -159,11 +159,6 @@ export default function Footer() {
                   </a>
                 </li>
                 <li>
-                  <a href="/journal" className="text-white hover:text-gray-300 transition-colors text-sm sm:text-base">
-                    Blog
-                  </a>
-                </li>
-                <li>
                   <a href="/contact" className="text-white hover:text-gray-300 transition-colors text-sm sm:text-base">
                     Contact
                   </a>
@@ -175,11 +170,7 @@ export default function Footer() {
             <div className="text-center sm:text-left">
               <h4 className="text-gray-400 text-sm font-bold mb-4 sm:mb-6 uppercase tracking-wider">LÉGAL</h4>
               <ul className="space-y-3 sm:space-y-4 mb-6 sm:mb-8">
-                <li>
-                  <a href="#" className="text-white hover:text-gray-300 transition-colors text-sm sm:text-base">
-                    Conditions
-                  </a>
-                </li>
+                
                 <li>
                   <a href="politique-de-confidentialite" className="text-white hover:text-gray-300 transition-colors text-sm sm:text-base">
                     Confidentialité
