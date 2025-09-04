@@ -15,7 +15,7 @@ export default function ThankYouPage() {
     // Déclencher la conversion si le GCLID existe
     if (gclid && typeof window !== "undefined" && (window as any).gtag) {
       (window as any).gtag('event', 'conversion', {
-        'send_to': 'AW-17523897704', // ID de conversion Google Ads
+        'send_to': 'G-TZHRVN7HXX', // ID de conversion Google Ads
         'value': 1.0,
         'currency': 'EUR',
         'gclid': gclid
@@ -24,7 +24,7 @@ export default function ThankYouPage() {
     // Déclencher la conversion même sans GCLID (pour les cas non trackés)
     else if (typeof window !== "undefined" && (window as any).gtag) {
       (window as any).gtag('event', 'conversion', {
-        'send_to': 'AW-17523897704',
+        'send_to': 'G-TZHRVN7HXX',
         'value': 1.0,
         'currency': 'EUR'
       });
