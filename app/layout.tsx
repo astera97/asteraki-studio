@@ -34,14 +34,14 @@ export default function RootLayout({
         />
 
         {/* Google Ads Conversion Tag (gtag.js) */}
-        <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17350258945"></script>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-TZHRVN7HXX"></script>
         <script
           dangerouslySetInnerHTML={{
             __html: `
               window.dataLayer = window.dataLayer || [];
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
-              gtag('config', 'AW-17350258945');
+              gtag('config', 'G-TZHRVN7HXX');
             `,
           }}
         />
@@ -54,7 +54,7 @@ export default function RootLayout({
             new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
             j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-            })(window,document,'script','dataLayer','GTM-TB9X7VPG');`,
+            })(window,document,'script','dataLayer','GTM-P2DHPMWQ');`,
           }}
         />
         {/* End Google Tag Manager */}
