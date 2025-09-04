@@ -639,7 +639,7 @@ const portfolioProjects = getUniqueAndShuffledProjects([
     services: ["Production multi-caméra", "Streaming en direct", "Réels de highlights", "Post-production"],
     videoType: "Évènement",
     industry: "Startup",
-    thumbnail: "https://xb26hl5f9h.ufs.sh/f/myb9AtBX9KywbwgrntOiCeEItjw1VXN8kvL65WuUqFRDcO24    ",
+    thumbnail: "https://xb26hl5f9h.ufs.sh/f/myb9AtBX9KywbwgrntOiCeEItjw1VXN8kvL65WuUqFRDcO24",
     vimeoUrl: "https://vimeo.com/1104168315",
   },
   {
@@ -650,7 +650,7 @@ const portfolioProjects = getUniqueAndShuffledProjects([
     services: ["Scénario", "Cinématographie", "Graphismes animés", "Étalonnage colorimétrique"],
     videoType: "Vidéo de recrutement",
     industry: "Startup",
-    thumbnail: "https://xb26hl5f9h.ufs.sh/f/myb9AtBX9KywvuM8M7GgmR8DzbQXG4njAStoPfq2aTk7JiFL    ",
+    thumbnail: "https://xb26hl5f9h.ufs.sh/f/myb9AtBX9KywvuM8M7GgmR8DzbQXG4njAStoPfq2aTk7JiFL",
     vimeoUrl: "https://vimeo.com/1104256442",
   },
   //Cannes Lions

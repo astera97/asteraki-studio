@@ -34,14 +34,14 @@ export default function RootLayout({
         />
 
         {/* Google Ads Conversion Tag (gtag.js) */}
-        <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17523897704"></script>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17350258945"></script>
         <script
           dangerouslySetInnerHTML={{
             __html: `
               window.dataLayer = window.dataLayer || [];
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
-              gtag('config', 'AW-17523897704');
+              gtag('config', 'AW-17350258945');
             `,
           }}
         />
@@ -64,7 +64,7 @@ export default function RootLayout({
         {/* Google Tag Manager (noscript) */}
         <noscript>
           <iframe 
-            src="https://www.googletagmanager.com/ns.html?id=GTM-TB9X7VPG"
+            src="https://www.googletagmanager.com/ns.html?id=GTM-P2DHPMWQ"
             height="0" 
             width="0" 
             style={{ display: 'none', visibility: 'hidden' }}
