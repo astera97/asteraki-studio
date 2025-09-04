@@ -9,25 +9,62 @@ import { useEffect } from "react"
 export default function ThankYouPage() {
   useEffect(() => {
     // Récupérer le GCLID de l'URL
-    const urlParams = new URLSearchParams(window.location.search);
-    const gclid = urlParams.get('gclid');
+    const urlParams = new URLSearchParams(window.location.search)
+    const gclid = urlParams.get('gclid')
     
-    // Déclencher la conversion si le GCLID existe
-    if (gclid && typeof window !== "undefined" && (window as any).gtag) {
-      (window as any).gtag('event', 'conversion', {
-        'send_to': 'G-TZHRVN7HXX', // ID de conversion Google Ads
-        'value': 1.0,
-        'currency': 'EUR',
-        'gclid': gclid
-      });
+    // Fonction pour vérifier si gtag est disponible
+    const isGtagAvailable = () => {
+      return typeof window !== "undefined" && 
+             typeof (window as any).gtag === "function"
     }
-    // Déclencher la conversion même sans GCLID (pour les cas non trackés)
-    else if (typeof window !== "undefined" && (window as any).gtag) {
-      (window as any).gtag('event', 'conversion', {
-        'send_to': 'G-TZHRVN7HXX',
-        'value': 1.0,
-        'currency': 'EUR'
-      });
+
+    // Fonction pour envoyer l'événement de conversion
+    const sendConversionEvent = () => {
+      if (isGtagAvailable()) {
+        try {
+          // Format CORRECT pour Google Ads: AW-CONVERSION_ID/CONVERSION_LABEL
+          const conversionId = 'AW-17350258945/RetLCObT_PQaEIHin9FA'
+          
+          // Paramètres de conversion
+          const conversionParams: any = {
+            'send_to': conversionId,
+            'value': 1.0,
+            'currency': 'EUR'
+          }
+          
+          // Ajouter le GCLID si disponible
+          if (gclid) {
+            conversionParams.gclid = gclid
+          }
+          
+          // Envoyer l'événement de conversion
+          (window as any).gtag('event', 'conversion', conversionParams)
+          console.log('Conversion event sent successfully to Google Ads')
+          
+          // Vérification supplémentaire
+          setTimeout(() => {
+            if (typeof (window as any).gtag === 'function') {
+              (window as any).gtag('event', 'conversion_debug', {
+                'send_to': conversionId
+              })
+            }
+          }, 1000)
+        } catch (error) {
+          console.error('Error sending conversion event:', error)
+        }
+      } else {
+        // Réessayer si gtag n'est pas encore chargé
+        console.log('gtag not available yet, retrying in 500ms...')
+        setTimeout(sendConversionEvent, 500)
+      }
+    }
+
+    // Démarrer le processus d'envoi de conversion
+    sendConversionEvent()
+    
+    // Nettoyage
+    return () => {
+      // Aucun nettoyage nécessaire pour cet effet
     }
   }, []);
 
