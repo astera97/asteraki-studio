@@ -18,7 +18,7 @@ useEffect(() => {
     if (typeof window !== "undefined" && (window as any).gtag) {
       try {
         // Format CORRECT pour Google Ads: AW-CONVERSION_ID/CONVERSION_LABEL
-        const conversionId = 'AW-17350258945/RetLCObT_PQaEIHin9FA';
+        const conversionId = 'AW-17350258945';
         
         // Paramètres de conversion
         const conversionParams: any = {
