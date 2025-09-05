@@ -1,4 +1,4 @@
-"use client"
+/*"use client"
 
 import { Button } from "@/components/ui/button"
 import { Check, ExternalLink, ArrowRight, Play } from "lucide-react"

@@ -1,4 +1,4 @@
-/*"use client"
+"use client"
 
 import { Button } from "@/components/ui/button"
 import { Check, ExternalLink, ArrowRight, Play } from "lucide-react"
@@ -117,7 +117,7 @@ useEffect(() => {
           </div>
         </div>
 
-        /* Section CTA 
+        {/* Section CTA */}
         <div className="border-t pt-12">
           <div className="text-center mb-8">
             <h2 className="text-2xl font-bold text-gray-900 mb-2">En attendant…</h2>
@@ -125,7 +125,7 @@ useEffect(() => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          /* CTA Projets 
+            {/* CTA Projets */}
             <div className="bg-gradient-to-br from-orange-50 to-orange-100 rounded-xl p-8 text-center">
               <div className="w-16 h-16 bg-orange-500 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Play className="w-8 h-8 text-white" />
@@ -141,7 +141,7 @@ useEffect(() => {
               </Link>
             </div>
 
-            {/* CTA Blog 
+            {/* CTA Blog */}
             <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl p-8 text-center">
               <div className="w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center mx-auto mb-4">
                 <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
