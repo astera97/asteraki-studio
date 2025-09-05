@@ -10,8 +10,11 @@ import FinalCTASection from "./customer-story-cta"
 
 export const generateMetadata = async () => {
   return {
-    title: "Production de vidéos témoignages clients | Asteraki",
-    description: "Créez de la preuve sociale avec des témoignages premium. Notre équipe s'assure d'obtenir des vidéos témoignages clients cinématographiques qui convertissent les prospects en clients.",
+    title: "Vidéo Témoignage Client | Créez une Preuve Sociale Authentique - Asteraki",
+    description: "Vous cherchez une agence pour produire une vidéo témoignage client ? Découvrez comment des témoignages authentiques boostent la confiance des prospects et augmentent vos conversions en France.",
+    alternates: {
+      canonical: "https://www.asteraki.com/production-video-temoignage-client"
+    }
   }
 }
 
@@ -21,44 +24,43 @@ export default function CustomerStoryVideoPage() {
       <Header />
       <main className="min-h-screen" style={{ backgroundColor: "rgba(255, 255, 255, 1)" }}>
         {/* Section Héro */}
-        <section className="pt-16 pb-24" style={{ backgroundColor: "rgba(255, 255, 255, 1)" }}>
-          <div className="max-w-7xl mx-auto px-6 lg:px-8">
-            <div className="grid lg:grid-cols-2 gap-16 items-center">
-              <div className="max-w-xl">
-                <div className="text-sm font-semibold text-black mb-3 tracking-widest">
-                  Production de vidéos témoignages clients
-                </div>
-                <h1 className="text-3xl lg:text-4xl font-bold text-black mb-8 leading-tight">
-                  Transformez vos clients en vos meilleurs vendeurs.
-                </h1>
-                <p className="text-normal mb-5">
-                  Nous créons des vidéos témoignages clients authentiques et cinématographiques qui renforcent la confiance, démontrent de vrais résultats et convertissent les prospects en clients. De la conception initiale à la livraison finale, nous gérons tous les aspects de la production.
-                </p>
-                <div className="flex flex-col sm:flex-row gap-4">
-                  <Link href="/quiz" passHref>
-                    <button className="btn-luxury border-0 px-6 sm:px-8 py-3 rounded-full text-base text-white text-semibold sm:text-lg mb-4 sm:mb-2">
-                      Estimer votre projet en 1-minute
-                    </button>
-                  </Link>
-                </div>
-              </div>
-              <div className="relative">
-                <div className="rounded-2xl overflow-hidden bg-gray-800 flex items-center justify-center h-96">
-                  <video
-                    autoPlay
-                    loop
-                    muted
-                    className="w-full h-full object-cover"
-                    poster="/customer-story-poster.jpg"
-                  >
-                    <source src="https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVKCUwvV3f3Wsd1EZQ4zPStY5JB97kxm6Ac8Hy" type="video/mp4" />
-                    Votre navigateur ne prend pas en charge la balise vidéo.
-                  </video>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+        {/* Section Héro - MODIFICATIONS MINIMALES */}
+<section className="pt-16 pb-24" style={{ backgroundColor: "rgba(255, 255, 255, 1)" }}>
+  <div className="max-w-7xl mx-auto px-6 lg:px-8">
+    <div className="grid lg:grid-cols-2 gap-16 items-center">
+      <div className="max-w-xl">
+        {/* SUPPRESSION de la div "Production de vidéos témoignages clients" */}
+        <h1 className="text-3xl lg:text-4xl font-bold text-black mb-8 leading-tight">
+          Vidéo témoignage client <br/>Transformez vos clients en vos meilleurs vendeurs.
+        </h1>
+        <p className="text-normal mb-5">
+          Nous créons des vidéos témoignage client authentiques et cinématographiques qui renforcent la confiance, démontrent de vrais résultats et convertissent les prospects en clients. De la conception initiale à la livraison finale, nous gérons tous les aspects de la production.
+        </p>
+        <div className="flex flex-col sm:flex-row gap-4">
+          <Link href="/quiz" passHref>
+            <button className="btn-luxury border-0 px-6 sm:px-8 py-3 rounded-full text-base text-white text-semibold sm:text-lg mb-4 sm:mb-2">
+              Estimer votre projet en 1-minute
+            </button>
+          </Link>
+        </div>
+      </div>
+      <div className="relative">
+        <div className="rounded-2xl overflow-hidden bg-gray-800 flex items-center justify-center h-96">
+          <video
+            autoPlay
+            loop
+            muted
+            className="w-full h-full object-cover"
+            poster="/customer-story-poster.jpg"
+          >
+            <source src="https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVKCUwvV3f3Wsd1EZQ4zPStY5JB97kxm6Ac8Hy  " type="video/mp4" />
+            Votre navigateur ne prend pas en charge la balise vidéo.
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
         {/* Section des Logos Clients */}
         <section className="pt-1 pb-24" style={{ backgroundColor: "rgba(255, 255, 255, 1)" }}>
@@ -166,47 +168,49 @@ export default function CustomerStoryVideoPage() {
         </section>
 
         {/* Proposition de valeur */}
-        <section className="pt-1 pb-24" style={{ backgroundColor: "rgba(255, 255, 255, 1)" }}>
-          <div className="max-w-8xl mx-auto px-6 lg:px-8">
-            <div className="grid lg:grid-cols-2 gap-16 items-center">
-              <div className="relative">
-                <div className="rounded-2xl overflow-hidden">
-                  <img
-                    src="https://xb26hl5f9h.ufs.sh/f/myb9AtBX9KywnrVMma2GAKUwrqsXVlt1BHPRSjJzvoTuZfCE"
-                    alt="image d'interview avec un client HP ; le PDG de Digital Etikett"
-                    className="w-full"
-                  />
-                </div>
-              </div>
-              <div className="max-w-xl">
-                <h2 className="text-4xl lg:text-5xl font-bold text-black mb-8 leading-tight">
-                  Histoires réelles. Résultats réels. Confiance réelle.
-                </h2>
-                <div className="space-y-6 text-lg text-black leading-relaxed">
-                  <p>
-                    Les vidéos témoignages clients constituent la forme la plus puissante de preuve sociale. 
-                    Elles mettent en valeur de vraies personnes obtenant de vrais résultats avec votre produit ou service, 
-                    renforçant la confiance et la crédibilité auprès des prospects qui envisagent votre solution.
-                  </p>
-                </div>
-                <div className="mt-10">
-                  <Link href="/contact" passHref>
-                    <button className="btn-luxury border-0 px-6 sm:px-8 py-3 rounded-full text-base text-white text-semibold sm:text-lg mb-4 sm:mb-2">
-                      Obtenir un devis
-                    </button>
-                  </Link>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+{/* Proposition de valeur - VERSION FINALE (1 PHRASE) */}
+<section className="pt-1 pb-24" style={{ backgroundColor: "rgba(255, 255, 255, 1)" }}>
+  <div className="max-w-8xl mx-auto px-6 lg:px-8">
+    <div className="grid lg:grid-cols-2 gap-16 items-center">
+      <div className="relative">
+        <div className="rounded-2xl overflow-hidden">
+          <img
+            src="https://xb26hl5f9h.ufs.sh/f/myb9AtBX9KywnrVMma2GAKUwrqsXVlt1BHPRSjJzvoTuZfCE"
+            alt="Tournage témoignage client sur site"
+            className="w-full"
+          />
+        </div>
+      </div>
+      <div className="max-w-xl">
+        {/* MODIFICATION CLÉ (1 SEULE PHRASE) */}
+        <h2 className="text-4xl lg:text-5xl font-bold text-black mb-8 leading-tight">
+          Des vidéos témoignage client qui transforme la confiance en ventes
+        </h2>
+        <div className="space-y-6 text-lg text-black leading-relaxed">
+          <p>
+            Nous capturons des moments réels où vos clients partagent leurs succès, 
+            créant une confiance immédiate auprès des prospects en phase de décision. 
+            
+          </p>
+        </div>
+        <div className="mt-10">
+          <Link href="/contact" passHref>
+            <button className="btn-luxury border-0 px-6 sm:px-8 py-3 rounded-full text-base text-white text-semibold sm:text-lg">
+              Obtenir un devis
+            </button>
+          </Link>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
         {/* Fonctionnalités */}
         <section className="py-24" style={{ backgroundColor: "#ffffffff" }}>
           <div className="max-w-7xl mx-auto px-6 lg:px-8">
             <div className="text-center mb-20">
               <h2 className="text-4xl lg:text-5xl font-bold text-black mb-4">
-                Comment nous garantissons la livraison de témoignages clients qui convertissent mieux
+                Vidéo témoignage client par un processus de production maîtrisé
               </h2>
             </div>
             <div className="grid lg:grid-cols-3 gap-16">
@@ -260,7 +264,7 @@ export default function CustomerStoryVideoPage() {
             <div className="grid lg:grid-cols-2 gap-16 items-center">
               <div className="max-w-xl">
                 <h2 className="text-4xl lg:text-5xl font-bold text-black mb-8 leading-tight">
-                  Transformez les clients satisfaits en votre équipe commerciale.
+                  La confiance durable se construit autour de la vidéo témoignage client
                 </h2>
                 <div className="text-lg text-black mb-10 leading-relaxed">
                   <p className="mb-6">
@@ -289,135 +293,134 @@ export default function CustomerStoryVideoPage() {
         </section>
 
         {/* Pourquoi les témoignages clients fonctionnent */}
-        <section className="py-24" style={{ backgroundColor: "#111111" }}>
-          <div className="max-w-7xl mx-auto px-6 lg:px-8">
-            <div className="grid lg:grid-cols-2 gap-16 items-center">
-              {/* Colonne de gauche - Contenu principal */}
-              <div>
-                <div className="inline-block px-4 py-1 bg-orange-500/10 text-orange-400 rounded-full text-sm font-medium mb-6">
-                  La puissance de la preuve sociale
-                </div>
-                
-                <h2 className="text-3xl lg:text-4xl font-bold text-white mb-8">
-                  Pourquoi les témoignages clients convertissent mieux que tout autre contenu
-                </h2>
-                
-                <p className="text-white mb-8 leading-relaxed">
-                  Sur le marché sceptique d'aujourd'hui, les clients ne croient pas aux affirmations marketing. 
-                  Ils croient aux autres clients. Une vidéo témoignage client bien conçue est la forme la plus puissante 
-                  de preuve sociale que vous puissiez avoir.
-                </p>
-                
-                <p className="text-white mb-10 leading-relaxed">
-                  Nos vidéos témoignages clients ne se contentent pas de présenter des clients satisfaits - elles démontrent 
-                  le parcours spécifique du défi à la solution, mettant en valeur les résultats tangibles 
-                  que votre produit ou service a livrés.
-                </p>
-                
-                <div className="space-y-6">
-                  <div className="flex items-start">
-                    <div className="bg-orange-500 text-white rounded-lg w-8 h-8 flex items-center justify-center font-bold mr-4 flex-shrink-0">1</div>
-                    <div>
-                      <h3 className="text-xl font-bold text-white mb-2">Renforce instantanément la confiance</h3>
-                      <p className="text-gray-400">De vrais clients partageant leurs expériences authentiques renforcent la crédibilité plus rapidement que n'importe quel message marketing.</p>
-                    </div>
-                  </div>
-                  
-                  <div className="flex items-start">
-                    <div className="bg-orange-500 text-white rounded-lg w-8 h-8 flex items-center justify-center font-bold mr-4 flex-shrink-0">2</div>
-                    <div>
-                      <h3 className="text-xl font-bold text-white mb-2">Réduit le risque perçu</h3>
-                      <p className="text-gray-400">Lorsque les prospects voient d'autres personnes comme eux réussir, cela réduit la peur de prendre une mauvaise décision.</p>
-                    </div>
-                  </div>
-                  
-                  <div className="flex items-start">
-                    <div className="bg-orange-500 text-white rounded-lg w-8 h-8 flex items-center justify-center font-bold mr-4 flex-shrink-0">3</div>
-                    <div>
-                      <h3 className="text-xl font-bold text-white mb-2">Accélère le cycle de vente</h3>
-                      <p className="text-gray-400">Les témoignages clientes répondent aux objections et questions courantes avant même qu'elles ne soient posées, faisant avancer les prospects plus rapidement dans l'entonnoir.</p>
-                    </div>
-                  </div>
-                  
-                  <div className="flex items-start">
-                    <div className="bg-orange-500 text-white rounded-lg w-8 h-8 flex items-center justify-center font-bold mr-4 flex-shrink-0">4</div>
-                    <div>
-                      <h3 className="text-xl font-bold text-white mb-2">Démontre des résultats concrets</h3>
-                      <p className="text-gray-400">Au lieu d'avantages abstraits, vous montrez des résultats concrets auxquels vos clients idéaux peuvent s'identifier.</p>
-                    </div>
-                  </div>
-                  
-                  <div className="flex items-start">
-                    <div className="bg-orange-500 text-white rounded-lg w-8 h-8 flex items-center justify-center font-bold mr-4 flex-shrink-0">5</div>
-                    <div>
-                      <h3 className="text-xl font-bold text-white mb-2">Crée une connexion émotionnelle</h3>
-                      <p className="text-gray-400">Des histoires authentiques avec une émotion sincère résonnent plus profondément qu'un argument de vente, créant un impact durable.</p>
-                    </div>
-                  </div>
-                </div>
-                
-                <blockquote className="border-l-4 border-orange-500 pl-6 py-2 mt-10 italic text-gray-300">
-                  Chez Asteraki, nous ne réalisations pas seulement des témoignages - nous créons des récits percutants qui mettent en valeur la transformation que vos clients vivent. Laissez-nous vous aider à transformer vos clients satisfaits en vos vendeurs les plus persuasifs.
-                </blockquote>
-                
-                <div className="mt-12">
-                  <Link href="/contact" passHref>
-                    <button className="btn-luxury border-0 px-6 sm:px-8 py-3 rounded-full text-base text-white text-semibold sm:text-lg mb-4 sm:mb-2">
-                       Obtenir un devis
-                    </button>
-                  </Link>
-                </div>
-              </div>
-              
-              {/* Colonne de droite - Éléments visuels */}
-              <div className="relative">
-                {/* Vidéo principale - Boucle automatique, silencieuse */}
-                <div className="relative rounded-2xl overflow-hidden shadow-2xl mb-8">
-                  <div className="aspect-video bg-gray-800 border-2 border-white rounded-2xl overflow-hidden">
-                    <video 
-                      autoPlay 
-                      loop 
-                      muted 
-                      playsInline
-                      className="w-full h-full object-cover"
-                    >
-                      <source src="https://xb26hl5f9h.ufs.sh/f/myb9AtBX9Kyw7IlAPs3wavFUfw5SNg3PlOHYAIuB0yjRm1hp" type="video/mp4" />
-                      Votre navigateur ne prend pas en charge la balise vidéo.
-                    </video>
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent pointer-events-none"></div>
-                  </div>
-                </div>
-                
-                {/* Cartes de statistiques */}
-                <div className="grid grid-cols-2 gap-6 mt-8">
-                  <div className="bg-black/40 rounded-xl p-6 border border-white">
-                    <div className="text-3xl font-bold text-orange-400 mb-2">35%</div>
-                    <p className="text-gray-400 text-sm">Augmentation moyenne des taux de conversion pour les clients utilisant des vidéos témoignages clients</p>
-                  </div>
-                  
-                  <div className="bg-black/40 rounded-xl p-6 border border-white">
-                    <div className="text-3xl font-bold text-orange-400 mb-2">4.2x</div>
-                    <p className="text-gray-400 text-sm">Taux d'engagement plus élevé vs. vidéos de démonstration de produits</p>
-                  </div>
-                  
-                  <div className="bg-black/40 rounded-xl p-6 border border-white">
-                    <div className="text-3xl font-bold text-orange-400 mb-2">2.8x</div>
-                    <p className="text-gray-400 text-sm">Durée moyenne de visionnage plus longue vs. vidéos explicatives</p>
-                  </div>
-                  
-                  <div className="bg-black/40 rounded-xl p-6 border border-white">
-                    <div className="text-3xl font-bold text-orange-400 mb-2">200+</div>
-                    <p className="text-gray-400 text-sm">Vidéos témoignages clients produites pour nos clients</p>
-                  </div>
-                </div>
-                
-                {/* Éléments décoratifs */}
-                <div className="absolute -top-6 -right-6 w-24 h-24 rounded-full bg-orange-500/10"></div>
-                <div className="absolute -bottom-6 -left-6 w-16 h-16 rounded-full bg-orange-500/10"></div>
-              </div>
+        {/* Section "Preuve sociale" - VERSION FRANÇAISE PROFESSIONNELLE */}
+<section className="py-24" style={{ backgroundColor: "#111111" }}>
+  <div className="max-w-7xl mx-auto px-6 lg:px-8">
+    <div className="grid lg:grid-cols-2 gap-16 items-center">
+      {/* Colonne de gauche - Contenu principal */}
+      <div>
+        <div className="inline-block px-4 py-1 bg-orange-500/10 text-orange-400 rounded-full text-sm font-medium mb-6">
+          La preuve sociale en pratique
+        </div>
+        
+        {/* H2 RETRAVAILLÉ - Intégration mid-sentence */}
+        <h2 className="text-3xl lg:text-4xl font-bold text-white mb-8">
+          Pourquoi la vidéo témoignage client s'impose face au marketing traditionnel
+        </h2>
+        
+        <p className="text-white mb-8 leading-relaxed">
+          En France, 7 décideurs sur 10 se méfient des arguments marketing classiques. 
+          Ils préfèrent écouter leurs pairs. Une vidéo témoignage client bien réalisée 
+          devient alors votre meilleure alliée pour établir une relation de confiance authentique.
+        </p>
+        
+        <p className="text-white mb-10 leading-relaxed">
+          Chez Asteraki, nous ne montrons pas simplement des clients satisfaits – 
+          nous capturons leur parcours réel : le défi initial, la mise en œuvre concrète, 
+          et les résultats mesurables obtenus grâce à votre solution.
+        </p>
+        
+        <div className="space-y-6">
+          <div className="flex items-start">
+            <div className="bg-orange-500 text-white rounded-lg w-8 h-8 flex items-center justify-center font-bold mr-4 flex-shrink-0">1</div>
+            <div>
+              <h3 className="text-xl font-bold text-white mb-2">Confiance immédiate</h3>
+              <p className="text-gray-400">Un client parlant de ses résultats réels crée plus de crédibilité en 2 minutes qu'une campagne marketing en 2 mois.</p>
             </div>
           </div>
-        </section>
+          
+          <div className="flex items-start">
+            <div className="bg-orange-500 text-white rounded-lg w-8 h-8 flex items-center justify-center font-bold mr-4 flex-shrink-0">2</div>
+            <div>
+              <h3 className="text-xl font-bold text-white mb-2">Décision apaisée</h3>
+              <p className="text-gray-400">Voir des entreprises similaires réussir réduit l'appréhension naturelle face à un nouvel investissement.</p>
+            </div>
+          </div>
+          
+          <div className="flex items-start">
+            <div className="bg-orange-500 text-white rounded-lg w-8 h-8 flex items-center justify-center font-bold mr-4 flex-shrink-0">3</div>
+            <div>
+              <h3 className="text-xl font-bold text-white mb-2">Argumentation complète</h3>
+              <p className="text-gray-400">Les témoignages répondent aux objections avant même qu'elles ne soient formulées, accélérant le processus décisionnel.</p>
+            </div>
+          </div>
+          
+          <div className="flex items-start">
+            <div className="bg-orange-500 text-white rounded-lg w-8 h-8 flex items-center justify-center font-bold mr-4 flex-shrink-0">4</div>
+            <div>
+              <h3 className="text-xl font-bold text-white mb-2">Preuve tangible</h3>
+              <p className="text-gray-400">Des chiffres concrets > des avantages théoriques. Vos clients idéaux s'identifient aux résultats présentés.</p>
+            </div>
+          </div>
+          
+          <div className="flex items-start">
+            <div className="bg-orange-500 text-white rounded-lg w-8 h-8 flex items-center justify-center font-bold mr-4 flex-shrink-0">5</div>
+            <div>
+              <h3 className="text-xl font-bold text-white mb-2">Impact durable</h3>
+              <p className="text-gray-400">Une histoire vraie avec des émotions sincères laisse une empreinte plus forte qu'un argument rationnel seul.</p>
+            </div>
+          </div>
+        </div>
+        
+        <blockquote className="border-l-4 border-orange-500 pl-6 py-2 mt-10 italic text-gray-300">
+          "Chez Asteraki, nous croyons qu'un témoignage client réussi ne se compose pas – il se capture. 
+          Notre rôle : mettre en lumière la transformation réelle vécue par vos clients, sans artifice."
+        </blockquote>
+        
+        <div className="mt-12">
+          <Link href="/contact" passHref>
+            <button className="btn-luxury border-0 px-6 sm:px-8 py-3 rounded-full text-base text-white text-semibold sm:text-lg">
+              Obtenir un devis
+            </button>
+          </Link>
+        </div>
+      </div>
+      
+      {/* Colonne de droite - Éléments visuels */}
+      <div className="relative">
+        {/* Vidéo principale */}
+        <div className="relative rounded-2xl overflow-hidden shadow-2xl mb-8">
+          <div className="aspect-video bg-gray-800 border-2 border-white rounded-2xl overflow-hidden">
+            <video 
+              autoPlay 
+              loop 
+              muted 
+              playsInline
+              className="w-full h-full object-cover"
+            >
+              <source src="https://xb26hl5f9h.ufs.sh/f/myb9AtBX9Kyw7IlAPs3wavFUfw5SNg3PlOHYAIuB0yjRm1hp" type="video/mp4" />
+              Votre navigateur ne prend pas en charge la balise vidéo.
+            </video>
+            <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent pointer-events-none"></div>
+          </div>
+        </div>
+        
+        {/* Cartes de statistiques - TERMES FRANÇAIS */}
+        <div className="grid grid-cols-2 gap-6 mt-8">
+          <div className="bg-black/40 rounded-xl p-6 border border-white">
+            <div className="text-3xl font-bold text-orange-400 mb-2">+35%</div>
+            <p className="text-gray-400 text-sm">De conversions supplémentaires pour les entreprises utilisant des vidéos témoignage client</p>
+          </div>
+          
+          <div className="bg-black/40 rounded-xl p-6 border border-white">
+            <div className="text-3xl font-bold text-orange-400 mb-2">4,2x</div>
+            <p className="text-gray-400 text-sm">Plus d'engagement que les vidéos de démonstration produits</p>
+          </div>
+          
+          <div className="bg-black/40 rounded-xl p-6 border border-white">
+            <div className="text-3xl font-bold text-orange-400 mb-2">2,8x</div>
+            <p className="text-gray-400 text-sm">De temps passé sur la vidéo vs les contenus explicatifs</p>
+          </div>
+          
+          <div className="bg-black/40 rounded-xl p-6 border border-white">
+            <div className="text-3xl font-bold text-orange-400 mb-2">200+</div>
+            <p className="text-gray-400 text-sm">De témoignages clients réalisés pour des ETI et grands comptes</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
         {/* Section FAQ */}
         <CustomerStoryFAQSection />     
