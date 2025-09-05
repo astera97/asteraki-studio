@@ -32,7 +32,21 @@ export default function RootLayout({
           content="telephone=no, date=no, email=no, address=no"
         />
 
-        {/* ONLY Google Tag Manager (GTM) - REMOVED direct gtag.js */}
+        {/* Google Ads Global Site Tag (REQUIRED by Google Ads) */}
+        <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17350258945"></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'AW-17350258945');
+            `,
+          }}
+        />
+        {/* End Google Ads Global Site Tag */}
+        
+        {/* Google Tag Manager (Keep this for other tracking) */}
         <script
           dangerouslySetInnerHTML={{
             __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -60,7 +74,6 @@ export default function RootLayout({
         <Toaster />
         <Analytics />
         <SpeedInsights />
-        {/* Removed duplicate CookiebotScript */}
       </body>
     </html>
   );
