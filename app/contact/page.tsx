@@ -220,7 +220,7 @@ export default function ContactPage() {
       });
 
       // Redirection avec conservation du GCLID
-      const thankYouUrl = gclid ? `/merci-pour-votre-demande?gclid=${gclid}` : '/merci-pour-votre-demande';
+      const thankYouUrl = gclid ? `/thank-you?gclid=${gclid}` : '/thank-you';
       router.push(thankYouUrl);
 
     } catch (error: any) {
@@ -228,7 +228,7 @@ export default function ContactPage() {
       // Même redirection en cas d'erreur
       const urlParams = new URLSearchParams(window.location.search);
       const gclid = urlParams.get('gclid');
-      const thankYouUrl = gclid ? `/merci-pour-votre-demande?gclid=${gclid}` : '/merci-pour-votre-demande';
+      const thankYouUrl = gclid ? `/thank-you?gclid=${gclid}` : '/thank-you';
       router.push(thankYouUrl);
     }
   };
