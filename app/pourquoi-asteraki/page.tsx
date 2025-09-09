@@ -40,15 +40,15 @@ export default function WhyAsterakiPage() {
               </p>
               <div className="flex items-center justify-center lg:justify-start">
                 <Image
-                  src="/kayli.webp"
+                  src="https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVpC62n0aR2lYTb4od16OBLW0sgaN7xrmhqJup"
                   alt="Jenna Blau"
                   width={48}
                   height={48}
                   className="w-12 h-12 rounded-full mr-4"
                 />
                 <div className="text-center lg:text-left">
-                  <p className="font-semibold text-gray-900">Jenna Blau</p>
-                  <p className="text-gray-600">Responsable mondiale de la croissance des éditeurs, TikTok</p>
+                  <p className="font-semibold text-gray-900">Oona Vilermo</p>
+                  <p className="text-gray-600">Responsable marketing, TikTok</p>
                 </div>
               </div>
             </div>
