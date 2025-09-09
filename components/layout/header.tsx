@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button"
 import { ChevronDown, ArrowRight, ChevronRight } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
+
 interface DropdownItem {
   title: string
   description: string
@@ -12,13 +13,22 @@ interface DropdownItem {
   color?: string
   href?: string
 }
+
 interface DropdownSection {
   title: string
   description: string
   items: DropdownItem[]
-  href?: string // Added for clickable sections
-  heroImage?: string // Added for expertise sections
+  href?: string
+  heroImage?: string
+  specialItem?: {
+    title: string
+    description: string
+    image: string
+    backgroundColor: string
+    href?: string
+  }
 }
+
 const servicesDropdown = {
   sections: [
     {
@@ -120,27 +130,19 @@ const servicesDropdown = {
     },
   ],
   bottomMessages: [
-    {
-      icon: "",
-      text: "",
-    },
-    {
-      icon: "",
-      text: "",
-    },
-    {
-      icon: "",
-      text: "",
-    },
+    { icon: "", text: "" },
+    { icon: "", text: "" },
+    { icon: "", text: "" },
   ],
 }
+
 const expertiseDropdown = {
   sections: [
     {
       title: "Pour la technologie & SaaS",
       description: "Aucune société de production n'a autant travaillé pour le secteur technologique qu'Asteraki",
       heroImage: "https://xb26hl5f9h.ufs.sh/f/myb9AtBX9Kywa6Nj6vQW6cbV58LvMdJS0skQ9yGeoPAiFT3Y",
-      href: "/production-video-tech", // Added href for clickable section
+      href: "/production-video-tech",
       items: [
         {
           title: "SaaS & Applications",
@@ -160,7 +162,7 @@ const expertiseDropdown = {
       title: "Pour les entreprises",
       description: "En plus de notre engagement envers la qualité, nous respectons les guidelines de marque",
       heroImage: "https://xb26hl5f9h.ufs.sh/f/myb9AtBX9KywhPxURjesIX8uUOrt39b1FRWBpdfEcgCMKvw6?height=200&width=350&text=Enterprise+Meeting",
-      href: "/production-video-b2b", // Added href for clickable section
+      href: "/production-video-b2b",
       items: [
         {
           title: "Services financiers",
@@ -180,7 +182,7 @@ const expertiseDropdown = {
       title: "Pour le grand public",
       description: "Nous produisons ce genre de publicités grand public dont les gens parlent à leurs amis",
       heroImage: "https://xb26hl5f9h.ufs.sh/f/myb9AtBX9KywXNTUP5qqNEZxSsUah86LOQRFMbvitf9woCdj?height=200&width=350&text=Consumer+Ads",
-      href: "/production-video-b2c", // Added href for clickable section
+      href: "/production-video-b2c",
       items: [
         {
           title: "E-commerce & DTC",
@@ -190,60 +192,43 @@ const expertiseDropdown = {
         },
       ],
       specialItem: {
-        title: "Marque de mode ?",
-        description: "Séances photo rapides et simples pour l'e-commerce. À partir de 24 $/photo et 63 $/vidéo",
+        title: "Fashion brand?",
+        description: "Séances photo rapides et simples pour la mode. Contactez-nous pour discuter de votre projet",
         image: "https://xb26hl5f9h.ufs.sh/f/myb9AtBX9KywMPzHKyjroe97sS0GkHRwD6OVtv1Ez4ubBYFa?height=120&width=200&text=Vidi+Service",
-        backgroundColor: "bg-purple-700",
+        backgroundColor: "bg-orange-500",
         href: "/#"
       },
     },
   ],
-  rightColumn: {
-    title: "Êtes-vous le bon client ?",
-    description: "Découvrez comment tout se passe et faites connaissance avec notre équipe",
-    videoThumbnail: "https://xb26hl5f9h.ufs.sh/f/myb9AtBX9Kyw28Hr9S7LRoDnSIZdyi1KBFNT7vmeUt5Xckg4?height=300&width=350&text=Video+Testimonial",
-    videoUrl: "https://player.vimeo.com/video/1105886150?autoplay=1&controls=1&muted=0",
-    ctaButton: "Estimer votre projet",
-    href: "/quiz"
-  },
+  // Removed `rightColumn` entirely
   bottomMessages: [
-    {
-      icon: "",
-      text: "",
-    },
-    {
-      icon: "",
-      text: "",
-    },
-    {
-      icon: "",
-      text: "",
-    },
+    { icon: "", text: "" },
+    { icon: "", text: "" },
+    { icon: "", text: "" },
   ],
 }
+
 const resourcesDropdown = {
   sections: [
     {
       title: "Notre agence",
       description: "On produit du contenu que vous adorerez",
       heroImage: "https://xb26hl5f9h.ufs.sh/f/myb9AtBX9Kywjd5d0D1AXDwEq0U4C87KsF9Tplh2ZmP5R1ad?height=200&width=350&text=Vidico+Office",
-      href: "/a-propos", // Added href for clickable section
-      items: [
-      ],
+      href: "/a-propos",
+      items: [],
     },
     {
       title: "Pourquoi choisir Asteraki",
       description: "Découvrez ce qui nous rend différents",
       heroImage: "https://xb26hl5f9h.ufs.sh/f/myb9AtBX9KywlrrX99RNjhtsPvHbSRacMYefKT2gQAxB90k3?height=200&width=350&text=Creative+Process",
-      href: "/pourquoi-asteraki", // Added href for clickable section
-      items: [
-      ],
+      href: "/pourquoi-asteraki",
+      items: [],
     },
     {
       title: "Conseils créatifs actionnables",
       description: "Rejoignez plus de 5000 marketeurs",
       heroImage: "https://xb26hl5f9h.ufs.sh/f/myb9AtBX9Kyw1aH2UwL0yHGBKOREhLxl4Ti6nuevra7FcWC5?height=200&width=350&text=Newsletter+Preview",
-      href: "#", // Added href for clickable section
+      href: "#",
       items: [
         {
           title: "Blog",
@@ -263,20 +248,12 @@ const resourcesDropdown = {
     href: "#"
   },
   bottomMessages: [
-    {
-      icon: "",
-      text: "",
-    },
-    {
-      icon: "",
-      text: "",
-    },
-    {
-      icon: "",
-      text: "",
-    },
+    { icon: "", text: "" },
+    { icon: "", text: "" },
+    { icon: "", text: "" },
   ],
 }
+
 export default function Header() {
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null)
   const timeoutRef = useRef<NodeJS.Timeout | null>(null)
@@ -284,19 +261,18 @@ export default function Header() {
   const [mobileActiveSection, setMobileActiveSection] = useState<string | null>(null)
   const [mobileActiveSubsection, setMobileActiveSubsection] = useState<string | null>(null)
   const [isVideoOpen, setIsVideoOpen] = useState(false)
-  const [isScrolled, setIsScrolled] = useState(false); // State to track scroll position
-  // Effect to handle scroll event and update isScrolled state
+  const [isScrolled, setIsScrolled] = useState(false)
+
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 10); // Adjust threshold as needed
-    };
-    // Add scroll event listener
-    window.addEventListener('scroll', handleScroll);
-    // Cleanup function to remove event listener
+      setIsScrolled(window.scrollY > 10)
+    }
+    window.addEventListener('scroll', handleScroll)
     return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []); // Empty dependency array ensures this runs once on mount
+      window.removeEventListener('scroll', handleScroll)
+    }
+  }, [])
+
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen)
     if (isMobileMenuOpen) {
@@ -304,35 +280,41 @@ export default function Header() {
       setMobileActiveSubsection(null)
     }
   }
+
   const handleMouseEnter = (dropdown: string) => {
     if (timeoutRef.current) {
       clearTimeout(timeoutRef.current)
     }
     setActiveDropdown(dropdown)
   }
+
   const handleMouseLeave = () => {
     timeoutRef.current = setTimeout(() => {
       setActiveDropdown(null)
     }, 300)
   }
+
   const handleDropdownMouseEnter = () => {
     if (timeoutRef.current) {
       clearTimeout(timeoutRef.current)
     }
   }
+
   const handleDropdownMouseLeave = () => {
     if (!isVideoOpen) {
       setActiveDropdown(null)
     }
   }
+
   const handleMobileSectionClick = (section: string) => {
     setMobileActiveSection(mobileActiveSection === section ? null : section)
     setMobileActiveSubsection(null)
   }
+
   const handleMobileSubsectionClick = (subsection: string) => {
     setMobileActiveSubsection(mobileActiveSubsection === subsection ? null : subsection)
   }
-  // Cleanup on unmount
+
   useEffect(() => {
     return () => {
       if (timeoutRef.current) {
@@ -340,7 +322,7 @@ export default function Header() {
       }
     }
   }, [])
-  // Handle body overflow when mobile menu is open
+
   useEffect(() => {
     if (isMobileMenuOpen) {
       document.body.style.overflow = "hidden"
@@ -351,8 +333,8 @@ export default function Header() {
       document.body.style.overflow = "unset"
     }
   }, [isMobileMenuOpen])
+
   return (
-    // Added sticky classes and dynamic classes based on scroll
     <header className={`border-b ${isScrolled ? 'bg-white border-gray-200 shadow-sm' : 'bg-white border-white'} relative sticky top-0 z-50`}>
       <div className="max-w-[1300px] mx-auto px-4 sm:px-6 lg:px-8 py-4 sm:py-6">
         <nav className="flex items-center justify-between relative z-50">
@@ -370,65 +352,36 @@ export default function Header() {
               priority
             />
           </Link>
+
           {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center space-x-8 xl:space-x-12">
-            {/* Services Dropdown */}
-            <div
-              className="relative"
-              onMouseEnter={() => handleMouseEnter("services")}
-              onMouseLeave={handleMouseLeave}
-            >
+            <div className="relative" onMouseEnter={() => handleMouseEnter("services")} onMouseLeave={handleMouseLeave}>
               <div className="flex items-center space-x-1 cursor-pointer text-black">
                 <span>Services</span>
-                <ChevronDown
-                  className={`w-4 h-4 transition-transform duration-200 ${activeDropdown === "services" ? "rotate-180" : ""}`}
-                />
+                <ChevronDown className={`w-4 h-4 transition-transform duration-200 ${activeDropdown === "services" ? "rotate-180" : ""}`} />
               </div>
             </div>
-            {/* Expertises Dropdown */}
-            <div
-              className="relative"
-              onMouseEnter={() => handleMouseEnter("expertises")}
-              onMouseLeave={handleMouseLeave}
-            >
+            <div className="relative" onMouseEnter={() => handleMouseEnter("expertises")} onMouseLeave={handleMouseLeave}>
               <div className="flex items-center space-x-1 cursor-pointer text-black">
                 <span>Expertise</span>
-                <ChevronDown
-                  className={`w-4 h-4 transition-transform duration-200 ${activeDropdown === "expertises" ? "rotate-180" : ""}`}
-                />
+                <ChevronDown className={`w-4 h-4 transition-transform duration-200 ${activeDropdown === "expertises" ? "rotate-180" : ""}`} />
               </div>
             </div>
-            {/* Work */}
-            <Link
-              href="/realisations"
-              className="cursor-pointer text-black hover:text-black transition-colors"
-            >
+            <Link href="/realisations" className="cursor-pointer text-black hover:text-black transition-colors">
               Réalisations
             </Link>
-            {/* Resources Dropdown */}
-            <div
-              className="relative"
-              onMouseEnter={() => handleMouseEnter("resources")}
-              onMouseLeave={handleMouseLeave}
-            >
+            <div className="relative" onMouseEnter={() => handleMouseEnter("resources")} onMouseLeave={handleMouseLeave}>
               <div className="flex items-center space-x-1 cursor-pointer text-black">
                 <span>Ressources</span>
-                <ChevronDown
-                  className={`w-4 h-4 transition-transform duration-200 ${activeDropdown === "resources" ? "rotate-180" : ""}`}
-                />
+                <ChevronDown className={`w-4 h-4 transition-transform duration-200 ${activeDropdown === "resources" ? "rotate-180" : ""}`} />
               </div>
             </div>
-            {/* Pricing */}
-            <Link
-              href="/quiz"
-              className="cursor-pointer text-black hover:text-black transition-colors"
-            >
-              Tarifs
-            </Link>
+            
           </div>
+
           {/* Mobile Menu Button */}
           <div className="lg:hidden relative z-50">
-            <button onClick={toggleMobileMenu} className="text-black p-2"> {/* Note: Original had text-white, might need adjustment for non-mobile menu */}
+            <button onClick={toggleMobileMenu} className="text-black p-2">
               {isMobileMenuOpen ? (
                 <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 18" />
@@ -440,16 +393,138 @@ export default function Header() {
               )}
             </button>
           </div>
+
           {/* Desktop CTA Button */}
           <div className="hidden lg:block">
             <Link href="/contact" passHref>
-                   <Button className="btn-luxury border-0 px-6 sm:px-8 py-3 rounded-full text-base sm:text-lg mb-4 sm:mb-2">
-                     Devis gratuit en 1h
-                   </Button>
-                 </Link>
+              <Button className="btn-luxury border-0 px-6 sm:px-8 py-3 rounded-full text-base sm:text-lg mb-4 sm:mb-2">
+                Devis gratuit en 1h
+              </Button>
+            </Link>
           </div>
         </nav>
-        {/* Desktop Dropdowns */}
+
+        {/* Expertise Dropdown - Cleaned, 3-column layout */}
+        {activeDropdown === "expertises" && (
+          <div
+            className="absolute top-full left-1/2 transform -translate-x-1/2 mt-3 w-[95vw] max-w-[1280px] bg-white rounded-3xl shadow-2xl border border-gray-200 z-50 p-6 sm:p-8 lg:p-10"
+            onMouseEnter={handleDropdownMouseEnter}
+            onMouseLeave={handleDropdownMouseLeave}
+          >
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 min-h-[400px]">
+              {expertiseDropdown.sections.map((section, sectionIndex) => (
+                <div key={sectionIndex} className="space-y-6">
+                  <Link
+                    href={section.href || "#"}
+                    className="block"
+                    onClick={() => {
+                      setActiveDropdown(null)
+                      setIsMobileMenuOpen(false)
+                    }}
+                  >
+                    <div>
+                      <h3 className="text-gray-900 text-lg font-bold mb-2 hover:text-orange-500 transition-colors">
+                        {section.title}
+                      </h3>
+                      <p className="text-gray-600 text-sm leading-relaxed mb-4">{section.description}</p>
+                      <div className="w-full h-32 bg-gray-100 rounded-lg overflow-hidden mb-4">
+                        <Image
+                          src={section.heroImage || "/placeholder.svg"}
+                          alt={section.title}
+                          width={350}
+                          height={200}
+                          className="object-cover w-full h-full"
+                        />
+                      </div>
+                    </div>
+                  </Link>
+                  <div className="space-y-4">
+                    {section.items.map((item, itemIndex) => (
+                      <Link
+                        key={itemIndex}
+                        href={item.href || "#"}
+                        className="flex items-start space-x-3 p-2 rounded-lg hover:bg-gray-50 group transition-colors"
+                        onClick={() => {
+                          setActiveDropdown(null)
+                          setIsMobileMenuOpen(false)
+                        }}
+                      >
+                        <div className="flex-shrink-0 w-10 h-10 rounded-lg overflow-hidden">
+                          <Image
+                            src={item.image || "/placeholder.svg"}
+                            alt={item.title}
+                            width={40}
+                            height={40}
+                            className="object-cover w-full h-full rounded-lg"
+                          />
+                        </div>
+                        <div className="flex-1 min-w-0">
+                          <div className="flex items-center justify-between">
+                            <h4 className="text-gray-900 font-medium text-sm group-hover:text-gray-700">
+                              {item.title}
+                            </h4>
+                            <ArrowRight className="w-4 h-4 text-gray-400 opacity-0 group-hover:opacity-100 transition-opacity" />
+                          </div>
+                          <p className="text-gray-500 text-xs mt-1">{item.description}</p>
+                        </div>
+                      </Link>
+                    ))}
+                    {section.specialItem && (
+                      <Link
+                        href={section.specialItem.href || "#"}
+                        className="block rounded-lg overflow-hidden mt-2"
+                        onClick={() => {
+                          setActiveDropdown(null)
+                          setIsMobileMenuOpen(false)
+                        }}
+                      >
+                        <div className={`${section.specialItem.backgroundColor} p-4`}>
+                          <div className="flex items-center">
+                            <div className="flex-shrink-0 mr-3">
+                              <Image
+                                src={section.specialItem.image || "/placeholder.svg"}
+                                alt={section.specialItem.title}
+                                width={80}
+                                height={60}
+                                className="object-cover rounded-lg"
+                              />
+                            </div>
+                            <div>
+                              <h4 className="text-white font-medium text-sm">{section.specialItem.title}</h4>
+                              <p className="text-white text-xs mt-1">{section.specialItem.description}</p>
+                            </div>
+                          </div>
+                        </div>
+                      </Link>
+                    )}
+                  </div>
+                </div>
+              ))}
+            </div>
+            <div className="mt-10 pt-8 border-t border-gray-200">
+              <div className="grid grid-cols-3 gap-8">
+                {expertiseDropdown.bottomMessages.map((message, index) => (
+                  <div key={index} className="flex items-start space-x-3">
+                    {message.icon.endsWith(".svg") ? (
+                      <img
+                        src={message.icon}
+                        alt="Icone"
+                        width={48}
+                        height={48}
+                        className="w-10 h-10 object-contain"
+                      />
+                    ) : (
+                      <div className="text-2xl">{message.icon}</div>
+                    )}
+                    <p className="text-gray-600 text-sm leading-relaxed">{message.text}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        )}
+
+        {/* Services Dropdown */}
         {activeDropdown === "services" && (
           <div
             className="absolute top-full left-1/2 transform -translate-x-1/2 mt-3 w-[95vw] max-w-[1280px] bg-white rounded-3xl shadow-2xl border border-gray-200 z-50 p-6 sm:p-8 lg:p-10"
@@ -527,171 +602,7 @@ export default function Header() {
             </div>
           </div>
         )}
-        {/* Expertise Dropdown */}
-        {activeDropdown === "expertises" && (
-          <div
-            className="absolute top-full left-1/2 transform -translate-x-1/2 mt-3 w-[95vw] max-w-[1280px] bg-white rounded-3xl shadow-2xl border border-gray-200 z-50 p-6 sm:p-8 lg:p-10"
-            onMouseEnter={handleDropdownMouseEnter}
-            onMouseLeave={handleDropdownMouseLeave}
-          >
-            <div className="grid grid-cols-1 lg:grid-cols-4 gap-8 min-h-[400px]">
-              {/* Left 3 columns - Sections */}
-              <div className="lg:col-span-3 grid grid-cols-1 md:grid-cols-3 gap-8">
-                {expertiseDropdown.sections.map((section, sectionIndex) => (
-                  <div key={sectionIndex} className="space-y-6">
-                    {/* Clickable section header */}
-                    <Link
-                      href={section.href || "#"}
-                      className="block"
-                      onClick={() => {
-                        setActiveDropdown(null)
-                        setIsMobileMenuOpen(false)
-                      }}
-                    >
-                      <div>
-                        <h3 className="text-gray-900 text-lg font-bold mb-2 hover:text-orange-500 transition-colors">
-                          {section.title}
-                        </h3>
-                        <p className="text-gray-600 text-sm leading-relaxed mb-4">{section.description}</p>
-                        <div className="w-full h-32 bg-gray-100 rounded-lg overflow-hidden mb-4">
-                          <Image
-                            src={section.heroImage || "/placeholder.svg"}
-                            alt={section.title}
-                            width={350}
-                            height={200}
-                            className="object-cover w-full h-full"
-                          />
-                        </div>
-                      </div>
-                    </Link>
-                    <div className="space-y-4">
-                      {section.items.map((item, itemIndex) => (
-                        <Link
-                          key={itemIndex}
-                          href={item.href || "#"}
-                          className="flex items-start space-x-3 p-2 rounded-lg hover:bg-gray-50 group transition-colors"
-                          onClick={() => {
-                            setActiveDropdown(null)
-                            setIsMobileMenuOpen(false)
-                          }}
-                        >
-                          <div className="flex-shrink-0 w-10 h-10 rounded-lg overflow-hidden">
-                            <Image
-                              src={item.image || "/placeholder.svg"}
-                              alt={item.title}
-                              width={40}
-                              height={40}
-                              className="object-cover w-full h-full rounded-lg"
-                            />
-                          </div>
-                          <div className="flex-1 min-w-0">
-                            <div className="flex items-center justify-between">
-                              <h4 className="text-gray-900 font-medium text-sm group-hover:text-gray-700">
-                                {item.title}
-                              </h4>
-                              <ArrowRight className="w-4 h-4 text-gray-400 opacity-0 group-hover:opacity-100 transition-opacity" />
-                            </div>
-                            <p className="text-gray-500 text-xs mt-1">{item.description}</p>
-                          </div>
-                        </Link>
-                      ))}
-                      {section.specialItem && (
-                        <Link
-                          href={section.specialItem.href || "#"}
-                          className="block rounded-lg overflow-hidden mt-2"
-                          onClick={() => {
-                            setActiveDropdown(null)
-                            setIsMobileMenuOpen(false)
-                          }}
-                        >
-                          <div className={`${section.specialItem.backgroundColor} p-4`}>
-                            <div className="flex items-center">
-                              <div className="flex-shrink-0 mr-3">
-                                <Image
-                                  src={section.specialItem.image || "/placeholder.svg"}
-                                  alt={section.specialItem.title}
-                                  width={80}
-                                  height={60}
-                                  className="object-cover rounded-lg"
-                                />
-                              </div>
-                              <div>
-                                <h4 className="text-white font-medium text-sm">{section.specialItem.title}</h4>
-                                <p className="text-white text-xs mt-1">{section.specialItem.description}</p>
-                              </div>
-                            </div>
-                          </div>
-                        </Link>
-                      )}
-                    </div>
-                  </div>
-                ))}
-              </div>
-              {/* Right column */}
-              <div className="space-y-6">
-                <div>
-                  <h3 className="text-gray-900 text-lg font-bold mb-2">{expertiseDropdown.rightColumn.title}</h3>
-                  <p className="text-gray-600 text-sm leading-relaxed mb-4">
-                    {expertiseDropdown.rightColumn.description}
-                  </p>
-                  <div
-                    className="relative w-full h-48 bg-gray-100 rounded-lg overflow-hidden cursor-pointer mb-4"
-                    onClick={() => setIsVideoOpen(true)}
-                  >
-                    <Image
-                      src={expertiseDropdown.rightColumn.videoThumbnail}
-                      alt="Vidéo de présentation"
-                      width={350}
-                      height={300}
-                      className="object-cover w-full h-full"
-                    />
-                    <div className="absolute inset-0 flex items-center justify-center">
-                      <div className="w-10 h-10 bg-orange-500 rounded-full flex items-center justify-center shadow-xl animate-pulse-slow transition-transform hover:scale-110">
-                        <svg
-                          className="w-4 h-4 text-white"
-                          fill="currentColor"
-                          viewBox="0 0 24 24"
-                        >
-                          <path d="M8 5v14l11-7z" />
-                        </svg>
-                      </div>
-                    </div>
-                  </div>
-                  <Link
-                    href={expertiseDropdown.rightColumn.href || "/contact"}
-                    className="w-full block bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 rounded-full font-semibold transition-colors text-center"
-                    onClick={() => {
-                      setActiveDropdown(null)
-                      setIsMobileMenuOpen(false)
-                    }}
-                  >
-                    {expertiseDropdown.rightColumn.ctaButton}
-                  </Link>
-                </div>
-              </div>
-            </div>
-            <div className="mt-10 pt-8 border-t border-gray-200">
-              <div className="grid grid-cols-3 gap-8">
-                {expertiseDropdown.bottomMessages.map((message, index) => (
-                  <div key={index} className="flex items-start space-x-3">
-                    {message.icon.endsWith(".svg") ? (
-                      <img
-                        src={message.icon}
-                        alt="Icone"
-                        width={48}
-                        height={48}
-                        className="w-10 h-10 object-contain"
-                      />
-                    ) : (
-                      <div className="text-2xl">{message.icon}</div>
-                    )}
-                    <p className="text-gray-600 text-sm leading-relaxed">{message.text}</p>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-        )}
+
         {/* Resources Dropdown */}
         {activeDropdown === "resources" && (
           <div
@@ -700,11 +611,9 @@ export default function Header() {
             onMouseLeave={handleDropdownMouseLeave}
           >
             <div className="grid grid-cols-1 lg:grid-cols-4 gap-8 min-h-[400px]">
-              {/* Left 3 columns - Sections */}
               <div className="lg:col-span-3 grid grid-cols-1 md:grid-cols-3 gap-8">
                 {resourcesDropdown.sections.map((section, sectionIndex) => (
                   <div key={sectionIndex} className="space-y-6">
-                    {/* Clickable section header */}
                     <Link
                       href={section.href || "#"}
                       className="block"
@@ -764,7 +673,6 @@ export default function Header() {
                   </div>
                 ))}
               </div>
-              {/* Right column - Featured Report */}
               <div className="space-y-6">
                 <div className={`${resourcesDropdown.featuredReport.backgroundColor} p-6 rounded-lg text-white`}>
                   <h3 className="text-lg font-bold mb-2">{resourcesDropdown.featuredReport.title}</h3>
@@ -813,6 +721,7 @@ export default function Header() {
             </div>
           </div>
         )}
+
         {/* Mobile Menu */}
         {isMobileMenuOpen && (
           <>
@@ -836,7 +745,6 @@ export default function Header() {
                 </div>
                 <div className="flex-1 overflow-y-auto">
                   <div className="p-4 space-y-2">
-                    {/* Services Section */}
                     <div>
                       <button
                         onClick={() => handleMobileSectionClick("services")}
@@ -883,7 +791,6 @@ export default function Header() {
                         </div>
                       )}
                     </div>
-                    {/* Expertise Section */}
                     <div>
                       <button
                         onClick={() => handleMobileSectionClick("expertises")}
@@ -930,16 +837,15 @@ export default function Header() {
                         </div>
                       )}
                     </div>
-                    {/* Work */}
                     <div>
                       <Link
                         href="/realisations"
                         className="block py-4 text-white text-lg font-medium border-b border-gray-800"
-                        onClick={toggleMobileMenu}>
+                        onClick={toggleMobileMenu}
+                      >
                         Réalisations
                       </Link>
                     </div>
-                    {/* Resources Section */}
                     <div>
                       <button
                         onClick={() => handleMobileSectionClick("resources")}
@@ -989,46 +895,48 @@ export default function Header() {
                   </div>
                 </div>
                 <div className="p-4 border-t border-gray-800">
-                 <Link href="/contact" passHref>
-                   <Button className="btn-luxury border-0 px-6 sm:px-8 py-3 rounded-full text-base sm:text-lg mb-4 sm:mb-2">
-                     Devis gratuit en 1h
-                   </Button>
-                 </Link>
+                  <Link href="/contact" passHref>
+                    <Button className="btn-luxury border-0 px-6 sm:px-8 py-3 rounded-full text-base sm:text-lg mb-4 sm:mb-2">
+                      Devis gratuit en 1h
+                    </Button>
+                  </Link>
                 </div>
               </div>
             </div>
           </>
         )}
       </div>
+
+      {/* Video Modal (kept for possible future use in other sections) */}
       {isVideoOpen && (
-  <div
-    className="fixed inset-0 z-[100] bg-black bg-opacity-75 flex items-center justify-center px-2"
-    onClick={() => setIsVideoOpen(false)}
-  >
-    <div
-      className="relative max-w-7xl w-full mx-auto"
-      onClick={(e) => e.stopPropagation()}
-    >
-      <button
-  onClick={() => setIsVideoOpen(false)}
-  className="absolute top-6 right-6 z-50 text-white text-4xl font-bold cursor-pointer"
-  aria-label="Fermer la vidéo"
->
-  &times;
-</button>
-      <div className="w-full h-0 pb-[56.25%] relative rounded-lg overflow-hidden">
-        <iframe
-          src={expertiseDropdown.rightColumn.videoUrl}
-          title="Lecteur vidéo"
-          className="absolute inset-0 w-full h-full"
-          frameBorder="0"
-          allow="autoplay; fullscreen"
-          allowFullScreen
-        ></iframe>
-      </div>
-    </div>
-  </div>
-)}
+        <div
+          className="fixed inset-0 z-[100] bg-black bg-opacity-75 flex items-center justify-center px-2"
+          onClick={() => setIsVideoOpen(false)}
+        >
+          <div
+            className="relative max-w-7xl w-full mx-auto"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <button
+              onClick={() => setIsVideoOpen(false)}
+              className="absolute top-6 right-6 z-50 text-white text-4xl font-bold cursor-pointer"
+              aria-label="Fermer la vidéo"
+            >
+              &times;
+            </button>
+            <div className="w-full h-0 pb-[56.25%] relative rounded-lg overflow-hidden">
+              <iframe
+                src="https://player.vimeo.com/video/1105886150?autoplay=1&controls=1&muted=0"
+                title="Lecteur vidéo"
+                className="absolute inset-0 w-full h-full"
+                frameBorder="0"
+                allow="autoplay; fullscreen"
+                allowFullScreen
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      )}
     </header>
   )
 }
