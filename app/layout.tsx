@@ -6,6 +6,8 @@ import "./globals.css";
 import CookiebotScript from "@/components/CookiebotScript";
 import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+// ADD THIS IMPORT FOR GEO-TARGETING (CRITICAL)
+import { headers } from 'next/headers';
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,19 +22,43 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
+  // GET CURRENT PATH FOR HREFLANG (ADDED - PRESERVES ALL EXISTING CODE)
+  const headersList = headers();
+  const pathname = headersList.get('x-invoke-path') || '/';
+
   return (
     <html lang="fr">
       <head>
         <CookiebotScript />
         <link rel="icon" type="image/svg+xml" href="/Asteraki_favicon.svg" />
         
-        {/* Prevent iOS from auto-linking */}
+        {/* ===== CRITICAL ADDITION: FRANCE GEO-TARGETING (INSERTED HERE) ===== */}
+        {/* 1. French country signals (MUST be before tracking scripts) */}
+        <meta name="geo.region" content="FR" />
+        <meta name="geo.placename" content="France" />
+        <meta name="geo.position" content="46.2276;2.2137" />
+        <meta name="ICBM" content="46.2276, 2.2137" />
+        
+        {/* 2. Hreflang for French-France (FIXES .com domain issue) */}
+        <link 
+          rel="alternate" 
+          hrefLang="fr-fr" 
+          href={`https://asterakistudio.com${pathname}`} 
+        />
+        <link 
+          rel="alternate" 
+          hrefLang="x-default" 
+          href={`https://asterakistudio.com${pathname}`} 
+        />
+        {/* ===== END CRITICAL ADDITION ===== */}
+        
+        {/* Prevent iOS from auto-linking (UNCHANGED) */}
         <meta
           name="format-detection"
           content="telephone=no, date=no, email=no, address=no"
         />
 
-        {/* Google Ads Global Site Tag (REQUIRED by Google Ads) */}
+        {/* Google Ads Global Site Tag (REQUIRED by Google Ads) (UNCHANGED) */}
         <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17350258945"></script>
         <script
           dangerouslySetInnerHTML={{
@@ -46,7 +72,7 @@ export default function RootLayout({
         />
         {/* End Google Ads Global Site Tag */}
         
-        {/* Google Tag Manager (Keep this for other tracking) */}
+        {/* Google Tag Manager (Keep this for other tracking) (UNCHANGED) */}
         <script
           dangerouslySetInnerHTML={{
             __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -59,7 +85,7 @@ export default function RootLayout({
         {/* End Google Tag Manager */}
       </head>
       <body className={inter.className}>
-        {/* Google Tag Manager (noscript) */}
+        {/* Google Tag Manager (noscript) (UNCHANGED) */}
         <noscript>
           <iframe 
             src="https://www.googletagmanager.com/ns.html?id=GTM-P2DHPMWQ"
