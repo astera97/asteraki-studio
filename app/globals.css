@@ -419,3 +419,59 @@
 .animate-pulse-slow {
   animation: pulseSlow 1.6s infinite ease-in-out;
 }
+
+/* General section styling */
+.section-enhanced {
+  padding: 6rem 0;
+  position: relative;
+}
+
+.section-enhanced h2 {
+  font-size: 3.5rem;
+  line-height: 1.1;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.section-enhanced .content-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4rem;
+}
+
+/* Accent styles */
+.section-enhanced .accent-box {
+  background: #f9fafb;
+  border-left: 4px solid #ff7e5f;
+  padding: 2rem;
+  border-radius: 12px;
+}
+
+.section-enhanced h3 {
+  color: #2d3748;
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+}
+
+.section-enhanced p {
+  color: #5f697a;
+  line-height: 1.6;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .section-enhanced .content-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Remove hover captions from hero section */
+.hero-section .image-overlay {
+  display: none;
+}
+
+/* Or if it's part of the video container */
+.video-hero:hover::after {
+  content: none !important;
+}
+

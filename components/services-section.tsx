@@ -181,7 +181,7 @@ export default function ServicesSection() {
       {/* Section Title */}
       <section className="py-12 sm:py-1" style={{ backgroundColor: "#ffffffff" }}>
         <div className="text-center mb-12 sm:mb-16 px-4">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight mb-6 sm:mb-8 text-black">
+          <h2 className="text-5xl sm:text-5xl lg:text-5xl font-bold leading-tight mb-6 sm:mb-8 text-black">
             Nos services de production <br />
             audiovisuelle pour entreprises
           </h2>

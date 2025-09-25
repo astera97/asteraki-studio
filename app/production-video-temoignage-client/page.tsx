@@ -13,7 +13,7 @@ export const generateMetadata = async () => {
     title: "Vidéo Témoignage Client | Créez une Preuve Sociale Authentique - Asteraki",
     description: "Vous cherchez une agence pour produire une vidéo témoignage client ? Découvrez comment des témoignages authentiques boostent la confiance des prospects et augmentent vos conversions en France.",
     alternates: {
-      canonical: "https://www.asteraki.com/production-video-temoignage-client"
+      canonical: "https://asteraki.com/production-video-temoignage-client"
     }
   }
 }
@@ -349,7 +349,7 @@ export default function CustomerStoryVideoPage() {
             <div className="bg-orange-500 text-white rounded-lg w-8 h-8 flex items-center justify-center font-bold mr-4 flex-shrink-0">4</div>
             <div>
               <h3 className="text-xl font-bold text-white mb-2">Preuve tangible</h3>
-              <p className="text-gray-400">Des chiffres concrets > des avantages théoriques. Vos clients idéaux s'identifient aux résultats présentés.</p>
+              <p className="text-gray-400">Des chiffres concrets, des avantages théoriques. Vos clients idéaux s'identifient aux résultats présentés.</p>
             </div>
           </div>
           
