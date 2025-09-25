@@ -1,4 +1,4 @@
-// src/app/production-audiovisuelle-rouen/rouen-video-faq.tsx
+// src/app/production-audiovisuelle-caen/caen-video-faq.tsx
 "use client";
 
 import { useState } from "react";
@@ -10,21 +10,17 @@ interface FAQItem {
   answer: string;
 }
 
-const rouenVideoFAQItems: FAQItem[] = [
+// Updated FAQ items, more general, with focus keyword integrated
+const caenVideoFAQItems: FAQItem[] = [
   {
-    question: "Intervenez-vous uniquement à Rouen ?",
+    question: "Quel est le budget pour une vidéo professionnelle ?",
     answer:
-      "Non. Nous couvrons toute la Normandie (Seine-Maritime, Eure, Calvados, Manche, Orne) et pouvons intervenir partout en France grâce à notre réseau de partenaires locaux et à notre équipe mobile. Que vous soyez à Caen, Le Havre, Évreux ou même à Paris, Lyon ou Marseille, nous assurons la même qualité et les mêmes délais et sans frais de déplacement.",
-  },
-  {
-    question: "Quel est le budget pour une vidéo professionnelle à Rouen ?",
-    answer:
-      "Nos projets à Rouen commencent à partir de 2 500 €, tout inclus : brief, scénario, tournage local (sans frais de déplacement), montage, et livraison de plusieurs formats optimisés. La majorité de nos vidéos corporate se situent entre 3 500 € et 6 000 €, selon la durée, le nombre de lieux ou d’intervenants. Et pour votre premier projet, les frais de pré-production sont offerts (valeur 600 €).",
+      "Nos projets commencent à partir de 2 500 €, tout inclus : brief, scénario, tournage, montage, et livraison de plusieurs formats optimisés. La majorité de nos vidéos corporate se situent entre 3 500 € et 6 000 €, selon la durée, le nombre de lieux ou d’intervenants. Et pour votre premier projet, les frais de pré-production sont offerts (valeur 600 €).",
   },
   {
     question: "Combien de temps dure la production d’une vidéo ?",
     answer:
-      "Une fois le brief validé, nous pouvons tourner sous 24h à Rouen si besoin. Après le tournage, vous recevez votre vidéo finale en 5 jours ouvrés maximum. Ce délai est garanti grâce à notre processus interne optimisé et à une équipe dédiée — pas de sous-traitance aléatoire.",
+      "Une fois le brief validé, nous pouvons démarrer le tournage sous 24h si besoin. Après le tournage, vous recevez votre vidéo finale en 5 jours ouvrés maximum. Ce délai est garanti grâce à notre processus interne optimisé et à une équipe dédiée.",
   },
   {
     question: "Quels types de vidéos créez-vous ?",
@@ -32,14 +28,23 @@ const rouenVideoFAQItems: FAQItem[] = [
       "Nous réalisons tous les formats utiles aux entreprises B2B :<br/>• Vidéos institutionnelles<br/>• Témoignages clients<br/>• Vidéos de recrutement<br/>• Présentations de solutions ou produits<br/>• Retours d’événements (salons, conférences)<br/>• Contenus pour les réseaux sociaux (LinkedIn, Instagram)<br/>Chaque projet inclut plusieurs versions : longue, teaser 15-30s, format carré ou vertical — prêtes à diffuser partout.",
   },
   {
+    question: "Comment se déroule la collaboration ?",
+    answer:
+      "Notre processus est simple : un échange pour comprendre votre besoin, un scénario validé par vos soins, le tournage et le montage en interne, et enfin la livraison de plusieurs formats. Nous intégrons systématiquement la <strong>production audiovisuelle à Caen</strong> dans une dynamique de partenariat pour des résultats optimaux.",
+  },
+  {
     question: "Et si on n’est pas satisfait du résultat ?",
     answer:
       "Nous travaillons main dans la main avec vous : du brief au storyboard, en passant par une première version de montage. Mais si des ajustements sont nécessaires, 3 tours de retouches sont inclus dans le prix. Notre objectif ? Que vous soyez 100 % satisfait, sans stress.",
   },
-  
+  {
+    question: "Quelle est la différence entre votre offre et celle d'autres agences ?",
+    answer:
+      "Notre approche se distingue par la rapidité (livraison en 5 jours), la clarté des tarifs (aucun frais caché), la qualité du rendu (équipe interne), et la flexibilité (nombreux formats inclus). Cela s'applique à chaque projet de <strong>production audiovisuelle à Caen</strong> que nous menons à bien."
+  }
 ];
 
-export default function RouenVideoFAQSection() {
+export default function CaenVideoFAQSection() { // Updated component name
   const [openItems, setOpenItems] = useState<number[]>([]);
 
   const toggleItem = (index: number) => {
@@ -52,9 +57,9 @@ export default function RouenVideoFAQSection() {
 
   // ✅ Generate structured data for SEO (FAQPage)
   const faqSchema = {
-    "@context": "https://schema.org",
+    "@context": "https://schema.org", // Removed extra spaces
     "@type": "FAQPage",
-    mainEntity: rouenVideoFAQItems.map((item) => ({
+    mainEntity: caenVideoFAQItems.map((item) => ({
       "@type": "Question",
       name: item.question,
       acceptedAnswer: {
@@ -68,7 +73,7 @@ export default function RouenVideoFAQSection() {
     <>
       {/* ✅ Inject JSON-LD schema */}
       <Script
-        id="rouen-video-faq-schema"
+        id="caen-video-faq-schema" // Updated schema ID
         type="application/ld+json"
         strategy="afterInteractive"
       >
@@ -93,7 +98,7 @@ export default function RouenVideoFAQSection() {
 
           {/* FAQ List */}
           <div className="max-w-4xl mx-auto space-y-4">
-            {rouenVideoFAQItems.map((item, index) => (
+            {caenVideoFAQItems.map((item, index) => (
               <div key={index} className="bg-[#F1F1F1] rounded-3xl overflow-hidden">
                 <button
                   onClick={() => toggleItem(index)}

@@ -89,11 +89,11 @@ export default function CaenVideoProductionPage() { // Updated function name
               <div className="max-w-xl">
                 {/* H1 includes the focus keyword */}
                 <h1 className="text-3xl lg:text-4xl font-bold text-black mb-8 leading-tight">
-                  Production audiovisuelle à Caen pour entreprises
+                 Société de production audiovisuelle à Caen pour entreprises
                 </h1>
                 {/* First paragraph of content includes the focus keyword */}
                 <p className="text-normal mb-5">
-                  Notre expertise en <strong>production audiovisuelle à Caen</strong> se concentre sur la création de vidéos professionnelles sur mesure. Nous collaborons avec des entreprises de la région Normandie pour produire des contenus percutants : événements, témoignages, recrutement, institutionnel. Chaque projet est conçu pour être aligné avec votre stratégie.
+                  En tant  qu'équipe de production audiovisuelle à Caen, on se concentre sur la création de vidéos professionnelles sur mesure. Nous collaborons avec des entreprises de la région Normandie pour produire des contenus percutants : événements, témoignages, recrutement, institutionnel. Chaque projet est conçu pour être aligné avec votre stratégie.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4">
                   <Link href="/contact" passHref>
@@ -329,10 +329,10 @@ export default function CaenVideoProductionPage() { // Updated function name
         <ClientsSection />
 
         {/* FAQ */}
-        <CaenVideoFAQSection /> // Updated component
+        <CaenVideoFAQSection /> 
 
         {/* CTA */}
-        <CaenVideoCTASection /> // Updated component
+        <CaenVideoCTASection /> 
       </main>
       <Footer />
     </>

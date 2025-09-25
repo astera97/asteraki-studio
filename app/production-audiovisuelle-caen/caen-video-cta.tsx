@@ -35,9 +35,9 @@ export default function CaenVideoCTASection() { // Updated component name
                 Faites appel à une équipe experte en <strong>production audiovisuelle à Caen</strong> pour des contenus percutants. Livraison en 5 jours, plusieurs formats inclus, ROI clair — sans frais cachés ni mauvaises surprises.
               </p>
 
-              <Link href="/contact" passHref>
+              <Link href="/quiz" passHref>
                 <Button className="btn-luxury border-0 px-6 py-3 w-full sm:w-auto sm:px-8 sm:py-3 rounded-full text-base sm:text-lg mb-4 sm:mb-6">
-                  Estimer votre projet
+                  Estimer votre projet en 1-min
                 </Button>
               </Link>
             </div>

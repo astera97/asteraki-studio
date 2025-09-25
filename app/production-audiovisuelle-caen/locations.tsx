@@ -4,7 +4,12 @@ import Image from "next/image";
 
 // Define the key cities in Normandie where you operate - Updated for Caen page
 const normandieCities = [
-
+  {
+    id: "caen",
+    name: "Caen",
+    href: "/production-audiovisuelle-caen", // Points to the current page
+    image: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVXA74OQyU25xHY6yjCthZbQeBr3P09VOWigE8", // Example: Caen city center/castle
+  },
   {
     id: "rouen",
     name: "Rouen",
