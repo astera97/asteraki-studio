@@ -27,12 +27,12 @@ export default function CaenVideoCTASection() { // Updated component name
             <div className="max-w-xl">
               {/* H2 includes the focus keyword */}
               <h2 className="text-3xl xs:text-2xl sm:text-2xl lg:text-4xl font-bold leading-tight mb-6 xs:mb-6 sm:mb-8">
-                Lancez votre <span className="text-orange-400">production audiovisuelle à Caen</span>
+                Lancez votre <span className="text-orange-400">production vidéo à Caen dès maintenant</span>
               </h2>
 
               {/* Description includes the focus keyword */}
               <p className="text-gray-300 text-base xs:text-lg leading-relaxed mb-6 xs:mb-8 sm:mb-12 max-w-lg">
-                Faites appel à une équipe experte en <strong>production audiovisuelle à Caen</strong> pour des contenus percutants. Livraison en 5 jours, plusieurs formats inclus, ROI clair — sans frais cachés ni mauvaises surprises.
+                Faites appel à une équipe experte en production vidéo pour des contenus percutants. Livraison en 5 jours, plusieurs formats inclus, ROI clair — sans frais cachés ni mauvaises surprises.
               </p>
 
               <Link href="/quiz" passHref>

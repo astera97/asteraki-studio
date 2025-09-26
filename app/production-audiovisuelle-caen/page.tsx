@@ -200,7 +200,7 @@ export default function CaenVideoProductionPage() { // Updated function name
                 </div>
 
                 <h2 className="text-3xl lg:text-4xl font-bold text-white mb-8">
-                  Pourquoi la <span className="text-orange-400">production audiovisuelle à Caen</span> inclut plusieurs formats pour un marketing efficace
+                  Pourquoi nos services de <span className="text-orange-400">production audiovisuelle à Caen</span> incluent plusieurs formats?
                 </h2>
 
                 <p className="text-white mb-6 leading-relaxed">
@@ -257,7 +257,7 @@ export default function CaenVideoProductionPage() { // Updated function name
                 </div>
 
                 <blockquote className="border-l-4 border-orange-500 pl-6 py-2 mt-10 italic text-gray-300">
-                  Chez Asteraki Studio, notre approche de la production audiovisuelle à Caen va au-delà de la simple création. Nous intégrons dès le départ la stratégie multi-canaux, vous offrant des formats variés sans coût supplémentaire, pour une communication vidéo percutante et homogène.
+                  Chez Asteraki Studio, notre approche de la production vidéo va au-delà de la simple création. Nous intégrons dès le départ la stratégie multi-canaux, vous offrant des formats variés sans coût supplémentaire, pour une communication vidéo percutante.
                 </blockquote>
 
                 <div className="mt-12">
