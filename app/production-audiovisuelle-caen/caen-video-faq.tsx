@@ -30,7 +30,7 @@ const caenVideoFAQItems: FAQItem[] = [
   {
     question: "Comment se déroule la collaboration ?",
     answer:
-      "Notre processus est simple : un échange pour comprendre votre besoin, un scénario validé par vos soins, le tournage et le montage en interne, et enfin la livraison de plusieurs formats. Nous intégrons systématiquement la <strong>production audiovisuelle à Caen</strong> dans une dynamique de partenariat pour des résultats optimaux.",
+      "Notre processus est simple : un échange pour comprendre votre besoin, un scénario validé par vos soins, le tournage et le montage en interne, et enfin la livraison de plusieurs formats. ",
   },
   {
     question: "Et si on n’est pas satisfait du résultat ?",
@@ -40,7 +40,7 @@ const caenVideoFAQItems: FAQItem[] = [
   {
     question: "Quelle est la différence entre votre offre et celle d'autres agences ?",
     answer:
-      "Notre approche se distingue par la rapidité (livraison en 5 jours), la clarté des tarifs (aucun frais caché), la qualité du rendu (équipe interne), et la flexibilité (nombreux formats inclus). Cela s'applique à chaque projet de <strong>production audiovisuelle à Caen</strong> que nous menons à bien."
+      "Notre approche se distingue par la rapidité (livraison en 5 jours), la clarté des tarifs (aucun frais caché), la qualité du rendu (équipe interne), et la flexibilité (nombreux formats inclus). Cela s'applique à chaque projet vidéo que nous menons à bien."
   }
 ];
 
