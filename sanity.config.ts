@@ -7,16 +7,18 @@ import { structureTool } from 'sanity/structure'
 import { schema } from './sanity/schemaTypes'
 import { structure } from './sanity/structure'
 
+// 🔴 Hardcode these — they are public and safe
+const projectId = '5p7k2ucr' // ← YOUR REAL PROJECT ID
+const dataset = 'production'
+const apiVersion = '2025-09-30'
+
 export default defineConfig({
   basePath: '/studio',
-  // 🔴 HARDCODE these — they are public anyway
-  projectId: '5p7k2ucr', // ← replace with your real ID
-  dataset: 'production',
-  apiVersion: '2025-04-01',
-
+  projectId,
+  dataset,
   schema,
   plugins: [
     structureTool({ structure }),
-    visionTool({ defaultApiVersion: '2025-04-01' }),
+    visionTool({ defaultApiVersion: apiVersion }),
   ],
 })
