@@ -56,6 +56,7 @@ export const postType = defineType({
       of: [
         defineArrayMember({ type: 'block' }),
         defineArrayMember({ type: 'embed' }), // ← supports Vimeo/YouTube
+        defineArrayMember({ type: 'image' }),
       ],
     }),
   ],
