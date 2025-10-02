@@ -1,5 +1,4 @@
 // app/blog/[slug]/page.tsx
-'use client'
 
 import { sanityClient } from '@/lib/sanity'
 import { groq } from 'next-sanity'
