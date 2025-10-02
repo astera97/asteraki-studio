@@ -103,8 +103,39 @@ export default function ArticleLayout({
             </div>
           )}
 
-          {/* Contenu principal */}
-          <article className="mb-12">{children}</article>
+          {/* Contenu principal + CTA intégré */}
+          <article className="mb-12">
+            {/* Apply Tailwind Typography to PortableText content */}
+            <div className="prose prose-lg max-w-none">
+              {children}
+            </div>
+
+            {/* CTA universel — ajouté à la fin de chaque article */}
+            <section>
+              <h2 className="text-2xl font-bold text-black mt-12 mb-6">Et si vous vous faisiez accompagner ?</h2>
+              
+              <p className="text-black">
+                Réaliser une vidéo d’entreprise, ce n’est pas juste joli à regarder. C’est penser le fond, la forme, le rythme, le son, le message et la diffusion. Pour que tout tienne debout, avoir un partenaire expérimenté, c’est un vrai atout.
+              </p>
+              <br />
+              <p className="text-black">
+                Chez Asteraki, on prend le temps de comprendre votre besoin, d’ajuster le format à votre budget, et de vous proposer un devis clair.
+              </p>
+              <br />
+              <p className="text-black">
+                Alors, prêt à réaliser votre prochaine vidéo ?
+              </p>
+              <br /><br />
+              <div className="flex justify-center items-center">
+                <Link href="/quiz" passHref>
+                  <Button className="btn-luxury border-0 px-6 py-3 w-full sm:w-auto sm:px-8 sm:py-3 rounded-full text-base sm:text-lg mb-4 sm:mb-6">
+                    Besoin d'un projet vidéo pour votre entreprise ?
+                  </Button>
+                </Link>
+              </div>
+              <br /><br />
+            </section>
+          </article>
 
           {/* Mobile Sharing Buttons */}
           <div className="md:hidden flex justify-between items-center mb-8">
