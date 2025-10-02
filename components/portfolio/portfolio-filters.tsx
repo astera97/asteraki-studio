@@ -21,6 +21,8 @@ const industries = [
   { value: "Santé", label: "Santé" },
   { value: "SaaS", label: "SaaS" },
   { value: "Technologie", label: "Technologie" },
+  { value: "Logistique", label: "Logistique" },
+  { value: "Startup", label: "Startup" },
 ]
 
 const videoTypes = [

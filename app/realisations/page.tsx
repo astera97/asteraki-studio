@@ -649,7 +649,7 @@ const portfolioProjects = getUniqueAndShuffledProjects([
     description: "Vidéo d'entreprise mettant en lumière les employés de Bolt.",
     services: ["Scénario", "Cinématographie", "Graphismes animés", "Étalonnage colorimétrique"],
     videoType: "Vidéo de recrutement",
-    industry: "Startup",
+    industry: "Technologie",
     thumbnail: "https://xb26hl5f9h.ufs.sh/f/myb9AtBX9KywvuM8M7GgmR8DzbQXG4njAStoPfq2aTk7JiFL",
     vimeoUrl: "https://vimeo.com/1104256442",
   },
