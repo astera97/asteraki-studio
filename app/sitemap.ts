@@ -1,9 +1,10 @@
 // app/sitemap.ts
 import { sanityClient } from '@/lib/sanity'
 import { groq } from 'next-sanity'
+import { allStaticPages } from '@/lib/routes'
 
 export default async function sitemap() {
-  // Fetch all published blog posts from Sanity
+  // Fetch blog posts from Sanity
   const posts = await sanityClient.fetch(groq`
     *[_type == "post" && defined(slug.current)] {
       "slug": slug.current,
@@ -13,18 +14,11 @@ export default async function sitemap() {
 
   const baseUrl = 'https://asterakistudio.com'
 
-  // Static pages (non-blog)
-  const staticPages = [
-    { url: '/', priority: 1.0 },
-    { url: '/blog', priority: 0.9 },
-    // Add other key pages if needed: '/contact', '/services', etc.
-  ]
-
-  const staticUrls = staticPages.map((page) => ({
-    url: `${baseUrl}${page.url}`,
+  const staticUrls = allStaticPages.map(path => ({
+    url: `${baseUrl}${path === '/' ? '' : path}`,
     lastModified: new Date(),
     changeFrequency: 'weekly' as const,
-    priority: page.priority,
+    priority: path === '/' ? 1.0 : path.startsWith('/production-video-a-') ? 0.9 : 0.8,
   }))
 
   const blogUrls = posts.map((post: any) => ({
