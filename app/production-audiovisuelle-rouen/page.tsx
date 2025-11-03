@@ -17,7 +17,7 @@ export const generateMetadata = async (): Promise<Metadata> => {
     description:
       "Agence de production vidéo basée en Normandie. On filme à Rouen pour les entreprises locales : témoignages, événements, recrutement, présentations — livraison rapide, sans surprise.",
     alternates: {
-      canonical: "https://www.asterakistudio.com/production-audiovisuelle-rouen",
+      canonical: "https://asterakistudio.com/production-audiovisuelle-rouen",
     },
     openGraph: {
       title: "Production audiovisuelle à Rouen | Asteraki Studio",
@@ -25,7 +25,7 @@ export const generateMetadata = async (): Promise<Metadata> => {
         "Agence de production vidéo basée en Normandie. On filme à Rouen pour les entreprises locales : témoignages, événements, recrutement, présentations — livraison rapide, sans surprise.",
       locale: "fr_FR",
       type: "website",
-      url: "https://www.asterakistudio.com/production-audiovisuelle-rouen",
+      url: "https://asterakistudio.com/production-audiovisuelle-rouen",
     },
   };
 };
@@ -42,7 +42,7 @@ export default function RouenVideoProductionPage() {
             "@type": "ProfessionalService",
             "name": "Asteraki Studio",
             "image": "https://www.asterakistudio.com/logo.png",
-            "url": "https://www.asterakistudio.com/production-audiovisuelle-rouen",
+            "url": "https://asterakistudio.com/production-audiovisuelle-rouen",
             "telephone": "+33758116026",
             "serviceArea": [
               {
@@ -87,7 +87,7 @@ export default function RouenVideoProductionPage() {
                   Production audiovisuelle à Rouen pour entreprises ambitieuses
                 </h1>
                 <p className="text-normal mb-5">
-                  Spécialisée en production audiovisuelle à Rouen, notre agence Asteraki Studio conçoit des vidéos professionnelles sur mesure pour les entreprises de la région Normandie. Que ce soit pour un événement corporate, un témoignage client, une vidéo de recrutement ou un message institutionnel, nous livrons un contenu percutant, soigné et 100 % adapté à votre stratégie locale.
+                  Spécialisée en production audiovisuelle à Rouen, notre agence conçoit des vidéos professionnelles sur mesure pour les entreprises de la région Normandie. Que ce soit pour un événement corporate, un témoignage client, une vidéo de recrutement ou un message institutionnel, nous livrons un contenu percutant, soigné et 100 % adapté à votre stratégie locale.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4">
                   <Link href="/contact" passHref>

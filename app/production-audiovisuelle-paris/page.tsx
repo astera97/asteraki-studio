@@ -19,7 +19,7 @@ export const generateMetadata = async (): Promise<Metadata> => {
     description:
       "Expert en production audiovisuelle à Paris. Vidéos sur mesure pour entreprises : institutionnelles, événementielles, recrutement. Livraison rapide, ROI garanti.",
     alternates: {
-      canonical: "https://www.asterakistudio.com/production-audiovisuelle-paris", // Updated canonical
+      canonical: "https://asterakistudio.com/production-audiovisuelle-paris", // Updated canonical
     },
     openGraph: {
       // Open Graph title includes the focus keyword
@@ -29,7 +29,7 @@ export const generateMetadata = async (): Promise<Metadata> => {
         "Expert en production audiovisuelle à Paris. Vidéos sur mesure pour entreprises : institutionnelles, événementielles, recrutement. Livraison rapide, ROI garanti.",
       locale: "fr_FR",
       type: "website",
-      url: "https://www.asterakistudio.com/production-audiovisuelle-paris", // Updated URL
+      url: "https://asterakistudio.com/production-audiovisuelle-paris", // Updated URL
     },
   };
 };
@@ -45,8 +45,8 @@ export default function ParisVideoProductionPage() { // Updated function name
             "@context": "https://schema.org", // Removed extra spaces
             "@type": "ProfessionalService",
             "name": "Asteraki Studio",
-            "image": "https://www.asterakistudio.com/logo.png", // Removed extra spaces
-            "url": "https://www.asterakistudio.com/production-audiovisuelle-paris", // Updated URL
+            "image": "https://asterakistudio.com/logo.png", // Removed extra spaces
+            "url": "https://asterakistudio.com/production-audiovisuelle-paris", // Updated URL
             "telephone": "+33758116026",
             "serviceArea": [
               {
