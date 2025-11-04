@@ -7,6 +7,8 @@ import Link from "next/link"
 import PortfolioSection from "./portfolio-section"
 import EventVideoFAQSection from "./event-faq"
 import FinalCTASection from "./event-cta"
+import ProcessTimelineSection from "./process-section";
+import WhyChooseUsSection from './WhyChooseUsSection';
 
 export const generateMetadata = async () => {
   return {
@@ -29,10 +31,13 @@ export default function EventVideoProductionPage() {
                   Services de production de vidéos d'événements
                 </div>
                 <h1 className="text-3xl lg:text-4xl font-bold text-black mb-8 leading-tight">
-                  Rendez votre événement inoubliable avec une couverture vidéo de qualités
+                  Captation d’événements B2B : Vidéos stratégiques pour renforcer votre marque et convertir vos prospects
                 </h1>
                 <p className="text-normal mb-5">
-                  Nous créons des vidéos d'événements professionnelles qui capturent l'énergie, l'émotion et les moments clés de votre conférence, salon professionnel ou événement d'entreprise. De la configuration multi-caméras aux réels de temps forts, nous gérons tous les aspects de la production.
+                  Nous créons des vidéos d’événements professionnelles grâce à une captation d’évènements sur-mesure 
+                  qui capture l’énergie, l’émotion et les moments clés de votre conférence, salon professionnel ou événement 
+                  d’entreprise. De la configuration multi-caméras aux réels de temps forts, nous gérons tous les aspects 
+                  de la production — du brief à la livraison finale.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4">
                   <Link href="/contact" passHref>
@@ -60,167 +65,127 @@ export default function EventVideoProductionPage() {
           </div>
         </section>
 
-        {/* Client Logos Section */}
-  <section className="pt-0 pb-24" style={{ backgroundColor: "rgba(255, 255, 255, 1)" }}>
-    <div className="max-w-7xl mx-auto px-6 lg:px-8 text-center">
-      <p className="text-center text-black font-normal mt-4 sm:mt-6 text-sm sm:text-base px-4">
-        Nous avons accompagné plus de 250 entreprises en France
-      </p>
+        { /* Client Logos Section */ }
+<section className="pt-0 pb-12" style={{ backgroundColor: "rgba(255, 255, 255, 1)" }}> {/* ⬇️ Reduced from pb-24 to pb-12 */}
+  <div className="max-w-7xl mx-auto px-6 lg:px-8 text-center">
+    <p className="text-center text-black font-normal mt-4 sm:mt-6 text-sm sm:text-base px-4">
+      Nous avons accompagné plus de 250 entreprises en France
+    </p>
 
-      {/* Logo Carousel */}
-      <div className="relative overflow-hidden mb-8 sm:mb-12">
-        {/* Left fade gradient */}
-        <div
-          className="absolute left-0 top-0 w-16 sm:w-32 h-full z-10 pointer-events-none"
-          style={{
-            background:
-              "linear-gradient(to right, rgba(255, 255, 255, 0), rgba(237, 237, 237, 0), transparent)",
-          }}
-        ></div>
-        {/* Right fade gradient */}
-        <div
-          className="absolute right-0 top-0 w-16 sm:w-32 h-full z-10 pointer-events-none"
-          style={{
-            background:
-              "linear-gradient(to left, hsla(0, 0%, 100%, 0.00), rgba(237, 237, 237, 0), transparent)",
-          }}
-        ></div>
+    {/* Logo Carousel */}
+    <div className="relative overflow-hidden mb-8 sm:mb-12">
+      {/* Left fade gradient */}
+      <div
+        className="absolute left-0 top-0 w-16 sm:w-32 h-full z-10 pointer-events-none"
+        style={{
+          background:
+            "linear-gradient(to right, rgba(255, 255, 255, 0), rgba(237, 237, 237, 0), transparent)",
+        }}
+      ></div>
+      {/* Right fade gradient */}
+      <div
+        className="absolute right-0 top-0 w-16 sm:w-32 h-full z-10 pointer-events-none"
+        style={{
+          background:
+            "linear-gradient(to left, hsla(0, 0%, 100%, 0.00), rgba(237, 237, 237, 0), transparent)",
+        }}
+      ></div>
 
-        <div className="flex animate-scroll-seamless">
-          {[
+      <div className="flex animate-scroll-seamless">
+        {[
+          { name: "sage", src: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztV4bnvwY2lTHSXo8DmjG0ZWyuahPUIeOpds65E" },
+          { name: "notion", src: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVRjuai5V8xN4tsZSVcawW35TIh0CgyLOYHAiX" },
+          { name: "dell", src: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVyVJ83Vf7jHwWMkUO0E4Y25ImLfS3X8vyRBib" },
+          { name: "deloitte", src: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVufQdOSMM0kbnN9ZpEL8lYQRazuvgOVG4Fot2" },
+          { name: "malt", src: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVN72SnQD45FgMDujBmTbOY28pnK0y4lkrZfWx" },
+          { name: "aircall", src: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVUlYofGSq2CrN5MjsDJkoHGX6AzxuROT8Sgfw" },
+          { name: "sanofi", src: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVUlVYsEdq2CrN5MjsDJkoHGX6AzxuROT8Sgfw" },
+          { name: "uber", src: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVci8fmc9r3QfKI0dziE8sFt4BVwMqT2bChkLN" },
+          { name: "zapier", src: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVNLoseK45FgMDujBmTbOY28pnK0y4lkrZfWxe" },
+        ]
+          .concat([
             { name: "sage", src: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztV4bnvwY2lTHSXo8DmjG0ZWyuahPUIeOpds65E" },
             { name: "notion", src: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVRjuai5V8xN4tsZSVcawW35TIh0CgyLOYHAiX" },
             { name: "dell", src: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVyVJ83Vf7jHwWMkUO0E4Y25ImLfS3X8vyRBib" },
             { name: "deloitte", src: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVufQdOSMM0kbnN9ZpEL8lYQRazuvgOVG4Fot2" },
             { name: "malt", src: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVN72SnQD45FgMDujBmTbOY28pnK0y4lkrZfWx" },
             { name: "aircall", src: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVUlYofGSq2CrN5MjsDJkoHGX6AzxuROT8Sgfw" },
-            { name: "sanofi", src: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVUlVYsEdq2CrN5MjsDJkoHGX6AzxuROT8Sgfw" },
+            { name: "sanofi", src: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVUlVYsEdq2CrN5MjsDJkoHGX6AzxuROT8Sgfw" }, 
             { name: "uber", src: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVci8fmc9r3QfKI0dziE8sFt4BVwMqT2bChkLN" },
             { name: "zapier", src: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVNLoseK45FgMDujBmTbOY28pnK0y4lkrZfWxe" },
-          ]
-            .concat([
-              { name: "sage", src: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztV4bnvwY2lTHSXo8DmjG0ZWyuahPUIeOpds65E" },
-              { name: "notion", src: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVRjuai5V8xN4tsZSVcawW35TIh0CgyLOYHAiX" },
-              { name: "dell", src: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVyVJ83Vf7jHwWMkUO0E4Y25ImLfS3X8vyRBib" },
-              { name: "deloitte", src: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVufQdOSMM0kbnN9ZpEL8lYQRazuvgOVG4Fot2" },
-              { name: "malt", src: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVN72SnQD45FgMDujBmTbOY28pnK0y4lkrZfWx" },
-              { name: "aircall", src: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVUlYofGSq2CrN5MjsDJkoHGX6AzxuROT8Sgfw" },
-              { name: "sanofi", src: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVUlVYsEdq2CrN5MjsDJkoHGX6AzxuROT8Sgfw" }, 
-              { name: "uber", src: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVci8fmc9r3QfKI0dziE8sFt4BVwMqT2bChkLN" },
-              { name: "zapier", src: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVNLoseK45FgMDujBmTbOY28pnK0y4lkrZfWxe" },
-            ])
-            .map((logo, index) => (
-              <div
-                key={index}
-                className="flex items-center justify-center min-w-[120px] sm:min-w-[160px] mx-2 sm:mx-4"
-              >
-                <Image
-                  src={logo.src || "/placeholder.svg"}
-                  alt={`${logo.name} logo`}
-                  width={120}
-                  height={40}
-                  className="opacity-60 hover:opacity-80 transition-opacity object-contain"
-                />
-              </div>
-            ))}
+          ])
+          .map((logo, index) => (
+            <div
+              key={index}
+              className="flex items-center justify-center min-w-[120px] sm:min-w-[160px] mx-2 sm:mx-4"
+            >
+              <Image
+                src={logo.src || "/placeholder.svg"}
+                alt={`${logo.name} logo`}
+                width={120}
+                height={40}
+                className="opacity-60 hover:opacity-80 transition-opacity object-contain"
+              />
+            </div>
+          ))}
+      </div>
+    </div>
+  </div>
+</section>
+
+{ /* Proposition de valeur */ }
+<section className="py-12" style={{ backgroundColor: "rgba(255, 255, 255, 1)" }}> {/* ⬇️ Reduced from py-24 to py-12 */}
+  <div className="max-w-7xl mx-auto px-6 lg:px-8">
+    <div className="grid lg:grid-cols-2 gap-16 items-center">
+      <div className="max-w-xl">
+        <h2 className="text-4xl lg:text-5xl font-bold text-black mb-8 leading-tight">
+          Une agence vidéo spécialisée dans tous les types de captation d’événements.
+        </h2>
+        <div className="text-lg text-black mb-10 leading-relaxed">
+          <p className="mb-6">
+            Spécialisés dans la réalisation de vidéos événementielles, nous accompagnons les entreprises 
+            dans la captation professionnelle de leurs conférences, salons professionnels, 
+            séminaires internes, lancements de produits, soirées de gala, conventions ou encore 
+            sessions plénières. Chaque projet est traité avec rigueur : de la préparation à la livraison 
+            en 24–48h pour les temps forts, en passant par un tournage multicaméras et un montage optimisé 
+            pour LinkedIn, le site web ou la diffusion interne.
+          </p>
+        </div>
+        <Link href="/contact" passHref>
+          <button className="btn-luxury border-0 px-6 sm:px-8 py-3 rounded-full text-base text-white text-semibold sm:text-lg mb-4 sm:mb-2">
+            Obtenir un devis
+          </button>
+        </Link>
+      </div>
+      <div className="relative">
+        <div className="rounded-2xl overflow-hidden">
+          <img
+            src="https://xb26hl5f9h.ufs.sh/f/myb9AtBX9KywvWc9HMGgmR8DzbQXG4njAStoPfq2aTk7JiFL"
+            alt="Couverture de l'événement Salesforce Dreamforce"
+            className="w-full"
+          />
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-        {/* Proposition de valeur */}
-        <section className="pt-1 pb-24" style={{ backgroundColor: "rgba(255, 255, 255, 1)" }}>
-          <div className="max-w-8xl mx-auto px-6 lg:px-8">
-            <div className="grid lg:grid-cols-2 gap-16 items-center">
-              <div className="relative">
-                <div className="rounded-2xl overflow-hidden">
-                  <img
-                    src="https://xb26hl5f9h.ufs.sh/f/myb9AtBX9KywplYRsP6IpEkOY8D0GBumXaioq9CjFLZxsPM1"
-                    alt="Couverture vidéo d'événement avec Insead"
-                    className="w-full"
-                  />
-                </div>
-              </div>
-              <div className="max-w-xl">
-                <h2 className="text-4xl lg:text-5xl font-bold text-black mb-8 leading-tight">
-                  Chaque moment compte. Capturez-les tous.
-                </h2>
-                <div className="space-y-6 text-lg text-black leading-relaxed">
-                  <p>
-                    Les vidéos d'événements constituent le moyen idéal pour étendre la portée de votre événement, engager les participants qui n'ont pas pu y assister et créer du contenu marketing précieux. Une couverture professionnelle garantit que vous ne manquez aucun moment clé.
-                  </p>
-                </div>
-                <div className="mt-10">
-                  <Link href="/contact" passHref>
-                    <button className="btn-luxury border-0 px-6 sm:px-8 py-3 rounded-full text-base text-white text-semibold sm:text-lg mb-4 sm:mb-2">
-                      Obtenir un devis
-                    </button>
-                  </Link>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+        {/* Other sections */}
+        <WhyChooseUsSection />
 
-        {/* Fonctionnalités */}
-        <section className="py-24" style={{ backgroundColor: "#ffffffff" }}>
-          <div className="max-w-7xl mx-auto px-6 lg:px-8">
-            <div className="text-center mb-20">
-              <h2 className="text-4xl lg:text-5xl font-bold text-black mb-4">
-                Comment nous garantissons la livraison de vidéos d'événements qui engagent votre audience
-              </h2>
-            </div>
-            <div className="grid lg:grid-cols-3 gap-16">
-              {[
-                {
-                  image: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVh2BelJLDI024dcPOMo9lrEN6UY8eWLTbkv3Q",
-                  alt: "Couverture multi-caméras",
-                  title: "Couverture multi-caméras",
-                  desc: "Nous déployons plusieurs angles de caméra pour capturer chaque moment important depuis les meilleures perspectives, garantissant des plans dynamiques et engageants.",
-                },
-                {
-                  image: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVh2BelJLDI024dcPOMo9lrEN6UY8eWLTbkv3Q", 
-                  alt: "Montage en temps réel",
-                  title: "Montage en temps réel",
-                  desc: "Notre équipe fournit un rendu rapide pour les réels de temps forts pendant votre événement, vous permettant de partager du contenu pendant que l'excitation est encore vive.",
-                },
-                {
-                  image: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVh2BelJLDI024dcPOMo9lrEN6UY8eWLTbkv3Q",
-                  alt: "Livraison multi-format",
-                  title: "Livraison multi-format",
-                  desc: "Nous livrons votre contenu événementiel dans plusieurs formats optimisés pour les réseaux sociaux, le site web, les campagnes par e-mail et les communications internes.",
-                },
-              ].map((item, idx) => (
-                <div
-                  key={idx}
-                  className="text-left border border-black rounded-3xl p-12 bg-beige-200"
-                >
-                  <div className="w-16 h-16 mb-8">
-                    <Image
-                      src={item.image}
-                      alt={item.alt}
-                      width={64}
-                      height={64}
-                      className="w-full h-full object-contain invert-0 sepia saturate-200 hue-rotate-12"
-                    />
-                  </div>
-                  <h3 className="text-2xl font-bold text-black mb-6">{item.title}</h3>
-                  <p className="text-lg text-black mb-8 leading-relaxed">{item.desc}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
 
         {/* Section Portfolio */}
         <PortfolioSection />
+
+        {/* Process — fully rewritten, human tone */}
+        <ProcessTimelineSection />
 
         {/* Section Communiquer avec clarté */}
         <section className="py-24" style={{ backgroundColor: "rgba(255, 255, 255, 1)" }}>
           <div className="max-w-7xl mx-auto px-6 lg:px-8">
             <div className="grid lg:grid-cols-2 gap-16 items-center">
               <div className="max-w-xl">
-                <h2 className="text-4xl lg:text-5xl font-bold text-black mb-8 leading-tight">
+                <h2 className="text-3xl lg:text-4xl font-bold text-black mb-8 leading-tight">
                   Transformez votre événement en contenu intemporel.
                 </h2>
                 <div className="text-lg text-black mb-10 leading-relaxed">
@@ -239,7 +204,7 @@ export default function EventVideoProductionPage() {
               <div className="relative">
                 <div className="rounded-2xl overflow-hidden">
                   <img
-                    src="https://xb26hl5f9h.ufs.sh/f/myb9AtBX9KywvWc9HMGgmR8DzbQXG4njAStoPfq2aTk7JiFL"
+                    src="https://xb26hl5f9h.ufs.sh/f/myb9AtBX9KywplYRsP6IpEkOY8D0GBumXaioq9CjFLZxsPM1"
                     alt="Couverture de l'événement Salesforce Dreamforce"
                     className="w-full"
                   />
@@ -248,8 +213,6 @@ export default function EventVideoProductionPage() {
             </div>
           </div>
         </section>
-
-        
 
         {/* Pourquoi les vidéos d'événements fonctionnent */}
         <section className="py-24" style={{ backgroundColor: "#111111" }}>
