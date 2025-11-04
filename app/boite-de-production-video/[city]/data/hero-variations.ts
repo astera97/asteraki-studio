@@ -4,13 +4,11 @@ export const heroHeadlines = [
   "Société de production audiovisuelle à {{city}} pour entreprises ambitieuses",
   "Boite de production vidéo à {{city}} pour entreprises innovantes",
   "Agence de production vidéo à {{city}} pour entreprises locales",
-  "Studio de production audiovisuelle à {{city}} pour entreprises de croissance",
-  "Équipe de production vidéo à {{city}} pour entreprises dynamiques",
-  "Partenaire de production audiovisuelle à {{city}} pour entreprises qui veulent se démarquer",
-  "Société de production vidéo à {{city}} pour entreprises sérieuses",
-  "Boite de production audiovisuelle à {{city}} pour entreprises exigeantes",
-  "Agence vidéo à {{city}} pour entreprises visionnaires",
-  "Studio vidéo à {{city}} pour entreprises leaders"
+  "Studio de production audiovisuelle à {{city}} pour entreprises",
+  "Équipe de production vidéo à {{city}}",
+  "Agence de production audiovisuelle à {{city}} pour les entreprises qui veulent se démarquer",
+  "Société de production vidéo à {{city}} pour entreprises B2B et B2C",
+  "Agence vidéo à {{city}} pour entreprises et startups",
 ];
 
 export const heroParagraphs = [

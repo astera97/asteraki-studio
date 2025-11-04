@@ -27,7 +27,7 @@ export default function WhyChooseSection({ whyChooseContent }: WhyChooseSectionP
               La Puissance Du Storytelling Vidéo
             </div>
 
-            <h2 className="text-4xl lg:text-5xl font-bold text-white mb-8">
+            <h2 className="text-3xl lg:text-4xl font-bold text-white mb-8">
               {whyChooseContent.heading}
             </h2>
 

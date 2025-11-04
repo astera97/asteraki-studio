@@ -1,6 +1,7 @@
-// src/app/event-video-production/[city]/data/getFaqContent.ts
+// src/app/boite-de-production-video/[city]/data/getFaqContent.ts
 
-import { faqHeadings, faqItems } from './faq-variations';
+// ✅ Import the faqQuestions array
+import { faqQuestions } from './faq-variations'; // Make sure this path is correct!
 
 function simpleHash(str: string): number {
   let hash = 0;
@@ -12,25 +13,25 @@ function simpleHash(str: string): number {
   return Math.abs(hash);
 }
 
-export interface FaqContent {
-  heading: string;
-  faqItems: typeof faqItems; // Use the type of the static array
+export interface FaqItem {
+  id: string;
+  question: string;
+  answer: string;
 }
 
-export function getFaqContent(cityName: string): FaqContent {
+export function getFaqContent(cityName: string): FaqItem[] {
   const seed = simpleHash(cityName);
 
-  const rawHeading = faqHeadings[seed % faqHeadings.length];
-  const heading = rawHeading.replace(/{{city}}/g, cityName);
+  // ✅ Safeguard: If faqQuestions is undefined, return an empty array
+  if (!faqQuestions || !Array.isArray(faqQuestions)) {
+    console.warn('FAQ questions are not defined. Returning empty array.');
+    return [];
+  }
 
-  // For now, keep the FAQ items static but personalize the answers
-  const personalizedFaqItems = faqItems.map(item => ({
-    question: item.question,
-    answer: item.answer.replace(/{{city}}/g, cityName) // Personalize the answer
+  // Personalize all questions and answers with the city name
+  return faqQuestions.map(faq => ({
+    ...faq,
+    question: faq.question.replace(/{{city}}/g, cityName),
+    answer: faq.answer.replace(/{{city}}/g, cityName)
   }));
-
-  return {
-    heading,
-    faqItems: personalizedFaqItems // Return the personalized list
-  };
 }

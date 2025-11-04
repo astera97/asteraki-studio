@@ -51,5 +51,6 @@ export default function HeroSection({ heroContent }: HeroSectionProps) {
         </div>
       </div>
     </section>
+    
   );
 }
