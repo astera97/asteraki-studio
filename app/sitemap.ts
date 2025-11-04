@@ -1,6 +1,7 @@
 // app/sitemap.ts
 import { sanityClient } from '@/lib/sanity'
 import { groq } from 'next-sanity'
+import { CITIES } from '@/app/boite-de-production-video/[city]/data/cities'
 
 export default async function sitemap() {
   // Fetch blog posts from Sanity
@@ -64,6 +65,15 @@ export default async function sitemap() {
     
   ]
 
+  // ➤ DYNAMIC CITY PAGES — Generate all city pages for "boite de production vidéo"
+  const cityPages = CITIES.map(city => ({
+    url: `${baseUrl}/boite-de-production-video/${city.id}`, // ✅ Correct URL structure
+    lastModified: new Date(),
+    changeFrequency: 'weekly' as const,
+    priority: 0.9, // ✅ Priorité élevée car c'est du contenu commercial important
+  }));
+
+
   const staticUrls = allStaticPages.map(path => ({
     url: `${baseUrl}${path === '/' ? '' : path}`,
     lastModified: new Date(),
@@ -82,5 +92,5 @@ export default async function sitemap() {
     priority: 0.8,
   }))
 
-  return [...staticUrls, ...blogUrls]
+  return [...staticUrls, ...cityPages, ...blogUrls]
 }
