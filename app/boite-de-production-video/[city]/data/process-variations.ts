@@ -2,14 +2,12 @@
 
 export const processHeadings = [
   "Le déroulé de votre projet vidéo en {{city}}",
-  "Processus de production vidéo pour votre événement à {{city}}",
-  "Comment nous produisons des vidéos d'événement à {{city}}",
+  "Processus de production vidéo pour votre projet à {{city}}",
   "Notre méthode de production vidéo à {{city}}",
   "Votre projet vidéo pas à pas à {{city}}",
   "La méthode de notre boite de production vidéo à {{city}}",
-  "Processus de création de vidéo événementielle à {{city}}",
   "Notre approche de production vidéo à {{city}}",
-  "Déroulé de votre projet de vidéo d'événement à {{city}}",
+  "Déroulé de votre projet de vidéo à {{city}}",
   "Comment fonctionne notre boite de production vidéo à {{city}}?"
 ];
 
