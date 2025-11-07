@@ -20,16 +20,6 @@ export async function generateMetadata({ params }: { params: { city: string } })
     return {
       title: "Boîte de production vidéo en France | Asteraki Studio",
       description: "Agence de production audiovisuelle spécialisée dans les vidéos professionnelles pour les entreprises. Livraison en 5 jours, multi-format, ROI clair.",
-      alternates: {
-        canonical: "https://asterakistudio.com/boite-de-production-video/${params.city}"
-      },
-      openGraph: {
-        title: "Boîte de production vidéo en France | Asteraki Studio",
-        description: "Agence de production audiovisuelle spécialisée dans les vidéos professionnelles pour les entreprises. Livraison en 5 jours, multi-format, ROI clair.",
-        locale: "fr_FR",
-        type: "website",
-        url: "https://asterakistudio.com/boite-de-production-video/${params.city}"
-      }
     };
   }
 
@@ -70,7 +60,7 @@ export async function generateMetadata({ params }: { params: { city: string } })
       siteName: "Asteraki Studio",
       images: [
         {
-          url: "https://asterakistudio.com/production-audiovisuelle-og-image.jpg",
+          url: "https://xb26hl5f9h.ufs.sh/f/myb9AtBX9KywwP6D71p8bKgyaVXAm3Widen0SEzUPqYQGJFT",
           width: 1200,
           height: 630,
           alt: `Boîte de production vidéo à ${city.name}`,
@@ -81,7 +71,7 @@ export async function generateMetadata({ params }: { params: { city: string } })
       card: "summary_large_image",
       title: `Boîte de production vidéo à ${city.name}`,
       description: heroHeadline,
-      images: ["https://asterakistudio.com/production-audiovisuelle-og-image.jpg"],
+      images: ["https://xb26hl5f9h.ufs.sh/f/myb9AtBX9KywwP6D71p8bKgyaVXAm3Widen0SEzUPqYQGJFT"],
     },
   };
 }

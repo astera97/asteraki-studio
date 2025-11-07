@@ -17,7 +17,7 @@ export const generateMetadata = async (): Promise<Metadata> => {
     description:
       "Agence de production vidéo basée en Normandie. On filme à Rouen pour les entreprises locales : témoignages, événements, recrutement, présentations — livraison rapide, sans surprise.",
     alternates: {
-      canonical: "https://asterakistudio.com/production-audiovisuelle-rouen",
+      canonical: "https://www.asterakistudio.com/production-audiovisuelle-rouen",
     },
     openGraph: {
       title: "Production audiovisuelle à Rouen | Asteraki Studio",
@@ -25,7 +25,7 @@ export const generateMetadata = async (): Promise<Metadata> => {
         "Agence de production vidéo basée en Normandie. On filme à Rouen pour les entreprises locales : témoignages, événements, recrutement, présentations — livraison rapide, sans surprise.",
       locale: "fr_FR",
       type: "website",
-      url: "https://asterakistudio.com/production-audiovisuelle-rouen",
+      url: "https://www.asterakistudio.com/production-audiovisuelle-rouen",
     },
   };
 };
@@ -42,7 +42,7 @@ export default function RouenVideoProductionPage() {
             "@type": "ProfessionalService",
             "name": "Asteraki Studio",
             "image": "https://www.asterakistudio.com/logo.png",
-            "url": "https://asterakistudio.com/production-audiovisuelle-rouen",
+            "url": "https://www.asterakistudio.com/production-audiovisuelle-rouen",
             "telephone": "+33758116026",
             "serviceArea": [
               {

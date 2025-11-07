@@ -7,8 +7,8 @@ import Link from "next/link"
 import PortfolioSection from "./portfolio-section"
 import EventVideoFAQSection from "./event-faq"
 import FinalCTASection from "./event-cta"
-import ProcessTimelineSection from "./process-section";
-import WhyChooseUsSection from './WhyChooseUsSection';
+import ProcessTimelineSection from "./process-section"
+import WhyChooseUsSection from "./WhyChooseUsSection"
 
 export const generateMetadata = async () => {
   return {
@@ -169,6 +169,7 @@ export default function EventVideoProductionPage() {
     </div>
   </div>
 </section>
+
 
         {/* Other sections */}
         <WhyChooseUsSection />
