@@ -42,7 +42,7 @@ export default function PortfolioSection() {
   ]
 
   return (
-    <section className="py-24 border-t border-gray-700" style={{ backgroundColor: "rgba(255, 255, 255, 1)" }}>
+    <section className="py-24" style={{ backgroundColor: "rgba(255, 255, 255, 1)" }}>
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold text-black mb-4">

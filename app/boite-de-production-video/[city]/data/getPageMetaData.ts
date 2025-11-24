@@ -1,9 +1,9 @@
-// src/app/production-audiovisuelle/[city]/data/getPageMetadata.ts
+// src/app/agence-audiovisuelle/[city]/data/getPageMetadata.ts
 
 import type { Metadata } from "next";
 import { CITIES } from './cities';
 
-// Définir simpleHash localement pour éviter les erreurs
+// Simple hash function to generate a consistent pseudo-random index
 function simpleHash(str: string): number {
   let hash = 0;
   for (let i = 0; i < str.length; i++) {
@@ -18,59 +18,91 @@ export async function generateMetadata({ params }: { params: { city: string } })
   const city = CITIES.find(c => c.id === params.city);
   if (!city) {
     return {
-      title: "Boîte de production vidéo en France | Asteraki Studio",
-      description: "Agence de production audiovisuelle spécialisée dans les vidéos professionnelles pour les entreprises. Livraison en 5 jours, multi-format, ROI clair.",
+      title: "Agence audiovisuelle en France – Production vidéo professionnelle | Asteraki Studio",
+      description: "Agence audiovisuelle spécialisée dans la création de vidéos professionnelles pour entreprises. Livraison rapide. Tournage partout en France.",
     };
   }
 
-  // Générer un H1 unique pour la méta-description
   const seed = simpleHash(city.name);
+
+  // Semantic hero headlines variations
   const heroHeadlines = [
-    `Production audiovisuelle à ${city.name} pour entreprises ambitieuses.`,
-    `Agence vidéo à ${city.name} spécialisée en production multi-format.`,
-    `Boîte de production vidéo à ${city.name} livrant en 5 jours ouvrés.`,
-    `Production vidéo à ${city.name} sans frais cachés ni mauvaises surprises.`,
-    `Production audiovisuelle à ${city.name} incluant plusieurs formats optimisés.`,
-    `Agence de production vidéo à ${city.name} pour des contenus percutants et stratégiques.`,
-    `Production vidéo à ${city.name} avec un retour sur investissement clair.`,
-    `Boîte de production vidéo à ${city.name} pour des entreprises qui veulent se démarquer.`,
-    `Production audiovisuelle à ${city.name} conçue pour tous vos canaux de communication.`,
-    `Agence vidéo à ${city.name} alliant rapidité, qualité et transparence tarifaire.`,
-    `Production vidéo à ${city.name} pour des campagnes de recrutement, événements, et plus.`,
-    `Boîte de production vidéo à ${city.name} spécialisée dans les témoignages clients.`,
-    `Production audiovisuelle à ${city.name} livrée avec 5+ formats prêts à l'emploi.`,
-    `Agence de production vidéo à ${city.name} pour maximiser votre impact marketing.`,
-    `Production vidéo à ${city.name} qui transforme votre stratégie de communication.`
+    `Agence audiovisuelle à ${city.name} pour entreprises qui veulent se démarquer.`,
+    `Production audiovisuelle professionnelle à ${city.name} pour tous vos projets.`,
+    `Studio de production vidéo à ${city.name} spécialisé en contenus B2B.`,
+    `Agence audiovisuelle à ${city.name} — qualité, créativité et efficacité.`,
+    `Créez vos vidéos professionnelles avec notre agence à ${city.name}.`,
+    `Des contenus audiovisuels percutants pour entreprises à ${city.name}.`,
+    `Agence audiovisuelle à ${city.name} pour renforcer votre communication visuelle.`,
+    `Communication vidéo efficace et multi-format à ${city.name}.`,
+    `Agence audiovisuelle à ${city.name} qui transforme vos idées en résultats concrets.`,
+    `Vidéos professionnelles à ${city.name} — rapidité et qualité garanties.`,
+    `Agence audiovisuelle à ${city.name} — votre partenaire pour des projets vidéo réussis.`,
+    `Contenus audiovisuels modernes et clairs à ${city.name}.`,
+    `Agence audiovisuelle à ${city.name} pour booster votre image de marque.`,
+    `Agence audiovisuelle à ${city.name} — stratégie, production et créativité réunies.`,
+    `Production vidéo à ${city.name} adaptée à vos objectifs business.`,
+    `Agence audiovisuelle à ${city.name} qui simplifie la création de vos contenus.`,
+    `Création de vidéos professionnelles à ${city.name} — multi-format inclus.`,
+    `Agence audiovisuelle à ${city.name} pour des campagnes vidéo impactantes.`,
+    `Studio audiovisuel à ${city.name} pour des contenus engageants.`,
+    `Agence audiovisuelle à ${city.name} — expertise et fiabilité pour vos vidéos.`,
   ];
-  
-  const heroHeadline = heroHeadlines[seed % heroHeadlines.length];
+
+  // Expanded meta descriptions (~150 chars) for SEO & CTR
+  const heroDescriptions = [
+    `Agence audiovisuelle à ${city.name} pour entreprises qui veulent se démarquer. Contenus professionnels multi-format et communication visuelle efficace.`,
+    `Production audiovisuelle professionnelle à ${city.name} pour tous vos projets. Livraison rapide et vidéos optimisées pour tous vos canaux.`,
+    `Studio de production vidéo à ${city.name} spécialisé en contenus B2B. Vidéos claires, modernes et efficaces pour vos objectifs marketing.`,
+    `Agence audiovisuelle à ${city.name} — qualité, créativité et efficacité pour vos vidéos d'entreprise et communication visuelle.`,
+    `Créez vos vidéos professionnelles avec notre agence à ${city.name}. Multi-format et livraison rapide pour un ROI mesurable.`,
+    `Des contenus audiovisuels percutants pour entreprises à ${city.name}. Témoignages, événements, et vidéos institutionnelles inclus.`,
+    `Agence audiovisuelle à ${city.name} pour renforcer votre communication visuelle. Contenus adaptés à vos canaux et objectifs marketing.`,
+    `Communication vidéo efficace et multi-format à ${city.name}. Nous livrons vos vidéos prêtes à diffuser et optimisées pour vos réseaux.`,
+    `Agence audiovisuelle à ${city.name} qui transforme vos idées en résultats concrets. Vidéos professionnelles et multi-format inclus.`,
+    `Vidéos professionnelles à ${city.name} — rapidité et qualité garanties. Création de contenus engageants pour tous vos projets.`,
+    `Agence audiovisuelle à ${city.name} — votre partenaire pour des projets vidéo réussis. Multi-format et ROI mesurable.`,
+    `Contenus audiovisuels modernes et clairs à ${city.name}. Production rapide et optimisée pour tous vos canaux de communication.`,
+    `Agence audiovisuelle à ${city.name} pour booster votre image de marque. Création de vidéos percutantes pour tous vos supports.`,
+    `Agence audiovisuelle à ${city.name} — stratégie, production et créativité réunies pour des contenus engageants.`,
+    `Production vidéo à ${city.name} adaptée à vos objectifs business. Multi-format et livraison rapide incluse.`,
+    `Agence audiovisuelle à ${city.name} qui simplifie la création de vos contenus. Vidéos prêtes à diffuser et optimisées pour l'impact.`,
+    `Création de vidéos professionnelles à ${city.name} — multi-format inclus et adaptée à votre stratégie marketing.`,
+    `Agence audiovisuelle à ${city.name} pour des campagnes vidéo impactantes. Contenus clairs, modernes et professionnels.`,
+    `Studio audiovisuel à ${city.name} pour des contenus engageants. Multi-format et livraison rapide pour un ROI mesurable.`,
+    `Agence audiovisuelle à ${city.name} — expertise et fiabilité pour vos vidéos professionnelles et communication efficace.`,
+  ];
+
+  const index = seed % heroHeadlines.length;
+  const heroHeadline = heroHeadlines[index];
+  const heroDescription = heroDescriptions[index];
 
   return {
-    title: `Boîte de production vidéo à ${city.name} | Asteraki Studio`,
-    description: heroHeadline,
+    title: `Agence audiovisuelle à ${city.name} – Production vidéo professionnelle | Asteraki Studio`,
+    description: heroDescription,
     alternates: {
-      canonical: `https://asterakistudio.com/boite-de-production-video/${params.city}`
+      canonical: `https://asterakistudio.com/agence-audiovisuelle/${params.city}`
     },
     openGraph: {
-      title: `Boîte de production vidéo à ${city.name}`,
-      description: heroHeadline,
+      title: heroHeadline,
+      description: heroDescription,
       locale: "fr_FR",
       type: "website",
-      url: `https://asterakistudio.com/boite-de-production-video/${params.city}`,
+      url: `https://asterakistudio.com/agence-audiovisuelle/${params.city}`,
       siteName: "Asteraki Studio",
       images: [
         {
           url: "https://xb26hl5f9h.ufs.sh/f/myb9AtBX9KywwP6D71p8bKgyaVXAm3Widen0SEzUPqYQGJFT",
           width: 1200,
           height: 630,
-          alt: `Boîte de production vidéo à ${city.name}`,
+          alt: heroHeadline,
         },
       ],
     },
     twitter: {
       card: "summary_large_image",
-      title: `Boîte de production vidéo à ${city.name}`,
-      description: heroHeadline,
+      title: heroHeadline,
+      description: heroDescription,
       images: ["https://xb26hl5f9h.ufs.sh/f/myb9AtBX9KywwP6D71p8bKgyaVXAm3Widen0SEzUPqYQGJFT"],
     },
   };

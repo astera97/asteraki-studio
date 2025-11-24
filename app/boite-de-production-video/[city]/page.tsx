@@ -1,16 +1,15 @@
-// src/app/production-audiovisuelle/[city]/page.tsx
+// src/app/boite-production-video/[city]/page.tsx
 
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Header from "@/components/layout/header";
 import Footer from "@/components/layout/footer";
 import HeroSection from "./templates/HeroSection";
-import ClientLogosSection from "./templates/ClientLogosSection";
 import ProcessSection from "./templates/ProcessSection";
 import WhyChooseSection from "./templates/WhyChooseSection";
 import FaqSection from "./templates/FaqSection";
 import CtaSection from "./templates/CtaSection";
-import InvisibleInterlinkBlock from "./templates/InvisibleInterlinkBlock";
+import IndustriesSection from "./templates/industries-section";
 import { CITIES } from "./data/cities";
 import { getHeroContent } from "./data/getHeroContent";
 import { getProcessContent } from "./data/getProcessContent";
@@ -20,6 +19,12 @@ import { getFaqContent } from "./data/getFaqContent";
 import { getLocalSchema } from "./data/getLocalSchema";
 import ServicesSection from "@/components/services-section";
 import Script from "next/script";
+import { PortfolioCarousel } from "./templates/portfolio-carousel";
+import CitySearch from "./templates/CitySearch";
+import UspSection from './templates/UspSection';
+import VideoAdvantagesSection from './templates/VideoAdvantagesSection';
+import PopularCategoriesSection from './templates/PopularCategoriesSection';
+
 
 // ✅ Define simpleHash at the module level so it can be used by both generateMetadata and the main component
 function simpleHash(str: string): number {
@@ -43,29 +48,30 @@ export async function generateMetadata({ params }: { params: Promise<{ city: str
   
   if (!city) {
     return {
-      title: "Production audiovisuelle | Agence vidéo professionnelle en France",
-      description: "Agence de production audiovisuelle spécialisée dans les vidéos professionnelles pour les entreprises. Livraison rapide, multi-format, ROI clair.",
+      title: "Boîte de production vidéo | Production vidéo professionnelle en France",
+      description: "Boîte de production vidéo spécialisée dans la création de contenus professionnels pour les entreprises. Livraison rapide, multi-format, tournage partout en France.",
     };
   }
 
   // ✅ Define heroHeadlines array locally within generateMetadata
   const heroHeadlines = [
-    "Production audiovisuelle à {{city}} pour entreprises ambitieuses.",
-    "Agence vidéo à {{city}} spécialisée en production multi-format.",
-    "Boîte de production vidéo à {{city}} livrant en 5 jours ouvrés.",
-    "Production vidéo à {{city}} sans frais cachés ni mauvaises surprises.",
-    "Production audiovisuelle à {{city}} incluant plusieurs formats optimisés.",
-    "Agence de production vidéo à {{city}} pour des contenus percutants et stratégiques.",
-    "Production vidéo à {{city}} avec un retour sur investissement clair.",
-    "Boîte de production vidéo à {{city}} pour des entreprises qui veulent se démarquer.",
-    "Production audiovisuelle à {{city}} conçue pour tous vos canaux de communication.",
-    "Agence vidéo à {{city}} alliant rapidité, qualité et transparence tarifaire.",
-    "Production vidéo à {{city}} pour des campagnes de recrutement, événements, et plus.",
-    "Boîte de production vidéo à {{city}} spécialisée dans les témoignages clients.",
-    "Production audiovisuelle à {{city}} livrée avec 5+ formats prêts à l'emploi.",
-    "Agence de production vidéo à {{city}} pour maximiser votre impact marketing.",
-    "Production vidéo à {{city}} qui transforme votre stratégie de communication."
-  ];
+  "Boîte de production vidéo à {{city}} pour les entreprises qui veulent se démarquer.",
+  "Boîte de production vidéo à {{city}} spécialisée dans la création de contenus professionnels.",
+  "Boîte de production vidéo à {{city}} — qualité, réactivité et transparence.",
+  "Boîte de production vidéo à {{city}} pour tous vos projets vidéo et communication visuelle.",
+  "Boîte de production vidéo à {{city}} qui transforme vos idées en résultats concrets.",
+  "Boîte de production vidéo à {{city}} — production, créativité et stratégie réunies.",
+  "Boîte de production vidéo à {{city}} pour des vidéos claires, modernes et efficaces.",
+  "Boîte de production vidéo à {{city}} au service de votre image de marque.",
+  "Boîte de production vidéo à {{city}} — votre partenaire pour une communication vidéo cohérente.",
+  "Boîte de production vidéo à {{city}} qui simplifie la production de vos contenus.",
+  "Boîte de production vidéo à {{city}} pour des vidéos qui soutiennent vos objectifs business.",
+  "Boîte de production vidéo à {{city}} — votre solution complète en production audiovisuelle.",
+  "Boîte de production vidéo à {{city}} qui garantit une expérience fluide et professionnelle.",
+  "Boîte de production vidéo à {{city}} pour des contenus percutants et adaptés à vos canaux.",
+  "Boîte de production vidéo à {{city}} — expertise, fiabilité et créativité au service de votre marque."
+];
+
   
   // ✅ Use the locally defined simpleHash function
   const seed = simpleHash(city.name);
@@ -80,14 +86,14 @@ export async function generateMetadata({ params }: { params: Promise<{ city: str
       description: heroHeadline,
       locale: "fr_FR",
       type: "website",
-      url: `https://asterakistudio.com/production-audiovisuelle/${cityId}`, // ✅ Replace with your domain
+      url: `https://asterakistudio.com/boite-de-production-video/${cityId}`,
       siteName: "Asteraki Studio",
       images: [
         {
-          url: "https://asterakistudio.com/logo.png", // ✅ Replace with your image URL
+          url: "/team_agency.webp",
           width: 1200,
           height: 630,
-          alt: `Boîte de production vidéo à ${city.name}`,
+          alt: `Logo de Asteraki Studio, la boîte de production vidéo #1 à ${city.name}`,
         },
       ],
     },
@@ -95,10 +101,10 @@ export async function generateMetadata({ params }: { params: Promise<{ city: str
       card: "summary_large_image",
       title: `Boîte de production vidéo à ${city.name}`,
       description: heroHeadline,
-      images: ["https://asterakistudio.com/logo.png"], // ✅ Replace with your image URL
+      images: ["https://asterakistudio.com/logo.png"],
     },
     alternates: {
-      canonical: `https://asterakistudio.com/production-audiovisuelle/${cityId}`, // ✅ Replace with your domain
+      canonical: `https://asterakistudio.com/boite-de-production-video/${cityId}`,
     },
   };
 }
@@ -132,21 +138,42 @@ export default async function ProductionAudiovisuellePage({ params }: { params: 
           />
         )}
         
+        {/* Hero Section */}
         <HeroSection heroContent={heroContent} />
+
+        {/* Portfolio */}
+        <PortfolioCarousel />
         
-        {/* ✅ Import Client Component */}
-        <ClientLogosSection />
-        
-        {/* Portfolio / Services */}
+        {/* Services */}
         <ServicesSection/>
-        
+
+        {/* Pourquoi Asteraki */}
+        <UspSection pageIdentifier="home-page" />
+
+        {/* Process Section */}
         <ProcessSection processContent={processContent} />
+
+        {/* Advantages Section */}
+        <VideoAdvantagesSection />
+
+        {/* Video types */}
+        <PopularCategoriesSection />
+
+        {/* Industries */}
+        <IndustriesSection/>
+
+        {/* Why Asteraki */}
         <WhyChooseSection whyChooseContent={whyChooseContent} />
-        <FaqSection faqContent={faqContent} />
+
+        {/* FAQ */}
+        <FaqSection faqItems={faqContent} />
+
+        {/* City search bar */}
+        <CitySearch />
+
+        {/* Call to action */}
         <CtaSection ctaContent={ctaContent} />
 
-        {/* Add the invisible interlink block here, before the Footer */}
-        <InvisibleInterlinkBlock currentCityId={cityId} /> {/* ✅ Pass cityId */}
       </main>
       <Footer />
     </>

@@ -1,4 +1,4 @@
-// src/app/boite-de-production-video/[city]/data/getCtaContent.ts
+// src/app/agence-audiovisuelle/[city]/data/getCtaContent.ts
 
 import { ctaHeadings, ctaParagraphs, ctaButtons } from './cta-variations';
 

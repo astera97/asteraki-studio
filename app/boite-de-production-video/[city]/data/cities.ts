@@ -1,4 +1,4 @@
-// src/app/boite-de-production-video/[city]/data/cities.ts
+// src/app/agence-audiovisuelle/[city]/data/cities.ts
 
 export interface City {
   id: string; // URL-safe slug (e.g., "new-york")
@@ -48,8 +48,6 @@ export const CITIES: City[] = [
   { id: "besancon", name: "Besançon", state: "Bourgogne-Franche-Comté", stateAbbr: "BFC", lat: 47.2378, lng: 6.0241, country: "France", countryCode: "FR" },
   { id: "orleans", name: "Orléans", state: "Centre-Val de Loire", stateAbbr: "CVL", lat: 47.9029, lng: 1.9093, country: "France", countryCode: "FR" },
   { id: "mulhouse", name: "Mulhouse", state: "Grand Est", stateAbbr: "GES", lat: 47.75, lng: 7.3333, country: "France", countryCode: "FR" },
-  { id: "rouen", name: "Rouen", state: "Normandy", stateAbbr: "NOR", lat: 49.4432, lng: 1.0995, country: "France", countryCode: "FR" },
-  { id: "caen", name: "Caen", state: "Normandy", stateAbbr: "NOR", lat: 49.1829, lng: -0.3707, country: "France", countryCode: "FR" },
   { id: "nancy", name: "Nancy", state: "Grand Est", stateAbbr: "GES", lat: 48.6929, lng: 6.1832, country: "France", countryCode: "FR" },
   { id: "argenteuil", name: "Argenteuil", state: "Île-de-France", stateAbbr: "IDF", lat: 48.9475, lng: 2.2433, country: "France", countryCode: "FR" },
   { id: "montreuil", name: "Montreuil", state: "Île-de-France", stateAbbr: "IDF", lat: 48.8601, lng: 2.4395, country: "France", countryCode: "FR" },

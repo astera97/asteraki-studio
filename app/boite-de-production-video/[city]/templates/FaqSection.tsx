@@ -1,7 +1,6 @@
 // src/app/boite-de-production-video/[city]/templates/FaqSection.tsx
 
 "use client";
-// src/app/boite-de-production-video/[city]/templates/FaqSection.tsx
 
 import { useState } from "react";
 import { ChevronDown } from "lucide-react";

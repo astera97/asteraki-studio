@@ -1,4 +1,4 @@
-// src/app/boite-de-production-video/[city]/data/getHeroContent.ts
+// src/app/agence-audiovisuelle/[city]/data/getHeroContent.ts
 
 import { heroHeadlines, heroParagraphs } from './hero-variations';
 

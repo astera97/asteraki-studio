@@ -1,6 +1,4 @@
-// src/app/boite-de-production-video/[city]/templates/WhyMultiFormatSection.tsx
-
-// src/app/production-audiovisuelle/[city]/templates/WhyChooseSection.tsx
+// src/app/agence-audiovisuelle/[city]/templates/WhyChooseSection.tsx
 
 import Link from "next/link";
 

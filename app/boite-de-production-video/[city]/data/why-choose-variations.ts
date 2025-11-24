@@ -1,16 +1,16 @@
-// src/app/boite-de-production-video/[city]/data/why-choose-variations.ts
+// src/app/agence-audiovisuelle/[city]/data/why-choose-variations.ts
 
 export const whyChooseHeadings = [
-  "Pourquoi choisir Asteraki comme votre agence vidéo à {{city}} ?",
-  "Pourquoi faire confiance à Asteraki pour votre production vidéo à {{city}} ?",
-  "Pourquoi choisir Asteraki comme votre partenaire vidéo à {{city}} ?",
-  "Pourquoi votre prochaine production vidéo devrait être avec Asteraki à {{city}} ?",
-  "Pourquoi Asteraki est l'agence vidéo idéale pour les entreprises à {{city}} ?",
-  "Pourquoi collaborer avec Asteraki pour votre communication vidéo à {{city}} ?",
-  "Pourquoi Asteraki se démarque comme agence vidéo à {{city}} ?",
-  "Pourquoi notre approche de la production vidéo est-elle différente à {{city}} ?",
-  "Pourquoi les entreprises ambitieuses à {{city}} choisissent Asteraki ?",
-  "Pourquoi votre production audiovisuelle à {{city}} commence avec Asteraki ?"
+  "Pourquoi choisir notre agence audiovisuelle à {{city}} pour vos projets vidéo",
+  "Agence audiovisuelle à {{city}} experte pour des vidéos impactantes",
+  "Votre partenaire agence audiovisuelle à {{city}} pour une communication réussie",
+  "Agence audiovisuelle à {{city}} professionnelle pour booster votre visibilité",
+  "Comment notre agence audiovisuelle à {{city}} transforme vos idées en vidéos",
+  "Agence audiovisuelle à {{city}} stratégique pour maximiser votre ROI",
+  "Pourquoi faire confiance à notre agence audiovisuelle à {{city}} pour vos contenus",
+  "Agence audiovisuelle à {{city}} créative pour des vidéos percutantes",
+  "Agence audiovisuelle à {{city}} pour des campagnes vidéo efficaces et multi-format",
+  "Découvrez notre agence audiovisuelle à {{city}} et son approche unique pour vos vidéos"
 ];
 
 export const whyChooseFirstParagraphs = [
@@ -28,10 +28,8 @@ export const whyChooseFirstParagraphs = [
 
 export const whyChooseSecondParagraphs = [
   "Nous ne produisons pas de simples vidéos promotionnelles. Nous créons des actifs stratégiques qui renforcent votre marque, génèrent des leads et convertissent vos prospects. Laissez-nous vous aider à transformer votre prochain projet vidéo en un véritable levier de croissance pour votre entreprise à {{city}}.",
-  "Notre mission est de vous fournir un contenu vidéo qui travaille pour vous, 24h/24 et 7j/7. Grâce à notre livraison multi-format incluse, vous obtenez un actif marketing complet, prêt à être déployé sur tous vos canaux et à générer des résultats durables à {{city}}.",
   "En choisissant Asteraki, vous optez pour une agence qui pense à long terme. Votre vidéo ne sera pas un simple 'fichier', mais un ensemble de contenus stratégiques conçus pour évoluer avec vos besoins marketing à {{city}}.",
   "Nous savons que votre temps est votre ressource la plus précieuse. C'est pourquoi notre processus est conçu pour être fluide, rapide et sans stress. Vous obtenez une vidéo professionnelle en 5 jours, accompagnée de tous les formats dont vous avez besoin, le tout sans frais supplémentaires à {{city}}.",
-  "Notre promesse à {{city}} est claire : vous livrer une vidéo qui dépasse vos attentes, tant en qualité qu'en efficacité. En incluant la livraison multi-format, nous nous assurons que votre investissement génère le maximum d'impact sur tous vos points de contact."
 ];
 
 export const whyChooseReasons = [

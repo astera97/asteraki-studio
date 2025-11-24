@@ -1,6 +1,5 @@
-// src/app/boite-de-production-video/[city]/data/getFaqContent.ts
+// src/app/agence-audiovisuelle/[city]/data/getFaqContent.ts
 
-// ✅ Import the faqQuestions array
 import { faqQuestions } from './faq-variations'; // Make sure this path is correct!
 
 function simpleHash(str: string): number {
