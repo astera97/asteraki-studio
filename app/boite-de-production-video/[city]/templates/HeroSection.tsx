@@ -147,22 +147,22 @@ export default function HeroSection({ heroContent }: HeroSectionProps) {
 
           <Image
             src="https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVfsQn5WOa93bxoLyhcW8aNnVRf0tO2vu4mHdZ"
-            alt="TikTok logo"
+            alt="Aircall logo"
             width={100}
             height={40}
             className="h-8 w-auto"
           />
 
           <Image
-            src="https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVlevFEypzsmTAV4v5ZlCLMrhXaKHPkY1W98jb"
-            alt="Spotify logo"
+            src="https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztViizPmUGcOpNoz2fj0GxlAQw71ZgD4a3WUYEF"
+            alt="Engie logo"
             width={100}
             height={40}
             className="h-8 w-auto"
           />
 
           <Image
-            src="https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVjkm86KZnk6Z0aKAOH3TspmrCuFeME74fB5Qq"
+            src="https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVtpzj77dTBWldAyg2P0M5Chku4INecjLo9UbH"
             alt="Notion logo"
             width={100}
             height={40}
