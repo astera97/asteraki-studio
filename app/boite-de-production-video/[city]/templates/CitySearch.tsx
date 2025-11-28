@@ -253,7 +253,7 @@ const CitySearch: React.FC = () => {
                         Notre équipe de production vidéo est prête à réaliser votre projet à {result.name}.
                       </p>
                       <Link
-                        href={`/agence-audiovisuelle/${result.id}`}
+                        href={`/boite-de-production-video/${result.id}`}
                         className="inline-flex items-center bg-orange-500 hover:bg-orange-600 text-white font-bold px-5 py-3 rounded-xl transition shadow-md hover:shadow-lg"
                       >
                         <span className="flex items-center">
