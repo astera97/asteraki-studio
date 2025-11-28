@@ -19,11 +19,11 @@ const CitySearch: React.FC = () => {
 
   // Auto-detect city from URL on mount
   useEffect(() => {
-    // Extract city ID from URL path like "/agence-audiovisuelle/paris"
+    // Extract city ID from URL path like "/boite-de-production-video/paris"
     const pathParts = pathname.split('/');
     const cityId = pathParts[pathParts.length - 1];
     
-    if (cityId && cityId !== 'agence-audiovisuelle') {
+    if (cityId && cityId !== 'boite-de-production-video') {
       const cityFromUrl = CITIES.find(city => city.id === cityId);
       if (cityFromUrl) {
         // Set all states to reflect this city
