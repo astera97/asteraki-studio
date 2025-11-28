@@ -1,4 +1,4 @@
-// src/app/agence-audiovisuelle/[city]/data/getHeroContent.ts
+// src/app/boite-de-production-video/[city]/data/getHeroContent.ts
 
 import { heroHeadlines, heroParagraphs } from './hero-variations';
 
@@ -31,7 +31,7 @@ export function getHeroContent(cityName: string): HeroContent {
   return {
     heading,
     description,
-    videoSrc: "https://xb26hl5f9h.ufs.sh/f/myb9AtBX9Kywsg1Juach9tIXKsu1OETl2SqkiA0bH7zG5eao",
+    videoSrc: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVKCUwvV3f3Wsd1EZQ4zPStY5JB97kxm6Ac8Hy",
     posterSrc: "/event-video-poster.jpg"
   };
 }
