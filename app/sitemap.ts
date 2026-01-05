@@ -1,6 +1,9 @@
 import { sanityClient } from '@/lib/sanity'
 import { groq } from 'next-sanity'
-import { CITIES } from './boite-de-production-video/[city]/data/cities' // 👈 Import your cities
+
+// ➤ Cities – dynamic templates
+import { CITIES as BOITE_CITIES } from './boite-de-production-video/[city]/data/cities'
+import { CITIES as ENTREPRISE_CITIES } from './production-video-entreprise/[city]/data/cities'
 
 export default async function sitemap() {
   const posts = await sanityClient.fetch(groq`
@@ -12,10 +15,10 @@ export default async function sitemap() {
 
   const baseUrl = 'https://asterakistudio.com'
 
-  // 🔧 MANUALLY LIST ALL YOUR STATIC PAGES HERE
+  // ➤ STATIC PAGES
   const allStaticPages = [
     '/',
-    // ➤ Service pages
+    // Services
     '/motion-design',
     '/production-video-motion-design',
     '/production-video-application',
@@ -36,8 +39,8 @@ export default async function sitemap() {
     '/production-video-startup',
     '/production-video-tech',
     '/production-video-temoignage-client',
- 
-    // ➤ Other unique pages
+
+    // Pages uniques
     '/quiz',
     '/realisations',
     '/a-propos',
@@ -46,6 +49,8 @@ export default async function sitemap() {
     '/pourquoi-asteraki',
     '/contact',
     '/blog',
+
+    // Pages locales statiques
     '/production-audiovisuelle-caen',
     '/production-audiovisuelle-cannes',
     '/production-audiovisuelle-paris',
@@ -54,25 +59,41 @@ export default async function sitemap() {
     '/production-audiovisuelle-toulouse',
   ]
 
-  // ✅ ONLY dynamic template you want
-  const cityPages = CITIES.map(city => `/boite-de-production-video/${city.id}`)
+  // ➤ Dynamic pages – boîte de production vidéo
+  const boiteCityPages = BOITE_CITIES.map(
+    city => `/boite-de-production-video/${city.id}`
+  )
 
-  const staticAndCityPages = [...allStaticPages, ...cityPages]
+  // ➤ Dynamic pages – production vidéo entreprise
+  const entrepriseCityPages = ENTREPRISE_CITIES.map(
+    city => `/production-video-entreprise/${city.id}`
+  )
 
-  const staticUrls = staticAndCityPages.map(path => ({
+  const staticAndDynamicPages = [
+    ...allStaticPages,
+    ...boiteCityPages,
+    ...entrepriseCityPages,
+  ]
+
+  const staticUrls = staticAndDynamicPages.map(path => ({
     url: `${baseUrl}${path === '/' ? '' : path}`,
     lastModified: new Date(),
     changeFrequency: 'weekly' as const,
-    priority: path === '/' 
-      ? 1.0 
-      : path.startsWith('/boite-de-production-video/')
-        ? 0.9
-        : 0.8, // all other static pages = 0.8
+    priority:
+      path === '/'
+        ? 1.0
+        : path.startsWith('/production-video-entreprise/')
+          ? 0.95
+          : path.startsWith('/boite-de-production-video/')
+            ? 0.9
+            : 0.8,
   }))
 
   const blogUrls = posts.map((post: any) => ({
     url: `${baseUrl}/blog/${post.slug}`,
-    lastModified: post.publishedAt ? new Date(post.publishedAt) : new Date(),
+    lastModified: post.publishedAt
+      ? new Date(post.publishedAt)
+      : new Date(),
     changeFrequency: 'weekly' as const,
     priority: 0.8,
   }))
