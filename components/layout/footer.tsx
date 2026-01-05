@@ -54,34 +54,10 @@ export default function Footer() {
       <div className="border-b border-gray-700 py-8 sm:py-12">
         <div className="max-w-[1300px] mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
-            {/* Contact */}
-            <div className="text-center sm:text-left">
-              <h3 className="text-gray-400 text-sm font-bold mb-4">Contact</h3>
-              <div className="space-y-2">
-                <p className="text-white text-sm sm:text-base">info@asterakistudio.com</p>
-              </div>
-            </div>
-
-            {/* Phone Number - Generic Contact Info */}
-            <div className="text-center sm:text-left sm:col-span-2"> {/* Spanning 2 columns to keep layout balanced */}
-              <h3 className="text-gray-400 text-sm font-bold mb-4">Téléphone</h3>
-              <div className="text-white text-xs sm:text-sm space-y-1">
-                <p className="font-medium">
-                  <a
-                    href="tel:+33758116026"
-                    className="hover:text-gray-300 transition-colors"
-                  >
-                    +33 (7) 58 11 60 26
-                  </a>
-                </p>
-              </div>
-            </div>
-
             {/* Empty placeholder for layout balance if needed */}
             <div className="text-center sm:text-left hidden lg:block"> {/* Hidden on small screens, visible on large */}
               {/* Can add other generic info here if needed */}
             </div>
-
           </div>
         </div>
       </div>
@@ -112,12 +88,12 @@ export default function Footer() {
               <ul className="space-y-3 sm:space-y-4">
                 <li>
                   <a href="/production-video-marque" className="text-white hover:text-gray-300 transition-colors text-sm sm:text-base">
-                    Vidéo de marque
+                    Vidéos de marque
                   </a>
                 </li>
                 <li>
-                  <a href="/production-video-entreprise" className="text-white hover:text-gray-300 transition-colors text-sm sm:text-base">
-                    Vidéos d'entreprise
+                  <a href="/production-video-saas" className="text-white hover:text-gray-300 transition-colors text-sm sm:text-base">
+                    Vidéos SaaS
                   </a>
                 </li>
                 <li>
@@ -146,7 +122,7 @@ export default function Footer() {
                 </li>
                 <li>
                   <a href="production-video-tech" className="text-white hover:text-gray-300 transition-colors text-sm sm:text-base">
-                    Technologie & SaaS
+                    Technologie
                   </a>
                 </li>
               </ul>
@@ -184,7 +160,7 @@ export default function Footer() {
               <h4 className="text-gray-400 text-sm font-bold mb-4 sm:mb-6 uppercase tracking-wider">RESSOURCES</h4>
               <ul className="space-y-3 sm:space-y-4">
                 <li>
-                  <a href="/journal" className="text-white hover:text-gray-300 transition-colors text-sm sm:text-base">
+                  <a href="/blog" className="text-white hover:text-gray-300 transition-colors text-sm sm:text-base">
                     Blog
                   </a>
                 </li>
@@ -204,20 +180,11 @@ export default function Footer() {
         <div className="max-w-[1300px] mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
             <p className="text-gray-400 text-xs sm:text-sm text-center sm:text-left">
-              Tous droits réservés © 2025 Asteraki
+              Tous droits réservés © 2026 Asteraki
             </p>
 
             {/* Icônes des réseaux sociaux */}
             <div className="flex space-x-4">
-              <a
-                href="https://www.instagram.com/asteraki_studio  "
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-gray-400 hover:text-white transition-colors"
-              >
-                <Instagram className="w-4 h-4 sm:w-5 sm:h-5" />
-              </a>
-
               <a
                 href="https://www.linkedin.com/company/asteraki-agency/  "
                 target="_blank"

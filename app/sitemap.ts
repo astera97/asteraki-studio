@@ -36,12 +36,6 @@ export default async function sitemap() {
     '/production-video-startup',
     '/production-video-tech',
     '/production-video-temoignage-client',
-    '/production-audiovisuelle-caen',
-    '/production-audiovisuelle-cannes',
-    '/production-audiovisuelle-paris',
-    '/production-audiovisuelle-rennes',
-    '/production-audiovisuelle-rouen',
-    '/production-audiovisuelle-toulouse',
  
     // ➤ Other unique pages
     '/quiz',
@@ -52,15 +46,17 @@ export default async function sitemap() {
     '/pourquoi-asteraki',
     '/contact',
     '/blog',
-    
-    // ❌ Remove old /production-audiovisuelle-* pages if they're deprecated
-    // (or keep only if you still serve them — but avoid duplicate content)
+    '/production-audiovisuelle-caen',
+    '/production-audiovisuelle-cannes',
+    '/production-audiovisuelle-paris',
+    '/production-audiovisuelle-rennes',
+    '/production-audiovisuelle-rouen',
+    '/production-audiovisuelle-toulouse',
   ]
 
-  // ✅ Generate dynamic city page URLs
+  // ✅ ONLY dynamic template you want
   const cityPages = CITIES.map(city => `/boite-de-production-video/${city.id}`)
 
-  // Combine static + city pages
   const staticAndCityPages = [...allStaticPages, ...cityPages]
 
   const staticUrls = staticAndCityPages.map(path => ({
@@ -69,11 +65,9 @@ export default async function sitemap() {
     changeFrequency: 'weekly' as const,
     priority: path === '/' 
       ? 1.0 
-      : path.startsWith('/boite-production-video/')
+      : path.startsWith('/boite-de-production-video/')
         ? 0.9
-        : path.startsWith('/production-video-') || path.startsWith('/production-audiovisuelle-')
-          ? 0.8 
-          : 0.7,
+        : 0.8, // all other static pages = 0.8
   }))
 
   const blogUrls = posts.map((post: any) => ({

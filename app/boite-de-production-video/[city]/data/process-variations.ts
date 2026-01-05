@@ -1470,3 +1470,8 @@ export const postprodVariations: ProcessVariation[] = [
       image: "/post-production_process.webp?height=300&width=400&text=Post-production+Editing",
   },
 ]
+
+// Type used when a uniqueId is added at runtime
+export interface ProcessVariationWithId extends ProcessVariation {
+  uniqueId: string;
+}

@@ -350,7 +350,7 @@ const portfolioProjects = getUniqueAndShuffledProjects([
      videoType: "Évènement",
      industry: "Technologie",
      thumbnail: "https://py0hr1mf9k.ufs.sh/f/1AsXvEojqztVLNaKXKbf8wJFWPDVs4Ky3z2UpGML7SAeE10r",
-     vimeoUrl: "https://vimeo.com/1114279669/d381d70e6e",
+     vimeoUrl: "https://vimeo.com/1114279669",
     },
     //HP - Technology
     {

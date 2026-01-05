@@ -308,5 +308,4 @@ export const CITIES: City[] = [
   { id: "nemours", name: "Nemours", state: "Île-de-France", stateAbbr: "IDF", lat: 48.3, lng: 2.7, country: "France", countryCode: "FR" },
   { id: "saint-avold", name: "Saint-Avold", state: "Grand Est", stateAbbr: "GES", lat: 49.0833, lng: 6.7, country: "France", countryCode: "FR" },
   { id: "redon", name: "Redon", state: "Brittany", stateAbbr: "BRE", lat: 47.65, lng: -2.0833, country: "France", countryCode: "FR" },
-  { id: "daly-city", name: "Daly City", state: "California", stateAbbr: "CA", lat: 37.6879, lng: -122.4702, country: "United States", countryCode: "US" }
 ];

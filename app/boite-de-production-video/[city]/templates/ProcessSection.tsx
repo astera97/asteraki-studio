@@ -1,6 +1,4 @@
-// src/app/agence-audiovisuelle/[city]/templates/ProcessSection.tsx
-
-// src/app/agence-audiovisuelle/[city]/templates/ProcessSection.tsx
+// src/app/boite-de-production-video/[city]/templates/ProcessSection.tsx
 
 "use client";
 

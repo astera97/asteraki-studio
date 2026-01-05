@@ -168,9 +168,6 @@ export default async function ProductionAudiovisuellePage({ params }: { params: 
         {/* FAQ */}
         <FaqSection faqItems={faqContent} />
 
-        {/* City search bar */}
-        <CitySearch />
-
         {/* Call to action */}
         <CtaSection ctaContent={ctaContent} />
 

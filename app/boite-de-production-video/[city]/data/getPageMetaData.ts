@@ -81,14 +81,14 @@ export async function generateMetadata({ params }: { params: { city: string } })
     title: `Agence audiovisuelle à ${city.name} – Production vidéo professionnelle | Asteraki Studio`,
     description: heroDescription,
     alternates: {
-      canonical: `https://asterakistudio.com/agence-audiovisuelle/${params.city}`
+      canonical: `https://asterakistudio.com/boite-de-production-video/${params.city}`
     },
     openGraph: {
       title: heroHeadline,
       description: heroDescription,
       locale: "fr_FR",
       type: "website",
-      url: `https://asterakistudio.com/agence-audiovisuelle/${params.city}`,
+      url: `https://asterakistudio.com/boite-de-production-video/${params.city}`,
       siteName: "Asteraki Studio",
       images: [
         {
